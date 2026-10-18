@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic, predeclared challenge cases. Unique propositions, not textual mentions, define fact denominators. Core coverage is separate from attached qualifiers and alignment.",
+  "annotation_policy": "core lists literal evidence fragments for a proposition; all fragments must occur in one exact source quote. Qualifiers are separately judged in the same quote. Shared subjects and antecedents remain context notes, not invented normalized text. These operational labels require semantic review and do not constitute real-world fact checking.",
+  "cases": [
+    {
+      "id": "base_01",
+      "category": "baseline",
+      "source": "On Monday, Aurora City opened a new library, and the building has 200 seats.",
+      "facts": [
+        {
+          "id": "library",
+          "reference_quote": "On Monday, Aurora City opened a new library",
+          "core": [
+            "Aurora City opened a new library"
+          ],
+          "qualifiers": [
+            {
+              "id": "library.q1",
+              "kind": "time",
+              "text": "On Monday"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "seats",
+          "reference_quote": "the building has 200 seats",
+          "core": [
+            "the building has",
+            "seats"
+          ],
+          "qualifiers": [
+            {
+              "id": "seats.q1",
+              "kind": "quantity",
+              "text": "200"
+            }
+          ],
+          "context": "the building refers to the new library"
+        }
+      ]
+    },
+    {
+      "id": "base_02",
+      "category": "baseline",
+      "source": "Riverdale Hospital added 40 beds in June, but its emergency department stayed closed.",
+      "facts": [
+        {
+          "id": "beds",
+          "reference_quote": "Riverdale Hospital added 40 beds in June",
+          "core": [
+            "Riverdale Hospital added",
+            "beds"
+          ],
+          "qualifiers": [
+            {
+              "id": "beds.q1",
+              "kind": "quantity",
+              "text": "40"
+            },
+            {
+              "id": "beds.q2",
+              "kind": "time",
+              "text": "in June"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "emergency",
+          "reference_quote": "its emergency department stayed closed",
+          "core": [
+            "its emergency department stayed closed"
+          ],
+          "qualifiers": [],
+          "context": "its refers to Riverdale Hospital"
+        }
+      ]
+    },
+    {
+      "id": "base_03",
+      "category": "baseline",
+      "source": "Green Line ridership rose 12% in 2025, while ticket prices fell by 5%.",
+      "facts": [
+        {
+          "id": "ridership",
+          "reference_quote": "Green Line ridership rose 12% in 2025",
+          "core": [
+            "Green Line ridership rose"
+          ],
+          "qualifiers": [
+            {
+              "id": "ridership.q1",
+              "kind": "quantity",
+              "text": "12%"
+            },
+            {
+              "id": "ridership.q2",
+              "kind": "time",
+              "text": "in 2025"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "prices",
+          "reference_quote": "ticket prices fell by 5%",
+          "core": [
+            "ticket prices fell"
+          ],
+          "qualifiers": [
+            {
+              "id": "prices.q1",
+              "kind": "quantity",
+              "text": "by 5%"
+            }
+          ],
+          "context": "ticket prices are scoped by the surrounding sentence"
+        }
+      ]
+    },
+    {
+      "id": "repeat_01",
+      "category": "repeated_quote",
+      "source": "North Hall has 80 seats. North Hall has 80 seats.",
+      "facts": [
+        {
+          "id": "hall",
+          "reference_quote": "North Hall has 80 seats",
+          "core": [
+            "North Hall has",
+            "seats"
+          ],
+          "qualifiers": [
+            {
+              "id": "hall.q1",
+              "kind": "quantity",
+              "text": "80"
+            }
+          ],
+          "context": "One unique proposition has two textual mentions; do not count repetition as a new fact."
+        }
+      ]
+    },
+    {
+      "id": "repeat_02",
+      "category": "repeated_quote",
+      "source": "\"The clinic stayed open in June\"; \"The clinic stayed open in June\"; its pharmacy stayed closed.",
+      "facts": [
+        {
+          "id": "clinic",
+          "reference_quote": "The clinic stayed open in June",
+          "core": [
+            "The clinic stayed open"
+          ],
+          "qualifiers": [
+            {
+              "id": "clinic.q1",
+              "kind": "time",
+              "text": "in June"
+            }
+          ],
+          "context": "Two identical quotations express the same proposition."
+        },
+        {
+          "id": "pharmacy",
+          "reference_quote": "its pharmacy stayed closed",
+          "core": [
+            "its pharmacy stayed closed"
+          ],
+          "qualifiers": [],
+          "context": "its refers to the clinic"
+        }
+      ]
+    },
+    {
+      "id": "shared_01",
+      "category": "shared_subject",
+      "source": "Meadow Clinic hired 12 nurses in March and opened a new ward in July.",
+      "facts": [
+        {
+          "id": "nurses",
+          "reference_quote": "Meadow Clinic hired 12 nurses in March",
+          "core": [
+            "Meadow Clinic hired",
+            "nurses"
+          ],
+          "qualifiers": [
+            {
+              "id": "nurses.q1",
+              "kind": "quantity",
+              "text": "12"
+            },
+            {
+              "id": "nurses.q2",
+              "kind": "time",
+              "text": "in March"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "ward",
+          "reference_quote": "opened a new ward in July",
+          "core": [
+            "opened a new ward"
+          ],
+          "qualifiers": [
+            {
+              "id": "ward.q1",
+              "kind": "time",
+              "text": "in July"
+            }
+          ],
+          "context": "Shared subject Meadow Clinic is inherited; it cannot be repeated inside an exact contiguous quote."
+        }
+      ]
+    },
+    {
+      "id": "shared_02",
+      "category": "shared_subject",
+      "source": "Eastport Council approved the park on Tuesday but did not approve the road on Wednesday.",
+      "facts": [
+        {
+          "id": "park",
+          "reference_quote": "Eastport Council approved the park on Tuesday",
+          "core": [
+            "Eastport Council approved the park"
+          ],
+          "qualifiers": [
+            {
+              "id": "park.q1",
+              "kind": "time",
+              "text": "on Tuesday"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "road",
+          "reference_quote": "did not approve the road on Wednesday",
+          "core": [
+            "approve the road"
+          ],
+          "qualifiers": [
+            {
+              "id": "road.q1",
+              "kind": "negation",
+              "text": "did not"
+            },
+            {
+              "id": "road.q2",
+              "kind": "time",
+              "text": "on Wednesday"
+            }
+          ],
+          "context": "Shared subject Eastport Council is inherited."
+        }
+      ]
+    },
+    {
+      "id": "pronoun_01",
+      "category": "pronoun",
+      "source": "Lina opened a bakery in April, and she hired two bakers in May.",
+      "facts": [
+        {
+          "id": "bakery",
+          "reference_quote": "Lina opened a bakery in April",
+          "core": [
+            "Lina opened a bakery"
+          ],
+          "qualifiers": [
+            {
+              "id": "bakery.q1",
+              "kind": "time",
+              "text": "in April"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "bakers",
+          "reference_quote": "she hired two bakers in May",
+          "core": [
+            "she hired",
+            "bakers"
+          ],
+          "qualifiers": [
+            {
+              "id": "bakers.q1",
+              "kind": "quantity",
+              "text": "two"
+            },
+            {
+              "id": "bakers.q2",
+              "kind": "time",
+              "text": "in May"
+            }
+          ],
+          "context": "she refers to Lina"
+        }
+      ]
+    },
+    {
+      "id": "pronoun_02",
+      "category": "pronoun",
+      "source": "Harbor Hospital closed its west wing in July, but that wing reopened in October.",
+      "facts": [
+        {
+          "id": "closure",
+          "reference_quote": "Harbor Hospital closed its west wing in July",
+          "core": [
+            "Harbor Hospital closed its west wing"
+          ],
+          "qualifiers": [
+            {
+              "id": "closure.q1",
+              "kind": "time",
+              "text": "in July"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "reopening",
+          "reference_quote": "that wing reopened in October",
+          "core": [
+            "that wing reopened"
+          ],
+          "qualifiers": [
+            {
+              "id": "reopening.q1",
+              "kind": "time",
+              "text": "in October"
+            }
+          ],
+          "context": "that wing refers to the west wing"
+        }
+      ]
+    },
+    {
+      "id": "negation_01",
+      "category": "negation",
+      "source": "The board did not cancel the concert, and tickets remained valid until Friday.",
+      "facts": [
+        {
+          "id": "concert",
+          "reference_quote": "The board did not cancel the concert",
+          "core": [
+            "The board",
+            "cancel the concert"
+          ],
+          "qualifiers": [
+            {
+              "id": "concert.q1",
+              "kind": "negation",
+              "text": "did not"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "tickets",
+          "reference_quote": "tickets remained valid until Friday",
+          "core": [
+            "tickets remained valid"
+          ],
+          "qualifiers": [
+            {
+              "id": "tickets.q1",
+              "kind": "time",
+              "text": "until Friday"
+            }
+          ],
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "negation_02",
+      "category": "negation",
+      "source": "No trains ran on Sunday, but buses carried 300 passengers.",
+      "facts": [
+        {
+          "id": "trains",
+          "reference_quote": "No trains ran on Sunday",
+          "core": [
+            "trains",
+            "ran"
+          ],
+          "qualifiers": [
+            {
+              "id": "trains.q1",
+              "kind": "negation",
+              "text": "No"
+            },
+            {
+              "id": "trains.q2",
+              "kind": "time",
+              "text": "on Sunday"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "buses",
+          "reference_quote": "buses carried 300 passengers",
+          "core": [
+            "buses carried",
+            "passengers"
+          ],
+          "qualifiers": [
+            {
+              "id": "buses.q1",
+              "kind": "quantity",
+              "text": "300"
+            }
+          ],
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "time_01",
+      "category": "complex_time",
+      "source": "From March 3 to March 8, the museum closed at 4 p.m., while its cafe stayed open until 6 p.m. during that period.",
+      "facts": [
+        {
+          "id": "museum",
+          "reference_quote": "From March 3 to March 8, the museum closed at 4 p.m.",
+          "core": [
+            "the museum closed"
+          ],
+          "qualifiers": [
+            {
+              "id": "museum.q1",
+              "kind": "time",
+              "text": "From March 3 to March 8"
+            },
+            {
+              "id": "museum.q2",
+              "kind": "time",
+              "text": "at 4 p.m."
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "cafe",
+          "reference_quote": "its cafe stayed open until 6 p.m. during that period",
+          "core": [
+            "its cafe stayed open"
+          ],
+          "qualifiers": [
+            {
+              "id": "cafe.q1",
+              "kind": "time",
+              "text": "until 6 p.m."
+            },
+            {
+              "id": "cafe.q2",
+              "kind": "time",
+              "text": "during that period"
+            }
+          ],
+          "context": "its refers to museum; that period refers to March 3–8"
+        }
+      ]
+    },
+    {
+      "id": "time_02",
+      "category": "complex_time",
+      "source": "The bridge reopened on the first Monday after June 10, 2025, and tolls resumed two days later.",
+      "facts": [
+        {
+          "id": "bridge",
+          "reference_quote": "The bridge reopened on the first Monday after June 10, 2025",
+          "core": [
+            "The bridge reopened"
+          ],
+          "qualifiers": [
+            {
+              "id": "bridge.q1",
+              "kind": "time",
+              "text": "on the first Monday after June 10, 2025"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "tolls",
+          "reference_quote": "tolls resumed two days later",
+          "core": [
+            "tolls resumed"
+          ],
+          "qualifiers": [
+            {
+              "id": "tolls.q1",
+              "kind": "time",
+              "text": "two days later"
+            }
+          ],
+          "context": "relative time is anchored to the reopening; do not invent an absolute date"
+        }
+      ]
+    },
+    {
+      "id": "time_03",
+      "category": "complex_time",
+      "source": "By the end of 2024, River Labs had hired 20 staff, but its hiring freeze lasted from January through March 2025.",
+      "facts": [
+        {
+          "id": "staff",
+          "reference_quote": "By the end of 2024, River Labs had hired 20 staff",
+          "core": [
+            "River Labs had hired",
+            "staff"
+          ],
+          "qualifiers": [
+            {
+              "id": "staff.q1",
+              "kind": "time",
+              "text": "By the end of 2024"
+            },
+            {
+              "id": "staff.q2",
+              "kind": "quantity",
+              "text": "20"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "freeze",
+          "reference_quote": "its hiring freeze lasted from January through March 2025",
+          "core": [
+            "its hiring freeze lasted"
+          ],
+          "qualifiers": [
+            {
+              "id": "freeze.q1",
+              "kind": "time",
+              "text": "from January through March 2025"
+            }
+          ],
+          "context": "its refers to River Labs"
+        }
+      ]
+    },
+    {
+      "id": "time_04",
+      "category": "complex_time",
+      "source": "The clinic will be closed next Friday, and appointments booked before October 1 remain valid until October 31.",
+      "facts": [
+        {
+          "id": "future_closure",
+          "reference_quote": "The clinic will be closed next Friday",
+          "core": [
+            "The clinic",
+            "be closed"
+          ],
+          "qualifiers": [
+            {
+              "id": "future_closure.q1",
+              "kind": "modality",
+              "text": "will"
+            },
+            {
+              "id": "future_closure.q2",
+              "kind": "time",
+              "text": "next Friday"
+            }
+          ],
+          "context": null
+        },
+        {
+          "id": "appointments",
+          "reference_quote": "appointments booked before October 1 remain valid until October 31",
+          "core": [
+            "appointments",
+            "remain valid"
+          ],
+          "qualifiers": [
+            {
+              "id": "appointments.q1",
+              "kind": "restriction",
+              "text": "booked before October 1"
+            },
+            {
+              "id": "appointments.q2",
+              "kind": "time",
+              "text": "until October 31"
+            }
+          ],
+          "context": null
+        }
+      ]
+    }
+  ]
+}

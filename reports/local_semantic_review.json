@@ -1,0 +1,66 @@
+{
+  "reviewed_at_utc": "2026-10-18T10:01:01.065172+00:00",
+  "method": "Assistant semantic review of all source sentences and unmodified raw predictions, cross-checked against predeclared labels. Core coverage is not full fact correctness when qualifiers are corrupted.",
+  "cases": [
+    {
+      "case_id": "base_01",
+      "note": "Two distinct propositions; Monday and seat count retained. The building remains context dependent."
+    },
+    {
+      "case_id": "base_02",
+      "note": "Both propositions, June and 40 beds retained. its remains context dependent."
+    },
+    {
+      "case_id": "base_03",
+      "note": "Both propositions, 12%, 2025 and 5% retained."
+    },
+    {
+      "case_id": "repeat_01",
+      "note": "One unique fact despite two mentions. Extraction deduplicates it; alignment correctly refuses two possible positions."
+    },
+    {
+      "case_id": "repeat_02",
+      "note": "Two unique facts retained. First quote has two literal occurrences and is rejected; pharmacy quote has one exact span."
+    },
+    {
+      "case_id": "shared_01",
+      "note": "Both facts and all qualifiers retained semantically. Model inserts Meadow Clinic into the second quote; that quote is nonliteral and is rejected."
+    },
+    {
+      "case_id": "shared_02",
+      "note": "Both facts, both weekdays and negation retained. Model inserts Eastport Council into the second quote; it is nonliteral and is rejected."
+    },
+    {
+      "case_id": "pronoun_01",
+      "note": "Both propositions, months and two bakers retained; she needs the Lina antecedent."
+    },
+    {
+      "case_id": "pronoun_02",
+      "note": "Both propositions and months retained; that wing needs the west-wing antecedent."
+    },
+    {
+      "case_id": "negation_01",
+      "note": "did not is retained; both facts and until Friday retained."
+    },
+    {
+      "case_id": "negation_02",
+      "note": "No is retained; Sunday and 300 passengers retained."
+    },
+    {
+      "case_id": "time_01",
+      "note": "Both event cores retained, but March 3 to March 8 is changed to March 3 to March 3. One time qualifier is corrupted, and that nonliteral quote is rejected. Cafe qualifiers remain intact."
+    },
+    {
+      "case_id": "time_02",
+      "note": "Both event cores and complete absolute/relative time phrases retained. No inferred absolute date added."
+    },
+    {
+      "case_id": "time_03",
+      "note": "Both event cores, end-of-2024 scope, 20 staff and January–March 2025 range retained."
+    },
+    {
+      "case_id": "time_04",
+      "note": "Future modality, next Friday, appointment restriction and validity end date retained."
+    }
+  ]
+}

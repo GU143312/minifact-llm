@@ -1,0 +1,49 @@
+{
+  "controlled_comparison": false,
+  "reason": "Historical outputs use different prompts, schemas, precision and token limits; cannot support a controlled environment comparison.",
+  "same_model_id": true,
+  "same_model_revision": true,
+  "colab": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "torch_version": "2.11.0+cu130",
+    "transformers_version": "4.57.1",
+    "python_version": "3.13.15",
+    "gpu": "Tesla T4",
+    "dtype": "torch.float16",
+    "max_new_tokens": 384,
+    "system_prompt": "Extract independent atomic factual claims explicitly stated in the input.\nReturn ONLY a JSON array. Each object must have exactly these keys:\nclaim, source_quote, start_idx, end_idx.\nclaim: one standalone factual proposition; resolve pronouns using only the input.\nsource_quote: an exact contiguous substring of the input supporting that claim.\nstart_idx/end_idx: zero-based Python character offsets into the input, end exclusive.\nThe substring input[start_idx:end_idx] MUST equal source_quote.\nSplit distinct factual propositions. Do not add facts, explanations, or markdown fences.\nThe offsets refer only to the input text, not the prompt around it.",
+    "score_definition": "Mean raw-model logprob over generated non-special JSON response tokens; includes syntax; not factual correctness probability."
+  },
+  "local_improved": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "4.57.6",
+    "dtype": "torch.bfloat16",
+    "max_new_tokens": 256,
+    "system_prompt": "Extract every independent atomic factual claim from the input. Return ONLY a JSON array of strings, each copied EXACTLY and contiguously from the input. Never rewrite, reorder words, change case, or add punctuation. Split different facts into separate quotes. Keep each fact's subject, numbers, units, dates and time expressions together. Do not omit temporal qualifiers. Retain pronouns as written; do not replace them with names. Exclude clause-joining conjunctions and optional terminal punctuation. Example input: In May, Cedar opened a pool, and the pool has six lanes. Example output: [\"In May, Cedar opened a pool\", \"the pool has six lanes\"]",
+    "score_definition": "Mean natural-log probability per generated non-special token of quote-array JSON; derived indices are not scored."
+  },
+  "historical_colab_sentences": [
+    {
+      "sentence_id": 1,
+      "extracted_claims": 2,
+      "reported_offset_error_count": 2,
+      "mean_generated_json_logprob": -0.03948063467066851
+    },
+    {
+      "sentence_id": 2,
+      "extracted_claims": 2,
+      "reported_offset_error_count": 2,
+      "mean_generated_json_logprob": -0.05328120270216999
+    },
+    {
+      "sentence_id": 3,
+      "extracted_claims": 2,
+      "reported_offset_error_count": 2,
+      "mean_generated_json_logprob": -0.047113599491701214
+    }
+  ],
+  "excluded": "Original archive, shared planning document, personal identifiers, original notebook URL and local filesystem paths are not published."
+}
