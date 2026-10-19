@@ -54,6 +54,8 @@ python compare.py reports/local_fp16.json reports/colab_fp16.json --output repor
 
 ## 检查与结果
 
+本地与 Colab 的统一 FP16 比较已完成：[完整报告](reports/CONTROLLED_COMPARISON.md)。15 句原始响应全部一致；两端分别得到事实核心覆盖 29/29、限定保留 37/38、定位接受 24 条／拒绝 5 条。共同复现日期改写、补写共享主语和重复引用歧义，未将这些维度合成总通过率。
+
 ```powershell
 python -m unittest discover -s tests -v
 ```

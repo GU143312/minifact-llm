@@ -1,0 +1,2168 @@
+{
+  "controlled_comparison": true,
+  "residual_differences": "GPU architecture, operating system and placement may differ. Greedy FP16 outputs need not be bit-identical; speed is descriptive, not a hardware causal estimate.",
+  "local": {
+    "label": "local",
+    "contract_sha256": "e8724c06a5ee7e99da5e8ca99468c59229794ba331ca45cb1990aab64f73fb0c",
+    "metric_note": "No composite pass rate. Fact/qualifier evidence is judged from raw predicted strings independently of literal alignment and requires semantic review. Exact accepted spans are guaranteed by construction; always report rejected predictions and malformed/truncated outputs alongside them.",
+    "totals": {
+      "gold_facts": 29,
+      "facts_covered": 29,
+      "gold_qualifiers": 38,
+      "qualifiers_retained": 37,
+      "qualifiers_on_covered_facts": 38,
+      "predicted_quote_items": 29,
+      "literal_quote_items": 26,
+      "aligned_quote_items": 24,
+      "exact_accepted_spans": 24,
+      "rejected_quote_items": 5,
+      "schema_or_json_errors": 0,
+      "truncated_generations": 0,
+      "multi_fact_quote_items": 0
+    },
+    "by_category": {
+      "baseline": {
+        "gold_facts": 6,
+        "facts_covered": 6,
+        "gold_qualifiers": 7,
+        "qualifiers_retained": 7,
+        "qualifiers_on_covered_facts": 7,
+        "predicted_quote_items": 6,
+        "literal_quote_items": 6,
+        "aligned_quote_items": 6,
+        "exact_accepted_spans": 6,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "repeated_quote": {
+        "gold_facts": 3,
+        "facts_covered": 3,
+        "gold_qualifiers": 2,
+        "qualifiers_retained": 2,
+        "qualifiers_on_covered_facts": 2,
+        "predicted_quote_items": 3,
+        "literal_quote_items": 3,
+        "aligned_quote_items": 1,
+        "exact_accepted_spans": 1,
+        "rejected_quote_items": 2,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "shared_subject": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 6,
+        "qualifiers_retained": 6,
+        "qualifiers_on_covered_facts": 6,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 2,
+        "aligned_quote_items": 2,
+        "exact_accepted_spans": 2,
+        "rejected_quote_items": 2,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "pronoun": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 5,
+        "qualifiers_retained": 5,
+        "qualifiers_on_covered_facts": 5,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 4,
+        "aligned_quote_items": 4,
+        "exact_accepted_spans": 4,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "negation": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 5,
+        "qualifiers_retained": 5,
+        "qualifiers_on_covered_facts": 5,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 4,
+        "aligned_quote_items": 4,
+        "exact_accepted_spans": 4,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "complex_time": {
+        "gold_facts": 8,
+        "facts_covered": 8,
+        "gold_qualifiers": 13,
+        "qualifiers_retained": 12,
+        "qualifiers_on_covered_facts": 13,
+        "predicted_quote_items": 8,
+        "literal_quote_items": 7,
+        "aligned_quote_items": 7,
+        "exact_accepted_spans": 7,
+        "rejected_quote_items": 1,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      }
+    },
+    "cases": [
+      {
+        "case_id": "base_01",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "library",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "library.q1",
+                "kind": "time",
+                "text": "On Monday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "seats",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "seats.q1",
+                "kind": "quantity",
+                "text": "200",
+                "retained": true
+              }
+            ],
+            "context_note": "the building refers to the new library"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "base_02",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "beds",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "beds.q1",
+                "kind": "quantity",
+                "text": "40",
+                "retained": true
+              },
+              {
+                "id": "beds.q2",
+                "kind": "time",
+                "text": "in June",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "emergency",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [],
+            "context_note": "its refers to Riverdale Hospital"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "base_03",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "ridership",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "ridership.q1",
+                "kind": "quantity",
+                "text": "12%",
+                "retained": true
+              },
+              {
+                "id": "ridership.q2",
+                "kind": "time",
+                "text": "in 2025",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "prices",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "prices.q1",
+                "kind": "quantity",
+                "text": "by 5%",
+                "retained": true
+              }
+            ],
+            "context_note": "ticket prices are scoped by the surrounding sentence"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "repeat_01",
+        "category": "repeated_quote",
+        "counts": {
+          "gold_facts": 1,
+          "facts_covered": 1,
+          "gold_qualifiers": 1,
+          "qualifiers_retained": 1,
+          "qualifiers_on_covered_facts": 1,
+          "predicted_quote_items": 1,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 0,
+          "exact_accepted_spans": 0,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "hall",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "hall.q1",
+                "kind": "quantity",
+                "text": "80",
+                "retained": true
+              }
+            ],
+            "context_note": "One unique proposition has two textual mentions; do not count repetition as a new fact."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "North Hall has 80 seats",
+            "reason": "ambiguous_repeated_quote",
+            "matches": [
+              {
+                "start_idx": 0,
+                "end_idx": 23
+              },
+              {
+                "start_idx": 25,
+                "end_idx": 48
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "repeat_02",
+        "category": "repeated_quote",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 1,
+          "qualifiers_retained": 1,
+          "qualifiers_on_covered_facts": 1,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "clinic",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "clinic.q1",
+                "kind": "time",
+                "text": "in June",
+                "retained": true
+              }
+            ],
+            "context_note": "Two identical quotations express the same proposition."
+          },
+          {
+            "fact_id": "pharmacy",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [],
+            "context_note": "its refers to the clinic"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "The clinic stayed open in June",
+            "reason": "ambiguous_repeated_quote",
+            "matches": [
+              {
+                "start_idx": 1,
+                "end_idx": 31
+              },
+              {
+                "start_idx": 35,
+                "end_idx": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "shared_01",
+        "category": "shared_subject",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "nurses",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "nurses.q1",
+                "kind": "quantity",
+                "text": "12",
+                "retained": true
+              },
+              {
+                "id": "nurses.q2",
+                "kind": "time",
+                "text": "in March",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "ward",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "ward.q1",
+                "kind": "time",
+                "text": "in July",
+                "retained": true
+              }
+            ],
+            "context_note": "Shared subject Meadow Clinic is inherited; it cannot be repeated inside an exact contiguous quote."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 1,
+            "quote": "Meadow Clinic opened a new ward in July",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "shared_02",
+        "category": "shared_subject",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "park",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "park.q1",
+                "kind": "time",
+                "text": "on Tuesday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "road",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "road.q1",
+                "kind": "negation",
+                "text": "did not",
+                "retained": true
+              },
+              {
+                "id": "road.q2",
+                "kind": "time",
+                "text": "on Wednesday",
+                "retained": true
+              }
+            ],
+            "context_note": "Shared subject Eastport Council is inherited."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 1,
+            "quote": "Eastport Council did not approve the road on Wednesday",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "pronoun_01",
+        "category": "pronoun",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "bakery",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "bakery.q1",
+                "kind": "time",
+                "text": "in April",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "bakers",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "bakers.q1",
+                "kind": "quantity",
+                "text": "two",
+                "retained": true
+              },
+              {
+                "id": "bakers.q2",
+                "kind": "time",
+                "text": "in May",
+                "retained": true
+              }
+            ],
+            "context_note": "she refers to Lina"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "pronoun_02",
+        "category": "pronoun",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "closure",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "closure.q1",
+                "kind": "time",
+                "text": "in July",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "reopening",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "reopening.q1",
+                "kind": "time",
+                "text": "in October",
+                "retained": true
+              }
+            ],
+            "context_note": "that wing refers to the west wing"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "negation_01",
+        "category": "negation",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "concert",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "concert.q1",
+                "kind": "negation",
+                "text": "did not",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "tickets",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "tickets.q1",
+                "kind": "time",
+                "text": "until Friday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "negation_02",
+        "category": "negation",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "trains",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "trains.q1",
+                "kind": "negation",
+                "text": "No",
+                "retained": true
+              },
+              {
+                "id": "trains.q2",
+                "kind": "time",
+                "text": "on Sunday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "buses",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "buses.q1",
+                "kind": "quantity",
+                "text": "300",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_01",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 4,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 4,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "museum",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "museum.q1",
+                "kind": "time",
+                "text": "From March 3 to March 8",
+                "retained": false
+              },
+              {
+                "id": "museum.q2",
+                "kind": "time",
+                "text": "at 4 p.m.",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "cafe",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "cafe.q1",
+                "kind": "time",
+                "text": "until 6 p.m.",
+                "retained": true
+              },
+              {
+                "id": "cafe.q2",
+                "kind": "time",
+                "text": "during that period",
+                "retained": true
+              }
+            ],
+            "context_note": "its refers to museum; that period refers to March 3–8"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "From March 3 to March 3, the museum closed at 4 p.m.",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "time_02",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "bridge",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "bridge.q1",
+                "kind": "time",
+                "text": "on the first Monday after June 10, 2025",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "tolls",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "tolls.q1",
+                "kind": "time",
+                "text": "two days later",
+                "retained": true
+              }
+            ],
+            "context_note": "relative time is anchored to the reopening; do not invent an absolute date"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_03",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "staff",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "staff.q1",
+                "kind": "time",
+                "text": "By the end of 2024",
+                "retained": true
+              },
+              {
+                "id": "staff.q2",
+                "kind": "quantity",
+                "text": "20",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "freeze",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "freeze.q1",
+                "kind": "time",
+                "text": "from January through March 2025",
+                "retained": true
+              }
+            ],
+            "context_note": "its refers to River Labs"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_04",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 4,
+          "qualifiers_retained": 4,
+          "qualifiers_on_covered_facts": 4,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "future_closure",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "future_closure.q1",
+                "kind": "modality",
+                "text": "will",
+                "retained": true
+              },
+              {
+                "id": "future_closure.q2",
+                "kind": "time",
+                "text": "next Friday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "appointments",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "appointments.q1",
+                "kind": "restriction",
+                "text": "booked before October 1",
+                "retained": true
+              },
+              {
+                "id": "appointments.q2",
+                "kind": "time",
+                "text": "until October 31",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      }
+    ]
+  },
+  "colab": {
+    "label": "colab",
+    "contract_sha256": "e8724c06a5ee7e99da5e8ca99468c59229794ba331ca45cb1990aab64f73fb0c",
+    "metric_note": "No composite pass rate. Fact/qualifier evidence is judged from raw predicted strings independently of literal alignment and requires semantic review. Exact accepted spans are guaranteed by construction; always report rejected predictions and malformed/truncated outputs alongside them.",
+    "totals": {
+      "gold_facts": 29,
+      "facts_covered": 29,
+      "gold_qualifiers": 38,
+      "qualifiers_retained": 37,
+      "qualifiers_on_covered_facts": 38,
+      "predicted_quote_items": 29,
+      "literal_quote_items": 26,
+      "aligned_quote_items": 24,
+      "exact_accepted_spans": 24,
+      "rejected_quote_items": 5,
+      "schema_or_json_errors": 0,
+      "truncated_generations": 0,
+      "multi_fact_quote_items": 0
+    },
+    "by_category": {
+      "baseline": {
+        "gold_facts": 6,
+        "facts_covered": 6,
+        "gold_qualifiers": 7,
+        "qualifiers_retained": 7,
+        "qualifiers_on_covered_facts": 7,
+        "predicted_quote_items": 6,
+        "literal_quote_items": 6,
+        "aligned_quote_items": 6,
+        "exact_accepted_spans": 6,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "repeated_quote": {
+        "gold_facts": 3,
+        "facts_covered": 3,
+        "gold_qualifiers": 2,
+        "qualifiers_retained": 2,
+        "qualifiers_on_covered_facts": 2,
+        "predicted_quote_items": 3,
+        "literal_quote_items": 3,
+        "aligned_quote_items": 1,
+        "exact_accepted_spans": 1,
+        "rejected_quote_items": 2,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "shared_subject": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 6,
+        "qualifiers_retained": 6,
+        "qualifiers_on_covered_facts": 6,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 2,
+        "aligned_quote_items": 2,
+        "exact_accepted_spans": 2,
+        "rejected_quote_items": 2,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "pronoun": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 5,
+        "qualifiers_retained": 5,
+        "qualifiers_on_covered_facts": 5,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 4,
+        "aligned_quote_items": 4,
+        "exact_accepted_spans": 4,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "negation": {
+        "gold_facts": 4,
+        "facts_covered": 4,
+        "gold_qualifiers": 5,
+        "qualifiers_retained": 5,
+        "qualifiers_on_covered_facts": 5,
+        "predicted_quote_items": 4,
+        "literal_quote_items": 4,
+        "aligned_quote_items": 4,
+        "exact_accepted_spans": 4,
+        "rejected_quote_items": 0,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      },
+      "complex_time": {
+        "gold_facts": 8,
+        "facts_covered": 8,
+        "gold_qualifiers": 13,
+        "qualifiers_retained": 12,
+        "qualifiers_on_covered_facts": 13,
+        "predicted_quote_items": 8,
+        "literal_quote_items": 7,
+        "aligned_quote_items": 7,
+        "exact_accepted_spans": 7,
+        "rejected_quote_items": 1,
+        "schema_or_json_errors": 0,
+        "truncated_generations": 0,
+        "multi_fact_quote_items": 0
+      }
+    },
+    "cases": [
+      {
+        "case_id": "base_01",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "library",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "library.q1",
+                "kind": "time",
+                "text": "On Monday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "seats",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "seats.q1",
+                "kind": "quantity",
+                "text": "200",
+                "retained": true
+              }
+            ],
+            "context_note": "the building refers to the new library"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "base_02",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "beds",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "beds.q1",
+                "kind": "quantity",
+                "text": "40",
+                "retained": true
+              },
+              {
+                "id": "beds.q2",
+                "kind": "time",
+                "text": "in June",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "emergency",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [],
+            "context_note": "its refers to Riverdale Hospital"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "base_03",
+        "category": "baseline",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "ridership",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "ridership.q1",
+                "kind": "quantity",
+                "text": "12%",
+                "retained": true
+              },
+              {
+                "id": "ridership.q2",
+                "kind": "time",
+                "text": "in 2025",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "prices",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "prices.q1",
+                "kind": "quantity",
+                "text": "by 5%",
+                "retained": true
+              }
+            ],
+            "context_note": "ticket prices are scoped by the surrounding sentence"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "repeat_01",
+        "category": "repeated_quote",
+        "counts": {
+          "gold_facts": 1,
+          "facts_covered": 1,
+          "gold_qualifiers": 1,
+          "qualifiers_retained": 1,
+          "qualifiers_on_covered_facts": 1,
+          "predicted_quote_items": 1,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 0,
+          "exact_accepted_spans": 0,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "hall",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "hall.q1",
+                "kind": "quantity",
+                "text": "80",
+                "retained": true
+              }
+            ],
+            "context_note": "One unique proposition has two textual mentions; do not count repetition as a new fact."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "North Hall has 80 seats",
+            "reason": "ambiguous_repeated_quote",
+            "matches": [
+              {
+                "start_idx": 0,
+                "end_idx": 23
+              },
+              {
+                "start_idx": 25,
+                "end_idx": 48
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "repeat_02",
+        "category": "repeated_quote",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 1,
+          "qualifiers_retained": 1,
+          "qualifiers_on_covered_facts": 1,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "clinic",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "clinic.q1",
+                "kind": "time",
+                "text": "in June",
+                "retained": true
+              }
+            ],
+            "context_note": "Two identical quotations express the same proposition."
+          },
+          {
+            "fact_id": "pharmacy",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [],
+            "context_note": "its refers to the clinic"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "The clinic stayed open in June",
+            "reason": "ambiguous_repeated_quote",
+            "matches": [
+              {
+                "start_idx": 1,
+                "end_idx": 31
+              },
+              {
+                "start_idx": 35,
+                "end_idx": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "shared_01",
+        "category": "shared_subject",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "nurses",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "nurses.q1",
+                "kind": "quantity",
+                "text": "12",
+                "retained": true
+              },
+              {
+                "id": "nurses.q2",
+                "kind": "time",
+                "text": "in March",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "ward",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "ward.q1",
+                "kind": "time",
+                "text": "in July",
+                "retained": true
+              }
+            ],
+            "context_note": "Shared subject Meadow Clinic is inherited; it cannot be repeated inside an exact contiguous quote."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 1,
+            "quote": "Meadow Clinic opened a new ward in July",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "shared_02",
+        "category": "shared_subject",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "park",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "park.q1",
+                "kind": "time",
+                "text": "on Tuesday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "road",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "road.q1",
+                "kind": "negation",
+                "text": "did not",
+                "retained": true
+              },
+              {
+                "id": "road.q2",
+                "kind": "time",
+                "text": "on Wednesday",
+                "retained": true
+              }
+            ],
+            "context_note": "Shared subject Eastport Council is inherited."
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 1,
+            "quote": "Eastport Council did not approve the road on Wednesday",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "pronoun_01",
+        "category": "pronoun",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "bakery",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "bakery.q1",
+                "kind": "time",
+                "text": "in April",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "bakers",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "bakers.q1",
+                "kind": "quantity",
+                "text": "two",
+                "retained": true
+              },
+              {
+                "id": "bakers.q2",
+                "kind": "time",
+                "text": "in May",
+                "retained": true
+              }
+            ],
+            "context_note": "she refers to Lina"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "pronoun_02",
+        "category": "pronoun",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "closure",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "closure.q1",
+                "kind": "time",
+                "text": "in July",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "reopening",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "reopening.q1",
+                "kind": "time",
+                "text": "in October",
+                "retained": true
+              }
+            ],
+            "context_note": "that wing refers to the west wing"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "negation_01",
+        "category": "negation",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "concert",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "concert.q1",
+                "kind": "negation",
+                "text": "did not",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "tickets",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "tickets.q1",
+                "kind": "time",
+                "text": "until Friday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "negation_02",
+        "category": "negation",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "trains",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "trains.q1",
+                "kind": "negation",
+                "text": "No",
+                "retained": true
+              },
+              {
+                "id": "trains.q2",
+                "kind": "time",
+                "text": "on Sunday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "buses",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "buses.q1",
+                "kind": "quantity",
+                "text": "300",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_01",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 4,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 4,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 1,
+          "aligned_quote_items": 1,
+          "exact_accepted_spans": 1,
+          "rejected_quote_items": 1,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "museum",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "museum.q1",
+                "kind": "time",
+                "text": "From March 3 to March 8",
+                "retained": false
+              },
+              {
+                "id": "museum.q2",
+                "kind": "time",
+                "text": "at 4 p.m.",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "cafe",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "cafe.q1",
+                "kind": "time",
+                "text": "until 6 p.m.",
+                "retained": true
+              },
+              {
+                "id": "cafe.q2",
+                "kind": "time",
+                "text": "during that period",
+                "retained": true
+              }
+            ],
+            "context_note": "its refers to museum; that period refers to March 3–8"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": [
+          {
+            "index": 0,
+            "quote": "From March 3 to March 3, the museum closed at 4 p.m.",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      {
+        "case_id": "time_02",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 2,
+          "qualifiers_retained": 2,
+          "qualifiers_on_covered_facts": 2,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "bridge",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "bridge.q1",
+                "kind": "time",
+                "text": "on the first Monday after June 10, 2025",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "tolls",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "tolls.q1",
+                "kind": "time",
+                "text": "two days later",
+                "retained": true
+              }
+            ],
+            "context_note": "relative time is anchored to the reopening; do not invent an absolute date"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_03",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 3,
+          "qualifiers_retained": 3,
+          "qualifiers_on_covered_facts": 3,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "staff",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "staff.q1",
+                "kind": "time",
+                "text": "By the end of 2024",
+                "retained": true
+              },
+              {
+                "id": "staff.q2",
+                "kind": "quantity",
+                "text": "20",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "freeze",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "freeze.q1",
+                "kind": "time",
+                "text": "from January through March 2025",
+                "retained": true
+              }
+            ],
+            "context_note": "its refers to River Labs"
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      },
+      {
+        "case_id": "time_04",
+        "category": "complex_time",
+        "counts": {
+          "gold_facts": 2,
+          "facts_covered": 2,
+          "gold_qualifiers": 4,
+          "qualifiers_retained": 4,
+          "qualifiers_on_covered_facts": 4,
+          "predicted_quote_items": 2,
+          "literal_quote_items": 2,
+          "aligned_quote_items": 2,
+          "exact_accepted_spans": 2,
+          "rejected_quote_items": 0,
+          "schema_or_json_errors": 0,
+          "truncated_generations": 0,
+          "multi_fact_quote_items": 0
+        },
+        "facts": [
+          {
+            "fact_id": "future_closure",
+            "covered": true,
+            "supporting_quote_indices": [
+              0
+            ],
+            "qualifiers": [
+              {
+                "id": "future_closure.q1",
+                "kind": "modality",
+                "text": "will",
+                "retained": true
+              },
+              {
+                "id": "future_closure.q2",
+                "kind": "time",
+                "text": "next Friday",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          },
+          {
+            "fact_id": "appointments",
+            "covered": true,
+            "supporting_quote_indices": [
+              1
+            ],
+            "qualifiers": [
+              {
+                "id": "appointments.q1",
+                "kind": "restriction",
+                "text": "booked before October 1",
+                "retained": true
+              },
+              {
+                "id": "appointments.q2",
+                "kind": "time",
+                "text": "until October 31",
+                "retained": true
+              }
+            ],
+            "context_note": null
+          }
+        ],
+        "multi_fact_quotes": [],
+        "alignment_rejections": []
+      }
+    ]
+  },
+  "per_case_output_comparison": [
+    {
+      "case_id": "base_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.002180503517795698,
+      "colab_mean_logprob": -0.002697942259587532,
+      "logprob_difference_colab_minus_local": -0.000517438741791834
+    },
+    {
+      "case_id": "base_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.00030162313039851013,
+      "colab_mean_logprob": -0.00029558777122224756,
+      "logprob_difference_colab_minus_local": 6.035359176262563e-06
+    },
+    {
+      "case_id": "base_03",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.00011555116876767084,
+      "colab_mean_logprob": -0.00011779044033406631,
+      "logprob_difference_colab_minus_local": -2.239271566395473e-06
+    },
+    {
+      "case_id": "repeat_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.020982906046658596,
+      "colab_mean_logprob": -0.02048424033854464,
+      "logprob_difference_colab_minus_local": 0.0004986657081139552
+    },
+    {
+      "case_id": "repeat_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.0032259447125139013,
+      "colab_mean_logprob": -0.003225800604083316,
+      "logprob_difference_colab_minus_local": 1.44108430585356e-07
+    },
+    {
+      "case_id": "shared_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -4.596631693516429e-06,
+      "colab_mean_logprob": -4.587094134080871e-06,
+      "logprob_difference_colab_minus_local": 9.537559435557951e-09
+    },
+    {
+      "case_id": "shared_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.00028325894826088734,
+      "colab_mean_logprob": -0.00026314233654386754,
+      "logprob_difference_colab_minus_local": 2.0116611717019793e-05
+    },
+    {
+      "case_id": "pronoun_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -6.945073998644425e-05,
+      "colab_mean_logprob": -6.782241465212262e-05,
+      "logprob_difference_colab_minus_local": 1.6283253343216353e-06
+    },
+    {
+      "case_id": "pronoun_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.0009397681837310441,
+      "colab_mean_logprob": -0.0010664139162573053,
+      "logprob_difference_colab_minus_local": -0.0001266457325262612
+    },
+    {
+      "case_id": "negation_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.018633091667707102,
+      "colab_mean_logprob": -0.01813783853770934,
+      "logprob_difference_colab_minus_local": 0.0004952531299977636
+    },
+    {
+      "case_id": "negation_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -3.1871340755257656e-05,
+      "colab_mean_logprob": -3.180121940924691e-05,
+      "logprob_difference_colab_minus_local": 7.012134601074515e-08
+    },
+    {
+      "case_id": "time_01",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.0061900787610373615,
+      "colab_mean_logprob": -0.006213679929079063,
+      "logprob_difference_colab_minus_local": -2.360116804170191e-05
+    },
+    {
+      "case_id": "time_02",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.013792921637557092,
+      "colab_mean_logprob": -0.013096540836233064,
+      "logprob_difference_colab_minus_local": 0.0006963808013240279
+    },
+    {
+      "case_id": "time_03",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.001731717477249666,
+      "colab_mean_logprob": -0.001753094491961552,
+      "logprob_difference_colab_minus_local": -2.1377014711885947e-05
+    },
+    {
+      "case_id": "time_04",
+      "same_raw_response": true,
+      "local_mean_logprob": -0.000324226491935633,
+      "colab_mean_logprob": -0.00032107411334095557,
+      "logprob_difference_colab_minus_local": 3.152378594677445e-06
+    }
+  ],
+  "same_raw_response_cases": 15
+}

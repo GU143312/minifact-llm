@@ -1,0 +1,281 @@
+{
+  "verified_at_utc": "2026-10-19T16:57:07+00:00",
+  "controlled_contract_matches_current_source": true,
+  "contract_sha256": "e8724c06a5ee7e99da5e8ca99468c59229794ba331ca45cb1990aab64f73fb0c",
+  "received_archive_sha256": "a6e35c877737ce05ce6cc3ecc971be55b598afd3b992fa5a251d384bd3840149",
+  "received_metrics_equal_recomputed_metrics": true,
+  "device_maps_equal": true,
+  "same_raw_responses": 15,
+  "checked_generations": [
+    {
+      "label": "local",
+      "case_id": "base_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "base_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "base_03",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "repeat_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "repeat_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "shared_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "shared_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "pronoun_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "pronoun_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "negation_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "negation_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "time_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "time_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "time_03",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "local",
+      "case_id": "time_04",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "base_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "base_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "base_03",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "repeat_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "repeat_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "shared_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "shared_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "pronoun_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "pronoun_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "negation_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "negation_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "time_01",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "time_02",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "time_03",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    },
+    {
+      "label": "colab",
+      "case_id": "time_04",
+      "raw_json_consistent": true,
+      "alignment_recomputed": true,
+      "accepted_slices_exact": true,
+      "token_count_and_mean_verified": true,
+      "ended_with_eos": true
+    }
+  ]
+}
