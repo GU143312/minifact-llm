@@ -4,6 +4,12 @@
 
 项目比较 Windows 本地 GPU 与 Google Colab。两端使用同一份 `minifact.py`、固定提示词、模型 revision、FP16 精度及 greedy 生成参数。共享文档、个人项目安排和原始附件不属于公开仓库内容。
 
+## 正式实验：Days 1–2 已完成
+
+已策划并冻结 **60 条真实新闻相关错误主张**，改编自 AVeriTeC 公开基准的 Refuted 样本，附上游裁决、证据 QA、出处及固定来源版本。交付为[标准化 JSON](data/phase1/dataset.json)、[无答案输入](data/phase1/inputs.json)和 [JSON Schema](data/phase1/dataset.schema.json)；筛选、许可与复现方法见[正式数据说明](data/phase1/README.md)。样本是短主张，不是完整文章；全部为错误正例。
+
+本阶段完成数据策划，原子事实、限定条件与引用位置标注留待 Days 3–4。下文 15 句本地/Colab 结果属于前期合成回归实验，不能当作这 60 条上的正式结果。
+
 ## 实验约定
 
 - 模型：`Qwen/Qwen2.5-3B-Instruct`。
@@ -59,15 +65,17 @@ python compare.py reports/local_fp16.json reports/colab_fp16.json --output repor
 本地与 Colab 的统一 FP16 比较已完成：[完整报告](reports/CONTROLLED_COMPARISON.md)。15 句原始响应全部一致；两端分别得到事实核心覆盖 29/29、限定保留 37/38、定位接受 24 条／拒绝 5 条。共同复现日期改写、补写共享主语和重复引用歧义，未将这些维度合成总通过率。
 
 ```powershell
+python -m pip install -r requirements-data.txt
 python -m unittest discover -s tests -v
+python scripts/validate_phase1.py
 ```
 
 测试不下载模型，验证重复引文拒绝、Unicode 索引、改写拒绝、指标独立性，以及配置／实际 token 不一致时拒绝比较。完整模型实验的原始响应、逐 token 分数、拒绝记录和逐句指标保存在 `reports/`；当前运行状态见 `reports/STATUS.md`。
 
-log-probability 是模型生成的引用 JSON 的自然对数概率均值，包含 JSON 标点，排除特殊 token；派生索引没有模型分数。它不是主张为真的概率。这里不开展外部事实查证，也不从 15 个合成样本推断真实新闻上的泛化表现。
+log-probability 是模型生成的引用 JSON 的自然对数概率均值，包含 JSON 标点，排除特殊 token；派生索引没有模型分数。它不是主张为真的概率。上述前期模型实验只做抽取和定位，没有开展外部事实查证，也不从 15 个合成样本推断真实新闻上的泛化表现。
 
 ## 方向
 
-当前重点是事实拆分、字符定位和生成概率。后续可在独立测试集上研究字符到 token 对齐、验证器与抽取器协作，以及错误类型归因；本仓库中的当前结果以已执行实验为准。
+正式阶段已完成 60 条测试样本策划；下一步是原子事实、限定条件、字符引用位置的标注和协议冻结，再运行抽取与验证实验。可继续研究字符到 token 对齐、验证器与抽取器协作，以及错误类型归因；当前结果以已执行实验为准。
 
 模型使用条件见 [Qwen 官方模型卡](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)。仓库不分发模型权重。

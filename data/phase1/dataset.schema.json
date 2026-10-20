@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GU143312/minifact-llm/data/phase1/dataset.schema.json",
+  "title": "MiniFact Phase 1 news error dataset v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "dataset_id", "version", "curation_date", "language", "sample_unit", "project_split", "license", "source", "review", "statistics", "selection_audit", "samples"],
+  "properties": {
+    "$schema": {"const": "./dataset.schema.json"},
+    "schema_version": {"const": "1.0.0"},
+    "dataset_id": {"const": "minifact-news-errors-60-v1"},
+    "version": {"const": "1.0.0"},
+    "curation_date": {"type": "string", "format": "date"},
+    "language": {"const": "en"},
+    "sample_unit": {"const": "real_world_news_related_claim"},
+    "project_split": {"const": "test"},
+    "license": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "url", "attribution", "citation_url", "changes"],
+      "properties": {
+        "id": {"const": "CC-BY-NC-4.0"},
+        "url": {"type": "string", "format": "uri"},
+        "attribution": {"type": "string", "minLength": 1},
+        "citation_url": {"type": "string", "format": "uri"},
+        "changes": {"type": "string", "minLength": 1}
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["benchmark", "repository", "revision", "file", "sha256", "git_blob_sha", "original_split", "required_label"],
+      "properties": {
+        "benchmark": {"const": "AVeriTeC"},
+        "repository": {"type": "string"},
+        "revision": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "file": {"type": "string"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "git_blob_sha": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "original_split": {"const": "dev"},
+        "required_label": {"const": "Refuted"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["method", "independent_human_reverification", "live_source_retrieval_performed", "gold_origin", "atomic_gold_status"],
+      "properties": {
+        "method": {"type": "string"},
+        "independent_human_reverification": {"const": false},
+        "live_source_retrieval_performed": {"const": false},
+        "gold_origin": {"type": "string"},
+        "atomic_gold_status": {"type": "string"}
+      }
+    },
+    "statistics": {"type": "object"},
+    "selection_audit": {"type": "object"},
+    "samples": {
+      "type": "array", "minItems": 60, "maxItems": 60,
+      "items": {"$ref": "#/$defs/sample"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "nullable_string": {"type": ["string", "null"]},
+    "answer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["answer", "answer_type", "source_url", "source_medium"],
+      "properties": {
+        "answer": {"type": "string"},
+        "answer_type": {"enum": ["Abstractive", "Extractive", "Boolean", "Unanswerable"]},
+        "source_url": {"type": "string"},
+        "cached_source_url": {"type": "string"},
+        "source_medium": {"type": "string"},
+        "boolean_explanation": {"type": "string"}
+      }
+    },
+    "question": {
+      "type": "object", "additionalProperties": false,
+      "required": ["question", "answers"],
+      "properties": {
+        "question": {"type": "string", "minLength": 1},
+        "answers": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/answer"}}
+      }
+    },
+    "sample": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "text", "language", "claim_date", "context", "gold", "annotations", "provenance"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^MF-P1-[0-9]{4}$"},
+        "text": {"type": "string", "minLength": 1},
+        "language": {"const": "en"},
+        "claim_date": {"type": "string", "format": "date"},
+        "context": {
+          "type": "object", "additionalProperties": false,
+          "required": ["speaker", "reporting_source", "location_ISO_code"],
+          "properties": {
+            "speaker": {"$ref": "#/$defs/nullable_string"},
+            "reporting_source": {"$ref": "#/$defs/nullable_string"},
+            "location_ISO_code": {"$ref": "#/$defs/nullable_string"}
+          }
+        },
+        "gold": {
+          "type": "object", "additionalProperties": false,
+          "required": ["verdict", "original_label", "verdict_scope", "justification", "questions"],
+          "properties": {
+            "verdict": {"const": "REFUTED"},
+            "original_label": {"const": "Refuted"},
+            "verdict_scope": {"const": "whole_sample"},
+            "justification": {"type": "string", "minLength": 1},
+            "questions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/question"}}
+          }
+        },
+        "annotations": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "atomic_claims", "qualifiers", "error_types"],
+          "properties": {
+            "status": {"const": "pending_days_3_4"},
+            "atomic_claims": {"type": "null"},
+            "qualifiers": {"type": "null"},
+            "error_types": {"type": "null"}
+          }
+        },
+        "provenance": {
+          "type": "object", "additionalProperties": false,
+          "required": ["source_record_index", "source_record_sha256", "claim_date", "original_claim_url", "fact_checking_article", "claim_types", "fact_checking_strategies", "required_reannotation"],
+          "properties": {
+            "source_record_index": {"type": "integer", "minimum": 0, "maximum": 499},
+            "source_record_sha256": {"$ref": "#/$defs/sha256"},
+            "claim_date": {"type": "string"},
+            "original_claim_url": {"$ref": "#/$defs/nullable_string"},
+            "cached_original_claim_url": {"$ref": "#/$defs/nullable_string"},
+            "fact_checking_article": {"type": "string", "format": "uri"},
+            "claim_types": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+            "fact_checking_strategies": {"type": "array", "items": {"type": "string"}},
+            "required_reannotation": {"type": "boolean"}
+          }
+        }
+      }
+    }
+  }
+}
