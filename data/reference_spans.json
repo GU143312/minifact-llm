@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "source_file": "data/cases.json",
+  "source_sha256": "cf3ca74c4028a490d579ada403c44113a9abe0ce105ed762bf24c965bd0188d6",
+  "span_convention": "zero-based Python characters; end exclusive",
+  "note": "All literal occurrences of each gold reference quote; not model predictions or a requirement to select an ambiguous occurrence.",
+  "case_count": 15,
+  "fact_count": 29,
+  "qualifier_count": 38,
+  "cases": [
+    {
+      "case_id": "base_01",
+      "category": "baseline",
+      "source": "On Monday, Aurora City opened a new library, and the building has 200 seats.",
+      "facts": [
+        {
+          "fact_id": "library",
+          "reference_quote": "On Monday, Aurora City opened a new library",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 43
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "seats",
+          "reference_quote": "the building has 200 seats",
+          "occurrences": [
+            {
+              "start_idx": 49,
+              "end_idx": 75
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "base_02",
+      "category": "baseline",
+      "source": "Riverdale Hospital added 40 beds in June, but its emergency department stayed closed.",
+      "facts": [
+        {
+          "fact_id": "beds",
+          "reference_quote": "Riverdale Hospital added 40 beds in June",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 40
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "emergency",
+          "reference_quote": "its emergency department stayed closed",
+          "occurrences": [
+            {
+              "start_idx": 46,
+              "end_idx": 84
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "base_03",
+      "category": "baseline",
+      "source": "Green Line ridership rose 12% in 2025, while ticket prices fell by 5%.",
+      "facts": [
+        {
+          "fact_id": "ridership",
+          "reference_quote": "Green Line ridership rose 12% in 2025",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 37
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "prices",
+          "reference_quote": "ticket prices fell by 5%",
+          "occurrences": [
+            {
+              "start_idx": 45,
+              "end_idx": 69
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "repeat_01",
+      "category": "repeated_quote",
+      "source": "North Hall has 80 seats. North Hall has 80 seats.",
+      "facts": [
+        {
+          "fact_id": "hall",
+          "reference_quote": "North Hall has 80 seats",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 23
+            },
+            {
+              "start_idx": 25,
+              "end_idx": 48
+            }
+          ],
+          "occurrence_count": 2,
+          "unique_reference_location": false
+        }
+      ]
+    },
+    {
+      "case_id": "repeat_02",
+      "category": "repeated_quote",
+      "source": "\"The clinic stayed open in June\"; \"The clinic stayed open in June\"; its pharmacy stayed closed.",
+      "facts": [
+        {
+          "fact_id": "clinic",
+          "reference_quote": "The clinic stayed open in June",
+          "occurrences": [
+            {
+              "start_idx": 1,
+              "end_idx": 31
+            },
+            {
+              "start_idx": 35,
+              "end_idx": 65
+            }
+          ],
+          "occurrence_count": 2,
+          "unique_reference_location": false
+        },
+        {
+          "fact_id": "pharmacy",
+          "reference_quote": "its pharmacy stayed closed",
+          "occurrences": [
+            {
+              "start_idx": 68,
+              "end_idx": 94
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "shared_01",
+      "category": "shared_subject",
+      "source": "Meadow Clinic hired 12 nurses in March and opened a new ward in July.",
+      "facts": [
+        {
+          "fact_id": "nurses",
+          "reference_quote": "Meadow Clinic hired 12 nurses in March",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 38
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "ward",
+          "reference_quote": "opened a new ward in July",
+          "occurrences": [
+            {
+              "start_idx": 43,
+              "end_idx": 68
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "shared_02",
+      "category": "shared_subject",
+      "source": "Eastport Council approved the park on Tuesday but did not approve the road on Wednesday.",
+      "facts": [
+        {
+          "fact_id": "park",
+          "reference_quote": "Eastport Council approved the park on Tuesday",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 45
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "road",
+          "reference_quote": "did not approve the road on Wednesday",
+          "occurrences": [
+            {
+              "start_idx": 50,
+              "end_idx": 87
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "pronoun_01",
+      "category": "pronoun",
+      "source": "Lina opened a bakery in April, and she hired two bakers in May.",
+      "facts": [
+        {
+          "fact_id": "bakery",
+          "reference_quote": "Lina opened a bakery in April",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 29
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "bakers",
+          "reference_quote": "she hired two bakers in May",
+          "occurrences": [
+            {
+              "start_idx": 35,
+              "end_idx": 62
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "pronoun_02",
+      "category": "pronoun",
+      "source": "Harbor Hospital closed its west wing in July, but that wing reopened in October.",
+      "facts": [
+        {
+          "fact_id": "closure",
+          "reference_quote": "Harbor Hospital closed its west wing in July",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 44
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "reopening",
+          "reference_quote": "that wing reopened in October",
+          "occurrences": [
+            {
+              "start_idx": 50,
+              "end_idx": 79
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "negation_01",
+      "category": "negation",
+      "source": "The board did not cancel the concert, and tickets remained valid until Friday.",
+      "facts": [
+        {
+          "fact_id": "concert",
+          "reference_quote": "The board did not cancel the concert",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 36
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "tickets",
+          "reference_quote": "tickets remained valid until Friday",
+          "occurrences": [
+            {
+              "start_idx": 42,
+              "end_idx": 77
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "negation_02",
+      "category": "negation",
+      "source": "No trains ran on Sunday, but buses carried 300 passengers.",
+      "facts": [
+        {
+          "fact_id": "trains",
+          "reference_quote": "No trains ran on Sunday",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 23
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "buses",
+          "reference_quote": "buses carried 300 passengers",
+          "occurrences": [
+            {
+              "start_idx": 29,
+              "end_idx": 57
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "time_01",
+      "category": "complex_time",
+      "source": "From March 3 to March 8, the museum closed at 4 p.m., while its cafe stayed open until 6 p.m. during that period.",
+      "facts": [
+        {
+          "fact_id": "museum",
+          "reference_quote": "From March 3 to March 8, the museum closed at 4 p.m.",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 52
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "cafe",
+          "reference_quote": "its cafe stayed open until 6 p.m. during that period",
+          "occurrences": [
+            {
+              "start_idx": 60,
+              "end_idx": 112
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "time_02",
+      "category": "complex_time",
+      "source": "The bridge reopened on the first Monday after June 10, 2025, and tolls resumed two days later.",
+      "facts": [
+        {
+          "fact_id": "bridge",
+          "reference_quote": "The bridge reopened on the first Monday after June 10, 2025",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 59
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "tolls",
+          "reference_quote": "tolls resumed two days later",
+          "occurrences": [
+            {
+              "start_idx": 65,
+              "end_idx": 93
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "time_03",
+      "category": "complex_time",
+      "source": "By the end of 2024, River Labs had hired 20 staff, but its hiring freeze lasted from January through March 2025.",
+      "facts": [
+        {
+          "fact_id": "staff",
+          "reference_quote": "By the end of 2024, River Labs had hired 20 staff",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 49
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "freeze",
+          "reference_quote": "its hiring freeze lasted from January through March 2025",
+          "occurrences": [
+            {
+              "start_idx": 55,
+              "end_idx": 111
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    },
+    {
+      "case_id": "time_04",
+      "category": "complex_time",
+      "source": "The clinic will be closed next Friday, and appointments booked before October 1 remain valid until October 31.",
+      "facts": [
+        {
+          "fact_id": "future_closure",
+          "reference_quote": "The clinic will be closed next Friday",
+          "occurrences": [
+            {
+              "start_idx": 0,
+              "end_idx": 37
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        },
+        {
+          "fact_id": "appointments",
+          "reference_quote": "appointments booked before October 1 remain valid until October 31",
+          "occurrences": [
+            {
+              "start_idx": 43,
+              "end_idx": 109
+            }
+          ],
+          "occurrence_count": 1,
+          "unique_reference_location": true
+        }
+      ]
+    }
+  ]
+}
