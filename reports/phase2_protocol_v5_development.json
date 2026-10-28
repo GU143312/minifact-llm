@@ -1,0 +1,39 @@
+{
+  "frozen_at_utc": "2026-10-28T17:20:48.181345+00:00",
+  "protocol": "phase2-closed-book-feedback-v1",
+  "max_rounds": 2,
+  "developer_input_sha256": "a95e7c2a271ce08a0e489df3e3725a9138c9b162d2791adffde7e7df1a488c76",
+  "developer_run_sha256": "b399feace3d69c04b3dac27f6fdeb552e07dedd4b8b1a26b5d8879333a6e29b4",
+  "formal_input_sha256": "0de38bd1a9348ccdf75216e80f3eb679fddd94e6605f8ef9f5f8a753e6f5e434",
+  "files_sha256": {
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+    "phase2_backend.py": "54fd640d8aad5508907f4ee5d9c309626b0c739bac322a0fe95c15a3584f2ef6",
+    "phase2_pipeline.py": "abe570dbe98b96b4536a8f8372bf26887c51e74dcfe73d6d39a5499941a27157",
+    "scripts/run_phase2.py": "4f935d2f32c03dbc2e8a5bbed22de091b6403e30413ecff1d129c52a8ebf469d"
+  },
+  "model_config": {
+    "schema_version": 1,
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "dtype": "float16",
+    "attention_implementation": "eager",
+    "seed": 42,
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "use_cache": true
+  },
+  "generation_limits": {
+    "extraction": 256,
+    "verdict": 16,
+    "feedback": 64,
+    "source_logic": 64
+  },
+  "evidence": "none: closed-book; source is context, not evidence",
+  "selection": "Final developer protocol chosen before formal-run outputs; v2–v4 and their limitations retained."
+}

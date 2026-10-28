@@ -1,0 +1,120 @@
+{
+  "created_at_utc": "2026-10-28T17:43:10.962019+00:00",
+  "run_sha256": "140970ba74a064998f775b21726e8a7dc1fc7115516cb0a8384572fa973ca59c",
+  "selection": {
+    "sample_id": "MF-P1-0001",
+    "round": 1,
+    "quote_index": 0,
+    "claim": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”."
+  },
+  "method": "Full-sequence teacher-forced forward on saved chat prompt IDs and actual generated token IDs, including EOS.",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "dtype": "float16",
+  "attention_implementation": "eager",
+  "device_map": {
+    "model.embed_tokens": "0",
+    "lm_head": "0",
+    "model.layers.0": "0",
+    "model.layers.1": "0",
+    "model.layers.2": "0",
+    "model.layers.3": "0",
+    "model.layers.4": "0",
+    "model.layers.5": "0",
+    "model.layers.6": "0",
+    "model.layers.7": "0",
+    "model.layers.8": "0",
+    "model.layers.9": "0",
+    "model.layers.10": "0",
+    "model.layers.11": "0",
+    "model.layers.12": "0",
+    "model.layers.13": "0",
+    "model.layers.14": "0",
+    "model.layers.15": "0",
+    "model.layers.16": "0",
+    "model.layers.17": "0",
+    "model.layers.18": "0",
+    "model.layers.19": "0",
+    "model.layers.20": "0",
+    "model.layers.21": "0",
+    "model.layers.22": "0",
+    "model.layers.23": "0",
+    "model.layers.24": "0",
+    "model.layers.25": "0",
+    "model.layers.26": "0",
+    "model.layers.27": "0",
+    "model.layers.28": "0",
+    "model.layers.29": "cpu",
+    "model.layers.30": "cpu",
+    "model.layers.31": "cpu",
+    "model.layers.32": "cpu",
+    "model.layers.33": "cpu",
+    "model.layers.34": "cpu",
+    "model.layers.35": "cpu",
+    "model.norm": "cpu",
+    "model.rotary_emb": "cpu"
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "os": "Windows",
+    "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "4.57.6",
+      "accelerate": "1.15.0",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    },
+    "cuda_build": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "prompt_token_count": 172,
+  "generated_token_count": 3,
+  "ended_with_eos": true,
+  "comparison": {
+    "tokens": [
+      {
+        "step": 0,
+        "token_id": 50,
+        "special": false,
+        "decoded_piece": "S",
+        "saved_raw_logprob": -0.0007899263291619718,
+        "recomputed_raw_logprob": -0.000813034363090992,
+        "absolute_logprob_error": 2.3108033929020166e-05,
+        "saved_full_vocab_entropy_nats": 0.006713972892612219,
+        "recomputed_full_vocab_entropy_nats": 0.006877164356410503,
+        "absolute_entropy_error": 0.00016319146379828453
+      },
+      {
+        "step": 1,
+        "token_id": 61140,
+        "special": false,
+        "decoded_piece": "UPPORTED",
+        "saved_raw_logprob": -0.02905704453587532,
+        "recomputed_raw_logprob": -0.028619125485420227,
+        "absolute_logprob_error": 0.0004379190504550934,
+        "saved_full_vocab_entropy_nats": 0.13131442666053772,
+        "recomputed_full_vocab_entropy_nats": 0.1298222690820694,
+        "absolute_entropy_error": 0.0014921575784683228
+      },
+      {
+        "step": 2,
+        "token_id": 151645,
+        "special": true,
+        "decoded_piece": "",
+        "saved_raw_logprob": -7.164221460698172e-05,
+        "recomputed_raw_logprob": -7.092700980138034e-05,
+        "absolute_logprob_error": 7.152048056013882e-07,
+        "saved_full_vocab_entropy_nats": 0.0009082958567887545,
+        "recomputed_full_vocab_entropy_nats": 0.000901535153388977,
+        "absolute_entropy_error": 6.760703399777412e-06
+      }
+    ],
+    "max_absolute_logprob_error": 0.0004379190504550934,
+    "max_absolute_entropy_error_nats": 0.0014921575784683228
+  },
+  "limitations": [
+    "One selected trace only; no inference about other claims or semantic accuracy.",
+    "The original run did not record its cache path; identical physical cache or weight bytes cannot be independently established from this record. The recheck uses the requested local snapshot and recorded revision.",
+    "Full-sequence teacher forcing and incremental KV-cached generation may differ through floating-point rounding or device placement; actual errors are reported without assuming equality."
+  ]
+}

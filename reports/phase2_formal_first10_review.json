@@ -1,0 +1,533 @@
+{
+  "scope": "正式运行的前 10 条，按固定输入顺序选取的 agent 语义试阅；非随机样本，不作正式总体结论或调参。",
+  "reviewer": "agent 初审，非独立人工金标准，也非双人仲裁；语义拆分和限定归属存在主观性。",
+  "run": "reports/phase2_formal_v6_20261029.json",
+  "run_completed_at_review": false,
+  "input_sha256": "0de38bd1a9348ccdf75216e80f3eb679fddd94e6605f8ef9f5f8a753e6f5e434",
+  "reviewed_prefix_sha256": "be6928536e30ee6d19d561b74c4b9017c4d06e9fa967daf5ef5c71ef7f9367b6",
+  "prefix_hash_method": "SHA256 of UTF-8 JSON results[:10], ensure_ascii=False, sort_keys=True, compact separators",
+  "meaning": "最终轮与之前各轮分开，原始语义候选、接受引用及拒绝单独展示；三个维度不合并。整句 Refuted 不用于判断其中各原子事实真假。闭卷 verifier 与源内逻辑输出均不是独立外部证据。",
+  "records": [
+    {
+      "id": "MF-P1-0001",
+      "source": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.\"]",
+      "final_raw_quotes": [
+        "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”."
+      ],
+      "fact_coverage_review": "一条关于 J&K 从 UN 未解决争端清单移除的陈述，核心被提到。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "可作为一个涉及名单状态变化的命题。"
+        }
+      ],
+      "qualifier_review": "Pakistan/India、UN 及带引号的 unresolved disputes 均保留。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+            "start_idx": 0,
+            "end_idx": 113,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "对专有清单名称和地理措辞的解释需人工核对。"
+    },
+    {
+      "id": "MF-P1-0002",
+      "source": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"All USA Ballots Arriving After Election Day Will Be Thrown Out\"]",
+      "final_raw_quotes": [
+        "All USA Ballots Arriving After Election Day Will Be Thrown Out"
+      ],
+      "fact_coverage_review": "全部美国选票在选举日后到达将被丢弃的条件性陈述被提到。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "一条含全称、地点和时间条件的主张；条件不应单独作为事实。"
+        }
+      ],
+      "qualifier_review": "All、USA、After Election Day 均保留。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+            "start_idx": 0,
+            "end_idx": 62,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "NOT_ENOUGH_INFO",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "年份未在原文给出，不自行补充。"
+    },
+    {
+      "id": "MF-P1-0003",
+      "source": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.\"]",
+      "final_raw_quotes": [
+        "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health."
+      ],
+      "fact_coverage_review": "无效和有害两项并列性质都被提到，但同一候选将两项性质合在一起。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "ineffective 与 harmful to human health 是可分别核查的性质；将两者合在一条未满足严格原子拆分。"
+        }
+      ],
+      "qualifier_review": "treated or not treated、with insecticide、human health 均保留。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+            "start_idx": 0,
+            "end_idx": 119,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "性质与蚊帐处理条件的拆分粒度需人工复核。"
+    },
+    {
+      "id": "MF-P1-0004",
+      "source": "The Wire called Durga puja racist and the goddess Durga a sex worker",
+      "final_round": 2,
+      "stop_reason": "repeated_extraction",
+      "final_raw_response": "[\"The Wire called Durga puja racist\", \"the goddess Durga a sex worker\"]",
+      "final_raw_quotes": [
+        "The Wire called Durga puja racist",
+        "the goddess Durga a sex worker"
+      ],
+      "fact_coverage_review": "针对杜尔迦节和女神的两项称谓均出现；第二条需要从第一条补回 The Wire called 才能表达原意。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "第一条表达一个称谓事实。"
+        },
+        {
+          "quote_index": 1,
+          "review": "第二条缺主语和谓语，是依赖上下文的片段，不能独立成立。"
+        }
+      ],
+      "qualifier_review": "两个对象及描述保留，但第二条单独引用缺少施事 The Wire 和 called。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "The Wire called Durga puja racist",
+            "start_idx": 0,
+            "end_idx": 33,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "claim": "the goddess Durga a sex worker",
+            "start_idx": 38,
+            "end_idx": 68,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        },
+        {
+          "quote_index": 1,
+          "verdict": "REFUTED",
+          "feedback": "contradictory dates: the claim about the goddess Durga being a sex worker is contradictory to the context suggesting it was called racist"
+        }
+      ],
+      "earlier_rounds": [
+        {
+          "round": 1,
+          "raw_response": "[\"The Wire called Durga puja racist\", \"the goddess Durga a sex worker\"]",
+          "raw_quotes": [
+            "The Wire called Durga puja racist",
+            "the goddess Durga a sex worker"
+          ],
+          "accepted_claims": [
+            {
+              "claim": "The Wire called Durga puja racist",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 33
+            },
+            {
+              "claim": "the goddess Durga a sex worker",
+              "quote_index": 1,
+              "start_idx": 38,
+              "end_idx": 68
+            }
+          ],
+          "alignment_rejections": []
+        }
+      ],
+      "uncertainty": "共享谓语的上下文解释需人工复核；不要将补写后的句子冒充原文。"
+    },
+    {
+      "id": "MF-P1-0005",
+      "source": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football in response to French President Macron’s comments on Islamist terrorism.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"Paul Pogba, who plays for Manchester United and the French national team, retired from international football\", \"in response to French President Macron’s comments on Islamist terrorism.\"]",
+      "final_raw_quotes": [
+        "Paul Pogba, who plays for Manchester United and the French national team, retired from international football",
+        "in response to French President Macron’s comments on Islamist terrorism."
+      ],
+      "fact_coverage_review": "效力 Manchester United、法国国家队和退出国际足球在第一条合并；回应 Macron 评论的关系在第二条短语中出现。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "第一条同时包含两个效力对象及退役命题，仍是复合陈述。"
+        },
+        {
+          "quote_index": 1,
+          "review": "第二条只是 in response to 引出的关系片段，不能独立表达谁因何退役。"
+        }
+      ],
+      "qualifier_review": "Macron、Islamist terrorism 和回应关系文字保留，但该因果限定与退役主句被拆开，未完整附着在同一独立事实。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football",
+            "start_idx": 0,
+            "end_idx": 109,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "claim": "in response to French President Macron’s comments on Islamist terrorism.",
+            "start_idx": 110,
+            "end_idx": 182,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "多个球队关系的拆分规则及同一候选的必要边界需人工复核。"
+    },
+    {
+      "id": "MF-P1-0006",
+      "source": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"COVID-19 pandemic pre-planned with the help from Bill Gates.\"]",
+      "final_raw_quotes": [
+        "COVID-19 pandemic pre-planned with the help from Bill Gates."
+      ],
+      "fact_coverage_review": "疫情预先策划并由 Bill Gates 协助的标题式主张被提到。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "一条含参与者限定的标题式陈述，谓语结构省略；是否再拆分参与者关系需人工复核。"
+        }
+      ],
+      "qualifier_review": "COVID-19、pre-planned 和 Bill Gates 保留。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+            "start_idx": 0,
+            "end_idx": 60,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "NOT_ENOUGH_INFO",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "标题式残句及参与者关系的划分需人工复核。"
+    },
+    {
+      "id": "MF-P1-0007",
+      "source": "Rock musician Jon Bon Jovi performed for 12 people and 7 pumpkins at a campaign event for Democratic presidential nominee Joe Biden in Pennsylvania.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"Jon Bon Jovi performed for 12 people\", \"Jon Bon Jovi performed for 7 pumpkins\"]",
+      "final_raw_quotes": [
+        "Jon Bon Jovi performed for 12 people",
+        "Jon Bon Jovi performed for 7 pumpkins"
+      ],
+      "fact_coverage_review": "原始候选分别提及 12 people 和 7 pumpkins；第二条补写 Jon Bon Jovi performed for，因非连续原文而被拒绝。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "第一条为可理解的单项人数主张，但丢失事件背景。"
+        },
+        {
+          "quote_index": 1,
+          "review": "第二条表达另一数量，但补写主语谓语；其原文引用不存在。"
+        }
+      ],
+      "qualifier_review": "12 和 7 在原始候选出现；campaign event、Joe Biden、Pennsylvania 均未保留。第二条的 7 pumpkins 未进入已接受引用。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Jon Bon Jovi performed for 12 people",
+            "start_idx": 14,
+            "end_idx": 50,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [
+          {
+            "index": 1,
+            "quote": "Jon Bon Jovi performed for 7 pumpkins",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "7 pumpkins 是独立事实还是并列背景限定需人工复核。"
+    },
+    {
+      "id": "MF-P1-0008",
+      "source": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost\"]",
+      "final_raw_quotes": [
+        "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost"
+      ],
+      "fact_coverage_review": "不投 BJP 的人在 2020 年选举相关条件下将不能免费获得 COVID 疫苗的主张被提到。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "一条带条件的主张；不要把未投票当成所有人的独立事实。"
+        }
+      ],
+      "qualifier_review": "do not vote、BJP、2020 elections、will not、free of cost 均保留。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost",
+            "start_idx": 0,
+            "end_idx": 125,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "NOT_ENOUGH_INFO",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "选举与疫苗发放的具体日期关系未明，不自行推断。"
+    },
+    {
+      "id": "MF-P1-0009",
+      "source": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+      "final_round": 2,
+      "stop_reason": "no_valid_claims",
+      "final_raw_response": "[]",
+      "final_raw_quotes": [],
+      "fact_coverage_review": "最终第二轮输出空数组，故未提到原句中的两人建立两个机构的任何事实核心；第一轮曾整体提到，但被第二轮空输出取代。",
+      "candidate_atomicity_review": [],
+      "qualifier_review": "最终候选为空，Marcos、Rizal、World Bank、International Monetary Fund 均未保留。",
+      "position_review": {
+        "accepted": [],
+        "rejected": [
+          {
+            "index": null,
+            "reason": "expected_nonempty_string_array"
+          }
+        ]
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [],
+      "earlier_rounds": [
+        {
+          "round": 1,
+          "raw_response": "[\"President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.\"]",
+          "raw_quotes": [
+            "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund."
+          ],
+          "accepted_claims": [
+            {
+              "claim": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 117
+            }
+          ],
+          "alignment_rejections": []
+        }
+      ],
+      "uncertainty": "两名主体与两个机构是否拆为四个命题需先约定规则；最终遗漏结论不依赖该粒度。"
+    },
+    {
+      "id": "MF-P1-0010",
+      "source": "India’s imports from China increased by 27% in April-August 2020",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "final_raw_response": "[\"India’s imports from China increased by 27%\"]",
+      "final_raw_quotes": [
+        "India’s imports from China increased by 27%"
+      ],
+      "fact_coverage_review": "印度从中国进口增加 27% 的核心被提到。",
+      "candidate_atomicity_review": [
+        {
+          "quote_index": 0,
+          "review": "一条增幅主张。"
+        }
+      ],
+      "qualifier_review": "India、China、27% 保留；遗漏 in April-August 2020。",
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "claim": "India’s imports from China increased by 27%",
+            "start_idx": 0,
+            "end_idx": 43,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logic_review": {
+        "raw_model_output": "NO_CONTRADICTION",
+        "parsed_status": "no_feedback",
+        "parsed_feedback": null,
+        "interpretation": "仅记录模型输出；无解释的 NO_CONTRADICTION 不能证明系统充分核查。"
+      },
+      "verifier_outputs": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED",
+          "feedback": null
+        }
+      ],
+      "earlier_rounds": [],
+      "uncertainty": "时间范围的比较基准未在原句中详述，不自行补充。"
+    }
+  ]
+}

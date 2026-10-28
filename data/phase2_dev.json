@@ -1,0 +1,561 @@
+{
+  "dataset_id": "minifact-phase2-synthetic-dev-v1",
+  "version": "1.0.0",
+  "purpose": "人工设计的 source-only 流程开发集；不含外部世界真值金标准。",
+  "annotation_origin": "agent 设计与自审；未经独立人工标注或双人仲裁。",
+  "character_indexing": "Python Unicode code points, zero-based, end-exclusive",
+  "samples": [
+    {
+      "id": "D01",
+      "categories": [
+        "independent",
+        "time"
+      ],
+      "source": "On Monday, Elm opened a clinic, and the clinic has five rooms.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "On Monday, Elm opened a clinic",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 30
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "On Monday",
+              "spans": [
+                {
+                  "start_idx": 0,
+                  "end_idx": 9
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "the clinic has five rooms",
+          "source_spans": [
+            {
+              "start_idx": 36,
+              "end_idx": 61
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "five",
+              "spans": [
+                {
+                  "start_idx": 51,
+                  "end_idx": 55
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D02",
+      "categories": [
+        "shared_subject"
+      ],
+      "source": "Mira opened a café and closed a shop.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "Mira opened a café",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 18
+            }
+          ],
+          "qualifiers": [],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "closed a shop",
+          "source_spans": [
+            {
+              "start_idx": 23,
+              "end_idx": 36
+            }
+          ],
+          "qualifiers": [],
+          "context_note": "省略的主语是 Mira；原文切片本身不是独立完整句。"
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D03",
+      "categories": [
+        "repeated_quote"
+      ],
+      "source": "The bridge reopened. The bridge reopened.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "The bridge reopened",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 19
+            },
+            {
+              "start_idx": 21,
+              "end_idx": 40
+            }
+          ],
+          "qualifiers": [],
+          "context_note": null
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D04",
+      "categories": [
+        "pronoun"
+      ],
+      "source": "Lina bought a bicycle. She painted it red.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "Lina bought a bicycle",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 21
+            }
+          ],
+          "qualifiers": [],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "She painted it red",
+          "source_spans": [
+            {
+              "start_idx": 23,
+              "end_idx": 41
+            }
+          ],
+          "qualifiers": [],
+          "context_note": "She 指 Lina；it 指 bicycle；这些关系依据相邻句的通常解释，需人工复核。"
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D05",
+      "categories": [
+        "negation",
+        "time"
+      ],
+      "source": "The council did not approve the plan on Tuesday.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "The council did not approve the plan on Tuesday",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 47
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "did not",
+              "spans": [
+                {
+                  "start_idx": 12,
+                  "end_idx": 19
+                }
+              ]
+            },
+            {
+              "text": "on Tuesday",
+              "spans": [
+                {
+                  "start_idx": 37,
+                  "end_idx": 47
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D06",
+      "categories": [
+        "complex_time"
+      ],
+      "source": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "The library is open from 9 a.m. to 5 p.m. on Fridays",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 52
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "from 9 a.m. to 5 p.m.",
+              "spans": [
+                {
+                  "start_idx": 20,
+                  "end_idx": 41
+                }
+              ]
+            },
+            {
+              "text": "on Fridays",
+              "spans": [
+                {
+                  "start_idx": 42,
+                  "end_idx": 52
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": []
+    },
+    {
+      "id": "D07",
+      "categories": [
+        "logic_conflict",
+        "time"
+      ],
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Monday, the room had exactly 7 chairs.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "At noon on Monday, the room had exactly 5 chairs",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 48
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "spans": [
+                {
+                  "start_idx": 0,
+                  "end_idx": 17
+                }
+              ]
+            },
+            {
+              "text": "exactly 5",
+              "spans": [
+                {
+                  "start_idx": 32,
+                  "end_idx": 41
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "At noon on Monday, the room had exactly 7 chairs",
+          "source_spans": [
+            {
+              "start_idx": 50,
+              "end_idx": 98
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "spans": [
+                {
+                  "start_idx": 50,
+                  "end_idx": 67
+                }
+              ]
+            },
+            {
+              "text": "exactly 7",
+              "spans": [
+                {
+                  "start_idx": 82,
+                  "end_idx": 91
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "relation": "contradictory",
+          "rationale": "同一房间同一时刻的椅子数量不能同时恰好是 5 和恰好是 7；以同一 room 指代为明确假设。"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "categories": [
+        "logic_control",
+        "time"
+      ],
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Tuesday, the room had exactly 7 chairs.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "At noon on Monday, the room had exactly 5 chairs",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 48
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "spans": [
+                {
+                  "start_idx": 0,
+                  "end_idx": 17
+                }
+              ]
+            },
+            {
+              "text": "exactly 5",
+              "spans": [
+                {
+                  "start_idx": 32,
+                  "end_idx": 41
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "At noon on Tuesday, the room had exactly 7 chairs",
+          "source_spans": [
+            {
+              "start_idx": 50,
+              "end_idx": 99
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "At noon on Tuesday",
+              "spans": [
+                {
+                  "start_idx": 50,
+                  "end_idx": 68
+                }
+              ]
+            },
+            {
+              "text": "exactly 7",
+              "spans": [
+                {
+                  "start_idx": 83,
+                  "end_idx": 92
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "relation": "no_contradiction_identified",
+          "rationale": "不同日期数量可以不同；无源内矛盾不意味着事件真实。"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "categories": [
+        "logic_control",
+        "quantity"
+      ],
+      "source": "The store sold at least 5 apples on Friday. The store sold at most 8 apples on Friday.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "The store sold at least 5 apples on Friday",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 42
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "at least 5",
+              "spans": [
+                {
+                  "start_idx": 15,
+                  "end_idx": 25
+                }
+              ]
+            },
+            {
+              "text": "on Friday",
+              "spans": [
+                {
+                  "start_idx": 33,
+                  "end_idx": 42
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "The store sold at most 8 apples on Friday",
+          "source_spans": [
+            {
+              "start_idx": 44,
+              "end_idx": 85
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "at most 8",
+              "spans": [
+                {
+                  "start_idx": 59,
+                  "end_idx": 68
+                }
+              ]
+            },
+            {
+              "text": "on Friday",
+              "spans": [
+                {
+                  "start_idx": 76,
+                  "end_idx": 85
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        }
+      ],
+      "logical_checks": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "relation": "no_contradiction_identified",
+          "rationale": "在同一店铺与同一周五的解释下，销量 5 至 8 可同时满足两项约束；不推断实际销量。"
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "categories": [
+        "shared_subject",
+        "quantity",
+        "time"
+      ],
+      "source": "The ferry carried 12 passengers on May 3 and 15 passengers on May 4.",
+      "facts": [
+        {
+          "id": "F1",
+          "quote": "The ferry carried 12 passengers on May 3",
+          "source_spans": [
+            {
+              "start_idx": 0,
+              "end_idx": 40
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "12",
+              "spans": [
+                {
+                  "start_idx": 18,
+                  "end_idx": 20
+                }
+              ]
+            },
+            {
+              "text": "on May 3",
+              "spans": [
+                {
+                  "start_idx": 32,
+                  "end_idx": 40
+                }
+              ]
+            }
+          ],
+          "context_note": null
+        },
+        {
+          "id": "F2",
+          "quote": "15 passengers on May 4",
+          "source_spans": [
+            {
+              "start_idx": 45,
+              "end_idx": 67
+            }
+          ],
+          "qualifiers": [
+            {
+              "text": "15",
+              "spans": [
+                {
+                  "start_idx": 45,
+                  "end_idx": 47
+                }
+              ]
+            },
+            {
+              "text": "on May 4",
+              "spans": [
+                {
+                  "start_idx": 59,
+                  "end_idx": 67
+                }
+              ]
+            }
+          ],
+          "context_note": "省略了 The ferry carried；保留原文短语并通过上下文理解。"
+        }
+      ],
+      "logical_checks": []
+    }
+  ]
+}

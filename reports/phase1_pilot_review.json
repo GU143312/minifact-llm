@@ -1,0 +1,361 @@
+{
+  "scope": "前 10 条 pilot；不代表完整 60 条实验，不是自动计算的总体通过率。",
+  "reviewer": "agent 对原文和输出进行语义初审，非独立人工双人标注；不进行逐原子真伪判断。",
+  "run": "reports/phase1_local_20261029.json",
+  "sample_selection": "正式输入顺序的前 10 条；作为试阅，不是随机或独立评估样本。",
+  "interpretation": "完整覆盖、限定条件和字符定位分别描述；整句 Refuted 标签没有分配给原子主张。原始输出中可理解的改写即使表达事实核心，也仍不能作为精确引用。",
+  "token_note": "token_alignment 的 partial_token 是完整 prompt 的输入 token 覆盖边界超出引用，不能视作字符定位错误；生成 log-probability 不等于事实真值概率。",
+  "records": [
+    {
+      "id": "MF-P1-0001",
+      "source": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+      "raw_quotes": [
+        "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of unresolved disputes"
+      ],
+      "fact_coverage": "核心意思有提到；输出删去了原文中 “unresolved disputes” 的引号。",
+      "independent_claims": "单条涉及一次从 UN 清单移除的主张，原始输出表达相应核心。",
+      "qualifier_review": "Pakistan/India、UN 清单和 unresolved disputes 均有提及；引号未保留。",
+      "position_review": {
+        "verified_accepted": [],
+        "rejected": [
+          {
+            "index": 0,
+            "quote": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of unresolved disputes",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [],
+      "mean_quote_json_logprob": -0.02781588740804075,
+      "uncertainty": "引号在该表达中是否具有额外语义需人工复核。"
+    },
+    {
+      "id": "MF-P1-0002",
+      "source": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+      "raw_quotes": [
+        "All USA Ballots Arriving After Election Day Will Be Thrown Out"
+      ],
+      "fact_coverage": "提到全部美国选票在选举日后到达将被丢弃的主张。",
+      "independent_claims": "一条带全称和时间条件的主张；不要把条件单独算成事实。",
+      "qualifier_review": "All、USA、After Election Day 均保留。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+            "start_idx": 0,
+            "end_idx": 62,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.000297064200136532,
+      "uncertainty": null
+    },
+    {
+      "id": "MF-P1-0003",
+      "source": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+      "raw_quotes": [
+        "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health."
+      ],
+      "fact_coverage": "原句的无效和有害两个并列性质都被提及，但合在同一输出中。",
+      "independent_claims": "ineffective 与 harmful 表达两个可分别核查的性质，整句合并输出；具体拆分粒度需人工复核。",
+      "qualifier_review": "treated or not treated、with insecticide、human health 均保留。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+            "start_idx": 0,
+            "end_idx": 119,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.029823770625989142,
+      "uncertainty": "性质是否各自作为独立事实及省略主语如何处理，需人工复核。"
+    },
+    {
+      "id": "MF-P1-0004",
+      "source": "The Wire called Durga puja racist and the goddess Durga a sex worker",
+      "raw_quotes": [
+        "The Wire called Durga puja racist",
+        "the goddess Durga a sex worker"
+      ],
+      "fact_coverage": "两项称谓均在输出中；第二项的施事和谓语依赖第一项语境。",
+      "independent_claims": "第 1 条是完整陈述；第 2 条 “the goddess Durga a sex worker” 缺少 The Wire called，不能独立理解。",
+      "qualifier_review": "被称谓对象及各自描述保留；第 2 条缺少说话者/动作。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "The Wire called Durga puja racist",
+            "start_idx": 0,
+            "end_idx": 33,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "claim": "the goddess Durga a sex worker",
+            "start_idx": 38,
+            "end_idx": 68,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        },
+        {
+          "quote_index": 1,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.0005210282630649113,
+      "uncertainty": "共享谓语允许何种上下文补全，需人工复核；不能把补写后的句子冒充逐字引用。"
+    },
+    {
+      "id": "MF-P1-0005",
+      "source": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football in response to French President Macron’s comments on Islamist terrorism.",
+      "raw_quotes": [
+        "Paul Pogba plays for Manchester United and the French national team",
+        "Paul Pogba retired from international football",
+        "response to French President Macron’s comments on Islamist terrorism"
+      ],
+      "fact_coverage": "原始输出提到效力球队、退役及对 Macron 言论的回应，但事实与因果联系分散，前两条不是原文连续片段。",
+      "independent_claims": "第 1 条合并两个效力对象；第 2 条是退役陈述但补写主语；第 3 条仅是回应短语，不能独立成事实。",
+      "qualifier_review": "Macron、Islamist terrorism 和 response 出现在第 3 条，但该短语与退役主张拆开；角色和时间语境需人工复核。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 2,
+            "claim": "response to French President Macron’s comments on Islamist terrorism",
+            "start_idx": 113,
+            "end_idx": 181,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [
+          {
+            "index": 0,
+            "quote": "Paul Pogba plays for Manchester United and the French national team",
+            "reason": "no_literal_match",
+            "matches": []
+          },
+          {
+            "index": 1,
+            "quote": "Paul Pogba retired from international football",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 2,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.024111662451068973,
+      "uncertainty": "球队并列拆分粒度、回应关系与原文语境需人工复核。"
+    },
+    {
+      "id": "MF-P1-0006",
+      "source": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+      "raw_quotes": [
+        "COVID-19 pandemic pre-planned with the help from Bill Gates"
+      ],
+      "fact_coverage": "提及 COVID-19 疫情预先策划并有 Bill Gates 协助。",
+      "independent_claims": "将策划及 Gates 的协助作为同一带参与者限定的陈述；原句为标题式残句，粒度需人工复核。",
+      "qualifier_review": "COVID-19、pre-planned 和 Bill Gates 保留。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "COVID-19 pandemic pre-planned with the help from Bill Gates",
+            "start_idx": 0,
+            "end_idx": 59,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.0033187799400145046,
+      "uncertainty": "标题式句子语法与参与者关系的独立拆分需人工复核。"
+    },
+    {
+      "id": "MF-P1-0007",
+      "source": "Rock musician Jon Bon Jovi performed for 12 people and 7 pumpkins at a campaign event for Democratic presidential nominee Joe Biden in Pennsylvania.",
+      "raw_quotes": [
+        "Rock musician Jon Bon Jovi performed for 12 people",
+        "Rock musician Jon Bon Jovi performed for 7 pumpkins"
+      ],
+      "fact_coverage": "原始输出提到 12 people 和 7 pumpkins；第二条补写主语与谓语、不是原文连续片段。",
+      "independent_claims": "第 1 条有完整主谓；第 2 条语义可理解，但其补写造成非逐字输出。",
+      "qualifier_review": "两条均漏掉 campaign event、Joe Biden 和 Pennsylvania；12 和 7 保留。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "Rock musician Jon Bon Jovi performed for 12 people",
+            "start_idx": 0,
+            "end_idx": 50,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [
+          {
+            "index": 1,
+            "quote": "Rock musician Jon Bon Jovi performed for 7 pumpkins",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.005424463440238725,
+      "uncertainty": "7 pumpkins 是否作为单独主张或并列数量限定，以及人和南瓜的并列含义需人工复核。"
+    },
+    {
+      "id": "MF-P1-0008",
+      "source": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost.",
+      "raw_quotes": [
+        "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost."
+      ],
+      "fact_coverage": "输出保留在 2020 年选举中不投 BJP 的人将不能免费获得 COVID 疫苗的条件主张。",
+      "independent_claims": "一条条件性的完整主张；不把 “不投票” 作为对所有人的独立事实。",
+      "qualifier_review": "do not vote、2020 elections、will not、free of cost 均保留。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost.",
+            "start_idx": 0,
+            "end_idx": 126,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.005524413873023172,
+      "uncertainty": "句子未明确条件与疫苗发放的精确时间关系，不额外推断。"
+    },
+    {
+      "id": "MF-P1-0009",
+      "source": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+      "raw_quotes": [
+        "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK",
+        "the WORLD BANK and International Monetary Fund"
+      ],
+      "fact_coverage": "第 1 条提到两人建立世界银行；第 2 条只列举两个机构，未表达两人建立国际货币基金组织的谓语。",
+      "independent_claims": "第 1 条将两名人物合并；第 2 条为名词短语，不能独立作为事实；主体与机构的并列拆分需人工复核。",
+      "qualifier_review": "两名人物、World Bank 及 IMF 都出现，但 IMF 缺少建立关系。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK",
+            "start_idx": 0,
+            "end_idx": 84,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "claim": "the WORLD BANK and International Monetary Fund",
+            "start_idx": 70,
+            "end_idx": 116,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        },
+        {
+          "quote_index": 1,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.0016635001179378887,
+      "uncertainty": "并列主体与并列机构是否应拆为四个原子命题，需要预先约定标注规则。"
+    },
+    {
+      "id": "MF-P1-0010",
+      "source": "India’s imports from China increased by 27% in April-August 2020",
+      "raw_quotes": [
+        "India’s imports from China increased by 27%"
+      ],
+      "fact_coverage": "核心增加 27% 的主张被提到。",
+      "independent_claims": "一条关于印度从中国进口增幅的主张。",
+      "qualifier_review": "27%、India、China 保留；遗漏 “in April-August 2020” 时间范围。",
+      "position_review": {
+        "verified_accepted": [
+          {
+            "quote_index": 0,
+            "claim": "India’s imports from China increased by 27%",
+            "start_idx": 0,
+            "end_idx": 43,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [],
+        "no_unrecorded_quote": true
+      },
+      "input_token_alignment": [
+        {
+          "quote_index": 0,
+          "status": "partial_token"
+        }
+      ],
+      "mean_quote_json_logprob": -0.05297949040762098,
+      "uncertainty": null
+    }
+  ]
+}

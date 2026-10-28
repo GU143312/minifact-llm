@@ -1,0 +1,508 @@
+{
+  "created_at_utc": "2026-10-28T16:54:51.434786+00:00",
+  "scope": "Replay of complete prompt-token and accepted character alignment; not semantic correctness or verification.",
+  "method": "Local fast tokenizer, recorded chat prompt and revision; same mapping implementation as extraction.",
+  "source_run_sha256": "08f0b2a1cb4ec3dd152549d9f0b2f93a6c5bf9cfb61d721d9ac41e1673ec6192",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "tokenizer_packages": {
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2"
+  },
+  "recorded_file_hashes_match": {
+    "minifact.py": true,
+    "config.json": true,
+    "token_alignment.py": true,
+    "scripts/run_phase1_extraction.py": true,
+    "data/phase1/inputs.json": true
+  },
+  "passed": true,
+  "sample_count": 60,
+  "samples_with_problems": 0,
+  "accepted_claim_count": 93,
+  "alignment_status_counts": {
+    "ok": 3,
+    "partial_token": 90
+  },
+  "samples": [
+    {
+      "id": "MF-P1-0001",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0002",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0003",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0004",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0005",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0006",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0007",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0008",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0009",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0010",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0011",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0012",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0013",
+      "accepted_claim_count": 4,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0014",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0015",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0016",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0017",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0018",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0019",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0020",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0021",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0022",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0023",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0024",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0025",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0026",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0027",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0028",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0029",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0030",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0031",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0032",
+      "accepted_claim_count": 4,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0033",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0034",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0035",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0036",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0037",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0038",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0039",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0040",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0041",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0042",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0043",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0044",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0045",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0046",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0047",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0048",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0049",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0050",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0051",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0052",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0053",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0054",
+      "accepted_claim_count": 0,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0055",
+      "accepted_claim_count": 4,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0056",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0057",
+      "accepted_claim_count": 3,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0058",
+      "accepted_claim_count": 2,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0059",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    },
+    {
+      "id": "MF-P1-0060",
+      "accepted_claim_count": 1,
+      "prompt_token_hash_match": true,
+      "source_location_match": true,
+      "token_alignment_match": true,
+      "problems": []
+    }
+  ]
+}

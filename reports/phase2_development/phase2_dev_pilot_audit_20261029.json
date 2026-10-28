@@ -1,0 +1,28 @@
+{
+  "status": "partial",
+  "counts": {
+    "accepted_claims": 6,
+    "feedback_transitions": 2,
+    "generations": 17,
+    "generations_without_eos": 0,
+    "label_alignment_unavailable": 0,
+    "rejected_quotes": 3,
+    "rounds": 5,
+    "samples_expected": 10,
+    "samples_processed": 3,
+    "samples_unprocessed": 7,
+    "verdict_trace_tokens": 18,
+    "verdict_traces": 6
+  },
+  "stop_reasons": {
+    "no_valid_claims": 1,
+    "repeated_extraction": 2
+  },
+  "verifier_statuses": {
+    "ok": 6
+  },
+  "limitations": [
+    "Saved token IDs, flags and numerical summaries are checked for internal consistency; model logits and tokenizer special-token sets are not independently reconstructed.",
+    "No semantic correctness, accuracy or fact-coverage metric is calculated."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "developer_samples_checked": 10,
+  "formal_samples_processed": 60,
+  "formal_samples_expected": 60,
+  "formal_samples_unprocessed": 0,
+  "protocol": "phase2-closed-book-feedback-v1",
+  "max_rounds": 2,
+  "frozen_at_utc": "2026-10-28T17:25:47.086640+00:00",
+  "formal_created_at_utc": "2026-10-28T17:25:47.992110+00:00",
+  "developer_run_sha256": "5bbe71ae48145bc5d2deb78c45c26a895568ab27c9cc4fe57b23dd2368780a15",
+  "formal_input_sha256": "0de38bd1a9348ccdf75216e80f3eb679fddd94e6605f8ef9f5f8a753e6f5e434",
+  "limitations": [
+    "Recorded timestamps are self-reported, not independently timestamped proof.",
+    "Checks only protocol, files, chronology, and completed input prefix; not semantic correctness or scores."
+  ]
+}

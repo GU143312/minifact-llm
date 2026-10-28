@@ -1,0 +1,25 @@
+{
+  "scope": "Final round of 10 developer samples; agent semantic review, not independent human gold or accuracy.",
+  "review_sha256": "0401b30bd9b5829e1ed47b684bdb3a000e64a456916260729123a9e0e93b988c",
+  "fact_core": {
+    "mentioned_in_raw_candidate": 17,
+    "expected": 17,
+    "caveat": "Core mention is not proof of independent or literal claims."
+  },
+  "qualifiers": {
+    "in_raw_candidate": 22,
+    "in_accepted_candidate": 20,
+    "expected": 22
+  },
+  "position": {
+    "accepted": 14,
+    "exact_slice": 14,
+    "rejected": 3,
+    "reason_counts": {
+      "no_literal_match": 2,
+      "ambiguous_repeated_quote": 1
+    }
+  },
+  "claim_independence": "Reviewed per sample; no scalar rate asserted.",
+  "sample_count": 10
+}
