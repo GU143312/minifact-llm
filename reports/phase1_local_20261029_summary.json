@@ -1,0 +1,567 @@
+{
+  "completed": true,
+  "partial": false,
+  "expected_samples": 60,
+  "observed_samples": 60,
+  "accepted_quotes": 93,
+  "rejection_records": 23,
+  "rejection_reasons": {
+    "no_literal_match": 23
+  },
+  "token_mapping_statuses": {
+    "ok": 3,
+    "partial_token": 90
+  },
+  "json_parse_error_samples": 0,
+  "possible_truncation_no_eos_samples": 0,
+  "token_alignment_check_scope": "Internal fields only; tokenizer offsets were not saved and could not be independently verified.",
+  "score_definition": "Mean log-probability of generated non-special JSON quote tokens, not verifier confidence or truth probability.",
+  "unassessed": [
+    "factual coverage",
+    "qualifier retention",
+    "independent-claim quality",
+    "veracity accuracy"
+  ],
+  "samples": [
+    {
+      "id": "MF-P1-0001",
+      "accepted_quotes": 0,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.02781588740804075
+    },
+    {
+      "id": "MF-P1-0002",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.000297064200136532
+    },
+    {
+      "id": "MF-P1-0003",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.029823770625989142
+    },
+    {
+      "id": "MF-P1-0004",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0005210282630649113
+    },
+    {
+      "id": "MF-P1-0005",
+      "accepted_quotes": 1,
+      "rejection_records": 2,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.024111662451068973
+    },
+    {
+      "id": "MF-P1-0006",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0033187799400145046
+    },
+    {
+      "id": "MF-P1-0007",
+      "accepted_quotes": 1,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.005424463440238725
+    },
+    {
+      "id": "MF-P1-0008",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.005524413873023172
+    },
+    {
+      "id": "MF-P1-0009",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0016635001179378887
+    },
+    {
+      "id": "MF-P1-0010",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.05297949040762098
+    },
+    {
+      "id": "MF-P1-0011",
+      "accepted_quotes": 1,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.001193719833500572
+    },
+    {
+      "id": "MF-P1-0012",
+      "accepted_quotes": 3,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.002388174932005743
+    },
+    {
+      "id": "MF-P1-0013",
+      "accepted_quotes": 4,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.014787558245363819
+    },
+    {
+      "id": "MF-P1-0014",
+      "accepted_quotes": 0,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0384886805046259
+    },
+    {
+      "id": "MF-P1-0015",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0099434121789533
+    },
+    {
+      "id": "MF-P1-0016",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.044262545313494606
+    },
+    {
+      "id": "MF-P1-0017",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0008732631855701278
+    },
+    {
+      "id": "MF-P1-0018",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.001642558528119358
+    },
+    {
+      "id": "MF-P1-0019",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.002702262563194324
+    },
+    {
+      "id": "MF-P1-0020",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0010542888469302625
+    },
+    {
+      "id": "MF-P1-0021",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0005320562891644176
+    },
+    {
+      "id": "MF-P1-0022",
+      "accepted_quotes": 3,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.018879920517454567
+    },
+    {
+      "id": "MF-P1-0023",
+      "accepted_quotes": 2,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.02438358220786177
+    },
+    {
+      "id": "MF-P1-0024",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.009418895187542542
+    },
+    {
+      "id": "MF-P1-0025",
+      "accepted_quotes": 0,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.07792637851244609
+    },
+    {
+      "id": "MF-P1-0026",
+      "accepted_quotes": 1,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0007669530212892381
+    },
+    {
+      "id": "MF-P1-0027",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0025553616123609947
+    },
+    {
+      "id": "MF-P1-0028",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.030819437261561045
+    },
+    {
+      "id": "MF-P1-0029",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.018623608098057704
+    },
+    {
+      "id": "MF-P1-0030",
+      "accepted_quotes": 2,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.04057034332251717
+    },
+    {
+      "id": "MF-P1-0031",
+      "accepted_quotes": 0,
+      "rejection_records": 2,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.014760389865776555
+    },
+    {
+      "id": "MF-P1-0032",
+      "accepted_quotes": 4,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.023654776961123076
+    },
+    {
+      "id": "MF-P1-0033",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.03868295133880107
+    },
+    {
+      "id": "MF-P1-0034",
+      "accepted_quotes": 2,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0011289883750421345
+    },
+    {
+      "id": "MF-P1-0035",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.007332728392628951
+    },
+    {
+      "id": "MF-P1-0036",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.009953308239802183
+    },
+    {
+      "id": "MF-P1-0037",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.02699940969296064
+    },
+    {
+      "id": "MF-P1-0038",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.045788511620460014
+    },
+    {
+      "id": "MF-P1-0039",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.02728118039153138
+    },
+    {
+      "id": "MF-P1-0040",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0030387481408424453
+    },
+    {
+      "id": "MF-P1-0041",
+      "accepted_quotes": 0,
+      "rejection_records": 2,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0138527968475952
+    },
+    {
+      "id": "MF-P1-0042",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.012244927545301465
+    },
+    {
+      "id": "MF-P1-0043",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0008152991288596922
+    },
+    {
+      "id": "MF-P1-0044",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.005224542646540218
+    },
+    {
+      "id": "MF-P1-0045",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.004733678004751967
+    },
+    {
+      "id": "MF-P1-0046",
+      "accepted_quotes": 1,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.046076602046006346
+    },
+    {
+      "id": "MF-P1-0047",
+      "accepted_quotes": 0,
+      "rejection_records": 2,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.05471265860052067
+    },
+    {
+      "id": "MF-P1-0048",
+      "accepted_quotes": 3,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.04736435809334064
+    },
+    {
+      "id": "MF-P1-0049",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.017549689563834646
+    },
+    {
+      "id": "MF-P1-0050",
+      "accepted_quotes": 3,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.02223081918672751
+    },
+    {
+      "id": "MF-P1-0051",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.025687348325591348
+    },
+    {
+      "id": "MF-P1-0052",
+      "accepted_quotes": 3,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.014660618083325576
+    },
+    {
+      "id": "MF-P1-0053",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0007622929615827446
+    },
+    {
+      "id": "MF-P1-0054",
+      "accepted_quotes": 0,
+      "rejection_records": 2,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.016222568539552285
+    },
+    {
+      "id": "MF-P1-0055",
+      "accepted_quotes": 4,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.019305576847509866
+    },
+    {
+      "id": "MF-P1-0056",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.027905432707767373
+    },
+    {
+      "id": "MF-P1-0057",
+      "accepted_quotes": 3,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.023105868931442532
+    },
+    {
+      "id": "MF-P1-0058",
+      "accepted_quotes": 2,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.0010794975386691557
+    },
+    {
+      "id": "MF-P1-0059",
+      "accepted_quotes": 1,
+      "rejection_records": 1,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.011065513762020402
+    },
+    {
+      "id": "MF-P1-0060",
+      "accepted_quotes": 1,
+      "rejection_records": 0,
+      "json_parse_error": false,
+      "ended_with_eos": true,
+      "possible_truncation_no_eos": false,
+      "mean_generated_json_logprob": -0.001884776533624688
+    }
+  ]
+}

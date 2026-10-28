@@ -8,7 +8,20 @@
 
 已策划并冻结 **60 条真实新闻相关错误主张**，改编自 AVeriTeC 公开基准的 Refuted 样本，附上游裁决、证据 QA、出处及固定来源版本。交付为[标准化 JSON](data/phase1/dataset.json)、[无答案输入](data/phase1/inputs.json)和 [JSON Schema](data/phase1/dataset.schema.json)；筛选、许可与复现方法见[正式数据说明](data/phase1/README.md)。样本是短主张，不是完整文章；全部为错误正例。
 
-本阶段完成数据策划，原子事实、限定条件与引用位置标注留待 Days 3–4。下文 15 句本地/Colab 结果属于前期合成回归实验，不能当作这 60 条上的正式结果。
+原计划 Days 3–4 的交付为抽取基线和字符到 token 对齐代码。正式数据的人工参考标注仍待完成；下文 15 句本地/Colab 结果属于前期合成回归实验，不能当作这 60 条上的正式结果。
+
+## 正式数据的抽取和 token 对齐
+
+`scripts/run_phase1_extraction.py` 使用既有冻结抽取提示词、revision、精度及生成设置，读取 `data/phase1/inputs.json` 中的 60 条无答案输入，并保存原始输出、引用和生成 token 的平均 log-probability。字符引用先验证为唯一的原文切片，再映射到完整聊天提示词的输入 token。映射细节和局限见 [token 对齐说明](docs/TOKEN_ALIGNMENT.md)。
+
+```powershell
+python scripts/run_phase1_extraction.py --cache-dir <模型缓存目录> --output runs/phase1_local.json
+python scripts/summarize_phase1_extraction.py runs/phase1_local.json --output runs/phase1_summary.json
+```
+
+运行需要本地 CUDA、依赖与指定 revision 的缓存快照；已有输出不会被覆盖。只有 `ok` 是 token 边界精确对齐，`partial_token`、`uncovered` 和 `non_contiguous` 必须分别保留。字符切片精确并不意味着命题独立或事实没有遗漏；正式样本还没有经独立人工核验的参考标注，不能计算事实覆盖或限定条件保留率。
+
+Phase 2 的有界抽取—验证交互见 [运行与方法说明](docs/PHASE2.md)：不同提示角色使用同一个模型，提供源内逻辑检查和反馈，并记录实际生成的判决 token 分数与熵。它是闭卷原型，没有外部证据检索；模型分数不是校准后的真值概率。早期 `scripts/run_phase1_verifier.py` 采用固定候选的 teacher-forced 评分，二者口径不同。
 
 ## 实验约定
 
@@ -76,6 +89,6 @@ log-probability 是模型生成的引用 JSON 的自然对数概率均值，包�
 
 ## 方向
 
-正式阶段已完成 60 条测试样本策划；下一步是原子事实、限定条件、字符引用位置的标注和协议冻结，再运行抽取与验证实验。可继续研究字符到 token 对齐、验证器与抽取器协作，以及错误类型归因；当前结果以已执行实验为准。
+正式阶段已完成 60 条测试样本策划和抽取／token 对齐代码；接下来需完成独立语义参考标注和证据验证，并将事实覆盖、限定条件和位置分开评估。可继续研究验证器与抽取器协作及错误类型归因；当前结果以已执行实验为准。
 
 模型使用条件见 [Qwen 官方模型卡](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)。仓库不分发模型权重。

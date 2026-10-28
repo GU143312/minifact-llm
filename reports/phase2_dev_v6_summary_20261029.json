@@ -1,0 +1,716 @@
+{
+  "audit": {
+    "status": "complete",
+    "counts": {
+      "accepted_claims": 16,
+      "feedback_transitions": 1,
+      "generations": 54,
+      "generations_without_eos": 0,
+      "label_alignment_unavailable": 0,
+      "rejected_quotes": 3,
+      "rounds": 11,
+      "samples_expected": 10,
+      "samples_processed": 10,
+      "samples_unprocessed": 0,
+      "verdict_trace_tokens": 48,
+      "verdict_traces": 16
+    },
+    "stop_reasons": {
+      "no_actionable_feedback": 8,
+      "no_valid_claims": 1,
+      "repeated_extraction": 1
+    },
+    "verifier_statuses": {
+      "ok": 16
+    },
+    "source_logic_statuses": {
+      "no_feedback": 9,
+      "ok": 2
+    },
+    "limitations": [
+      "Saved token IDs, flags and numerical summaries are checked for internal consistency; model logits and tokenizer special-token sets are not independently reconstructed.",
+      "No semantic correctness, accuracy or fact-coverage metric is calculated."
+    ]
+  },
+  "completed": true,
+  "samples_processed": 10,
+  "round_statistics": [
+    {
+      "round": 1,
+      "samples": 10,
+      "accepted_quote_occurrences": 14,
+      "rejection_reasons": {
+        "ambiguous_repeated_quote": 1,
+        "no_literal_match": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 14
+      },
+      "verifier_statuses": {
+        "ok": 14
+      },
+      "source_logic_statuses": {
+        "no_feedback": 9,
+        "ok": 1
+      },
+      "feedback_entries_with_text": 0,
+      "source_logic_feedbacks": 1,
+      "feedback_transitions_to_next_round": 1,
+      "verdict_generations_missing_label_token_alignment": 0,
+      "generations_missing": {},
+      "generations_without_eos": {},
+      "label_token_count": 28,
+      "mean_label_token_logprob": -0.028390086941986477,
+      "mean_label_token_full_vocab_entropy_nats": 0.10550820541850824
+    },
+    {
+      "round": 2,
+      "samples": 1,
+      "accepted_quote_occurrences": 2,
+      "rejection_reasons": {},
+      "verdicts": {
+        "SUPPORTED": 2
+      },
+      "verifier_statuses": {
+        "ok": 2
+      },
+      "source_logic_statuses": {
+        "ok": 1
+      },
+      "feedback_entries_with_text": 0,
+      "source_logic_feedbacks": 1,
+      "feedback_transitions_to_next_round": 0,
+      "verdict_generations_missing_label_token_alignment": 0,
+      "generations_missing": {},
+      "generations_without_eos": {},
+      "label_token_count": 4,
+      "mean_label_token_logprob": -0.06556059489957988,
+      "mean_label_token_full_vocab_entropy_nats": 0.21287443884648383
+    }
+  ],
+  "samples": [
+    {
+      "id": "D01",
+      "source": "On Monday, Elm opened a clinic, and the clinic has five rooms.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "On Monday, Elm opened a clinic",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 30
+            },
+            {
+              "claim": "the clinic has five rooms",
+              "quote_index": 1,
+              "start_idx": 36,
+              "end_idx": 61
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "On Monday, Elm opened a clinic",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.01527463222737424,
+              "mean_label_token_full_vocab_entropy_nats": 0.06865967786870897
+            },
+            {
+              "quote_index": 1,
+              "claim": "the clinic has five rooms",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013533711462514475,
+              "mean_label_token_full_vocab_entropy_nats": 0.06269343668827787
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "source": "Mira opened a café and closed a shop.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Mira opened a café",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 18
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "Mira closed a shop",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Mira opened a café",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.012070684795617126,
+              "mean_label_token_full_vocab_entropy_nats": 0.05789755785372108
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "source": "The bridge reopened. The bridge reopened.",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "The bridge reopened",
+              "reason": "ambiguous_repeated_quote",
+              "matches": [
+                {
+                  "start_idx": 0,
+                  "end_idx": 19
+                },
+                {
+                  "start_idx": 21,
+                  "end_idx": 40
+                }
+              ]
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "source": "Lina bought a bicycle. She painted it red.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Lina bought a bicycle",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 21
+            },
+            {
+              "claim": "She painted it red",
+              "quote_index": 1,
+              "start_idx": 23,
+              "end_idx": 41
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Lina bought a bicycle",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.008831984087009914,
+              "mean_label_token_full_vocab_entropy_nats": 0.04571710526943207
+            },
+            {
+              "quote_index": 1,
+              "claim": "She painted it red",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.012154325333540328,
+              "mean_label_token_full_vocab_entropy_nats": 0.05858370242640376
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "source": "The council did not approve the plan on Tuesday.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The council did not approve the plan on Tuesday",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 47
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The council did not approve the plan on Tuesday",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.036550203687511384,
+              "mean_label_token_full_vocab_entropy_nats": 0.13482042960822582
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "source": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 53
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.04606410644919379,
+              "mean_label_token_full_vocab_entropy_nats": 0.15074872580589727
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Monday, the room had exactly 7 chairs.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 48
+            },
+            {
+              "claim": "At noon on Monday, the room had exactly 7 chairs",
+              "quote_index": 1,
+              "start_idx": 50,
+              "end_idx": 98
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013886129949241877,
+              "mean_label_token_full_vocab_entropy_nats": 0.067241080570966
+            },
+            {
+              "quote_index": 1,
+              "claim": "At noon on Monday, the room had exactly 7 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.11723505984991789,
+              "mean_label_token_full_vocab_entropy_nats": 0.35850779712200165
+            }
+          ],
+          "source_logic_status": "ok",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": "At the same time the same room cannot contain exactly 5 and exactly 7 chairs.",
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "At noon on Monday, the room had exactly 5 chairs",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "At noon on Monday, the room had exactly 7 chairs",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              }
+            ],
+            "source_logic_feedback": {
+              "origin": "source_logic_model_output",
+              "warning": "Unverified model output about possible internal inconsistency, not external evidence.",
+              "text": "At the same time the same room cannot contain exactly 5 and exactly 7 chairs."
+            }
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 48
+            },
+            {
+              "claim": "At noon on Monday, the room had exactly 7 chairs",
+              "quote_index": 1,
+              "start_idx": 50,
+              "end_idx": 98
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013886129949241877,
+              "mean_label_token_full_vocab_entropy_nats": 0.067241080570966
+            },
+            {
+              "quote_index": 1,
+              "claim": "At noon on Monday, the room had exactly 7 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.11723505984991789,
+              "mean_label_token_full_vocab_entropy_nats": 0.35850779712200165
+            }
+          ],
+          "source_logic_status": "ok",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": "At the same time the same room cannot contain exactly 5 and exactly 7 chairs.",
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Tuesday, the room had exactly 7 chairs.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 48
+            },
+            {
+              "claim": "At noon on Tuesday, the room had exactly 7 chairs",
+              "quote_index": 1,
+              "start_idx": 50,
+              "end_idx": 99
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "At noon on Monday, the room had exactly 5 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02684332459466532,
+              "mean_label_token_full_vocab_entropy_nats": 0.1041368930018507
+            },
+            {
+              "quote_index": 1,
+              "claim": "At noon on Tuesday, the room had exactly 7 chairs",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.0189014938659966,
+              "mean_label_token_full_vocab_entropy_nats": 0.08186666737310588
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "source": "The store sold at least 5 apples on Friday. The store sold at most 8 apples on Friday.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The store sold at least 5 apples on Friday",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 42
+            },
+            {
+              "claim": "The store sold at most 8 apples on Friday",
+              "quote_index": 1,
+              "start_idx": 44,
+              "end_idx": 85
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The store sold at least 5 apples on Friday",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.019583037370466627,
+              "mean_label_token_full_vocab_entropy_nats": 0.08313690533395857
+            },
+            {
+              "quote_index": 1,
+              "claim": "The store sold at most 8 apples on Friday",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.048717575962655246,
+              "mean_label_token_full_vocab_entropy_nats": 0.16209183819592
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "source": "The ferry carried 12 passengers on May 3 and 15 passengers on May 4.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The ferry carried 12 passengers on May 3",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 40
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "The ferry carried 15 passengers on May 4",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The ferry carried 12 passengers on May 3",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.007814947552105878,
+              "mean_label_token_full_vocab_entropy_nats": 0.04101305874064565
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Round totals count extracted quote occurrences, including repeated claims across rounds; they are not unique facts.",
+    "Verdicts, challenges and logic comments are closed-book model output, not independent evidence or gold labels.",
+    "Label-token means use actual generated verdict tokens and raw-logit-derived values; entropy is over the full vocabulary in nats. These are not calibrated probabilities of truth.",
+    "No fact coverage, qualifier retention, atomicity, veracity accuracy or false-negative rate is inferred.",
+    "No EOS indicates possible truncation; saved token scores and mapping are not independently recomputed from model logits."
+  ]
+}

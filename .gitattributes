@@ -1,2 +1,9 @@
 * text=auto eol=lf
 *.png binary
+
+# Preserve experiment inputs, output records and historical source snapshots
+# byte-for-byte: their published SHA256 values include the original line endings.
+data/phase2_dev.json -text
+reports/phase1_*.json -text
+reports/phase2*.json -text
+reports/phase2_development/** -text

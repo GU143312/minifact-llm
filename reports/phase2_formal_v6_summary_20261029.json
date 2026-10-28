@@ -1,0 +1,4022 @@
+{
+  "audit": {
+    "status": "complete",
+    "counts": {
+      "accepted_claims": 101,
+      "feedback_transitions": 10,
+      "generations": 342,
+      "generations_without_eos": 0,
+      "label_alignment_unavailable": 0,
+      "rejected_quotes": 24,
+      "rounds": 70,
+      "samples_expected": 60,
+      "samples_processed": 60,
+      "samples_unprocessed": 0,
+      "verdict_trace_tokens": 361,
+      "verdict_traces": 101
+    },
+    "stop_reasons": {
+      "no_actionable_feedback": 43,
+      "no_valid_claims": 9,
+      "repeated_extraction": 7,
+      "round_limit": 1
+    },
+    "verifier_statuses": {
+      "ok": 101
+    },
+    "source_logic_statuses": {
+      "no_feedback": 68,
+      "ok": 2
+    },
+    "limitations": [
+      "Saved token IDs, flags and numerical summaries are checked for internal consistency; model logits and tokenizer special-token sets are not independently reconstructed.",
+      "No semantic correctness, accuracy or fact-coverage metric is calculated."
+    ]
+  },
+  "completed": true,
+  "samples_processed": 60,
+  "round_statistics": [
+    {
+      "round": 1,
+      "samples": 60,
+      "accepted_quote_occurrences": 84,
+      "rejection_reasons": {
+        "expected_nonempty_string_array": 3,
+        "no_literal_match": 19
+      },
+      "verdicts": {
+        "NOT_ENOUGH_INFO": 19,
+        "REFUTED": 4,
+        "SUPPORTED": 61
+      },
+      "verifier_statuses": {
+        "ok": 84
+      },
+      "source_logic_statuses": {
+        "no_feedback": 59,
+        "ok": 1
+      },
+      "feedback_entries_with_text": 10,
+      "source_logic_feedbacks": 1,
+      "feedback_transitions_to_next_round": 10,
+      "verdict_generations_missing_label_token_alignment": 0,
+      "generations_missing": {},
+      "generations_without_eos": {},
+      "label_token_count": 212,
+      "mean_label_token_logprob": -0.0491064577826095,
+      "mean_label_token_full_vocab_entropy_nats": 0.11235104703496397
+    },
+    {
+      "round": 2,
+      "samples": 10,
+      "accepted_quote_occurrences": 17,
+      "rejection_reasons": {
+        "ambiguous_repeated_quote": 1,
+        "expected_nonempty_string_array": 1
+      },
+      "verdicts": {
+        "NOT_ENOUGH_INFO": 6,
+        "REFUTED": 2,
+        "SUPPORTED": 9
+      },
+      "verifier_statuses": {
+        "ok": 17
+      },
+      "source_logic_statuses": {
+        "no_feedback": 9,
+        "ok": 1
+      },
+      "feedback_entries_with_text": 8,
+      "source_logic_feedbacks": 1,
+      "feedback_transitions_to_next_round": 0,
+      "verdict_generations_missing_label_token_alignment": 0,
+      "generations_missing": {},
+      "generations_without_eos": {},
+      "label_token_count": 48,
+      "mean_label_token_logprob": -0.06368983676940927,
+      "mean_label_token_full_vocab_entropy_nats": 0.11780523221226247
+    }
+  ],
+  "samples": [
+    {
+      "id": "MF-P1-0001",
+      "source": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 113
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.014923485432518646,
+              "mean_label_token_full_vocab_entropy_nats": 0.06901419977657497
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0002",
+      "source": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 62
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.00045014421868927457,
+              "mean_label_token_full_vocab_entropy_nats": 0.0038409132775996113
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0003",
+      "source": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 119
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.05828860029578209,
+              "mean_label_token_full_vocab_entropy_nats": 0.21182432025671005
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0004",
+      "source": "The Wire called Durga puja racist and the goddess Durga a sex worker",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The Wire called Durga puja racist",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 33
+            },
+            {
+              "claim": "the goddess Durga a sex worker",
+              "quote_index": 1,
+              "start_idx": 38,
+              "end_idx": 68
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The Wire called Durga puja racist",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.014999377075582743,
+              "mean_label_token_full_vocab_entropy_nats": 0.07712085545063019
+            },
+            {
+              "quote_index": 1,
+              "claim": "the goddess Durga a sex worker",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates: the claim about the goddess Durga being a sex worker is contradictory to the context suggesting it was called racist",
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.004293856614215959,
+              "mean_label_token_full_vocab_entropy_nats": 0.026003521488746628
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "The Wire called Durga puja racist",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "the goddess Durga a sex worker",
+                "verdict": "REFUTED",
+                "verifier_feedback": "contradictory dates: the claim about the goddess Durga being a sex worker is contradictory to the context suggesting it was called racist"
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "The Wire called Durga puja racist",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 33
+            },
+            {
+              "claim": "the goddess Durga a sex worker",
+              "quote_index": 1,
+              "start_idx": 38,
+              "end_idx": 68
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The Wire called Durga puja racist",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.014999377075582743,
+              "mean_label_token_full_vocab_entropy_nats": 0.07712085545063019
+            },
+            {
+              "quote_index": 1,
+              "claim": "the goddess Durga a sex worker",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates: the claim about the goddess Durga being a sex worker is contradictory to the context suggesting it was called racist",
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.004293856614215959,
+              "mean_label_token_full_vocab_entropy_nats": 0.026003521488746628
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0005",
+      "source": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football in response to French President Macron’s comments on Islamist terrorism.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 109
+            },
+            {
+              "claim": "in response to French President Macron’s comments on Islamist terrorism.",
+              "quote_index": 1,
+              "start_idx": 110,
+              "end_idx": 182
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013174367952160537,
+              "mean_label_token_full_vocab_entropy_nats": 0.06388663174584508
+            },
+            {
+              "quote_index": 1,
+              "claim": "in response to French President Macron’s comments on Islamist terrorism.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.338648185133934,
+              "mean_label_token_full_vocab_entropy_nats": 0.38616422936320305
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0006",
+      "source": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 60
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.006296861584189628,
+              "mean_label_token_full_vocab_entropy_nats": 0.03290845702713341
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0007",
+      "source": "Rock musician Jon Bon Jovi performed for 12 people and 7 pumpkins at a campaign event for Democratic presidential nominee Joe Biden in Pennsylvania.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Jon Bon Jovi performed for 12 people",
+              "quote_index": 0,
+              "start_idx": 14,
+              "end_idx": 50
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "Jon Bon Jovi performed for 7 pumpkins",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Jon Bon Jovi performed for 12 people",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03863896569237113,
+              "mean_label_token_full_vocab_entropy_nats": 0.15375639870762825
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0008",
+      "source": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 125
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0006701111175289043,
+              "mean_label_token_full_vocab_entropy_nats": 0.005554647766530252
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0009",
+      "source": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+      "round_count": 2,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 117
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund. - NO_ISSUE",
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.0037276699349604314,
+              "mean_label_token_full_vocab_entropy_nats": 0.02069612354777443
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+                "verdict": "REFUTED",
+                "verifier_feedback": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund. - NO_ISSUE"
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": null,
+              "reason": "expected_nonempty_string_array"
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0010",
+      "source": "India’s imports from China increased by 27% in April-August 2020",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "India’s imports from China increased by 27%",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 43
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "India’s imports from China increased by 27%",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.01585549983428791,
+              "mean_label_token_full_vocab_entropy_nats": 0.07227394776418805
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0011",
+      "source": "National Testing Agency (NTA) has made a major blunder in NEET Exam Result 2020. They stated that the all India topper had failed.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "National Testing Agency (NTA) has made a major blunder in NEET Exam Result 2020",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 79
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "they stated that the all India topper had failed",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "National Testing Agency (NTA) has made a major blunder in NEET Exam Result 2020",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.0268219499848783,
+              "mean_label_token_full_vocab_entropy_nats": 0.10745171969756484
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0012",
+      "source": "White House coronavirus adviser Dr. Anthony Fauci wrote a 2008 paper that found most 1918-1919 Spanish Influenza pandemic deaths were because of bacterial pneumonia from wearing masks.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "wearing masks",
+              "quote_index": 2,
+              "start_idx": 170,
+              "end_idx": 183
+            }
+          ],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Dr Anthony Fauci wrote a 2008 paper",
+              "reason": "no_literal_match",
+              "matches": []
+            },
+            {
+              "index": 1,
+              "quote": "most 1918 1919 Spanish Influenza pandemic deaths were because of bacterial pneumonia",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 2,
+              "claim": "wearing masks",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0010290813866049575,
+              "mean_label_token_full_vocab_entropy_nats": 0.007308823956918786
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0013",
+      "source": "Prominent US Democrat party members including Hillary and Bill Clinton, were running a child sex-trafficking ring in the basement of a Washington, D.C., pizzeria.",
+      "round_count": 2,
+      "stop_reason": "round_limit",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 70
+            },
+            {
+              "claim": "were running a child sex-trafficking ring",
+              "quote_index": 1,
+              "start_idx": 72,
+              "end_idx": 113
+            },
+            {
+              "claim": "in the basement of a Washington, D.C.",
+              "quote_index": 2,
+              "start_idx": 114,
+              "end_idx": 151
+            },
+            {
+              "claim": "pizzeria.",
+              "quote_index": 3,
+              "start_idx": 153,
+              "end_idx": 162
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.1312787803260278,
+              "mean_label_token_full_vocab_entropy_nats": 0.17313944730494768
+            },
+            {
+              "quote_index": 1,
+              "claim": "were running a child sex-trafficking ring",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; both \"were running a child sex-trafficking ring\" and unspecified past events conflict",
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.2829673280678738,
+              "mean_label_token_full_vocab_entropy_nats": 0.3644942363316659
+            },
+            {
+              "quote_index": 2,
+              "claim": "in the basement of a Washington, D.C.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011608422442805022,
+              "mean_label_token_full_vocab_entropy_nats": 0.05860188137739897
+            },
+            {
+              "quote_index": 3,
+              "claim": "pizzeria.",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.22102049945654775,
+              "mean_label_token_full_vocab_entropy_nats": 0.2809505276964046
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "were running a child sex-trafficking ring",
+                "verdict": "REFUTED",
+                "verifier_feedback": "contradictory dates; both \"were running a child sex-trafficking ring\" and unspecified past events conflict"
+              },
+              {
+                "quote_index": 2,
+                "claim": "in the basement of a Washington, D.C.",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 3,
+                "claim": "pizzeria.",
+                "verdict": "REFUTED",
+                "verifier_feedback": null
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 70
+            },
+            {
+              "claim": "were running a child sex-trafficking ring",
+              "quote_index": 1,
+              "start_idx": 72,
+              "end_idx": 113
+            },
+            {
+              "claim": "in the basement of a Washington, D.C.",
+              "quote_index": 2,
+              "start_idx": 114,
+              "end_idx": 151
+            }
+          ],
+          "rejections": [
+            {
+              "index": 3,
+              "quote": ".",
+              "reason": "ambiguous_repeated_quote",
+              "matches": [
+                {
+                  "start_idx": 148,
+                  "end_idx": 149
+                },
+                {
+                  "start_idx": 150,
+                  "end_idx": 151
+                },
+                {
+                  "start_idx": 161,
+                  "end_idx": 162
+                }
+              ]
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.1312787803260278,
+              "mean_label_token_full_vocab_entropy_nats": 0.17313944730494768
+            },
+            {
+              "quote_index": 1,
+              "claim": "were running a child sex-trafficking ring",
+              "status": "ok",
+              "verdict": "REFUTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; both \"were running a child sex-trafficking ring\" and unspecified past events conflict",
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.2829673280678738,
+              "mean_label_token_full_vocab_entropy_nats": 0.3644942363316659
+            },
+            {
+              "quote_index": 2,
+              "claim": "in the basement of a Washington, D.C.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011608422442805022,
+              "mean_label_token_full_vocab_entropy_nats": 0.05860188137739897
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Prominent US Democrat party members including Hillary and Bill Clinton",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "were running a child sex-trafficking ring",
+                "verdict": "REFUTED",
+                "verifier_feedback": "contradictory dates; both \"were running a child sex-trafficking ring\" and unspecified past events conflict"
+              },
+              {
+                "quote_index": 2,
+                "claim": "in the basement of a Washington, D.C.",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "round_limit"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0014",
+      "source": "India's Congress party candidate Maskoor Usmani installed Jinnah's portrait at AMU.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Maskoor Usmani installed Jinnah's portrait",
+              "quote_index": 0,
+              "start_idx": 33,
+              "end_idx": 75
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "Jinnah's portrait is at AMU",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Maskoor Usmani installed Jinnah's portrait",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011111883912235498,
+              "mean_label_token_full_vocab_entropy_nats": 0.06124067306518555
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0015",
+      "source": "NASA always receives blessings from the Pope and that God’s permission must be sought before a space mission.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "NASA always receives blessings from the Pope",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 44
+            },
+            {
+              "claim": "God’s permission must be sought before a space mission.",
+              "quote_index": 1,
+              "start_idx": 54,
+              "end_idx": 109
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "NASA always receives blessings from the Pope",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.31993337254971266,
+              "mean_label_token_full_vocab_entropy_nats": 0.4025620333850384
+            },
+            {
+              "quote_index": 1,
+              "claim": "God’s permission must be sought before a space mission.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.08120059128850698,
+              "mean_label_token_full_vocab_entropy_nats": 0.2492116615176201
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0016",
+      "source": "The PHE has began to combine Covid-19 and influenza statistics to make the numbers look worse.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The PHE has began to combine Covid-19 and influenza statistics",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 62
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The PHE has began to combine Covid-19 and influenza statistics",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.026837779907509685,
+              "mean_label_token_full_vocab_entropy_nats": 0.11361022293567657
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0017",
+      "source": "A law called The Flora and Fauna Act classified aboriginal people as animals until Australian voters overturned it in the 1960s.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "A law called The Flora and Fauna Act classified aboriginal people as animals",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 76
+            },
+            {
+              "claim": "Australian voters overturned it in the 1960s",
+              "quote_index": 1,
+              "start_idx": 83,
+              "end_idx": 127
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "A law called The Flora and Fauna Act classified aboriginal people as animals",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.01713927512173541,
+              "mean_label_token_full_vocab_entropy_nats": 0.0756064192391932
+            },
+            {
+              "quote_index": 1,
+              "claim": "Australian voters overturned it in the 1960s",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.021518959663808346,
+              "mean_label_token_full_vocab_entropy_nats": 0.09980166330933571
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0018",
+      "source": "Joe Biden proposed a US wide 2% property tax increase.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Joe Biden proposed a US wide 2% property tax increase",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 53
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Joe Biden proposed a US wide 2% property tax increase",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.022254292445722967,
+              "mean_label_token_full_vocab_entropy_nats": 0.09332513622939587
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0019",
+      "source": "Swiss Squash player Ambre Allinckx’s refuses to play in India due to safety reasons",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": null,
+              "reason": "expected_nonempty_string_array"
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0020",
+      "source": "People in the UK who are required to self-isolate due to having tested positive for the COVID-19 virus will receive a support payment of £500 per week",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "People in the UK who are required to self-isolate due to having tested positive for the COVID-19 virus will receive a support payment of £500 per week",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 150
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "People in the UK who are required to self-isolate due to having tested positive for the COVID-19 virus will receive a support payment of £500 per week",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03447644098196179,
+              "mean_label_token_full_vocab_entropy_nats": 0.12578336894512177
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0021",
+      "source": "All students in India who had to switch to an online mode of education due to the coronavirus pandemic are being provided free Android smartphones by the government.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "All students in India who had to switch to an online mode of education due to the coronavirus pandemic are being provided free Android smartphones by the government.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 165
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "All students in India who had to switch to an online mode of education due to the coronavirus pandemic are being provided free Android smartphones by the government.",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.006946747870181014,
+              "mean_label_token_full_vocab_entropy_nats": 0.03342617597252229
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0022",
+      "source": "Judith Collins said, on Donald Trump, \"actually, he's a damn sight better than any of the other Presidents that have been there before him, including those that you admire, Miss Arden,\"",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "\"actually, he's a damn sight better than any of the other Presidents that have been there before him, including those that you admire, Miss Arden,\"",
+              "quote_index": 1,
+              "start_idx": 38,
+              "end_idx": 185
+            }
+          ],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Judith Collins said on Donald Trump",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 1,
+              "claim": "\"actually, he's a damn sight better than any of the other Presidents that have been there before him, including those that you admire, Miss Arden,\"",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02309784945100546,
+              "mean_label_token_full_vocab_entropy_nats": 0.11008068919181824
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0023",
+      "source": "Judith Collins, the National Party leader stated that New Zealand was using more coal to generate electricity because of the oil and gas exploration ban.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "New Zealand was using more coal to generate electricity",
+              "quote_index": 1,
+              "start_idx": 54,
+              "end_idx": 109
+            },
+            {
+              "claim": "because of the oil and gas exploration ban",
+              "quote_index": 2,
+              "start_idx": 110,
+              "end_idx": 152
+            }
+          ],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Judith Collins the National Party leader stated",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 1,
+              "claim": "New Zealand was using more coal to generate electricity",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.019989879336208105,
+              "mean_label_token_full_vocab_entropy_nats": 0.09025638177990913
+            },
+            {
+              "quote_index": 2,
+              "claim": "because of the oil and gas exploration ban",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates: \"because of the oil and gas exploration ban\" is not a date but a reason for New Zealand using more coal",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0007980314871360861,
+              "mean_label_token_full_vocab_entropy_nats": 0.0063008444069510006
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 1,
+                "claim": "New Zealand was using more coal to generate electricity",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 2,
+                "claim": "because of the oil and gas exploration ban",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": "contradictory dates: \"because of the oil and gas exploration ban\" is not a date but a reason for New Zealand using more coal"
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "New Zealand was using more coal to generate electricity",
+              "quote_index": 0,
+              "start_idx": 54,
+              "end_idx": 109
+            },
+            {
+              "claim": "because of the oil and gas exploration ban",
+              "quote_index": 1,
+              "start_idx": 110,
+              "end_idx": 152
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "New Zealand was using more coal to generate electricity",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.019989879336208105,
+              "mean_label_token_full_vocab_entropy_nats": 0.09025638177990913
+            },
+            {
+              "quote_index": 1,
+              "claim": "because of the oil and gas exploration ban",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates: \"because of the oil and gas exploration ban\" is not a date but a reason for New Zealand using more coal",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0007980314871360861,
+              "mean_label_token_full_vocab_entropy_nats": 0.0063008444069510006
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0024",
+      "source": "Democratic presidential nominee Joe Biden received the questions for the first presidential debate in advance.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Joe Biden received the questions for the first presidential debate in advance",
+              "quote_index": 0,
+              "start_idx": 32,
+              "end_idx": 109
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Joe Biden received the questions for the first presidential debate in advance",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02006176149006933,
+              "mean_label_token_full_vocab_entropy_nats": 0.08666640380397439
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0025",
+      "source": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed as severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 83
+            },
+            {
+              "claim": "severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+              "quote_index": 1,
+              "start_idx": 87,
+              "end_idx": 160
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "Claim lacks specificity about the disease being diagnosed, only stating it is \"diagnosed\" without specifying the entity or context of diagnosis.",
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.016312349122017622,
+              "mean_label_token_full_vocab_entropy_nats": 0.08296679705381393
+            },
+            {
+              "quote_index": 1,
+              "claim": "severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.11515992972999811,
+              "mean_label_token_full_vocab_entropy_nats": 0.28933345153927803
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": "Claim lacks specificity about the disease being diagnosed, only stating it is \"diagnosed\" without specifying the entity or context of diagnosis."
+              },
+              {
+                "quote_index": 1,
+                "claim": "severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 83
+            },
+            {
+              "claim": "severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+              "quote_index": 1,
+              "start_idx": 87,
+              "end_idx": 160
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "Claim lacks specificity about the disease being diagnosed, only stating it is \"diagnosed\" without specifying the entity or context of diagnosis.",
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.016312349122017622,
+              "mean_label_token_full_vocab_entropy_nats": 0.08296679705381393
+            },
+            {
+              "quote_index": 1,
+              "claim": "severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.11515992972999811,
+              "mean_label_token_full_vocab_entropy_nats": 0.28933345153927803
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0026",
+      "source": "AARP endorsed President Biden and gave financial support to planned parenthood.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "AARP endorsed President Biden",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 29
+            }
+          ],
+          "rejections": [
+            {
+              "index": 1,
+              "quote": "AARP gave financial support to planned parenthood",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "AARP endorsed President Biden",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011993356652965304,
+              "mean_label_token_full_vocab_entropy_nats": 0.05725063302088529
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0027",
+      "source": "Donald Trump has not appoointed any black federal judges.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Donald Trump has not appoointed any black federal judges",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 56
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Donald Trump has not appoointed any black federal judges",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.025839502457529306,
+              "mean_label_token_full_vocab_entropy_nats": 0.11425351537764072
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0028",
+      "source": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone during drug interrogation.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 106
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "Contradictory propositions: Raveer Singh requested to join vs. Narcotics Control Bureau (NCB) to let him join",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.08615675866599126,
+              "mean_label_token_full_vocab_entropy_nats": 0.15845408681258277
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": "Contradictory propositions: Raveer Singh requested to join vs. Narcotics Control Bureau (NCB) to let him join"
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 106
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "Contradictory propositions: Raveer Singh requested to join vs. Narcotics Control Bureau (NCB) to let him join",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.08615675866599126,
+              "mean_label_token_full_vocab_entropy_nats": 0.15845408681258277
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0029",
+      "source": "US President Donald Trump's executive order on September 24, 2020 legally ensures health coverage protections for those with pre existing medical conditions.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "US President Donald Trump's executive order on September 24, 2020 legally ensures health coverage protections",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 109
+            },
+            {
+              "claim": "for those with pre existing medical conditions.",
+              "quote_index": 1,
+              "start_idx": 110,
+              "end_idx": 157
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "US President Donald Trump's executive order on September 24, 2020 legally ensures health coverage protections",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.1311249164864421,
+              "mean_label_token_full_vocab_entropy_nats": 0.3334928136318922
+            },
+            {
+              "quote_index": 1,
+              "claim": "for those with pre existing medical conditions.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.04003426432609558,
+              "mean_label_token_full_vocab_entropy_nats": 0.16492696851491928
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0030",
+      "source": "House Speaker Nancy Pelosi said of US employers, “Employers cutting hours is a good thing. It then gives that person time to pursue their dreams and passions.”",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "House Speaker Nancy Pelosi said",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 31
+            },
+            {
+              "claim": "Employers cutting hours is a good thing",
+              "quote_index": 1,
+              "start_idx": 50,
+              "end_idx": 89
+            }
+          ],
+          "rejections": [
+            {
+              "index": 2,
+              "quote": "it then gives that person time to pursue their dreams and passions",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "House Speaker Nancy Pelosi said",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.016976220067590475,
+              "mean_label_token_full_vocab_entropy_nats": 0.08341917209327221
+            },
+            {
+              "quote_index": 1,
+              "claim": "Employers cutting hours is a good thing",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011691505555063486,
+              "mean_label_token_full_vocab_entropy_nats": 0.06337578594684601
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0031",
+      "source": "Shah Rukh Khan's Kolkata Knight Riders (KKR) is acquiring a 1.28 per cent stake in Reliance Retail at Rs 5,500 crore",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Shah Rukh Khan's Kolkata Knight Riders (Kkr) is acquiring a 1.28 per cent stake",
+              "reason": "no_literal_match",
+              "matches": []
+            },
+            {
+              "index": 1,
+              "quote": "in Reliance Retail at Rs 5500 crore",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0032",
+      "source": "Due to coronavirus schools and colleges have been closed and because of this, the education of students has been affected. The government is providing free laptops to all the students so that they can complete their education and also give exams with the help of the internet",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Due to coronavirus schools and colleges have been closed",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 56
+            },
+            {
+              "claim": "the education of students has been affected",
+              "quote_index": 1,
+              "start_idx": 78,
+              "end_idx": 121
+            },
+            {
+              "claim": "they can complete their education",
+              "quote_index": 3,
+              "start_idx": 192,
+              "end_idx": 225
+            },
+            {
+              "claim": "and also give exams with the help of the internet",
+              "quote_index": 4,
+              "start_idx": 226,
+              "end_idx": 275
+            }
+          ],
+          "rejections": [
+            {
+              "index": 2,
+              "quote": "the government is providing free laptops to all the students",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Due to coronavirus schools and colleges have been closed",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.014516347844619304,
+              "mean_label_token_full_vocab_entropy_nats": 0.06760558043606579
+            },
+            {
+              "quote_index": 1,
+              "claim": "the education of students has been affected",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.010224927857052535,
+              "mean_label_token_full_vocab_entropy_nats": 0.05099239107221365
+            },
+            {
+              "quote_index": 3,
+              "claim": "they can complete their education",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.1166105568408966,
+              "mean_label_token_full_vocab_entropy_nats": 0.301306888461113
+            },
+            {
+              "quote_index": 4,
+              "claim": "and also give exams with the help of the internet",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03555878344923258,
+              "mean_label_token_full_vocab_entropy_nats": 0.14796452596783638
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0033",
+      "source": "California Governor Gavin Newsom made it so that convicted sexual predators have lighter sentences.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "California Governor Gavin Newsom made it so that convicted sexual predators have lighter sentences.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 99
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "California Governor Gavin Newsom made it so that convicted sexual predators have lighter sentences.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02387496503069997,
+              "mean_label_token_full_vocab_entropy_nats": 0.10903362929821014
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0034",
+      "source": "Ruth Bader Ginsburg waged an \"active campaign\" to repeal the Mann Act and to lower the age of consent for sex",
+      "round_count": 2,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Ruth Bader Ginsburg waged an \"active campaign\"",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 46
+            },
+            {
+              "claim": "to repeal the Mann Act",
+              "quote_index": 1,
+              "start_idx": 47,
+              "end_idx": 69
+            },
+            {
+              "claim": "to lower the age of consent for sex",
+              "quote_index": 2,
+              "start_idx": 74,
+              "end_idx": 109
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Ruth Bader Ginsburg waged an \"active campaign\"",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.015067361760884523,
+              "mean_label_token_full_vocab_entropy_nats": 0.07837656140327454
+            },
+            {
+              "quote_index": 1,
+              "claim": "to repeal the Mann Act",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.019933235642071168,
+              "mean_label_token_full_vocab_entropy_nats": 0.07189343844765972
+            },
+            {
+              "quote_index": 2,
+              "claim": "to lower the age of consent for sex",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "Contradictory propositions: \"to repeal the Mann Act\" and \"to lower the age of consent for sex\"",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.002196911464309892,
+              "mean_label_token_full_vocab_entropy_nats": 0.013636141285587655
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Ruth Bader Ginsburg waged an \"active campaign\"",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "to repeal the Mann Act",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 2,
+                "claim": "to lower the age of consent for sex",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": "Contradictory propositions: \"to repeal the Mann Act\" and \"to lower the age of consent for sex\""
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "Ruth Bader Ginsburg waged an \"active campaign\"",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 46
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Ruth Bader Ginsburg waged an \"active campaign\"",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.015067361760884523,
+              "mean_label_token_full_vocab_entropy_nats": 0.07837656140327454
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0035",
+      "source": "MPs are not following workplace Covid guidance by wearing masks.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "MPs are not following workplace Covid guidance",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 46
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "MPs are not following workplace Covid guidance",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.023043093213345855,
+              "mean_label_token_full_vocab_entropy_nats": 0.0960658360272646
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0036",
+      "source": "Zimbabwe recorded its first coronavirus Infection before 20 February 2020.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Zimbabwe recorded its first coronavirus Infection before 20 February 2020.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 74
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Zimbabwe recorded its first coronavirus Infection before 20 February 2020.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.020734033547341824,
+              "mean_label_token_full_vocab_entropy_nats": 0.09681718610227108
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0037",
+      "source": "Joe Biden would be the first person without an Ivy League degree to be elected president.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Joe Biden would be the first person without an Ivy League degree to be elected president.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 89
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Joe Biden would be the first person without an Ivy League degree to be elected president.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03155549615621567,
+              "mean_label_token_full_vocab_entropy_nats": 0.137093648314476
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0038",
+      "source": "In 2019, 10 million fell ill from tuberculosis and 1.5 million died but nobody needs to wears a mask for tuberculosis",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "In 2019, 10 million fell ill from tuberculosis",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 46
+            },
+            {
+              "claim": "1.5 million died",
+              "quote_index": 1,
+              "start_idx": 51,
+              "end_idx": 67
+            },
+            {
+              "claim": "nobody needs to wears a mask for tuberculosis",
+              "quote_index": 2,
+              "start_idx": 72,
+              "end_idx": 117
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "In 2019, 10 million fell ill from tuberculosis",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013555746292695403,
+              "mean_label_token_full_vocab_entropy_nats": 0.06807954981923103
+            },
+            {
+              "quote_index": 1,
+              "claim": "1.5 million died",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.005905031342990696,
+              "mean_label_token_full_vocab_entropy_nats": 0.03430754225701094
+            },
+            {
+              "quote_index": 2,
+              "claim": "nobody needs to wears a mask for tuberculosis",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.012297963839955628,
+              "mean_label_token_full_vocab_entropy_nats": 0.06259625498205423
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0039",
+      "source": "Australian politician, Daniel Andrews said “In fact, you’d be surprised at how much can be avoided if people stop insisting on their personal freedoms. Because insisting on human rights is not only selfish, it’s stupid.”",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Australian politician, Daniel Andrews said",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 42
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Australian politician, Daniel Andrews said",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.018410508520901203,
+              "mean_label_token_full_vocab_entropy_nats": 0.07941303658299148
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0040",
+      "source": "The US government has plans to force a COVID-19 vaccine on everyone.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The US government has plans to force a COVID-19 vaccine on everyone",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 67
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The US government has plans to force a COVID-19 vaccine on everyone",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0010325835344247025,
+              "mean_label_token_full_vocab_entropy_nats": 0.00787077668155689
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0041",
+      "source": "A Democratic Vice Presidential nominee, Kamala Harris, said that there will be \"a federal tax on your home for slavery reparations.\"",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "A federal tax on your home for slavery reparations will be a federal tax",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0042",
+      "source": "Actor Mukesh Khanna has called for a boycott of Jaya and Amitabh Bachchan.",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": null,
+              "reason": "expected_nonempty_string_array"
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0043",
+      "source": "Muslim regiment of the Indian Army had refused to fight in India’s 1965 war with Pakistan.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Muslim regiment of the Indian Army had refused to fight",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 55
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Muslim regiment of the Indian Army had refused to fight",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.009424180698445639,
+              "mean_label_token_full_vocab_entropy_nats": 0.043188780791751924
+            }
+          ],
+          "source_logic_status": "ok",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": "NO_CONTRADICTION\n\nExplanation: The source and the claim both refer to a Muslim regiment of the Indian Army refusing to fight, but the source specifies the time as \"1965 war with Pakistan\" while the claim does not mention the specific time. This difference in scope does not create a contradiction.",
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Muslim regiment of the Indian Army had refused to fight",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": null
+              }
+            ],
+            "source_logic_feedback": {
+              "origin": "source_logic_model_output",
+              "warning": "Unverified model output about possible internal inconsistency, not external evidence.",
+              "text": "NO_CONTRADICTION\n\nExplanation: The source and the claim both refer to a Muslim regiment of the Indian Army refusing to fight, but the source specifies the time as \"1965 war with Pakistan\" while the claim does not mention the specific time. This difference in scope does not create a contradiction."
+            }
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "Muslim regiment of the Indian Army had refused to fight",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 55
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Muslim regiment of the Indian Army had refused to fight",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.009424180698445639,
+              "mean_label_token_full_vocab_entropy_nats": 0.043188780791751924
+            }
+          ],
+          "source_logic_status": "ok",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": "NO_CONTRADICTION\n\nExplanation: The source and the claim both refer to a Muslim regiment of the Indian Army refusing to fight, but the source specifies the time as \"1965 war with Pakistan\" while the claim does not mention the specific time. This difference in scope does not create a contradiction.",
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0044",
+      "source": "Nigerian Government had placed a ban on alcohol in sachet and polythene.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Nigerian Government had placed a ban on alcohol in sachet and polythene.",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 72
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Nigerian Government had placed a ban on alcohol in sachet and polythene.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.04863570991437882,
+              "mean_label_token_full_vocab_entropy_nats": 0.16210388485342264
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0045",
+      "source": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed to be higher than that of other applicants",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 177
+            },
+            {
+              "claim": "to be higher than that of other applicants",
+              "quote_index": 1,
+              "start_idx": 178,
+              "end_idx": 220
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02056076005101204,
+              "mean_label_token_full_vocab_entropy_nats": 0.09694872796535492
+            },
+            {
+              "quote_index": 1,
+              "claim": "to be higher than that of other applicants",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"higher\" and \"to be higher\"",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.03228738424581934,
+              "mean_label_token_full_vocab_entropy_nats": 0.09593594699526875
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "to be higher than that of other applicants",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": "contradictory dates; \"higher\" and \"to be higher\""
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 177
+            },
+            {
+              "claim": "to be higher than that of other applicants",
+              "quote_index": 1,
+              "start_idx": 178,
+              "end_idx": 220
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.02056076005101204,
+              "mean_label_token_full_vocab_entropy_nats": 0.09694872796535492
+            },
+            {
+              "quote_index": 1,
+              "claim": "to be higher than that of other applicants",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"higher\" and \"to be higher\"",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.03228738424581934,
+              "mean_label_token_full_vocab_entropy_nats": 0.09593594699526875
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0046",
+      "source": "US Democratic Vice Presidential nominee Kamala Harris tweeted that she ‘filed a complaint’ to remove a specific Instagram account.",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Kamala Harris filed a complaint to remove a specific Instagram account",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0047",
+      "source": "The CDC has removed the “Covid-19 Pandemic” and replaced it with “Covid-19 Outbreak” on their website.",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "The CDC has removed the Covid-19 Pandemic",
+              "reason": "no_literal_match",
+              "matches": []
+            },
+            {
+              "index": 1,
+              "quote": "replaced it with Covid-19 Outbreak",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0048",
+      "source": "PGA star Bubba Watson wrote a post that says, \"I see signs all over saying black lives matter. I’m just trying to figure out which black lives matter.”",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "I see signs all over saying black lives matter",
+              "quote_index": 0,
+              "start_idx": 47,
+              "end_idx": 93
+            },
+            {
+              "claim": "I’m just trying to figure out which black lives matter",
+              "quote_index": 1,
+              "start_idx": 95,
+              "end_idx": 149
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "I see signs all over saying black lives matter",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.040389891826166036,
+              "mean_label_token_full_vocab_entropy_nats": 0.10780825055587684
+            },
+            {
+              "quote_index": 1,
+              "claim": "I’m just trying to figure out which black lives matter",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.11299205245450139,
+              "mean_label_token_full_vocab_entropy_nats": 0.27932168170809746
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0049",
+      "source": "Math Mistake Caused U.S. Leaders To Panic And Order COVID Lockdowns",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": null,
+              "reason": "expected_nonempty_string_array"
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0050",
+      "source": "Maharashtra Navnirman Sena (MNS) chief Raj Thackeray has come forward in support of Bollywood actress Kangana Ranaut and would welcome her back to Mumbai, India.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Maharashtra Navnirman Sena (MNS) chief Raj Thackeray has come forward in support of Bollywood actress Kangana Ranaut",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 116
+            },
+            {
+              "claim": "would welcome her back to Mumbai",
+              "quote_index": 1,
+              "start_idx": 121,
+              "end_idx": 153
+            },
+            {
+              "claim": "India",
+              "quote_index": 2,
+              "start_idx": 155,
+              "end_idx": 160
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Maharashtra Navnirman Sena (MNS) chief Raj Thackeray has come forward in support of Bollywood actress Kangana Ranaut",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.1991337598010432,
+              "mean_label_token_full_vocab_entropy_nats": 0.32144292281009257
+            },
+            {
+              "quote_index": 1,
+              "claim": "would welcome her back to Mumbai",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.21639953522632518,
+              "mean_label_token_full_vocab_entropy_nats": 0.2504589979847272
+            },
+            {
+              "quote_index": 2,
+              "claim": "India",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.00027746683346663303,
+              "mean_label_token_full_vocab_entropy_nats": 0.0024549848535571073
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0051",
+      "source": "Viral message claims that all Haldiram’s food products were banned in USA",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Viral message claims that all Haldiram’s food products were banned in USA",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 73
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Viral message claims that all Haldiram’s food products were banned in USA",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.04306478064972907,
+              "mean_label_token_full_vocab_entropy_nats": 0.14857689198106527
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0052",
+      "source": "Voters in North Carolina can send their Mail-in vote and then go to the polling place to vote again to check that their mail-in vote has been counted.",
+      "round_count": 2,
+      "stop_reason": "repeated_extraction",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Voters in North Carolina can send their Mail-in vote",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 52
+            },
+            {
+              "claim": "then go to the polling place to vote again",
+              "quote_index": 1,
+              "start_idx": 57,
+              "end_idx": 99
+            },
+            {
+              "claim": "to check that their mail-in vote has been counted.",
+              "quote_index": 2,
+              "start_idx": 100,
+              "end_idx": 150
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Voters in North Carolina can send their Mail-in vote",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.012977912207134068,
+              "mean_label_token_full_vocab_entropy_nats": 0.06367002986371517
+            },
+            {
+              "quote_index": 1,
+              "claim": "then go to the polling place to vote again",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"then go to the polling place to vote again\" contradicts \"can send their Mail-in vote\"",
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.34225017204880714,
+              "mean_label_token_full_vocab_entropy_nats": 0.40105945616960526
+            },
+            {
+              "quote_index": 2,
+              "claim": "to check that their mail-in vote has been counted.",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"can send their Mail-in vote\" and \"to check that their mail-in vote has been counted\" refer to different actions",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.004423935410699187,
+              "mean_label_token_full_vocab_entropy_nats": 0.024603290568848024
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": {
+            "origin": "verifier_model_output",
+            "warning": "Untrusted model output; not independent evidence or established truth.",
+            "entries": [
+              {
+                "quote_index": 0,
+                "claim": "Voters in North Carolina can send their Mail-in vote",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": null
+              },
+              {
+                "quote_index": 1,
+                "claim": "then go to the polling place to vote again",
+                "verdict": "SUPPORTED",
+                "verifier_feedback": "contradictory dates; \"then go to the polling place to vote again\" contradicts \"can send their Mail-in vote\""
+              },
+              {
+                "quote_index": 2,
+                "claim": "to check that their mail-in vote has been counted.",
+                "verdict": "NOT_ENOUGH_INFO",
+                "verifier_feedback": "contradictory dates; \"can send their Mail-in vote\" and \"to check that their mail-in vote has been counted\" refer to different actions"
+              }
+            ]
+          },
+          "feedback_passed_to_next_round": true,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": null
+        },
+        {
+          "round": 2,
+          "accepted_claims": [
+            {
+              "claim": "Voters in North Carolina can send their Mail-in vote",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 52
+            },
+            {
+              "claim": "then go to the polling place to vote again",
+              "quote_index": 1,
+              "start_idx": 57,
+              "end_idx": 99
+            },
+            {
+              "claim": "to check that their mail-in vote has been counted.",
+              "quote_index": 2,
+              "start_idx": 100,
+              "end_idx": 150
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Voters in North Carolina can send their Mail-in vote",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.012977912207134068,
+              "mean_label_token_full_vocab_entropy_nats": 0.06367002986371517
+            },
+            {
+              "quote_index": 1,
+              "claim": "then go to the polling place to vote again",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"then go to the polling place to vote again\" contradicts \"can send their Mail-in vote\"",
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.34225017204880714,
+              "mean_label_token_full_vocab_entropy_nats": 0.40105945616960526
+            },
+            {
+              "quote_index": 2,
+              "claim": "to check that their mail-in vote has been counted.",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": "contradictory dates; \"can send their Mail-in vote\" and \"to check that their mail-in vote has been counted\" refer to different actions",
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.004423935410699187,
+              "mean_label_token_full_vocab_entropy_nats": 0.024603290568848024
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "repeated_extraction"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0053",
+      "source": "US President Trump issued an executive order to reopen states in lockdown during COVID-19 pandemic; governors who refuse will be sued",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "US President Trump issued an executive order",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 44
+            },
+            {
+              "claim": "reopen states in lockdown during COVID-19 pandemic",
+              "quote_index": 1,
+              "start_idx": 48,
+              "end_idx": 98
+            },
+            {
+              "claim": "governors who refuse will be sued",
+              "quote_index": 2,
+              "start_idx": 100,
+              "end_idx": 133
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "US President Trump issued an executive order",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.011818028244306333,
+              "mean_label_token_full_vocab_entropy_nats": 0.05664961156435311
+            },
+            {
+              "quote_index": 1,
+              "claim": "reopen states in lockdown during COVID-19 pandemic",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.030038615688681602,
+              "mean_label_token_full_vocab_entropy_nats": 0.1327998787164688
+            },
+            {
+              "quote_index": 2,
+              "claim": "governors who refuse will be sued",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03134735859930515,
+              "mean_label_token_full_vocab_entropy_nats": 0.13543682917952538
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0054",
+      "source": "Economic damage caused by the pandemic shows United States GDP (gross domestic product) falling by 33 percent compared to India's 23.9 percent drop.",
+      "round_count": 1,
+      "stop_reason": "no_valid_claims",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Economic damage caused by the pandemic shows United States GDP falling by 33 percent",
+              "reason": "no_literal_match",
+              "matches": []
+            },
+            {
+              "index": 1,
+              "quote": "United States GDP falling by 33 percent compared to India's 23. 9 percent drop",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_valid_claims"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0055",
+      "source": "Hooligans from the Muslim community were behind the desecration of Goddess Kali Idol in a Bengal Temple in West Bengal's Murshidabad district by burning it.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Hooligans from the Muslim community were behind the desecration",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 63
+            },
+            {
+              "claim": "of Goddess Kali Idol in a Bengal Temple",
+              "quote_index": 1,
+              "start_idx": 64,
+              "end_idx": 103
+            },
+            {
+              "claim": "in West Bengal's Murshidabad district",
+              "quote_index": 2,
+              "start_idx": 104,
+              "end_idx": 141
+            },
+            {
+              "claim": "by burning it.",
+              "quote_index": 3,
+              "start_idx": 142,
+              "end_idx": 156
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Hooligans from the Muslim community were behind the desecration",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.030799392610788345,
+              "mean_label_token_full_vocab_entropy_nats": 0.13629267737269402
+            },
+            {
+              "quote_index": 1,
+              "claim": "of Goddess Kali Idol in a Bengal Temple",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.0003900576749344964,
+              "mean_label_token_full_vocab_entropy_nats": 0.0034249327668476326
+            },
+            {
+              "quote_index": 2,
+              "claim": "in West Bengal's Murshidabad district",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.08517336822862376,
+              "mean_label_token_full_vocab_entropy_nats": 0.1529037179846
+            },
+            {
+              "quote_index": 3,
+              "claim": "by burning it.",
+              "status": "ok",
+              "verdict": "NOT_ENOUGH_INFO",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 4,
+              "mean_label_token_logprob": -0.1105163588713367,
+              "mean_label_token_full_vocab_entropy_nats": 0.16730019741953583
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0056",
+      "source": "The World Health Organization (WHO) says there is no proof that face masks protect against Covid-19.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The World Health Organization (WHO) says",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 40
+            },
+            {
+              "claim": "there is no proof that face masks protect against Covid-19.",
+              "quote_index": 1,
+              "start_idx": 41,
+              "end_idx": 100
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The World Health Organization (WHO) says",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.014858149530482478,
+              "mean_label_token_full_vocab_entropy_nats": 0.06746205547824502
+            },
+            {
+              "quote_index": 1,
+              "claim": "there is no proof that face masks protect against Covid-19.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.013404131401330233,
+              "mean_label_token_full_vocab_entropy_nats": 0.06417942512780428
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0057",
+      "source": "Republican Maine Sen. Susan Collins said of President Donald Trump, “Yes, I said that I wouldn’t endorse him but that doesn’t mean I don’t fully support him.”",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "Republican Maine Sen. Susan Collins said of President Donald Trump",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 66
+            },
+            {
+              "claim": "I said that I wouldn’t endorse him",
+              "quote_index": 1,
+              "start_idx": 74,
+              "end_idx": 108
+            },
+            {
+              "claim": "that doesn’t mean I don’t fully support him.",
+              "quote_index": 2,
+              "start_idx": 113,
+              "end_idx": 157
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "Republican Maine Sen. Susan Collins said of President Donald Trump",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.017715342342853546,
+              "mean_label_token_full_vocab_entropy_nats": 0.08046757895499468
+            },
+            {
+              "quote_index": 1,
+              "claim": "I said that I wouldn’t endorse him",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.041095263324677944,
+              "mean_label_token_full_vocab_entropy_nats": 0.16685475409030914
+            },
+            {
+              "quote_index": 2,
+              "claim": "that doesn’t mean I don’t fully support him.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.022420791909098625,
+              "mean_label_token_full_vocab_entropy_nats": 0.10648416355252266
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0058",
+      "source": "US Cable news channel Fox News is unavailable in Canada due to media legislation.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "US Cable news channel Fox News is unavailable in Canada",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 55
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "US Cable news channel Fox News is unavailable in Canada",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.04610468726605177,
+              "mean_label_token_full_vocab_entropy_nats": 0.18021202832460403
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0059",
+      "source": "Suresh Raina, the Chennai Super Kings (CSK) cricketer, has withdrawn from the upcoming 2020 edition of the IPL after testing positive for COVID-19.",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "after testing positive for COVID-19.",
+              "quote_index": 1,
+              "start_idx": 111,
+              "end_idx": 147
+            }
+          ],
+          "rejections": [
+            {
+              "index": 0,
+              "quote": "Suresh Raina, the Chennai Super Kings (CSK) cricketer, has withdrawn from the upcoming 2020 edition of the IPL",
+              "reason": "no_literal_match",
+              "matches": []
+            }
+          ],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 1,
+              "claim": "after testing positive for COVID-19.",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 3,
+              "mean_label_token_logprob": -0.07560329251767446,
+              "mean_label_token_full_vocab_entropy_nats": 0.20561255359401306
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    },
+    {
+      "id": "MF-P1-0060",
+      "source": "The first night of the US Republican National Convention had 128.4 million viewers",
+      "round_count": 1,
+      "stop_reason": "no_actionable_feedback",
+      "rounds": [
+        {
+          "round": 1,
+          "accepted_claims": [
+            {
+              "claim": "The first night of the US Republican National Convention had 128.4 million viewers",
+              "quote_index": 0,
+              "start_idx": 0,
+              "end_idx": 82
+            }
+          ],
+          "rejections": [],
+          "extract_generation_state": "ended_with_eos",
+          "extract_error": null,
+          "verifications": [
+            {
+              "quote_index": 0,
+              "claim": "The first night of the US Republican National Convention had 128.4 million viewers",
+              "status": "ok",
+              "verdict": "SUPPORTED",
+              "verdict_generation_state": "ended_with_eos",
+              "feedback_generation_state": "ended_with_eos",
+              "feedback": null,
+              "label_token_count": 2,
+              "mean_label_token_logprob": -0.03963776192540536,
+              "mean_label_token_full_vocab_entropy_nats": 0.13610613183118403
+            }
+          ],
+          "source_logic_status": "no_feedback",
+          "source_logic_generation_state": "ended_with_eos",
+          "source_logic_feedback": null,
+          "feedback_for_next_round": null,
+          "feedback_passed_to_next_round": false,
+          "missing_generations": [],
+          "generations_without_eos": [],
+          "stop_reason": "no_actionable_feedback"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Round totals count extracted quote occurrences, including repeated claims across rounds; they are not unique facts.",
+    "Verdicts, challenges and logic comments are closed-book model output, not independent evidence or gold labels.",
+    "Label-token means use actual generated verdict tokens and raw-logit-derived values; entropy is over the full vocabulary in nats. These are not calibrated probabilities of truth.",
+    "No fact coverage, qualifier retention, atomicity, veracity accuracy or false-negative rate is inferred.",
+    "No EOS indicates possible truncation; saved token scores and mapping are not independently recomputed from model logits."
+  ]
+}

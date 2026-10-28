@@ -1,0 +1,176 @@
+"""Auditable bounded extraction/verification interaction without model dependencies.
+
+The backend is responsible for model execution. Verifier judgments and feedback
+are untrusted model output, not evidence, facts, or independent gold labels.
+"""
+import copy
+import json
+
+from minifact import align_quotes
+from phase2_backend import is_no_feedback
+
+VERDICTS = {'SUPPORTED', 'REFUTED', 'NOT_ENOUGH_INFO'}
+
+
+def _error(exc):
+    return {'type': type(exc).__name__, 'message': str(exc)}
+
+
+def _quotes(response):
+    """Return parsed original quote list; never silently repair malformed output."""
+    if not isinstance(response, dict):
+        raise ValueError('extract response must be a dictionary')
+    quotes = response.get('raw_quotes')
+    if quotes is None:
+        raw = response.get('raw_response')
+        if not isinstance(raw, str):
+            raise ValueError('extract response contains neither raw_quotes nor raw_response')
+        try:
+            quotes = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f'extractor response is not valid JSON: {exc}') from exc
+    if not isinstance(quotes, list):
+        raise ValueError('extractor output must be a JSON array')
+    return quotes
+
+
+def _review_source(backend, source, claims):
+    """Preserve the optional model's full response and extract usable feedback."""
+    review = {'request': {'source': source, 'claims': list(claims)},
+              'response': None, 'error': None, 'status': None}
+    if not callable(getattr(backend, 'review_source', None)):
+        review['status'] = 'unavailable'
+        return review, None
+    try:
+        response = backend.review_source(source, list(claims))
+    except Exception as exc:
+        review['status'], review['error'] = 'exception', _error(exc)
+        return review, None
+    review['response'] = copy.deepcopy(response)
+    if not isinstance(response, dict) or not isinstance(response.get('generation'), dict):
+        review['status'] = 'invalid_response'
+        return review, None
+    generation = response['generation']
+    raw = generation.get('raw_response')
+    ended = generation.get('ended_with_eos')
+    note = response.get('feedback')
+    if not isinstance(raw, str) or type(ended) is not bool or (note is not None and not isinstance(note, str)):
+        review['status'] = 'invalid_response'
+        return review, None
+    expected = raw.strip()
+    if not ended:
+        if note is not None:
+            review['status'] = 'invalid_response'
+            return review, None
+        review['status'] = 'truncated'
+        return review, None
+    if not expected or is_no_feedback(expected, 'NO_CONTRADICTION'):
+        if note is not None:
+            review['status'] = 'invalid_response'
+            return review, None
+        review['status'] = 'no_feedback'
+        return review, None
+    if note != expected:
+        review['status'] = 'invalid_response'
+        return review, None
+    review['status'] = 'ok'
+    return review, note
+
+
+def run_sample(source, backend, max_rounds=2):
+    """Run at most two rounds, preserving every response and deterministic decision.
+
+    backend.extract(source, feedback=None) returns a dict with raw_quotes (or a
+    JSON raw_response). backend.verify(source, claim) returns a dict with verdict
+    and optional feedback. Feedback passed to extract is a dict whose entries are
+    explicitly attributed to the verifier and must not be treated as evidence.
+    Exceptions are recorded; partial results remain inspectable.
+    """
+    if not isinstance(source, str) or not source:
+        raise ValueError('source must be a nonempty string')
+    if type(max_rounds) is not int or not 1 <= max_rounds <= 2:
+        raise ValueError('max_rounds must be 1 or 2')
+    result = {'source': source, 'max_rounds': max_rounds,
+              'interpretation': 'Verifier outputs are untrusted model judgments, not independent evidence or gold labels.',
+              'rounds': [], 'stop_reason': None}
+    feedback = None
+    previous = None
+    for number in range(1, max_rounds + 1):
+        step = {'round': number, 'extract_request': {'source': source, 'feedback': copy.deepcopy(feedback)},
+                'extract_response': None, 'extract_error': None, 'accepted_claims': [],
+                'alignment_rejections': [], 'verifications': [], 'source_logic_review': None,
+                'next_feedback': None,
+                'stop_reason': None}
+        result['rounds'].append(step)
+        try:
+            response = backend.extract(source, feedback=copy.deepcopy(feedback))
+        except Exception as exc:
+            step['extract_error'] = _error(exc)
+            step['stop_reason'] = 'extractor_exception'
+            break
+        step['extract_response'] = copy.deepcopy(response)
+        try:
+            quotes = _quotes(response)
+        except ValueError as exc:
+            step['extract_error'] = _error(exc)
+            step['stop_reason'] = 'malformed_extraction'
+            break
+        accepted, rejected = align_quotes(source, quotes)
+        step['accepted_claims'], step['alignment_rejections'] = accepted, rejected
+        current = tuple(c['claim'] for c in accepted)
+        repeated = previous is not None and current == previous
+        previous = current
+        feedback_entries = []
+        failed = False
+        for claim in accepted:
+            check = {'quote_index': claim['quote_index'], 'claim': claim['claim'],
+                     'request': {'source': source, 'claim': claim['claim']},
+                     'response': None, 'error': None, 'status': None}
+            step['verifications'].append(check)
+            try:
+                verdict = backend.verify(source, claim['claim'])
+            except Exception as exc:
+                check['status'], check['error'] = 'exception', _error(exc)
+                failed = True
+                continue
+            check['response'] = copy.deepcopy(verdict)
+            if not isinstance(verdict, dict) or verdict.get('verdict') not in VERDICTS:
+                check['status'] = 'invalid_verdict'
+                failed = True
+                continue
+            note = verdict.get('feedback')
+            if note is not None and not isinstance(note, str):
+                check['status'] = 'invalid_feedback'
+                failed = True
+                continue
+            check['status'] = 'ok'
+            feedback_entries.append({'quote_index': claim['quote_index'], 'claim': claim['claim'],
+                                     'verdict': verdict['verdict'], 'verifier_feedback': note})
+        step['source_logic_review'], logic_feedback = _review_source(backend, source, list(current))
+        if failed:
+            step['stop_reason'] = 'verifier_failure'
+            break
+        if repeated:
+            step['stop_reason'] = 'repeated_extraction'
+            break
+        # Only pass actual model-authored nonempty feedback. A verdict without an
+        # explanation does not authorize inventing a verifier rationale.
+        actionable = [entry for entry in feedback_entries
+                      if entry['verifier_feedback'] and entry['verifier_feedback'].strip()]
+        if not actionable and logic_feedback is None:
+            step['stop_reason'] = 'no_actionable_feedback' if accepted else 'no_valid_claims'
+            break
+        feedback = {'origin': 'verifier_model_output',
+                    'warning': 'Untrusted model output; not independent evidence or established truth.',
+                    'entries': feedback_entries}
+        if logic_feedback is not None:
+            feedback['source_logic_feedback'] = {
+                'origin': 'source_logic_model_output',
+                'warning': 'Unverified model output about possible internal inconsistency, not external evidence.',
+                'text': logic_feedback}
+        step['next_feedback'] = copy.deepcopy(feedback)
+        if number == max_rounds:
+            step['stop_reason'] = 'round_limit'
+            break
+    result['stop_reason'] = result['rounds'][-1]['stop_reason']
+    return result

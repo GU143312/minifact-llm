@@ -1,0 +1,677 @@
+{
+  "review_scope": "v2 开发集全部 10 条；仅用于调试，非独立测试或正式准确率。",
+  "reviewer": "agent 对原文、开发集预期和模型输出逐条语义初审，非人工金标准或双人仲裁。",
+  "run_path": "reports/phase2_development/phase2_dev_v2_20261029.json",
+  "run_sha256": "4b7c948c3183033dafeffd0c8ef8d2f04927ffc9692849bda8a1e17cf47fb4fb",
+  "input_sha256": "a95e7c2a271ce08a0e489df3e3725a9138c9b162d2791adffde7e7df1a488c76",
+  "interpretation": "事实覆盖按原始候选单独审阅；限定只检查所属候选；位置只用原文精确切片与拒绝记录，三项不合成为通过率。SUPPORTED 是闭卷模型输出，不能视为外部证据或真实标签。",
+  "logic_boundary": "只引用 verifier 原始反馈，不将无反馈当作无矛盾判定。D07 泛化反馈未明确命题对，且两轮提取相同；不能据此宣称可靠的矛盾检出或修复。",
+  "records": [
+    {
+      "id": "D01",
+      "source": "On Monday, Elm opened a clinic, and the clinic has five rooms.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "两个候选分别表达开诊所、诊所有五间房；两个陈述可分别核查。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "On Monday, Elm opened a clinic",
+          "candidate_index": 0,
+          "candidate_quote": "On Monday, Elm opened a clinic",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "On Monday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "the clinic has five rooms",
+          "candidate_index": 1,
+          "candidate_quote": "the clinic has five rooms",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "five",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 30,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "start_idx": 36,
+            "end_idx": 61,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": null
+    },
+    {
+      "id": "D02",
+      "source": "Mira opened a café and closed a shop.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "两个动作的语义均被原始候选提到；第二条补写 Mira，因不在原文连续出现而被拒绝。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "Mira opened a café",
+          "candidate_index": 0,
+          "candidate_quote": "Mira opened a café",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": []
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "closed a shop",
+          "candidate_index": 1,
+          "candidate_quote": "Mira closed a shop",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": false,
+          "qualifiers": []
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 18,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [
+          {
+            "index": 1,
+            "quote": "Mira closed a shop",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": "该句涉及省略或指代，参考事实需人工确认语境。"
+    },
+    {
+      "id": "D03",
+      "source": "The bridge reopened. The bridge reopened.",
+      "final_round": 1,
+      "stop_reason": "no_valid_claims",
+      "semantic_review": "两次相同陈述表达一个预期事实；模型只输出一次，因存在两个匹配位置被拒绝，不应猜测。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "The bridge reopened",
+          "candidate_index": 0,
+          "candidate_quote": "The bridge reopened",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": false,
+          "qualifiers": []
+        }
+      ],
+      "position_review": {
+        "accepted": [],
+        "rejected": [
+          {
+            "index": 0,
+            "quote": "The bridge reopened",
+            "reason": "ambiguous_repeated_quote",
+            "matches": [
+              {
+                "start_idx": 0,
+                "end_idx": 19
+              },
+              {
+                "start_idx": 21,
+                "end_idx": 40
+              }
+            ]
+          }
+        ]
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [],
+      "review_uncertainty": null
+    },
+    {
+      "id": "D04",
+      "source": "Lina bought a bicycle. She painted it red.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "两个动作均被提到；第二条保留 She 和 it，依赖前句解析指代，不能脱离上下文声称独立完整。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "Lina bought a bicycle",
+          "candidate_index": 0,
+          "candidate_quote": "Lina bought a bicycle",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": []
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "She painted it red",
+          "candidate_index": 1,
+          "candidate_quote": "She painted it red",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": []
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 21,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "start_idx": 23,
+            "end_idx": 41,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": "该句涉及省略或指代，参考事实需人工确认语境。"
+    },
+    {
+      "id": "D05",
+      "source": "The council did not approve the plan on Tuesday.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "否定性主张完整提及；不能把 did not 拆成肯定主张。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "The council did not approve the plan on Tuesday",
+          "candidate_index": 0,
+          "candidate_quote": "The council did not approve the plan on Tuesday",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "did not",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "on Tuesday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 47,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": null
+    },
+    {
+      "id": "D06",
+      "source": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "营业时间作为一条带时间限定的主张提及；末尾句点是原文的一部分。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "The library is open from 9 a.m. to 5 p.m. on Fridays",
+          "candidate_index": 0,
+          "candidate_quote": "The library is open from 9 a.m. to 5 p.m. on Fridays.",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "from 9 a.m. to 5 p.m.",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "on Fridays",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 53,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": null
+    },
+    {
+      "id": "D07",
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Monday, the room had exactly 7 chairs.",
+      "final_round": 2,
+      "stop_reason": "repeated_extraction",
+      "semantic_review": "两条数量断言均被完整提及；是否指同一房间同一时刻遵循数据集明确假设。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "At noon on Monday, the room had exactly 5 chairs",
+          "candidate_index": 0,
+          "candidate_quote": "At noon on Monday, the room had exactly 5 chairs",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "exactly 5",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "At noon on Monday, the room had exactly 7 chairs",
+          "candidate_index": 1,
+          "candidate_quote": "At noon on Monday, the room had exactly 7 chairs",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "exactly 7",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 48,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "start_idx": 50,
+            "end_idx": 98,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "reference_relation": "contradictory",
+          "evidence_in_verifier_output": [
+            {
+              "round": 1,
+              "quote_index": 1,
+              "verdict": "SUPPORTED",
+              "feedback": "Contradictory dates, quantities or propositions in the source"
+            },
+            {
+              "round": 2,
+              "quote_index": 1,
+              "verdict": "SUPPORTED",
+              "feedback": "Contradictory dates, quantities or propositions in the source"
+            }
+          ],
+          "assessment": "有宽泛矛盾提示，但未指出冲突命题对、数值和同一时间；相应 verdict 仍为 SUPPORTED，不能算已明确判定该事实对。"
+        }
+      ],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": "逻辑关系依赖标注中说明的同一对象和时间假设。"
+    },
+    {
+      "id": "D08",
+      "source": "At noon on Monday, the room had exactly 5 chairs. At noon on Tuesday, the room had exactly 7 chairs.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "两个日期的数量断言均被提及；不同日期可有不同数量。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "At noon on Monday, the room had exactly 5 chairs",
+          "candidate_index": 0,
+          "candidate_quote": "At noon on Monday, the room had exactly 5 chairs",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "At noon on Monday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "exactly 5",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "At noon on Tuesday, the room had exactly 7 chairs",
+          "candidate_index": 1,
+          "candidate_quote": "At noon on Tuesday, the room had exactly 7 chairs",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "At noon on Tuesday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "exactly 7",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 48,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "start_idx": 50,
+            "end_idx": 99,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "reference_relation": "no_contradiction_identified",
+          "evidence_in_verifier_output": [],
+          "assessment": "未见针对该事实对的显式矛盾判断；没有矛盾反馈不能证明系统完成无矛盾判定。"
+        }
+      ],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": null
+    },
+    {
+      "id": "D09",
+      "source": "The store sold at least 5 apples on Friday. The store sold at most 8 apples on Friday.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "下限和上限分别提及；同一星期五两约束可以同时满足。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "The store sold at least 5 apples on Friday",
+          "candidate_index": 0,
+          "candidate_quote": "The store sold at least 5 apples on Friday",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "at least 5",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "on Friday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "The store sold at most 8 apples on Friday",
+          "candidate_index": 1,
+          "candidate_quote": "The store sold at most 8 apples on Friday",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "at most 8",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "on Friday",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 42,
+            "exact_slice": true
+          },
+          {
+            "quote_index": 1,
+            "start_idx": 44,
+            "end_idx": 85,
+            "exact_slice": true
+          }
+        ],
+        "rejected": []
+      },
+      "logical_pair_review": [
+        {
+          "fact_ids": [
+            "F1",
+            "F2"
+          ],
+          "reference_relation": "no_contradiction_identified",
+          "evidence_in_verifier_output": [],
+          "assessment": "未见针对该事实对的显式矛盾判断；没有矛盾反馈不能证明系统完成无矛盾判定。"
+        }
+      ],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "quote_index": 1,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": "逻辑关系依赖标注中说明的同一对象和时间假设。"
+    },
+    {
+      "id": "D10",
+      "source": "The ferry carried 12 passengers on May 3 and 15 passengers on May 4.",
+      "final_round": 1,
+      "stop_reason": "no_actionable_feedback",
+      "semantic_review": "两次运送语义都出现在原始候选；第二条补写 The ferry carried，因非连续原文而被拒绝。",
+      "expected_facts": [
+        {
+          "expected_fact_id": "F1",
+          "reference_quote": "The ferry carried 12 passengers on May 3",
+          "candidate_index": 0,
+          "candidate_quote": "The ferry carried 12 passengers on May 3",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": true,
+          "qualifiers": [
+            {
+              "text": "12",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            },
+            {
+              "text": "on May 3",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": true
+            }
+          ]
+        },
+        {
+          "expected_fact_id": "F2",
+          "reference_quote": "15 passengers on May 4",
+          "candidate_index": 1,
+          "candidate_quote": "The ferry carried 15 passengers on May 4",
+          "raw_semantic_core": "present_in_context",
+          "accepted_as_literal_quote": false,
+          "qualifiers": [
+            {
+              "text": "15",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": false
+            },
+            {
+              "text": "on May 4",
+              "in_corresponding_raw_candidate": true,
+              "in_accepted_candidate": false
+            }
+          ]
+        }
+      ],
+      "position_review": {
+        "accepted": [
+          {
+            "quote_index": 0,
+            "start_idx": 0,
+            "end_idx": 40,
+            "exact_slice": true
+          }
+        ],
+        "rejected": [
+          {
+            "index": 1,
+            "quote": "The ferry carried 15 passengers on May 4",
+            "reason": "no_literal_match",
+            "matches": []
+          }
+        ]
+      },
+      "logical_pair_review": [],
+      "verifier_labels": [
+        {
+          "quote_index": 0,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "review_uncertainty": "该句涉及省略或指代，参考事实需人工确认语境。"
+    }
+  ]
+}
