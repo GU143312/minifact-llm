@@ -1,0 +1,148 @@
+{
+  "created_at_utc": "2026-11-12T08:16:38.356543+00:00",
+  "run_sha256": "c8e1331a734957269807844f962b8d5cb16264418ddcab079f89c1798ac28fc5",
+  "inputs_sha256": "c026dea203f713da2b66c39fd16ecc253ee78027dfeae40cf7c6163f27bd4998",
+  "protocol_files_sha256": {
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+    "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+    "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+    "scripts/run_phase2.py": "4f935d2f32c03dbc2e8a5bbed22de091b6403e30413ecff1d129c52a8ebf469d",
+    "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+    "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+    "scripts/run_phase3.py": "8292c8ec8340d2545f20a43cff3102d6529e8bfc5acb61f98ef733388ce99ffa",
+    "scripts/evaluate_phase3.py": "9084397afed1b2dd8a37185c64a8c13ea82f74e01e5508141ccc8af54b3da5da",
+    "scripts/audit_phase2_run.py": "61162c32cf591fa5bd5f6dad99bd6d73b63902cde46e2f0843e254c4fc9fafee",
+    "data/phase3/dataset.json": "8387c0ae6fb95fd0549c52ff890024fe8c7b50da4222c734ac242cd9fbd950d4",
+    "data/phase3/curation.json": "7d151a3e80ffb86ea940bcd3cfe3343345bdeb35be06b2d67003d7a87538232d"
+  },
+  "replay_script_sha256": "f8487ee7aef90ff9d60bd5e57fb84059d90e2bbd6335718414f68c0e77c26b76",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "snapshot_directory_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "tokenizer_commit_metadata": null,
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "tokenizer_runtime": {
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2"
+  },
+  "local_tokenizer_files_sha256": {
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "structural_audit": {
+    "passed": true,
+    "samples": 110,
+    "phase2": {
+      "status": "complete",
+      "counts": {
+        "accepted_claims": 165,
+        "feedback_transitions": 13,
+        "generations": 576,
+        "generations_without_eos": 0,
+        "label_alignment_unavailable": 0,
+        "rejected_quotes": 49,
+        "rounds": 123,
+        "samples_expected": 110,
+        "samples_processed": 110,
+        "samples_unprocessed": 0,
+        "verdict_trace_tokens": 575,
+        "verdict_traces": 165
+      },
+      "stop_reasons": {
+        "no_actionable_feedback": 77,
+        "no_valid_claims": 22,
+        "repeated_extraction": 10,
+        "round_limit": 1
+      },
+      "verifier_statuses": {
+        "ok": 165
+      },
+      "source_logic_statuses": {
+        "no_feedback": 121,
+        "ok": 2
+      },
+      "limitations": [
+        "Saved token IDs, flags and numerical summaries are checked for internal consistency; model logits and tokenizer special-token sets are not independently reconstructed.",
+        "No semantic correctness, accuracy or fact-coverage metric is calculated."
+      ]
+    },
+    "sample_judges": {
+      "generations": 220,
+      "generations_without_eos": 0,
+      "verdict_traces": 220,
+      "verdict_trace_tokens": 908,
+      "label_alignment_unavailable": 0
+    },
+    "boundary": "Structural/record checks; raw logits and tokenizer prompt IDs require model re-execution. Self-reported timestamps are not independent trusted timestamps."
+  },
+  "replay": {
+    "passed": true,
+    "samples": 110,
+    "generation_calls_checked": 796,
+    "calls_by_role": {
+      "direct/sample_judge": 110,
+      "dual/extract": 123,
+      "dual/feedback_generation": 165,
+      "dual/sample_judge": 110,
+      "dual/source_logic": 123,
+      "dual/verdict_generation": 165
+    },
+    "prompt_tokens_checked": 183456,
+    "generated_tokens_checked_including_eos": 6732,
+    "trace_token_pieces_checked": 1483,
+    "by_role": {
+      "direct/sample_judge": {
+        "calls": 110,
+        "prompt_tokens": 20041,
+        "generated_tokens_including_eos": 474,
+        "trace_tokens": 474,
+        "generations_without_eos": 0
+      },
+      "dual/extract": {
+        "calls": 123,
+        "prompt_tokens": 24298,
+        "generated_tokens_including_eos": 3200,
+        "trace_tokens": 0,
+        "generations_without_eos": 0
+      },
+      "dual/feedback_generation": {
+        "calls": 165,
+        "prompt_tokens": 28309,
+        "generated_tokens_including_eos": 1190,
+        "trace_tokens": 0,
+        "generations_without_eos": 0
+      },
+      "dual/sample_judge": {
+        "calls": 110,
+        "prompt_tokens": 55958,
+        "generated_tokens_including_eos": 434,
+        "trace_tokens": 434,
+        "generations_without_eos": 0
+      },
+      "dual/source_logic": {
+        "calls": 123,
+        "prompt_tokens": 29511,
+        "generated_tokens_including_eos": 859,
+        "trace_tokens": 0,
+        "generations_without_eos": 0
+      },
+      "dual/verdict_generation": {
+        "calls": 165,
+        "prompt_tokens": 25339,
+        "generated_tokens_including_eos": 575,
+        "trace_tokens": 575,
+        "generations_without_eos": 0
+      }
+    },
+    "scope": "All stored direct/dual sample judges and every stored extractor, claim-verdict, feedback and source-logic generation. Chat-template IDs, output decodings, EOS and traced special-token metadata are replayed; no logits or semantic judgments are recomputed."
+  },
+  "limitations": [
+    "CPU tokenization/decoding only; no model weights are loaded and no saved log-probability or entropy is independently recomputed.",
+    "The original run did not hash local tokenizer files; current snapshot hashes document this replay, not historical cache identity.",
+    "All stored generation calls are checked. Failed calls without generation records cannot be replayed; structural audit reports those separately.",
+    "Record consistency does not establish factual accuracy or independent evidence."
+  ],
+  "freeze_sha256": "8032bbf486150f5c5a69aac9fcf3416a851101051c2ea72f0360c72bcc0548d3"
+}
