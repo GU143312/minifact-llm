@@ -4,6 +4,10 @@
 
 项目比较 Windows 本地 GPU 与 Google Colab。两端使用同一份 `minifact.py`、固定提示词、模型 revision、FP16 精度及 greedy 生成参数。共享文档、个人项目安排和原始附件不属于公开仓库内容。
 
+## Week 6：整条主张的比较实验
+
+在原 60 条错误样本上增加 50 条 Supported 对照，形成 [110 条标准化数据](data/phase3/README.md)。比较已完成：直接提示与双角色流程加整条样本裁决的 benchmark 标签准确率分别为 **41.82% / 56.36%**，但双角色的严格漏报、误报和计算成本均更高；详细取舍见 [完整结果](reports/PHASE3_WEEK6_RESULTS.md)。两组共用固定模型、最终判决提示词与生成设置，逐条保留原始输出、分数、弃答及计算成本。实验协议见 [Week 6 方法](docs/PHASE3_WEEK6.md)，运行历史见 [冻结与重启记录](reports/PHASE3_RUN_HISTORY.md)。上游标签只用于离线评分，不提供给模型。
+
 ## 正式实验：Days 1–2 已完成
 
 已策划并冻结 **60 条真实新闻相关错误主张**，改编自 AVeriTeC 公开基准的 Refuted 样本，附上游裁决、证据 QA、出处及固定来源版本。交付为[标准化 JSON](data/phase1/dataset.json)、[无答案输入](data/phase1/inputs.json)和 [JSON Schema](data/phase1/dataset.schema.json)；筛选、许可与复现方法见[正式数据说明](data/phase1/README.md)。样本是短主张，不是完整文章；全部为错误正例。
@@ -89,6 +93,6 @@ log-probability 是模型生成的引用 JSON 的自然对数概率均值，包�
 
 ## 方向
 
-正式阶段已完成 60 条测试样本策划和抽取／token 对齐代码；接下来需完成独立语义参考标注和证据验证，并将事实覆盖、限定条件和位置分开评估。可继续研究验证器与抽取器协作及错误类型归因；当前结果以已执行实验为准。
+正式阶段已完成数据策划、抽取／token 对齐和 Phase 2 有界反馈流水线；Week 6 进行整条主张的比较实验。独立语义参考标注和外部证据验证仍待完成，事实覆盖、限定条件和位置继续分开评估。错误类型归因和可视化属于下一周；当前结果以已执行实验为准。
 
 模型使用条件见 [Qwen 官方模型卡](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)。仓库不分发模型权重。
