@@ -13,3 +13,6 @@ jobs:
       - run: python scripts/build_testset.py --check
       - run: python scripts/validate_phase1.py
       - run: python scripts/build_phase3_testset.py --check
+      - run: python scripts/build_improvement_data.py --check
+      - run: python scripts/next_eval.py check --bundle data/next_eval_v1
+      - run: python scripts/next_eval.py check --bundle data/next_eval_v2

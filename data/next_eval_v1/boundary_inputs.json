@@ -1,0 +1,482 @@
+[
+  {
+    "id": "MNB-repeat-1",
+    "text": "Luma-1 Hall has 20 seats. Luma-1 Hall has 20 seats.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-1 Hall has 20 seats.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-repeat-2",
+    "text": "Luma-2 Hall has 21 seats. Luma-2 Hall has 21 seats.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-2 Hall has 26 seats.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-repeat-3",
+    "text": "Luma-3 Hall has 22 seats. Luma-3 Hall has 22 seats.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-3 Hall has 22 seats.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-repeat-4",
+    "text": "Luma-4 Hall has 23 seats. Luma-4 Hall has 23 seats.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-4 Hall has 28 seats.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-repeat-5",
+    "text": "Luma-5 Hall has 24 seats. Luma-5 Hall has 24 seats.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-shared_subject-1",
+    "text": "Luma-1 Council opened a library and closed a depot.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-1 Council opened a library and closed a depot.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-shared_subject-2",
+    "text": "Luma-2 Council opened a library and closed a depot.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-2 Council opened a library and kept open a depot.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-shared_subject-3",
+    "text": "Luma-3 Council opened a library and closed a depot.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-3 Council opened a library and closed a depot.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-shared_subject-4",
+    "text": "Luma-4 Council opened a library and closed a depot.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-4 Council opened a library and kept open a depot.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-shared_subject-5",
+    "text": "Luma-5 Council opened a library and closed a depot.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-pronoun-1",
+    "text": "Mira joined Luma-1 Clinic. She managed its pharmacy.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Mira joined Luma-1 Clinic. Mira managed its pharmacy.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-pronoun-2",
+    "text": "Mira joined Luma-2 Clinic. She managed its pharmacy.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Mira joined Luma-2 Clinic. Only Leon managed its pharmacy.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-pronoun-3",
+    "text": "Mira joined Luma-3 Clinic. She managed its pharmacy.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Mira joined Luma-3 Clinic. Mira managed its pharmacy.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-pronoun-4",
+    "text": "Mira joined Luma-4 Clinic. She managed its pharmacy.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Mira joined Luma-4 Clinic. Only Leon managed its pharmacy.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-pronoun-5",
+    "text": "Mira joined Luma-5 Clinic. She managed its pharmacy.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-negation-1",
+    "text": "Luma-1 School did not close in June 2018.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-1 School remained open throughout June 2018.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-negation-2",
+    "text": "Luma-2 School did not close in June 2019.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-2 School closed during June 2019.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-negation-3",
+    "text": "Luma-3 School did not close in June 2020.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-3 School remained open throughout June 2020.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-negation-4",
+    "text": "Luma-4 School did not close in June 2021.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-4 School closed during June 2021.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-negation-5",
+    "text": "Luma-5 School did not close in June 2022.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-time-1",
+    "text": "Luma-1 Bridge was closed from 3 May 2018 through 7 May 2018, inclusive.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-1 Bridge closed on 3 May 2018 and reopened on 8 May 2018.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-time-2",
+    "text": "Luma-2 Bridge was closed from 3 May 2019 through 7 May 2019, inclusive.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-2 Bridge closed on 3 May 2019 and reopened on 6 May 2019.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-time-3",
+    "text": "Luma-3 Bridge was closed from 3 May 2020 through 7 May 2020, inclusive.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-3 Bridge closed on 3 May 2020 and reopened on 8 May 2020.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-time-4",
+    "text": "Luma-4 Bridge was closed from 3 May 2021 through 7 May 2021, inclusive.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-4 Bridge closed on 3 May 2021 and reopened on 6 May 2021.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-time-5",
+    "text": "Luma-5 Bridge was closed from 3 May 2022 through 7 May 2022, inclusive.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-quantity_causality-1",
+    "text": "A pump failure caused exactly 20 homes in Luma-1 to lose water.",
+    "context": {
+      "claim_date": "2018-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "A pump failure caused exactly 20 homes in Luma-1 to lose water.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-quantity_causality-2",
+    "text": "A pump failure caused exactly 21 homes in Luma-2 to lose water.",
+    "context": {
+      "claim_date": "2019-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "A planned shutdown, not a pump failure, caused exactly 21 homes in Luma-2 to lose water.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-quantity_causality-3",
+    "text": "A pump failure caused exactly 22 homes in Luma-3 to lose water.",
+    "context": {
+      "claim_date": "2020-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "A pump failure caused exactly 22 homes in Luma-3 to lose water.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-quantity_causality-4",
+    "text": "A pump failure caused exactly 23 homes in Luma-4 to lose water.",
+    "context": {
+      "claim_date": "2021-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "A planned shutdown, not a pump failure, caused exactly 23 homes in Luma-4 to lose water.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  },
+  {
+    "id": "MNB-quantity_causality-5",
+    "text": "A pump failure caused exactly 24 homes in Luma-5 to lose water.",
+    "context": {
+      "claim_date": "2022-12-31",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What does the fictional record establish?",
+        "answer": "Luma-5 is listed in this fictional municipality register. No further event details are recorded.",
+        "url": "https://example.org/minifact-fictional-record"
+      }
+    ]
+  }
+]

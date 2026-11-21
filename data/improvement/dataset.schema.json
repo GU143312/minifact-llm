@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MiniFact accuracy improvement development and holdout samples",
+  "type": "object",
+  "required": ["schema_version", "dataset_id", "project_split", "source", "license", "review", "statistics", "samples"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "dataset_id": {"type": "string"},
+    "project_split": {"enum": ["dev", "holdout"]},
+    "source": {"type": "object"},
+    "license": {"type": "object"},
+    "review": {"type": "object"},
+    "statistics": {"type": "object"},
+    "samples": {
+      "type": "array", "minItems": 32, "maxItems": 80,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "text", "context", "gold", "provenance", "upstream_record"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^MFI-[DH]-[0-9]{4}$"},
+          "text": {"type": "string", "minLength": 1},
+          "context": {"type": "object", "required": ["claim_date", "speaker", "location_ISO_code", "reporting_source"]},
+          "gold": {
+            "type": "object", "additionalProperties": false,
+            "required": ["verdict", "original_label", "verdict_scope", "questions", "justification"],
+            "properties": {
+              "verdict": {"enum": ["SUPPORTED", "REFUTED"]},
+              "original_label": {"enum": ["Supported", "Refuted"]},
+              "verdict_scope": {"const": "whole_sample"},
+              "questions": {"type": "array"},
+              "justification": {"type": "string"}
+            }
+          },
+          "provenance": {
+            "type": "object", "additionalProperties": false,
+            "required": ["original_split", "source_record_index", "source_record_sha256"],
+            "properties": {
+              "original_split": {"const": "train"},
+              "source_record_index": {"type": "integer", "minimum": 0},
+              "source_record_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+            }
+          },
+          "upstream_record": {"type": "object"}
+        }
+      }
+    }
+  }
+}

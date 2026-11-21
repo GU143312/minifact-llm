@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "stage": "dev",
+  "completed": true,
+  "samples_checked": 32,
+  "samples_expected": 32,
+  "candidate_forward_calls_checked": 64,
+  "tokenizer_replayed_samples": 32,
+  "development_diagnostics": {
+    "zero_threshold": {
+      "threshold": 0.0,
+      "samples": 32,
+      "correct": 15,
+      "accuracy": 0.46875,
+      "false_positive_rate": 0.875,
+      "false_negative_rate": 0.1875,
+      "balanced_error": 0.53125,
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 2,
+          "REFUTED": 14
+        },
+        "REFUTED": {
+          "SUPPORTED": 3,
+          "REFUTED": 13
+        }
+      }
+    },
+    "fitted_threshold": {
+      "threshold": -9.106303319749713,
+      "samples": 32,
+      "correct": 20,
+      "accuracy": 0.625,
+      "false_positive_rate": 0.125,
+      "false_negative_rate": 0.625,
+      "balanced_error": 0.375,
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 14,
+          "REFUTED": 2
+        },
+        "REFUTED": {
+          "SUPPORTED": 10,
+          "REFUTED": 6
+        }
+      }
+    },
+    "independent_fit": {
+      "threshold": -9.106303319749713,
+      "samples": 32,
+      "correct": 20,
+      "accuracy": 0.625,
+      "false_positive_rate": 0.125,
+      "false_negative_rate": 0.625,
+      "balanced_error": 0.375,
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 14,
+          "REFUTED": 2
+        },
+        "REFUTED": {
+          "SUPPORTED": 10,
+          "REFUTED": 6
+        }
+      },
+      "candidate_thresholds_evaluated": 65
+    },
+    "interpretation": "Both counts use the same development scores. Fitted performance is in-sample and optimistic, not holdout evidence."
+  },
+  "limitations": [
+    "Checks saved logits-derived scores arithmetically; does not independently recompute model logits.",
+    "Teacher-forced complete-candidate scores include EOS and are not actual generated-label confidence or truth probabilities.",
+    "Development fitting is in-sample; counter/old110 stages are retrospective, not unseen tests.",
+    "This independent audit was added after scoring inference was frozen; current audit code hashes are recorded separately."
+  ],
+  "run_sha256": "cc05c242bb26bb365f54c2de6358716ca6a39f8fd258def90d7b9848399a3005",
+  "freeze_sha256": "aad93c57514bbe8f7ee2a2f797702a789aa79c1179c152217531823d997e7e24",
+  "inputs_sha256": "4dda79612344e19d8788c66c896ddd37149f7a894ae8ba048204d0c9ab8ffb6c",
+  "audit_script_sha256": "48b9ad4859420e9c8af42ad86cbc65d994e300bee3911b9c7ea44283bd22b778",
+  "audit_dependencies_sha256": {
+    "scripts/audit_accuracy_calibration.py": "48b9ad4859420e9c8af42ad86cbc65d994e300bee3911b9c7ea44283bd22b778",
+    "accuracy_calibration.py": "b2df3e2c12319b5f75e584a5f78fd84d14338c410ff7e232eff72e23d271d8ac",
+    "scripts/run_accuracy_calibration.py": "c8c37e3a92383e5798e690ad29e414d95514b5bfffd405ac21e13120c59be50e",
+    "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "scripts/check_accuracy.py": "0f8aa8ac9b9c4b0f2ccaf9114bf72abba1effeaa4a8eeb102b8a6a2234436e05"
+  },
+  "calibration_sha256": "1b852c26587ec728dd1a0bcbf85500f7a2480f4166e163baedb82a6d443628b9"
+}

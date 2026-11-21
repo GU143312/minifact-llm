@@ -1,0 +1,369 @@
+{
+  "reviewer_ids": [],
+  "completed_at_utc": null,
+  "status": "pending",
+  "reviewer_a_sha256": null,
+  "reviewer_b_sha256": null,
+  "items": [
+    {
+      "id": "MFN-2795",
+      "text": "Black Friday originated with the practice of selling off slaves on the day after Thanksgiving.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0484",
+      "text": "Telangana govt has released guidelines to reopen schools in the state",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1690",
+      "text": "Minneapolis \"city government preemptively informed the Target Center that it would be responsible for $530,000 in security and other costs\" related to a Trump rally, \"more than 26 times the estimated security costs for a 2009 Target Center health care rally held by President Barack Obama.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2883",
+      "text": "Sir Roger Moore Died Aged 89 in 2017",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1236",
+      "text": "FBI Ignored Evidence That Hillary Clinton Put A Hit Out On Brett Kavanaugh.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2120",
+      "text": "Former Minnesota Senator Franken was accused credibly by eight women of groping and forceable kissing, all of which were corroborated in real time.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1809",
+      "text": "Proscribed indigenous leader of Biafra, Nnamdi Kanu ordered members of the Indigenous People of Biafra (IPOB) to arrest the Nigerian president and hand him over to the Japanese authorities.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0225",
+      "text": "Your face will become exposed to the virus if you wear your mask on your chin.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0741",
+      "text": "Billionaire currency speculator George Soros has hailed the Covid-19 pandemic as the crisis of his lifetime, all but salivating over the chance to remake society amid the revolutionary moment he claims preceded the virus.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1448",
+      "text": "Trump Mocks Global Warming, Lowballs Sea Level Rise",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2078",
+      "text": "On 13 June 2019 Kenya’s finance minister Henry Rotich claimed that Kenyas  growth is the highest to have been recorded for the past 8 years.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0467",
+      "text": "A phishing attack that seemed like an official communique on the COVID-19 pandemic was expected to be launched from June 21 2020 onwards in major metropolitan cities of India.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0708",
+      "text": "Rwanda gets its electricity from 70% renewable energy",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0720",
+      "text": "China is not the only source of serious viral outbreaks around the world",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0429",
+      "text": "South Africa is number one in the killing of women internationally.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0580",
+      "text": "The Federal Police did not use chemical irritants to clear the area around St. John's Church in Washington, D.C.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0214",
+      "text": "Hetero is selling 6 vials of Remdesivir at Rs 32,400 at Kukatpally",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2423",
+      "text": "“In 2017, there were more marijuana arrests in this country than all violent crime arrests combined.”",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1141",
+      "text": "The novel coronavirus has been found in crawfish in Mobile, Alabama.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1321",
+      "text": "The Chinese Communist Party \"will finally admit that the real source of the coronavirus is from ‘a lab in Wuhan’ linked to its covert biological weapon programs.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2804",
+      "text": "Irregular expenditure by the government of South Africa’s Western Cape province rose from R23 million in the 2016/17 financial year to R44 million in 2017/18 – an increase of R21 million.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0236",
+      "text": "Wisconsin Democrats say lawmakers in neighbouring states have implemented more safety precautions against the spread of COVID-19 than state GOP.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1074",
+      "text": "A charitable hospital in Pakistan charged patients for novel coronavirus tests",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1350",
+      "text": "The NHS operate on the wrong part of someone’s body four times a day.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0588",
+      "text": "The United Nations is creating a new country out of Nigeria to be called Ambazonia or the new State of Cameroon.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0818",
+      "text": "US President Donald Trump tried to defund the National Institute of Health.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1727",
+      "text": "During his telephone call with Ukrainian President Zelensky on 25th July 2019 Donald Trump said the United States had been good to Ukraine.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1858",
+      "text": "The common theme with mass shooters is that the assailants were on psychotropic drugs.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2048",
+      "text": "A group of 15-20 miscreants are on the loose in parts of Malad and Dahisar and asks residents not to open their doors at night if they hear a baby crying outside.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2485",
+      "text": "The Nigerian Supreme Court nullified the results of the 2019 Nigerian Presidential Election.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0633",
+      "text": "On Kenyas independence, they only had 1,800 kilometres of tarmacked roads",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2237",
+      "text": "A Facebook post claims that Joe Biden has run for President 3 times (1984, 1988, and 2008).",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2476",
+      "text": "Kenya has one of the worst maternal mortality rates in the world.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2814",
+      "text": "Egyptian authorities are carrying atrocious acts which results in injustice",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0978",
+      "text": "In Serbia, the stricter Covid19 curfew measures prevented dog walking for up to 14 hours at a time.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0424",
+      "text": "Seven people were shot in the neighbourhood of Newark in June 2018.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0976",
+      "text": "Jio is giving Indian users a free recharge of ₹498.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2437",
+      "text": "CAIR was founded after 9/11, because they recognized that some people did something and that all of us were starting to lose access to our civil liberties",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1381",
+      "text": "Iran’s hostilities substantially increased after the foolish Iran nuclear deal was signed in 2013 and they were given $150 billion, not to mention $1.8 billion in cash",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1832",
+      "text": "Professor HC Verma still drives an old scooter.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0211",
+      "text": "Republican bill says no medical malpractice suits until 2024.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1222",
+      "text": "Mayor Bloomberg blamed African Americans & Latinos for the housing crash of 2008.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1429",
+      "text": "Donald Trump is rated international public opinion polls below Xi Jinping.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0334",
+      "text": "South Africa has “expertise in the development and trial of a range of vaccines”",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2798",
+      "text": "the United States ranks third in murders throughout the world",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1519",
+      "text": "Tirupati Balaji Temple Will Donate Rs. 100 Crores For Ram Mandir.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2862",
+      "text": "colon cancer begins in the intestine then spreads to other parts of the body",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0178",
+      "text": "Michigan Senator Gary Peters is known for doing nothing, where he has skipped 84% of small business hearings and 89% of hearings on China.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0717",
+      "text": "Airline travelers to Florida must fill out a form at the airport with contact information and trip details and self-quarantine for 14 days",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2138",
+      "text": "Literal manure is coming out of taps in some US counties with CAFOs.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0965",
+      "text": "Coronavirus is part of a conspiracy designed to introduce a \"new world order.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1320",
+      "text": "Nobody had ever even heard of Ebola before 2014",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-2222",
+      "text": "Singapore's prime minister has one of the highest salaries of any world leader.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1956",
+      "text": "Biden's crime bill  included Violence Against Women Act, It also included strengthening the Brady Bill on background checks, eliminated assault weapons.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1258",
+      "text": "The salaries of MPs in the UK have grown faster than the starting salaries of nurses, teachers and police officers between 2010 and 2020.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0524",
+      "text": "Actor Matt Damon was planning on leaving the United States for Australia to get away from President Trump.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0789",
+      "text": "Retail milk prices have gone up, farmer price pay has dropped",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1390",
+      "text": "Amy Klobuchar has won Michele Bachmann's district every one of her 3 U.S Senate campaigns.",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-0243",
+      "text": "Target ended its “Heroes & Helpers” program that pairs children with police officers for holiday shopping trips",
+      "status": "pending",
+      "facts": []
+    },
+    {
+      "id": "MFN-1770",
+      "text": "VA hospitals were removing Bibles and banning Christmas carols under Obama administration",
+      "status": "pending",
+      "facts": []
+    }
+  ]
+}

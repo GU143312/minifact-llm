@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "stage": "holdout",
+  "completed": true,
+  "samples_checked": 80,
+  "samples_expected": 80,
+  "candidate_forward_calls_checked": 160,
+  "tokenizer_replayed_samples": 80,
+  "development_diagnostics": null,
+  "limitations": [
+    "Checks saved logits-derived scores arithmetically; does not independently recompute model logits.",
+    "Teacher-forced complete-candidate scores include EOS and are not actual generated-label confidence or truth probabilities.",
+    "Development fitting is in-sample; counter/old110 stages are retrospective, not unseen tests.",
+    "This independent audit was added after scoring inference was frozen; current audit code hashes are recorded separately."
+  ],
+  "run_sha256": "237db0dc32c4c4aa058477d01140d0acda24e5633e0d33bde22bee8da66c3488",
+  "freeze_sha256": "223161f6c4c9cc06fd4997d4ec0905d67f3abeb3776c29709eeef8198fc11aa8",
+  "inputs_sha256": "f7ab76f40886496fc4310f112fb217bd6b53ebdd26516ada3791b6c34e0388ab",
+  "audit_script_sha256": "48b9ad4859420e9c8af42ad86cbc65d994e300bee3911b9c7ea44283bd22b778",
+  "audit_dependencies_sha256": {
+    "scripts/audit_accuracy_calibration.py": "48b9ad4859420e9c8af42ad86cbc65d994e300bee3911b9c7ea44283bd22b778",
+    "accuracy_calibration.py": "b2df3e2c12319b5f75e584a5f78fd84d14338c410ff7e232eff72e23d271d8ac",
+    "scripts/run_accuracy_calibration.py": "c8c37e3a92383e5798e690ad29e414d95514b5bfffd405ac21e13120c59be50e",
+    "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "scripts/check_accuracy.py": "0f8aa8ac9b9c4b0f2ccaf9114bf72abba1effeaa4a8eeb102b8a6a2234436e05"
+  },
+  "calibration_sha256": "1b852c26587ec728dd1a0bcbf85500f7a2480f4166e163baedb82a6d443628b9"
+}

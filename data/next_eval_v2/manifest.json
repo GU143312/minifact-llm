@@ -1,0 +1,42 @@
+{
+  "source": {
+    "benchmark": "AVeriTeC",
+    "repository": "MichSchli/AVeriTeC",
+    "revision": "7c62d1ec8df3fb560d6efe2b85fa191135636f81",
+    "file": "data/train.json",
+    "original_split": "train",
+    "sha256": "ae5eda7c42ddf1695ef185a7ba1bc716928f5adf57103e4f78aae5f9afe00f9c",
+    "git_blob_sha": "0f190e115cf2ee23416e8a539c8d6ac043d7cc83"
+  },
+  "selection": {
+    "seed": 42,
+    "rank_namespace": "minifact-improvement-selection-v1",
+    "order_namespace": "minifact-improvement-order-v1",
+    "dev_per_label": 16,
+    "holdout_per_label": 40,
+    "min_words": 8,
+    "max_words": 65,
+    "max_evidence_items": 8,
+    "max_answer_characters": 900,
+    "max_evidence_characters": 5000,
+    "exclude_required_reannotation": true,
+    "deduplication": "Normalized claim and canonical fact-checking article, globally across old110, development and holdout.",
+    "evidence_exclusions": "Non-text/unanswerable answers; explicit verdict Q/A; answers sourced from the original fact-check article. URLs remain provenance only; model runners must omit URL strings."
+  },
+  "protocol_sha256": "541e658928be681b60a78d35b049ecda7866564af44752e81359e315b634fc83",
+  "history_sha256": {
+    "data/phase3/dataset.json": "8387c0ae6fb95fd0549c52ff890024fe8c7b50da4222c734ac242cd9fbd950d4",
+    "data/improvement/dev_dataset.json": "897e5c743275601382e9bc44812cf24171f6c2d10fd86e9d50f3c3034ee820d1",
+    "data/improvement/holdout_dataset.json": "4a8eb765c6522b6319e7ee82d086f5da7d7bc74b1aa724cb97f0a87b5052e4b9"
+  },
+  "artifacts_sha256": {
+    "dataset.json": "ea364f3cb6ccd00056b20581ee91b7ae4604299bcadf7cb67d968299ae5164a1",
+    "inputs.json": "0e0e4d082912ac6b9491196584b47a7d729c311790c31fc2256e16fac09d2c4d",
+    "protocol.json": "541e658928be681b60a78d35b049ecda7866564af44752e81359e315b634fc83",
+    "boundary.json": "023243968df82bdc3271811fc574e5f2f2cd83cf941db88a23da4bffa264f58f",
+    "boundary_inputs.json": "d83bb2d5e447684fb6dad6545f13c68f53fff6720d1a4efad819046f831af25f"
+  },
+  "review_files_are_editable": true,
+  "formal_run_ready": false,
+  "selection_rule": "Seed 42 SHA ranking, 100/class, existing text/article exclusions. Event review pending; replace excluded cases only in a new bundle before annotation."
+}

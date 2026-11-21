@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "completed": true,
+  "samples_checked": 80,
+  "samples_expected": 80,
+  "counts": {
+    "generation_calls": 400,
+    "generations_without_eos": 0,
+    "tokenizer_replayed_calls": 745,
+    "decision_traces": 320
+  },
+  "legacy_pipeline_audit": {
+    "status": "complete",
+    "counts": {
+      "accepted_claims": 90,
+      "feedback_transitions": 3,
+      "generations": 345,
+      "generations_without_eos": 0,
+      "label_alignment_unavailable": 0,
+      "rejected_quotes": 31,
+      "rounds": 83,
+      "samples_expected": 80,
+      "samples_processed": 80,
+      "samples_unprocessed": 0,
+      "verdict_trace_tokens": 301,
+      "verdict_traces": 90
+    },
+    "stop_reasons": {
+      "malformed_extraction": 1,
+      "no_actionable_feedback": 58,
+      "no_valid_claims": 18,
+      "repeated_extraction": 2,
+      "round_limit": 1
+    },
+    "verifier_statuses": {
+      "ok": 90
+    },
+    "source_logic_statuses": {
+      "no_feedback": 82
+    },
+    "limitations": [
+      "Saved token IDs, flags and numerical summaries are checked for internal consistency; model logits and tokenizer special-token sets are not independently reconstructed.",
+      "No semantic correctness, accuracy or fact-coverage metric is calculated."
+    ]
+  },
+  "limitations": [
+    "Raw logits are not independently recomputed; recorded numerical consistency and optional tokenizer replay only.",
+    "Literal matching and extraction parser replay do not prove semantic completeness or atomicity.",
+    "Supplied benchmark evidence is not independent web retrieval. Timestamps are self-reported."
+  ],
+  "run_sha256": "d3f5f4ee3813343b7b1e80b2981e557e5f9ed91848610c819f6ad54ac1411d6f",
+  "freeze_sha256": "5076fb954f05de79ce2529d55b1141964a872377a25845b16093df31308e7c1a",
+  "audit_script_sha256": "b69fadf7a225cd231c9bc4bfd0283baf20e9e4ed74a55cb139b66660e4bb04ba",
+  "audit_dependency_files_sha256": {
+    "scripts/audit_accuracy.py": "b69fadf7a225cd231c9bc4bfd0283baf20e9e4ed74a55cb139b66660e4bb04ba",
+    "scripts/audit_phase2_run.py": "61162c32cf591fa5bd5f6dad99bd6d73b63902cde46e2f0843e254c4fc9fafee",
+    "scripts/summarize_accuracy.py": "c4678d927fb9102e2fa172a4ebd94704c9d853d95257c149c63dd8a26175d9e3",
+    "scripts/evaluate_phase3.py": "9084397afed1b2dd8a37185c64a8c13ea82f74e01e5508141ccc8af54b3da5da",
+    "scripts/run_accuracy.py": "beba65056eb4db7dae06a939e4e0a0892f7ac65dbab949c7fc9132b5e0f589dc",
+    "scripts/run_phase3.py": "8292c8ec8340d2545f20a43cff3102d6529e8bfc5acb61f98ef733388ce99ffa",
+    "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+    "accuracy_claims.py": "fe6d0f13444e85da78e5a7db7859a27bf716f87a1d305721a2e84f36d03a817c",
+    "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+    "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+    "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+    "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574"
+  },
+  "audit_code_bound_in_freeze": true
+}

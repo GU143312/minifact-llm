@@ -1,0 +1,2 @@
+# Optional static scientific charts; install alongside the existing environment.
+matplotlib==3.10.7

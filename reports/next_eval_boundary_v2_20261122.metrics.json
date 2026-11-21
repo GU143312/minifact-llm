@@ -1,0 +1,222 @@
+{
+  "stage": "boundary",
+  "run_sha256": "aadb80a00da95bf4235fd8f9abc5d5069735c643653ee7f8de02a2cd8d456d14",
+  "freeze_sha256": "72b10ab65899ec1d62b8de701ed6260dbcfc314a9fed4e55edceb24922be08b5",
+  "audit": {
+    "passed": true,
+    "completed": true,
+    "samples": 30,
+    "counts": {
+      "generation_calls": 240,
+      "generations_without_eos": 0,
+      "decision_traces": 120,
+      "feedback_transitions": 0,
+      "arm_results": 90
+    },
+    "run_sha256": "aadb80a00da95bf4235fd8f9abc5d5069735c643653ee7f8de02a2cd8d456d14",
+    "freeze_sha256": "72b10ab65899ec1d62b8de701ed6260dbcfc314a9fed4e55edceb24922be08b5",
+    "tokenizer_replayed": false,
+    "limits": "Audits stored values and tokenizer reconstruction, not a fresh model-logit forward pass. Human reviewer identities are attestations."
+  },
+  "primary_comparison": "F minus D",
+  "gold_sha256": "023243968df82bdc3271811fc574e5f2f2cd83cf941db88a23da4bffa264f58f",
+  "boundary": {
+    "D": {
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "NOT_ENOUGH_INFO": 7,
+          "SUPPORTED": 4,
+          "REFUTED": 1
+        },
+        "REFUTED": {
+          "REFUTED": 10,
+          "NOT_ENOUGH_INFO": 2
+        },
+        "NOT_ENOUGH_INFO": {
+          "NOT_ENOUGH_INFO": 6
+        }
+      },
+      "families": {
+        "repeat": {
+          "correct": 3,
+          "total": 5
+        },
+        "shared_subject": {
+          "correct": 3,
+          "total": 5
+        },
+        "pronoun": {
+          "correct": 5,
+          "total": 5
+        },
+        "negation": {
+          "correct": 5,
+          "total": 5
+        },
+        "time": {
+          "correct": 1,
+          "total": 5
+        },
+        "quantity_causality": {
+          "correct": 3,
+          "total": 5
+        }
+      },
+      "correct": 20,
+      "total": 30,
+      "insufficient_evidence_correct": 6,
+      "insufficient_evidence_total": 6,
+      "cost_and_extraction": {
+        "generation_calls": 30,
+        "prompt_tokens": 7347,
+        "generated_tokens_including_eos": 60,
+        "truncated_calls": 0,
+        "total_elapsed_seconds": 52.23158569994848,
+        "mean_elapsed_seconds": 1.7410528566649495,
+        "p95_elapsed_seconds": 1.7322568999952637,
+        "peak_cuda_allocated_bytes": 5201738240,
+        "accepted_span_precision": null,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      }
+    },
+    "E": {
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "NOT_ENOUGH_INFO": 9,
+          "SUPPORTED": 2,
+          "REFUTED": 1
+        },
+        "REFUTED": {
+          "REFUTED": 10,
+          "NOT_ENOUGH_INFO": 2
+        },
+        "NOT_ENOUGH_INFO": {
+          "REFUTED": 1,
+          "NOT_ENOUGH_INFO": 5
+        }
+      },
+      "families": {
+        "repeat": {
+          "correct": 2,
+          "total": 5
+        },
+        "shared_subject": {
+          "correct": 3,
+          "total": 5
+        },
+        "pronoun": {
+          "correct": 4,
+          "total": 5
+        },
+        "negation": {
+          "correct": 4,
+          "total": 5
+        },
+        "time": {
+          "correct": 1,
+          "total": 5
+        },
+        "quantity_causality": {
+          "correct": 3,
+          "total": 5
+        }
+      },
+      "correct": 17,
+      "total": 30,
+      "insufficient_evidence_correct": 5,
+      "insufficient_evidence_total": 6,
+      "cost_and_extraction": {
+        "generation_calls": 105,
+        "prompt_tokens": 36704,
+        "generated_tokens_including_eos": 1338,
+        "truncated_calls": 0,
+        "extraction_samples": 30,
+        "samples_without_accepted_claim": 18,
+        "top_level_extraction_errors": 13,
+        "rejected_items": 5,
+        "ambiguous_items": 5,
+        "feedback_transitions": 0,
+        "accepted_quotes": 15,
+        "exact_quotes": 15,
+        "total_elapsed_seconds": 1106.6324751001375,
+        "mean_elapsed_seconds": 36.88774917000458,
+        "p95_elapsed_seconds": 54.15925550000975,
+        "peak_cuda_allocated_bytes": 5247747584,
+        "accepted_span_precision": 1.0,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      }
+    },
+    "F": {
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "NOT_ENOUGH_INFO": 9,
+          "SUPPORTED": 2,
+          "REFUTED": 1
+        },
+        "REFUTED": {
+          "REFUTED": 10,
+          "NOT_ENOUGH_INFO": 2
+        },
+        "NOT_ENOUGH_INFO": {
+          "REFUTED": 1,
+          "NOT_ENOUGH_INFO": 5
+        }
+      },
+      "families": {
+        "repeat": {
+          "correct": 2,
+          "total": 5
+        },
+        "shared_subject": {
+          "correct": 3,
+          "total": 5
+        },
+        "pronoun": {
+          "correct": 4,
+          "total": 5
+        },
+        "negation": {
+          "correct": 4,
+          "total": 5
+        },
+        "time": {
+          "correct": 1,
+          "total": 5
+        },
+        "quantity_causality": {
+          "correct": 3,
+          "total": 5
+        }
+      },
+      "correct": 17,
+      "total": 30,
+      "insufficient_evidence_correct": 5,
+      "insufficient_evidence_total": 6,
+      "cost_and_extraction": {
+        "generation_calls": 105,
+        "prompt_tokens": 36704,
+        "generated_tokens_including_eos": 1338,
+        "truncated_calls": 0,
+        "extraction_samples": 30,
+        "samples_without_accepted_claim": 18,
+        "top_level_extraction_errors": 13,
+        "rejected_items": 5,
+        "ambiguous_items": 5,
+        "feedback_transitions": 0,
+        "accepted_quotes": 15,
+        "exact_quotes": 15,
+        "total_elapsed_seconds": 1111.5960100000084,
+        "mean_elapsed_seconds": 37.05320033333361,
+        "p95_elapsed_seconds": 54.12656489998335,
+        "peak_cuda_allocated_bytes": 5247747584,
+        "accepted_span_precision": 1.0,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      }
+    }
+  },
+  "acceptance": {
+    "evaluation_complete": false,
+    "upgrade_default_method": false,
+    "reason": "Boundary fixtures are not news test results."
+  }
+}

@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "MFI-H-0003",
+    "text": "The United States has reached herd immunity for COVID-19",
+    "context": {
+      "claim_date": "2020-08-14",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What percent of the population would need to be  immune to Covid19 in order to establish herd immunity?",
+        "answer": "70%-90%",
+        "url": "https://perma.cc/R98N-P5TN?type=image"
+      },
+      {
+        "question": "What percent of the US population is immune to covid 19?",
+        "answer": "The number of confirmed infections in the US is about five million, which is less than two percent of the population.",
+        "url": "https://web.archive.org/web/20201214201605/https://coronavirus.jhu.edu/data"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0026",
+    "text": "Two-thirds of Americans disapprove of Donald Trump not wearing a face mask in public.",
+    "context": {
+      "claim_date": "2020-05-27",
+      "speaker": "Darren Jackson",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What was the health expert recommendations for face masks t the time of this claim?",
+        "answer": "Everyone should Wear a Mask to Protect Yourself and Others.",
+        "url": "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/masks.html"
+      },
+      {
+        "question": "Do American's support Trump's decision not to wear a mask?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20210610184735/https://www.huffpost.com/entry/face-masks-poll-partisan-culture-war_n_5ec584fcc5b642a7d150e103"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0020",
+    "text": "Police departments in Germany were defunded and eliminated by the Nazis under Hermann Goering.",
+    "context": {
+      "claim_date": "2020-06-19",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Who was Hermann Goering?",
+        "answer": "Hermann Göring, Göring also spelled Goering, (born January 12, 1893, Rosenheim, Germany—died October 15, 1946, Nürnberg), a leader of the Nazi Party and one of the primary architects of the Nazi police state in Germany.",
+        "url": "https://web.archive.org/web/20210129225026/https://www.britannica.com/biography/Hermann-Goring"
+      },
+      {
+        "question": "Was the police department in Germany defunded by the Nazis?",
+        "answer": "Beginning in 1933, the Nazis took control of and subsequently transformed the police forces of the Weimar Republic into instruments of state repression and, eventually, of genocide. They did so by Nazifying policing. \n\nThe Nazis expanded police power and used the police to target people they considered their political, racial, social, and criminal opponents.",
+        "url": "https://web.archive.org/web/20210125150921/https://encyclopedia.ushmm.org/content/en/article/german-police-in-the-nazi-state?parent=en%2F6434"
+      },
+      {
+        "question": "Did the Nazis eliminate Germany's police departments?",
+        "answer": "The new government removed anti-Nazi police leaders, reorganized Germany’s police forces, and reoriented police culture towards Nazism.",
+        "url": "https://web.archive.org/web/20210125150921/https://encyclopedia.ushmm.org/content/en/article/german-police-in-the-nazi-state?parent=en%2F6434"
+      },
+      {
+        "question": "Was the police department in Germany defunded and eliminated by the Nazis?",
+        "answer": "Beginning in 1933, the Nazis took control of and subsequently transformed the police forces of the Weimar Republic into instruments of state repression and, eventually, of genocide. They did so by Nazifying policing. The new government removed anti-Nazi police leaders, reorganized Germany’s police forces, and reoriented police culture towards Nazism.\n\nThe Nazis expanded police power and used the police to target people they considered their political, racial, social, and criminal opponents.",
+        "url": "https://web.archive.org/web/20210125150921/https://encyclopedia.ushmm.org/content/en/article/german-police-in-the-nazi-state?parent=en%2F6434"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0036",
+    "text": "Mexico does not have any cases of the novel coronavirus.",
+    "context": {
+      "claim_date": "2020-03-07",
+      "speaker": "Tina Cruz-Lopez",
+      "location_ISO_code": "MX"
+    },
+    "evidence": [
+      {
+        "question": "At the date of this claim, did Mexico have any confirmed coronovirus cases?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210305203235/https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200306-sitrep-46-covid-19.pdf?sfvrsn=96b04adf_4"
+      },
+      {
+        "question": "How many covid cases did Mexico have in the week after this claim was made?",
+        "answer": "Mexico had at least 41 confirmed cases of coronovirus on MArch 15th.",
+        "url": "https://web.archive.org/web/20210308065248/https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200315-sitrep-55-covid-19.pdf?sfvrsn=33daa5cb_6"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0027",
+    "text": "President Donald Trump took more than a month to allocate Congress’ emergency funding to Native American tribes.",
+    "context": {
+      "claim_date": "2020-05-21",
+      "speaker": "Joe Biden",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "When was the Coronavirus Aid, Relief, and Economic Security Act, or CARES Act signed into law by President Trump",
+        "answer": "27th March 2020",
+        "url": "https://web.archive.org/web/20201225143157/https://www.congress.gov/bill/116th-congress/house-bill/748/actions?KWICView=false"
+      },
+      {
+        "question": "How long was the disbursement of the CARES ACT fund supposed to take",
+        "answer": "When were the funds disbursed",
+        "url": "https://web.archive.org/web/20201113212840/https://www.indianz.com/News/2020/05/07/aguacalientevmnuchin050620.pdf"
+      },
+      {
+        "question": "When were the funds disbursed",
+        "answer": "May 5, 2020",
+        "url": "https://web.archive.org/web/20201211082939/https://home.treasury.gov/news/press-releases/sm998"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0033",
+    "text": "Democratic nominee for president Joe Biden has received campaign donations from Antifa.",
+    "context": {
+      "claim_date": "2020-03-29",
+      "speaker": "Fallis Gunnington",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "who were some of the biggest donors to Joe Biden during his 2020 democratic presidential campaign ?",
+        "answer": "Deborah Simon donated more than $3 million to Democrats for Presidential Candidate: Joe Biden.",
+        "url": "https://www.businessinsider.com/ultra-wealthy-americans-funding-2020-elections-millionaires-politics-2019-11?r=US&IR=T#6-deborah-simon-heiress-to-the-fortune-of-shopping-mall-developer-simon-property-group-has-donated-more-than-3-million-to-democrats-5"
+      },
+      {
+        "question": "who were some of the biggest donors to Joe Biden during his 2020 democratic presidential campaign ?",
+        "answer": "George Soros donated $6.3 million in support for  the eventual Democratic nominee.",
+        "url": "https://www.businessinsider.com/ultra-wealthy-americans-funding-2020-elections-millionaires-politics-2019-11?r=US&IR=T#4-while-george-soros-stopped-short-of-endorsing-a-presidential-candidate-he-did-give-thousands-to-the-several-state-chapters-of-the-democratic-party-7"
+      },
+      {
+        "question": "What is 'ANTIFA'",
+        "answer": "Antifa look to disrupt alt-right events and far-right speakers. They use a variety of tactics to do this – including shouting and chanting and forming human chains to block off right-wing demonstrators",
+        "url": "https://www.bbc.co.uk/programmes/articles/X56rQkDgd0qqB7R68t6t7C/seven-things-you-need-to-know-about-antifa"
+      },
+      {
+        "question": "are there any reported links between George Soros and ANTIFA?",
+        "answer": "Numerous conspiracy theories allege, without evidence, that Soros backs the Antifa movement.",
+        "url": "https://timesofsandiego.com/politics/2018/05/29/summer-stephan-blasts-soros-campaign-spending-on-da-race/"
+      },
+      {
+        "question": "Was Presidential candidate Joe Biden accused of receiving donations from anyone associated with ANTIFA",
+        "answer": "Yes",
+        "url": "https://archive.ph/7pIPE#selection-201.0-201.6"
+      },
+      {
+        "question": "What is ALLOD?",
+        "answer": "“Allod” is an acronym for “America’s Last Line of Defense,",
+        "url": "https://www.washingtonpost.com/education/2019/11/26/news-literacy-lessons-students-show-troubling-lack-information-skills-plus-sacha-baron-cohen-speech/"
+      },
+      {
+        "question": "IS ALLOD a trustworthy news source?",
+        "answer": "satire site run by the self-proclaimed “liberal troll” Christopher Blair",
+        "url": "https://newslit.org/educators/sift/the-sift-troubling-new-study-greatest-propaganda-machine-detecting-deepfakes/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0006",
+    "text": "Devender Sharma fabricated false covid-19 positive reports for patients  in order to get them admitted for kidney harvesting.",
+    "context": {
+      "claim_date": "2020-08-02",
+      "speaker": "United Social Club of Africa-international",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "During what period was Devender Sharma's alleged involvement in Kidney harvesting related crimes?",
+        "answer": "Delhi Police found out that he had illegally transplanted more than 125 kidneys between 1994 and 2004 with the help of middlemen and other doctors.",
+        "url": "https://web.archive.org/web/20201013071821/https://www.indiatoday.in/crime/story/murders-kidney-racket-life-and-crimes-of-doctor-death-devender-sharma-1706882-2020-08-02"
+      },
+      {
+        "question": "When were the first recorded cases of Coronavirus?",
+        "answer": "On 31 December 2019, the World Health Organization (WHO) was informed of a cluster of cases of pneumonia of unknown cause detected in Wuhan City, Hubei Province, China. A novel coronavirus (SARS-CoV-2) was subsequently identified from patient samples.",
+        "url": "https://www.gov.uk/government/publications/wuhan-novel-coronavirus-background-information"
+      },
+      {
+        "question": "Was Devender Sharma involved in any Kidney organ related crimes with reports of a coronavirus connection?",
+        "answer": "On 30th July 2020 The Wire India reported that Devender Sharma had confessed to being the mastermind behind at least 50 murder cases, when he was arrested after jumping parole in January 2020. From 1994 to 2004, he claimed to have carried out more than illegal 125 kidney transplants. There are no reports of any coronavirus connection to his crimes, or instances of Kidney organ related crimes between 2004 and 2020, which includes the period of the coronavirus pandemic.",
+        "url": "https://web.archive.org/web/20201203233205/https://thewire.in/urban/ayurvedic-doctor-mastermind-behind-over-50-murder-cases-arrested-in-delhi"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0056",
+    "text": "Florida’s red flag gun law has been used about five times a day.",
+    "context": {
+      "claim_date": "2019-08-26",
+      "speaker": "Dave Aronberg ",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "what is Florida's red flag gun law about?",
+        "answer": "Florida’s red flag law can be used to prevent people who have been deemed a danger to themselves or others from having a firearm.",
+        "url": "https://web.archive.org/web/20210419102456/https://www.tampabay.com/florida-politics/buzz/2019/08/08/red-flag-laws-all-the-rage-after-shootings-so-what-are-they/"
+      },
+      {
+        "question": "How many red flag orders are approved in a day?",
+        "answer": "Since it was adopted there, courts have approved some 2,500 risk protection orders. That's nearly five every day",
+        "url": "https://web.archive.org/web/20210411074140/https://www.npr.org/2019/08/21/752815318/florida-could-serve-as-example-for-lawmakers-considering-red-flag-laws"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0049",
+    "text": "Adam Schiff used tax dollars to settle sexual harassment lawsuit witha 19 year old man.",
+    "context": {
+      "claim_date": "2019-11-28",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Has there been a sexual harassment lawsuit against Adam Schiff involving a 19-year old man?",
+        "answer": "No",
+        "url": "https://ethics.house.gov/search/node/adam%20schiff"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0019",
+    "text": "Melania Trump tweeted in support of India, following the Indo-China clash at Galwan Valley.",
+    "context": {
+      "claim_date": "2020-06-19",
+      "speaker": "Melania Trump parody",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "Does Melania Trump have an official twitter account.",
+        "answer": "Yes",
+        "url": "https://www.gq.com/story/melania-trump-twitter-fave"
+      },
+      {
+        "question": "Did this tweet come from her official account?",
+        "answer": "No",
+        "url": "https://twitter.com/melaniatrump"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0066",
+    "text": "The Mortality Rate for Road Accidents Drops in Russia.",
+    "context": {
+      "claim_date": "2019-04-29",
+      "speaker": "Vladimir Kolokoltsev Russian Minister of Internal Affairs",
+      "location_ISO_code": "RU"
+    },
+    "evidence": [
+      {
+        "question": "Has the mortality rates for road accidents dropped in Russia?",
+        "answer": "In recent years, mortality [in road accidents] has decreased in Russia From 19 people per 100,000 to 13 people per 100,000.",
+        "url": "https://web.archive.org/web/20210116075916/http://kremlin.ru/events/president/news/60413"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0061",
+    "text": "The European Union asked for a 100 billion euro settlement for the UK to leave the EU.",
+    "context": {
+      "claim_date": "2019-07-25",
+      "speaker": "Government department",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "What is the latest estimate for the UK's divorce bill upon leaving the EU?",
+        "answer": "Based on our March forecast, but assuming a 31 October 2019 exit date, the financial\nsettlement would be €36.3 billion, or £32.8 billion, with the remaining £5.0 billion\ndifference being paid as part of the UK’s normal membership contributions to the EU.",
+        "url": "https://web.archive.org/web/20210604212333/https://obr.uk/docs/dlm_uploads/Fiscalrisksreport2019.pdf#page=172"
+      },
+      {
+        "question": "What is a Brexit divorce bill?",
+        "answer": "In the financial settlement (the settlement), the UK and EU have set out how they will\nsettle their outstanding financial obligations to each other. The obligations arise out of the\nUK’s participation in the EU Budget and broader aspects of its EU membership.\nThe settlement says which financial commitments will be covered, the methodology for\ncalculating the UK’s share and the payment schedule. The settlement is part of the\nWithdrawal Agreement, which is the legally binding treaty setting out the negotiated\nterms of the UK’s departure from the EU.\nThere is no definitive cost to the settlement. The final cost to the UK will depend on future\nevents such as future exchange rates and EU budgets. The Office for Budget Responsibility\nestimate that the net cost to the UK may be £34 billion.",
+        "url": "https://researchbriefings.files.parliament.uk/documents/CBP-8039/CBP-8039.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0059",
+    "text": "Mental illness is main driver of mass shootings says Donald trump when talking about the shootings in Texas and Ohio that killed 31 people.",
+    "context": {
+      "claim_date": "2019-08-05",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Donald Trump say \"Mental illness is main driver of mass shootings \"?",
+        "answer": "Yes in a meeting in the White House Diplomatic room on August 5th 2019.",
+        "url": "https://web.archive.org/web/20201201225045/https://www.cbsnews.com/news/trump-urges-nation-to-condemn-white-supremacy-and-find-bipartisan-solutions/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0009",
+    "text": "Medical experts from the World Health Organization (WHO), US Centers for Disease Control and Prevention (CDC) and The New England Journal of Medicine have warned against wearing face masks because they can cause “severe health issues”.",
+    "context": {
+      "claim_date": "2020-07-20",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What is the WHO's advice concerning the wearing of face masks?",
+        "answer": "Masks are a key measure to suppress transmission and save lives.\n\nMasks should be used as part of a comprehensive ‘Do it all!’ approach including physical distancing, avoiding crowded, closed and close-contact settings, good ventilation, cleaning hands, covering sneezes and coughs, and more.\n\nDepending on the type, masks can be used for either protection of healthy persons or to prevent onward transmission.",
+        "url": "https://web.archive.org/web/20210410200036/https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19-masks"
+      },
+      {
+        "question": "What is the CDC's advice concerning the wearing of face masks?",
+        "answer": "CDC recommends that people wear masks in public settings, at events and gatherings, and anywhere they will be around other people.",
+        "url": "https://web.archive.org/web/20210409221018/https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html"
+      },
+      {
+        "question": "What is the New England Journal of Medicine's (NEJM) advice concerning the wearing of face masks?",
+        "answer": "We therefore strongly support the calls of public health agencies for all people to wear masks when circumstances compel them to be within 6 ft of others for sustained periods.",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMc2020836"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0018",
+    "text": "Alex Jones claimed on the InfoWars website that Democratic-led areas told people to ‘never’ remove their masks during the pandemic.",
+    "context": {
+      "claim_date": "2020-06-21",
+      "speaker": "Alex Jones",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Who is Alex Jones?",
+        "answer": "Broadcaster and conspiracy theorist.",
+        "url": "https://edition.cnn.com/2019/03/30/us/alex-jones-psychosis-sandy-hook"
+      },
+      {
+        "question": "Has Alex Jones been banned from Facebook because of extremist views?",
+        "answer": "Facebook Bans Alex Jones, Other Extremists—but Not as Planned.",
+        "url": "https://www.wired.com/story/facebook-bans-alex-jones-extremists/"
+      },
+      {
+        "question": "Did Democratic-led areas tell people to ‘never’ remove their masks?",
+        "answer": "No they said that 'Californians are now REQUIRED to wear face coverings in public spaces'.",
+        "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/COVID-19/Guidance-for-Face-Coverings_06-18-2020.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0034",
+    "text": "Several First Nations communities in Canada have closed their borders to avoid COVID-19",
+    "context": {
+      "claim_date": "2020-03-19",
+      "speaker": null,
+      "location_ISO_code": "CA"
+    },
+    "evidence": [
+      {
+        "question": "What are First Nations communities?",
+        "answer": "Indigenous peoples and nations of Canada and the USA.",
+        "url": "https://www.afn.ca/about-afn/national-congress-of-american-indians/"
+      },
+      {
+        "question": "Have some First Nations communities in Canada closed their borders because of Covid-19?",
+        "answer": "Yes",
+        "url": "https://www.fnha.ca/about/news-and-events/news/first-nations-community-closures-and-checkpoints-in-covid-19-pandemic"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0039",
+    "text": "President Trump said he removed Lt. Col. Alexander Vindman from the White House's National security Council because his superior publicly stated that 'Vindman had problems with judgment, adhering to the chain of command, and leaking information'",
+    "context": {
+      "claim_date": "2020-02-08",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Did President Trump say he removed Lt. Col. Alexander Vindman from the White House's National security Council because his superior publicly stated that 'Vindman had problems with judgment, adhering to the chain of command, and leaking information'?",
+        "answer": "On Saturday morning, Trump tweeted: \"Fake News @CNN & MSDNC keep talking about “Lt. Col.” Vindman as though I should think only how wonderful he was. Actually, I don’t know him, never spoke to him, or met him (I don’t believe!) but, he was very insubordinate, reported contents of my “perfect” calls incorrectly, &... ....was given a horrendous report by his superior, the man he reported to, who publicly stated that Vindman had problems with judgement, adhering to the chain of command and leaking information. In other words, “OUT”.\"",
+        "url": "https://www.politico.com/news/2020/02/07/donald-trump-pressure-impeachment-witness-alexander-vindman-111997"
+      },
+      {
+        "question": "Why was Lt. Col. Alexander Vindman removed from the White House's National Security Council?",
+        "answer": "Vindman's removal from a detail at the NSC came hours after the president told reporters he was \"not happy\" with the aide. \nAn Army spokeswoman said in a statement that the two men had been transferred: \"We can confirm that both Lt. Cols. Vindman have been reassigned to the Department of the Army, out of respect for their privacy, we will not be providing any further information at this time.\nEarlier in the day the president made clear that he expected action on Vindman, but said the NSC would decide what to do with him.\n\n“Well, I'm not happy with him,” the president told reporters in comments on the White House lawn. “You think I'm supposed to be happy with him? I'm not. They'll make that decision.”",
+        "url": "https://www.politico.com/news/2020/02/07/donald-trump-pressure-impeachment-witness-alexander-vindman-111997"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0080",
+    "text": "Donald Trump's Grandfather was a pimp and a tax evader.",
+    "context": {
+      "claim_date": "2015-12-11",
+      "speaker": "Tim King",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Trump's Grandfather Was A Pimp And Tax Evader Or That His father A Member Of The KKK?",
+        "answer": "Most families of enormous wealth have a dark and sometimes scandalous, even monstrous past. Donald Trump's clan is no exception to that rule. His grandfather was a pimp and a tax evader, his father a racist who would in the course of his life, clash with New York City Police as a member of the Ku Klux Klan and then as a wealthy real estate magnate, refuse to rent to people of color.\n\nDonald Trump's legacy is anything but a rag to riches story. His dad kicked the bucket with $250-$300 million in the bank. The man who wants to ban all people of a particular religion from travel wasn't born with a silver spoon in his mouth, his was white gold. The only thing more obnoxious than Donald Trump himself, is his family's money-grubbing, bigoted history.",
+        "url": "https://web.archive.org/web/20210401163758/https://ahtribune.com/us/2016-election/242-trump-grandfather-pimp-father-kkk.html?fbclid=IwAR3f9zL-J2RoO5mPaCwIEGRHOa-f2pwXps8H9AzzMu10_4GDs6pil6IzjIg"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0044",
+    "text": "Each month 22 NHS patients with glaucoma unnecessarily lose their sight due to NHS treatment delays.",
+    "context": {
+      "claim_date": "2020-01-09",
+      "speaker": "",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "How many people with glaucoma lose sight each month due to NHS waiting times",
+        "answer": "The British Ophthalmological Surveillance\nUnit (BOSU) found that up to 22 people\nper month were experiencing permanent\nand severe vision loss due to health serviceinitiated delays",
+        "url": "https://hsib-kqcco125-media.s3.amazonaws.com/assets/documents/hsib_report_lack_timely_monitoring_patients_glaucoma.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0052",
+    "text": "There has been a reduction in Right to Information (RTI) applications filed in the last few years leading upto 2019.",
+    "context": {
+      "claim_date": "2019-10-12",
+      "speaker": "Amit Shah",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "Have Right to Information applications declined in the years leading upto 2019?",
+        "answer": "Dr. Jitendra Singh said that under Prime Minister Shri Narendra Modi, the government had further strengthened the cause of transparency and accountability by creating an online portal for RTI, which did not exist previously. He said that the proactive increase in transparency in the last five years has led to a reduction in the need for RTI.",
+        "url": "https://archive.pib.gov.in/newsite/erelease.aspx?relid=193758"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0065",
+    "text": "Texas leads in the number of Confederate monuments removed from public land.",
+    "context": {
+      "claim_date": "2019-05-07",
+      "speaker": "Brandon Creighton",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What state is leading the confederate monuments removal charge",
+        "answer": "Texas leads nation in Confederate symbols removed since 2015",
+        "url": "https://web.archive.org/web/20190908223209/https://www.statesman.com/news/20180605/report-texas-leads-nation-in-confederate-symbols-removed-since-2015"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0011",
+    "text": "The Democrats want to abolish US police departments. They want to abolish our prisons, I guess.",
+    "context": {
+      "claim_date": "2020-07-14",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is this claim referring to?",
+        "answer": "BIDEN-SANDERS UNITY TASK FORCE RECOMMENDATIONS\nCOMBATING THE CLIMATE CRISIS AND PURSUING ENVIRONMENTAL\nJUSTICE",
+        "url": "https://joebiden.com/wp-content/uploads/2020/08/UNITY-TASK-FORCE-RECOMMENDATIONS.pdf"
+      },
+      {
+        "question": "Does the document mention abolishing police departments or prisons?",
+        "answer": "No",
+        "url": "https://joebiden.com/wp-content/uploads/2020/08/UNITY-TASK-FORCE-RECOMMENDATIONS.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0079",
+    "text": "Pakistani media reported Clashes between Indian & Chinese forces in Naku La sector of North Sikkim resulted in China killing 158 Indian soldiers, Which is the same number which Pakistan beat India by in the Champion trophy final cricket game at the oval in England.",
+    "context": {
+      "claim_date": "2017-07-01",
+      "speaker": "",
+      "location_ISO_code": "CN"
+    },
+    "evidence": [
+      {
+        "question": "What was the final score of the 2017 Champion trophy final ?",
+        "answer": "Pakistan 338 - India 158\n(Difference of 180 runs)",
+        "url": "https://wisden.com/comp/6128/icc-champions-trophy-2017/results"
+      },
+      {
+        "question": "Did India report any losses relating to this clash ?",
+        "answer": "In a report by Hindustan times External affairs ministry spokesperson Gopal Baglay said Such reports are utterly baseless, malicious and mischievous,\"",
+        "url": "https://web.archive.org/web/20201109035734/http://www.hindustantimes.com/india-news/pakistan-media-report-on-158-indian-soldiers-killed-in-sikkim-malicious-mea/story-IVeGDzSDPNdh9oZJVgNL8L.html"
+      },
+      {
+        "question": "Did China report any losses relating to this clash?",
+        "answer": "China described the reports from Pakistan as \"Baseless & fake\"",
+        "url": "https://web.archive.org/web/20200819054958/https://www.jansatta.com/international/chinese-media-rubbished-pakistani-media-fake-news-and-pictures-of-indian-soldier-dead-in-rocket-attack-on-sikkim-border/378738/"
+      },
+      {
+        "question": "Did a clash take place?",
+        "answer": "A report by business today says that while a clash did occur, only minor injuries were sustained by each side.",
+        "url": "https://web.archive.org/web/20200603061508/https://www.businesstoday.in/current/economy-politics/india-china-face-off-soldiers-confrontation-naku-la-sector-sikkim-tropps-injured-border/story/403363.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0047",
+    "text": "An irrational House Speaker Nancy Pelosi was handcuffed by federal agents as they raided her office.",
+    "context": {
+      "claim_date": "2019-12-24",
+      "speaker": "Flagg Eagleton-Patriot",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Has House Speaker Nancy Pelosi been arrested?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20210127200610/https://tatersgonnatate.com/sharing-this-would-be-humiliating/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0005",
+    "text": "Massive international study shows a much lower COVID-19 mortality rate in countries where hydroxychloroquine was prescribed to patients.",
+    "context": {
+      "claim_date": "2020-08-06",
+      "speaker": "Jim Hoft is the founder and editor of The Gateway Pundit",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "According to the study was Hydroxychloroquine associated with mortality rate",
+        "answer": "Hydroxychloroquine was not significantly associated with mortality",
+        "url": "https://web.archive.org/web/20210622041238/https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X%2820%2930505-X/fulltext"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0029",
+    "text": "New York Gov. Andrew Cuomo said that “with all the technology we have, we don't need actual classrooms.”",
+    "context": {
+      "claim_date": "2020-05-07",
+      "speaker": "Beth Parlato for Congress ",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Cuomo say \"we don't need actual classrooms\"?",
+        "answer": "No.  He said that \"there is no way in my opinion, that remote learning can ever be a replacement or a substitute for the classroom experience.\"",
+        "url": "https://www.rev.com/blog/transcripts/andrew-cuomo-new-york-may-20-covid-19-press-conference-transcript"
+      },
+      {
+        "question": "Did New York Gov. Andrew Cuomo say \"we don't need actual classrooms\"?",
+        "answer": "No.  He said that \"there is no way in my opinion, that remote learning can ever be a replacement or a substitute for the classroom experience.\"",
+        "url": "https://www.rev.com/blog/transcripts/andrew-cuomo-new-york-may-20-covid-19-press-conference-transcript"
+      },
+      {
+        "question": "Who is Gov. Andrew Cuomo?",
+        "answer": "Governor Andrew M. Cuomo is the 56th Governor of New York, having assumed office on January 1, 2011.",
+        "url": "https://www.nga.org/governor/andrew-cuomo/"
+      },
+      {
+        "question": "Is Governor Andrew M. Cuomo against the use of actual classrooms?",
+        "answer": "Governor Cuomo proposes to invest $3 million in the We Teach NY program, which will strategically recruit 250 new teachers to fill identified needed positions in New York classrooms in 2024. Therefore, as he is proposing investment in classroom teachers, he cannot be against classrooms.",
+        "url": "https://www.budget.ny.gov/pubs/press/2019/pr-eBudgetfy20.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0001",
+    "text": "The Kenyan judiciary does not even get 1% of the national budget.",
+    "context": {
+      "claim_date": "2020-08-23",
+      "speaker": "David Maraga",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "How much of their national budget did the Kenyan judiciary receive in 2021?",
+        "answer": "Budget speeches for 2020/21 show the judiciary received 0.6% of the national budget.",
+        "url": "https://africacheck.org//sites/default/files/Appropriations-Act-2020.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0023",
+    "text": "Black Lives Matter Scotland have produced posters and stickers with phrases such as “Kill a white on sight” on them.",
+    "context": {
+      "claim_date": "2020-06-12",
+      "speaker": "Vinnie Sullivan",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "What is Black Lives Matter?",
+        "answer": "The movement was born in 2013, after the man who shot and killed an unarmed black teenager, Trayvon Martin, was cleared of his murder. A Californian activist, Alicia Garza, responded to the jury’s decision on Facebook with a post that ended: “Black people. I love you. I love us. Our lives matter.” The hashtag was born, and continued to grow in prominence with each new incident and protest.\n\nThe formal organization that sprung from the protests started with the goal of highlighting the disproportionate number of incidences in which a police officer killed a member of the black community. But it soon gained international recognition, after the death of Michael Brown in Missouri a year later.\n\nBlack Lives Matter now describes itself as a “chapter-based national organization working for the validity of black life”. It has developed to include the issues of black women and LGBT communities, u",
+        "url": "https://www.weforum.org/agenda/2016/08/black-lives-matter-movement-explained/"
+      },
+      {
+        "question": "Has Black Lives Matter given any comments on alledged images with text attacking white people?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210116115108/https://www.edinburghlive.co.uk/news/edinburgh-news/fake-kill-white-flyers-edinburgh-18423128"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0078",
+    "text": "Kansas City Chiefs CEO Clark Hunt said \"You will stand, with your hand over your heart and with respect, when our country’s national anthem is being played or you will no longer be a Kansas City Chief, a coach for the Kansas City Chiefs or have any association with the Chiefs organization. I will immediately fire you, no matter who you are!\"",
+    "context": {
+      "claim_date": "2017-09-03",
+      "speaker": "Lu Ann Lewis",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Kansas City Chiefs CEO Clark Hunt say he would fire anyone who did not stand for the national anthem ?",
+        "answer": "No",
+        "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-answers-questions-on-key-nfl-issues-18033794"
+      },
+      {
+        "question": "Has Kansas City Chiefs CEO Clark Hunt  passed down any directive requiring players to show respect during the National Anthem by not doing a gesture, kneeling or anything?",
+        "answer": "No",
+        "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-answers-questions-on-key-nfl-issues-18033794"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0013",
+    "text": "A letter from a consultant at a hospital in Surrey claims that hospitals are empty and that there is no pandemic.",
+    "context": {
+      "claim_date": "2020-07-09",
+      "speaker": "Helen Wilson",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "What did the NHS say about the claims concerning the pandemic",
+        "answer": "These claims have been denied by the National Health Service",
+        "url": "https://web.archive.org/web/20211203213146/https://www.reuters.com/article/uk-factcheck-hospital-consultant/fact-check-no-pandemic-claim-attributed-to-uk-hospital-consultant-is-false-idUSKCN24H370"
+      },
+      {
+        "question": "What are the number of deaths in Surrey according to NHS records",
+        "answer": "1,100 deaths",
+        "url": "https://web.archive.org/web/20210628180630/https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0032",
+    "text": "People with lupus who take hydroxychloroquine have protection against COVID-19.",
+    "context": {
+      "claim_date": "2020-04-04",
+      "speaker": "US president Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Is hydroxychloroquine used to treat lupus?",
+        "answer": "In patients with systemic lupus erythematosus (SLE), hydroxychloroquine prevents disease flares and damage accrual and facilitates the response to mycophenolate mofetil in those with renal involvement.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955128/"
+      },
+      {
+        "question": "Is hydroxychloroquine for patients with lupus?",
+        "answer": "Hydroxychloroquine, considered decades ago to be a relatively minor component in the overall treatment of patients with systemic lupus erythematosus (SLE), is now considered an essential therapeutic element in this disease",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955128/"
+      },
+      {
+        "question": "Do patients with Lupus who are already taking Hydroxychloroquine have protection against contracting covid 19?",
+        "answer": "Data to support the use of HCQ  for COVID-19 are limited and inconclusive. The drugs have some in vitro activity against several viruses, including coronaviruses and influenza, but previous randomized trials in patients with influenza have been negative",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7138336/"
+      },
+      {
+        "question": "Is hydroxychloroquine a preventative based or treatment based when used to combat covid 19?",
+        "answer": "At this time, the best available evidence suggests that hydroxychloroquine is not effective in the treatment and prevention of COVID-19,",
+        "url": "https://www.lupus.org/advocate/state-action-on-hydroxychloroquine-and-chloroquine-access"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0016",
+    "text": "The United States Annual Arms Control Compliance Report does not address the U.S. withdrawal from the Arms Trade Treaty (ATT).",
+    "context": {
+      "claim_date": "2020-06-24",
+      "speaker": "Fu Cong",
+      "location_ISO_code": "CN"
+    },
+    "evidence": [
+      {
+        "question": "Does the United States Annual Arms Control Compliance Report address the U.S. withdrawal from the Arms Trade Treaty (ATT).",
+        "answer": "No",
+        "url": "https://www.politico.com/story/2019/04/26/trump-arms-trade-treaty-1385303"
+      },
+      {
+        "question": "What is the Arms Trade Treaty (ATT)?",
+        "answer": "The Arms Trade Treaty is the first legally-binding instrument ever negotiated in the United Nations to establish common standards for the international transfer of conventional weapons.",
+        "url": "https://legal.un.org/avl/ha/att/att.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0021",
+    "text": "Milwaukee declared racism as a public health crisis in 2019.",
+    "context": {
+      "claim_date": "2020-06-14",
+      "speaker": "Jeanette Kowalik",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Milwaukee declared racism as a public health crisis in 2019?",
+        "answer": "Officials signed the ordinance one year after Milwaukee County passes a first-of-kind resolution declaring racism as a public health crisis in May 2019.",
+        "url": "https://www.racialequityalliance.org/2020/05/26/milwaukee-county-passes-ordinance-on-racial-equity/"
+      },
+      {
+        "question": "Why did Milwaukee declare racism as a public health crisis in 2019 ?",
+        "answer": "Milwaukee, both the city and county, passed resolutions last summer that were seen as important steps in addressing decades of race-based inequality.\n\n“We declared racism as a public health issue,” said Kowalik, the city’s health commissioner. “It frames not only how we do our work but how transparent we are about how things are going. It impacts how we manage an outbreak",
+        "url": "https://www.propublica.org/article/early-data-shows-african-americans-have-contracted-and-died-of-coronavirus-at-an-alarming-rate"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0028",
+    "text": "World Bank blacklisted China Civil Engineering Construction Corporation, a company that has executed projects in Nigeria under foreign agreements with China.",
+    "context": {
+      "claim_date": "2020-05-14",
+      "speaker": "Ben Igbakpa",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "What is the China Civil Engineering Construction Corporation?",
+        "answer": "China Civil Engineering Construction Corporation Ltd. (abbreviation CCECC) was established in June 1979 under the approval of the State Council of the People's Republic of China.\n\nIt performs international contracting and economic cooperation, CCECC has been developed from the earlier Foreign Aid Department of the Ministry of Railways (with the experience of executing the biggest foreign-aid project of China, the TAZARA) into a large-scale state-owned enterprise for project contracting.\n\nIts business scope expands from international contracting for railway construction to civil engineering design & consultancy, real estate development, trading, industrial investment and hotel management as well. The business activities of CCECC have expanded to over 40 countries and regions where more than 20 overseas offices or subsidiaries have been established.",
+        "url": "https://en.wikipedia.org/wiki/China_Civil_Engineering_Construction_Corporation"
+      },
+      {
+        "question": "Did the CCECC operate projects in Nigeria?",
+        "answer": "Yes",
+        "url": "https://ccecc-nigeria-limited.business.site/"
+      },
+      {
+        "question": "Did the world bank blacklist CCECC?",
+        "answer": "Yes",
+        "url": "https://www.premiumtimesng.com/news/headlines/347386-world-bank-blacklists-six-chinese-firms-in-nigeria-for-contract-fraud-corruption.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0041",
+    "text": "Biden Is The First President to Denounce White Supremacy in His Inaugural Address?",
+    "context": {
+      "claim_date": "2020-01-20",
+      "speaker": "Nathan Kalmoe",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Biden dennounce white supremacy in his speech",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210414032605/https://www.newsweek.com/read-full-text-joe-bidens-inauguration-speech-1563142"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0010",
+    "text": "United States citizens don't get the level of benefits that Bidens policy would be looking to give illegal immigrants",
+    "context": {
+      "claim_date": "2020-07-14",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What US benefits does US President Joe Biden want to make extented to immigrants",
+        "answer": "Medicaid and Children’s Health Insurance Programs to low-income and lawfully present immigrants.",
+        "url": "https://joebiden.com/wp-content/uploads/2020/08/UNITY-TASK-FORCE-RECOMMENDATIONS.pdf"
+      },
+      {
+        "question": "Can US citizens claim Medicaid and Children’s Health Insurance benefits?",
+        "answer": "Programs require you to be a U.S. citizen or eligible non-citizen.",
+        "url": "https://web.archive.org/web/20210121201459/https://www.usa.gov/benefits"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0058",
+    "text": "TRUMP SAID Earlier this month, the U.S. government officially labeled China for the first time ever a currency manipulator — another promise kept.",
+    "context": {
+      "claim_date": "2019-08-15",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is currency manipulation",
+        "answer": "Currency manipulation involves the artificial movement of a domestic currency valuation through government intervention such as by printing more money or buying and selling other currencies on the foreign exchange market.",
+        "url": "https://theconversation.com/the-us-branding-china-a-currency-manipulator-threatens-global-stability-121834"
+      },
+      {
+        "question": "Which U.S. government agency officially labeled China a currency manipulator",
+        "answer": "The United States Treasury",
+        "url": "https://web.archive.org/web/20210716041700/https://home.treasury.gov/news/press-releases/sm751"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0073",
+    "text": "Alexandria-Ocasio Cortez puts out a press release on Twitter demanding that President Trump should be blocked from stopping the return of a heroic mother from Alabama who supports ISIS.",
+    "context": {
+      "claim_date": "2019-02-19",
+      "speaker": "JohnGilmore@Shabbosgoy",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Where was this message posted?",
+        "answer": "the Twitter account that sent out the message has a parody disclaimer, it is not real The bio of the @AOCPress accounts notes it is a satirical parody and points visitors to her real account at @AOC:",
+        "url": "https://web.archive.org/web/20220812085832im_/https://leadstories.com/assets_c/2019/03/aocpress1-thumb-900xauto-3060388.jpg"
+      },
+      {
+        "question": "On her real account, does Ocasio-Cortez have this tweet or one similar?",
+        "answer": "No",
+        "url": "https://twitter.com/AOC/status/1056649914120392705?ref_src=twsrc%5Etfw"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0007",
+    "text": "Russia offered bounties to the Taliban to kill U.S. troops in Afghanistan.",
+    "context": {
+      "claim_date": "2020-07-29",
+      "speaker": "Jonathan Swan",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Has the US had any intelligence that Russia is offering bounties for the killing of US troops in Afghanistan?",
+        "answer": "Yes",
+        "url": "https://www.washingtonpost.com/politics/trump-says-us-intelligence-did-not-find-reports-of-russian-bounties-to-taliban-linked-militants-credible/2020/06/29/a69e1722-b9f4-11ea-80b9-40ece9a701dc_story.html?itid=lk_inline_manual_21"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0046",
+    "text": "Iihan Omar tweeted \"There is no way to overstate how ASHAMED I am to be called an 'American'. We need every world leader to rise up and demand that someone stops Trump from starting a catastrophic war with Iran.\" THE TIME FOR VIOLENCE IS NOW! #NoWarWithIran",
+    "context": {
+      "claim_date": "2020-01-03",
+      "speaker": " Ilhan Omar",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Iihan Omar tweet There is no way to overstate how ASHAMED I am to be called an 'American'. We need every world leader to rise up and demand that someone stops Trump from starting a catastrophic war with Iran. THE TIME FOR VIOLENCE IS NOW! #NoWarWithIran on the 3rd Jan 2020?",
+        "answer": "No",
+        "url": "https://archive.ph/uhh2V#selection-3031.0-3031.164"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0071",
+    "text": "52 counties in the state of New York have average taxes of above the SALT (state and local taxes) $10,000 cap",
+    "context": {
+      "claim_date": "2019-03-11",
+      "speaker": "Andrew Cuomo",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "what are the taxes in american counties?",
+        "answer": "\"This is a big deal for our state: New Yorkers reported more than $72 billion in deductions for income and property taxes in 2015,\" DiNapoli wrote.\n\nOf that total, income taxes accounted for $51.7 billion and property taxes for $20.9 billion.  \n\nThe Office of Comptroller found that filers who claimed state and local tax deductions had an average deduction of more than $10,000 in 52 of New York’s 62 counties, according to its analysis of county-by-county data from the Internal Revenue Service’s Statistics of Income program from the 2015 tax year.",
+        "url": "https://web.archive.org/web/20201227053818/https://www.irs.gov/statistics/soi-tax-stats-county-data-2016"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0072",
+    "text": "Man who cited religious reasons for not paying his income taxes “has won a historic lawsuit against the IRS.”",
+    "context": {
+      "claim_date": "2019-02-20",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Did Michael Bowman won a historic lawsuit against the IRS ?",
+        "answer": "The judge dismissed the charge without prejudice, meaning prosecutors could seek a new indictment to replace it.  Maddux said the government was considering its options.\n\nBowman still faces four counts of willful failure to file tax returns, a misdemeanor.",
+        "url": "https://www.oregonlive.com/portland/2018/04/judges_tosses_out_felony_tax_e.html"
+      },
+      {
+        "question": "Did  Michael Bowman  filed a motion asking the court to dismiss the whole case ?",
+        "answer": "Defendant, Michael Bowman, through his attorney, Matthew \nSchindler, moves the Court to dismiss the indictment alleging violations of \n26 USC §§ 7201 and 7203 because, as applied to him, these criminal charges \nviolate his right to maintain his conscience and freely practice his religion as \nguaranteed by the First Amendment to the United States Constitution and 42 \nUSC § 2000bb-1 (The Religious Freedom Restoration Act “RFRA”). This \nmotion is further supported by the following Memorandum of Law",
+        "url": "https://cdn.factcheck.org/UploadedFiles/BowmanMotion1.pdf"
+      },
+      {
+        "question": "What was  Michael Bowman alleged to have done ?",
+        "answer": "Prosecutors alleged that Bowman hasn't filed an accurate or timely income tax return since at least 1997. When the Oregon Department of Revenue stepped up its enforcement and began garnishing money from Bowman's bank account in January 2012, Bowman changed his method of financial transactions. He began cashing out his work checks, leaving a minimum balance in his bank account, between January 2012 through September 2014, according to the government. Defendant's altered bank behavior removed his income from the reach of taxing authorities and allowed him to avoid payment of assessed taxes",
+        "url": "https://www.oregonlive.com/portland/2018/04/judges_tosses_out_felony_tax_e.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0068",
+    "text": "The number of electricity connections in Kenya rose from 2.2 million in March 2013 to 7.1 million as at March 2019.",
+    "context": {
+      "claim_date": "2019-04-04",
+      "speaker": "Uhuru Kenyatta",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "What was the number of electricity connections in March 2019 in Kenya?",
+        "answer": "2.33 million customers",
+        "url": "https://web.archive.org/web/20210505170147/https://kplc.co.ke/img/full/4rNGlk21KXmA_KENYA%20POWER%20ANNUAL%20REPORT%20FA.pdf"
+      },
+      {
+        "question": "What was the number of electricity connections in March 2013 in Kenya?",
+        "answer": "The latest figures were 7 million customers connected to power.",
+        "url": "https://web.archive.org/web/20210506223445/https://www.kplc.co.ke/AR2018/KPLC%20Annual%20Report%2017_12_2018_Wed.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0051",
+    "text": "US Red flag laws allow gun seizure without a judge's ok.",
+    "context": {
+      "claim_date": "2019-10-22",
+      "speaker": "TMJ4",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is a red flag law?",
+        "answer": "An Extreme Risk Protection Order (ERPO), also known as a red flag law, is an order from a judge that suspends a person’s license to possess or carry a gun.",
+        "url": "https://www.mass.gov/extreme-risk-protection-orders"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0063",
+    "text": "Pakistan cricketers were out till late at night smoking hookah before their match against India which led to their loss",
+    "context": {
+      "claim_date": "2019-06-17",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "When was the match against India, where the players were seen out the night before?",
+        "answer": "on the Sunday",
+        "url": "https://twitter.com/MurtazaViews/status/1140311227437969409"
+      },
+      {
+        "question": "What date was the video from?",
+        "answer": "The video was from the night of June 14 (Friday) not Saturday as being alleged by fans and on social media. \n\nIn a statement, the Pakistan Cricket Board (PCB) clarified that no player had violated curfew and returned to their hotel rooms’ on-time the night before Pakistan’s match against India. The board added that players had gone out with their families two days before the match.",
+        "url": "https://www.geo.tv/latest/240574-pakistani-cricketers-night-out-video-stirs-controversy"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0074",
+    "text": "When countries put people into the diversity visa lottery program, they’re putting some very bad people in the lottery",
+    "context": {
+      "claim_date": "2019-02-15",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is the diversity visa lottery programme?",
+        "answer": "The Diversity Immigrant Visa Program (DV Program) makes up to 50,000 immigrant visas available annually, drawn from random selection among all entries to individuals who are from countries with low rates of immigration to the United States. The DV Program is administered by the U.S. Department of State (DOS).\n\nMost lottery winners reside outside the United States and immigrate through consular processing and issuance of an immigrant visa. To learn more, visit the U.S. Department of State's website.",
+        "url": "https://www.uscis.gov/green-card/green-card-eligibility/green-card-through-the-diversity-immigrant-visa-program"
+      },
+      {
+        "question": "Do other countries put people into the DV programme?",
+        "answer": "No",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/immigrate/diversity-visa-program-entry/diversity-visa-submit-entry1.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0025",
+    "text": "A German Shephard dog in New York state, USA was the first domesticated dog in the United States to test positive for Covid-19 infection.",
+    "context": {
+      "claim_date": "2020-06-02",
+      "speaker": "USDA APHIS - The Department of Argiculture National Veterinary Services Laboratories",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Can animals catch COVID-19?",
+        "answer": "Yes",
+        "url": "https://www.smithsonianmag.com/science-nature/why-new-coronavirus-affects-some-animals-not-others-180974689/"
+      },
+      {
+        "question": "Did a dog test positive for COVID-19?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210701220502mp_/https://www.buzzfeednews.com/article/danvergano/coronavirus-dog-us-first"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0015",
+    "text": "Photos showing sewer, sacks and trash-filled beaches in Boracay were taken during the past administration of former president Benigno Aquino III.",
+    "context": {
+      "claim_date": "2020-07-02",
+      "speaker": "DDS Drei Natabio",
+      "location_ISO_code": "PH"
+    },
+    "evidence": [
+      {
+        "question": "When were the images used in the claim taken originally",
+        "answer": "The images were taken after Typhoon Ursula hit the Philippines in 2016",
+        "url": "https://www.rappler.com/nation/248515-boracay-island-still-recovering-from-typhoon-ursula/"
+      },
+      {
+        "question": "Who was the President of the Philippines in 2016",
+        "answer": "Rodrigo Duterte",
+        "url": "https://edition.cnn.com/2016/12/16/asia/rodrigo-duterte-fast-facts/index.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0057",
+    "text": "40% of NI Unionists are happy about a potential trade border in the Irish Sea.",
+    "context": {
+      "claim_date": "2019-08-22",
+      "speaker": "Simon Jenkins",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "Have NI Unionists been polled about the trade border in the Irish Sea?",
+        "answer": "A poll asked self-described Unionists “If a referendum took place in NI tomorrow with the question — ‘Should there be a NI specific Backstop as part of Brexit?’ — which way would you vote?”:",
+        "url": "https://twitter.com/LucidTalk/status/1164498058161328129?s=20"
+      },
+      {
+        "question": "How many NI Unionists polled said there should not be a backstop?",
+        "answer": "81%",
+        "url": "https://twitter.com/LucidTalk/status/1164498058161328129?s=20"
+      },
+      {
+        "question": "What is the NI backstop?",
+        "answer": "The backstop is a guarantee that whatever happens during the negotiations between the EU and UK on the future relationship, the open border between Ireland and Northern Ireland will be maintained, and the Good Friday Agreement respected.",
+        "url": "https://commonslibrary.parliament.uk/the-backstop-explained/"
+      },
+      {
+        "question": "What is the trade border in the Irish Sea proposal?",
+        "answer": "That checks between the UK and Ireland will be done at sea ports and airports in the future, rather than on the 500km land border.\nThe Irish Sea would become, in effect, the border.",
+        "url": "https://inews.co.uk/news/politics/irish-sea-border-simple-explainer-81418"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0002",
+    "text": "South Africans that drink are amongst the top drinkers in the world.",
+    "context": {
+      "claim_date": "2020-08-21",
+      "speaker": "Zweli Kkhize",
+      "location_ISO_code": "ZA"
+    },
+    "evidence": [
+      {
+        "question": "What is the global average alcohol consumption in litres of pure alcohol per day?",
+        "answer": "The global averages as of 2016 is 15.1 litres per day.",
+        "url": "https://web.archive.org/web/20200828231222/https://apps.who.int/iris/bitstream/handle/10665/274603/9789241565639-eng.pdf?sequence=1&isAllowed=y#page=70"
+      },
+      {
+        "question": "What is the daily average of pure alcohol consumption per day in South africa?",
+        "answer": "29.9 litres.",
+        "url": "https://web.archive.org/web/20200828231222/https://apps.who.int/iris/bitstream/handle/10665/274603/9789241565639-eng.pdf?sequence=1&isAllowed=y#page=70"
+      },
+      {
+        "question": "Where does South Africa rank as a nation in terms of Daily pure Alcohol consumption?",
+        "answer": "6th out of 189 countries.",
+        "url": "https://web.archive.org/web/20200828231222/https://apps.who.int/iris/bitstream/handle/10665/274603/9789241565639-eng.pdf?sequence=1&isAllowed=y#page=70"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0024",
+    "text": "Prince Andrew is accused of pedophilia and was extremely close with Jeffrey Epstein.",
+    "context": {
+      "claim_date": "2020-06-04",
+      "speaker": "Kyle Darbyshire",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "Was prince Andrew accused of paedophilia?",
+        "answer": "Yes",
+        "url": "https://www.vanityfair.com/style/2019/08/prince-andrew-jeffrey-epstein"
+      },
+      {
+        "question": "Was prince Andrew extremely close with Jeffrey Epstein?",
+        "answer": "The pair formed a close friendship through the late 90s and early 2000s.",
+        "url": "https://www.businessinsider.com/prince-andrew-jeffrey-epstein-connections-videos-flights-2019-8?r=US&IR=T#epstein-and-andrew-were-reportedly-introduced-in-the-1990s-by-ghislaine-maxwell-epsteins-then-girlfriend-and-accused-madam-1"
+      },
+      {
+        "question": "Was Prince Andrew convicted of any sex crimes against children?",
+        "answer": "No",
+        "url": "https://www.businessinsider.com/prince-andrew-jeffrey-epstein-connections-videos-flights-2019-8?r=US&IR=T#according-to-a-2011-vanity-fair-article-andrew-even-told-a-friend-who-objected-against-his-friendship-with-epstein-that-they-were-such-a-puritan-and-that-he-was-going-to-be-loyal-to-him-3"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0040",
+    "text": "A ‘HUGE PERCENTAGE’ OF DEPORTED SALVADORANS KILLED OR HARMED UPON RETURN TO EL SALVADOR",
+    "context": {
+      "claim_date": "2020-02-05",
+      "speaker": null,
+      "location_ISO_code": "SV"
+    },
+    "evidence": [
+      {
+        "question": "How many cases of El Salvadorian deportee  deaths have been recorded",
+        "answer": "we identified or investigated 138 cases of Salvadorans killed since 2013 after deportation from the US",
+        "url": "https://web.archive.org/web/20201225094939/https://www.hrw.org/report/2020/02/05/deported-danger/united-states-deportation-policies-expose-salvadorans-death-and#"
+      },
+      {
+        "question": "How many El Salvadorians have been deported on record",
+        "answer": "Between 2014-2018, the US and Mexico have deported about 213,000 Salvadorans (102,000 from Mexico and 111,000 from the United States).",
+        "url": "https://web.archive.org/web/20201225094939/https://www.hrw.org/report/2020/02/05/deported-danger/united-states-deportation-policies-expose-salvadorans-death-and"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0064",
+    "text": "Mexican drug cartels make £500 billion a year.",
+    "context": {
+      "claim_date": "2019-06-11",
+      "speaker": "David Perdue - US Senator ",
+      "location_ISO_code": "MX"
+    },
+    "evidence": [
+      {
+        "question": "What are the worldwide proceeds from drugs estimated to be?",
+        "answer": "If only flows related to drug trafficking and other\ntransnational organized crime activities were considered, related proceeds would have been equivalent to\naround US$650 billion per year in the first decade\nof the new millennium, equivalent to 1.5% of global\nGDP or US$870 billion in 2009 assuming that the\nproportions remained unchanged. The funds available\nfor laundering through the financial system would\nhave been equivalent to some 1% of global GDP or\nUS$580 billion in 2009.",
+        "url": "https://www.unodc.org/documents/data-and-analysis/Studies/Illicit_financial_flows_2011_web.pdf"
+      },
+      {
+        "question": "Does the UN have estimates for Mexican drug cartels?",
+        "answer": "Calculating trafficking profits to North America (total\ntransit profits of US5.3 bn) is relatively straightforward.\nThe largest part of these profits are generated by South\nAmerican groups, notably groups from Colombia (most\nof the US$3.3 bn in profits generated in shipping the\ncocaine to Mexico), followed by profits made by Mexican drug cartels (US$2 bn for shipping the cocaine\nacross the border to the USA; far more money is then\nmade by the Mexican drug cartels within the United\nStates in trafficking the cocaine to the various wholesalers and retailers).",
+        "url": "https://www.unodc.org/documents/data-and-analysis/Studies/Illicit_financial_flows_2011_web.pdf"
+      },
+      {
+        "question": "What is the estimated revenue of Mexican drug cartels?",
+        "answer": "The cash-rich cartels, believed by the Mexican government to generate well over $21 billion each year.",
+        "url": "https://www.reuters.com/investigates/special-report/mexico-violence-oil/"
+      },
+      {
+        "question": "What is the estimated revenue of Mexican drug cartels?",
+        "answer": "NDIC estimates indicate that Mexican and Colombian DTOs generate, remove, and launder between $18 billion and $39 billion in wholesale drug proceeds annually",
+        "url": "https://www.justice.gov/archive/ndic/pubs31/31379/finance.htm"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0062",
+    "text": "US Republican Alexandria Ocasio-Cortez opposed it a proposed $4.6 billion US emergency aid bill, saying it wasn’t humanitarian.",
+    "context": {
+      "claim_date": "2019-07-03",
+      "speaker": "Republican Alexandria Ocasio-Cortez ",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Alexandria Ocasio-Cortez say the bill wasnt humanitarian?",
+        "answer": "Yes",
+        "url": "https://twitter.com/AOC/status/1146239531223539713?ref_src=twsrc%5Etfw"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0008",
+    "text": "The New York state Labor Department is giving essential workers $4,800 in hazard pay.",
+    "context": {
+      "claim_date": "2020-07-28",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is US hazard pay?",
+        "answer": "Hazardous Duty Differential is additional compensation paid to employees who are exposed to high-risk working conditions in certain agency/facility locations for which they are not otherwise compensated",
+        "url": "https://web.osc.state.ny.us/payroll/files/information/payrollsystem/files/payserv_manual/online_manual/Content/Earnings%20Manual/Time%20Entry%20Payments/hazardous_duty_pay_differentials.htm"
+      },
+      {
+        "question": "Where have requests for hazard pay been reported?",
+        "answer": "Some New York residents and fellows want hazard pay, more support.\n\nBy Mark Chiusano\nMark.Chiusano@newsday.commjchiusano\nApril 15, 2020",
+        "url": "https://www.newsday.com/opinion/columnists/mark-chiusano/coronavirus-covid-19-hazard-pay-essential-workers-hospitals-new-york-i12251"
+      },
+      {
+        "question": "Where have requests for hazard pay been reported?",
+        "answer": "Gov. Cuomo calls for 50% hazard pay for frontline workersNew York Gov. Andrew Cuomo urged the federal government to implement hazard pay for first responders, hospital workers and others deemed essential\nApr 21, 2020",
+        "url": "https://www.ems1.com/legislation-funding/articles/gov-cuomo-calls-for-50-hazard-pay-for-frontline-workers-ZPoKePp5JsZEZ8tY/"
+      },
+      {
+        "question": "What happens when the link on the social posts with the claim that The New York state Labor Department is giving essential workers $4,800 in hazard pay is activated?",
+        "answer": "A picture of a gorilla giving the camera a finger is received.",
+        "url": "https://external-preview.redd.it/vxPXEGgL4v8mCGw06IFGsmJNtqWQg-z60xQQ79dHKPY.jpg?auto=webp&s=db7685262e9b352a4888e547f52a244e2ea2cb9f"
+      },
+      {
+        "question": "How does the US Dept of Labor define hazard pay?",
+        "answer": "The U.S. Department of Labor defines hazardous work as “[w]ork duty that causes extreme physical discomfort and distress which is not adequately alleviated by protective devices [and] is deemed to impose a physical hardship.”[Hazard pay is also forward looking pay that provides additional compensation in advance to mitigate the impacts of potential future harm.",
+        "url": "https://www.jdsupra.com/legalnews/hazard-pay-during-covid-19-who-may-be-73437/"
+      },
+      {
+        "question": "What authority is responsible for authorising hazard pay?",
+        "answer": "The U.S. Department of Labor does not currently regulate hazard pay and does not require that employers provide hazard pay. An employee is only entitled to hazard pay either through an employment agreement, or in specific instances, where provided by statute.",
+        "url": "https://www.jdsupra.com/legalnews/hazard-pay-during-covid-19-who-may-be-73437/"
+      },
+      {
+        "question": "Who typically receives hazard pay?",
+        "answer": "Federal statutes establish hazard pay for government employees whose duty involves “unusual physical hardship or hazard, and for any hardship or hazard related to asbestos” in an amount not to exceed 25 percent of the employee’s basic pay. However, in order to be entitled to the hazard pay incentive, the employee’s work must not be “in a position the classification of which takes into account the degree of physical hardship or hazard involved in the performance of the duties.” Workers whose positions are already known to be hazardous would not receive additional hazard pay.  The hazard entitling a federal worker to additional compensation must therefore be outside the hazards normally encompassed by the worker’s job description.",
+        "url": "https://www.jdsupra.com/legalnews/hazard-pay-during-covid-19-who-may-be-73437/"
+      },
+      {
+        "question": "Did the parameters change during the COVID-19 pandemic?",
+        "answer": "With respect to COVID-19, federal employees whose job it is to work with deadly infectious diseases on a regular basis would likely not receive hazard pay under the statute.",
+        "url": "https://www.jdsupra.com/legalnews/hazard-pay-during-covid-19-who-may-be-73437/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0004",
+    "text": "The murder of Oscar Grant, by a police officer in the United States, was never prosecuted by the DA.",
+    "context": {
+      "claim_date": "2020-08-13",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What happened to the Oscar Grant in the claim?",
+        "answer": "Oscar Grant, 22, was shot once while on the platform after a BART officer drew his gun during what officials called a volatile and chaotic scene. A gravely wounded Grant was taken to Highland Hospital, where he died",
+        "url": "https://www.sfgate.com/bayarea/article/Deadly-BART-brawl-officer-shoots-rider-22-3178373.php"
+      },
+      {
+        "question": "Was the officer who shot Oscar Grant charged with a crime?",
+        "answer": "Yes",
+        "url": "https://abc7news.com/johannes-mehserle-oscar-grant-bart-trial-strategy/7913/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0048",
+    "text": "A study showed one in four people have had a package stolen from their residence in the U.S.",
+    "context": {
+      "claim_date": "2019-12-04",
+      "speaker": "Rob Hutton",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Is there a study showing how many mail packages are stolen from homes in the U.S?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210120070730/https://www.shorr.com/packaging-news/2019-11/2019-package-theft-report-porch-pirates-and-prevention"
+      },
+      {
+        "question": "In the 2019 package theft report how many respondents experienced package theft?",
+        "answer": "Nearly 1 in 4 respondents stated that they had personally experienced package theft.",
+        "url": "https://web.archive.org/web/20210120070730/https://www.shorr.com/packaging-news/2019-11/2019-package-theft-report-porch-pirates-and-prevention"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0067",
+    "text": "74% of the people in Texas are crammed into 4% of the land.",
+    "context": {
+      "claim_date": "2019-04-22",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "What is the latest population estimate for Texas?",
+        "answer": "As of 2017, Texas population grew to 28.3 million.",
+        "url": "https://www.texastribune.org/2017/12/20/texas-population-grew-283-million-2017/#:~:text=Texas'%20population%20grew%20to%2028.3,Census%20Bureau%20estimates%20released%20Wednesday."
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0042",
+    "text": "Witnesses have been part of \"every other impeachment trial the US Senate has ever had.",
+    "context": {
+      "claim_date": "2020-01-19",
+      "speaker": "Tammy Baldwin",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "How many impeachment trials have there been in the United States?",
+        "answer": "The senate has held 15 impeachment trials, two against preseidents and 19 people prior to Trump who were impeached by the House.",
+        "url": "https://www.senate.gov/about/powers-procedures/impeachment/impeachment-list.htm"
+      },
+      {
+        "question": "Did witnesses attend all the impeachment trials?",
+        "answer": "Yes",
+        "url": "https://www.washingtonpost.com/outlook/2020/01/09/senate-has-conducted-15-impeachment-trials-it-heard-witnesses-every-one/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0060",
+    "text": "Robert S Mueller's investigation into Russia’s interference in the 2016 presidential election took over 2 years and cost over £25 million.",
+    "context": {
+      "claim_date": "2019-07-25",
+      "speaker": "Turning Point USA",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What date did the investigation into Russia’s interference in the 2016 presidential election start?",
+        "answer": "In July 2016, the FBI began investigating the Russian government’s attempt to influence the 2016 presidential election,",
+        "url": "https://web.archive.org/web/20210120221342/https://www.factcheck.org/2017/06/timeline-russia-investigation/"
+      },
+      {
+        "question": "When did the Investigation Into Russian Interference In The 2016 Presidential Election conclude?",
+        "answer": "March 2019",
+        "url": "https://web.archive.org/web/20210119142547/https://www.justice.gov/storage/report.pdf"
+      },
+      {
+        "question": "What is the Investigation Into Russian Interference In The 2016 U.S  Presidential Election commonly called?",
+        "answer": "The Mueller report",
+        "url": "https://www.washingtonpost.com/graphics/2019/politics/read-the-mueller-report/"
+      },
+      {
+        "question": "How much did The Mueller\nreport cost?",
+        "answer": "Mueller Probe Cost $25 Million",
+        "url": "https://fortune.com/2018/12/14/mueller-investigation-cost-tax-cheats/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0050",
+    "text": "The Information and Communication Technology sector contributes more to Nigeria’s Gross Domestic Product than the Oil and Gas sector.",
+    "context": {
+      "claim_date": "2019-11-01",
+      "speaker": "Dr. Isa Ibrahim- Minister of Communications and Digital Economy",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "How much does the Information and Communication Technology sector contribute to Nigeria’s Gross Domestic Product?",
+        "answer": "Information and Communications Technology’s (ICT) contribution to the Gross Domestic Product (GDP) of 13.8%",
+        "url": "https://www.ncc.gov.ng/media-centre/news-headlines/665-press-release-with-13-8-contribution-to-gdp-ict-may-double-oil-and-gas-in-2-years-says-communications-minister"
+      },
+      {
+        "question": "How much does the Oil and Gas sector contribute to Nigeria’s Gross Domestic Product?",
+        "answer": "Oil and Gas contribution of 8.8%",
+        "url": "https://www.ncc.gov.ng/media-centre/news-headlines/665-press-release-with-13-8-contribution-to-gdp-ict-may-double-oil-and-gas-in-2-years-says-communications-minister"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0075",
+    "text": "The current Kenyan government has built a standard-gauge railway of 600 kilometres in the last five years.",
+    "context": {
+      "claim_date": "2019-02-08",
+      "speaker": "Kenyan Deputy President, William Ruto",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "What is the Standard Gauge Railway (SGR)?",
+        "answer": "The Standard Gauge Railway is a modern, efficient transport system that will enable safe, comfortable travel for individuals and freight across the country and region at lower costs.",
+        "url": "https://web.archive.org/web/20211227103028/http://delivery.go.ke/flagship/sgr"
+      },
+      {
+        "question": "How much of the SGR has already been built?",
+        "answer": "Phase 1 of the Standard Gauge Railway from Mombasa to Nairobi has seen 472km of track completed",
+        "url": "https://web.archive.org/web/20211227103028/http://delivery.go.ke/flagship/sgr"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0035",
+    "text": "The Australian state of Western Australia has recently passed a “COVID-19 Emergency Powers Act” that authorises forcible medical examination and vaccination in schools.",
+    "context": {
+      "claim_date": "2020-03-18",
+      "speaker": "@talialikeitis",
+      "location_ISO_code": "AU"
+    },
+    "evidence": [
+      {
+        "question": "Is there an act in Western Australia that authorises forcible medical examination and vaccination in schools regarding covid?",
+        "answer": "No, there is a study being conducted but this is not forced upon people.\n\nThe McGowan Government is partnering with the Telethon Kids Institute in a study to test for COVID-19 among school students and staff without symptoms.\n\nThe study has three aspects, the first is a surveillance study in which a sample of staff and students from 40 identified schools will be tested for COVID-19 at monthly intervals over a period of three months, possibly longer depending on the number of cases detected. Parents will be advised of the outcome of tests.",
+        "url": "https://www.mediastatements.wa.gov.au/Pages/McGowan/2020/05/Research-study-to-track-impact-of-COVID-19-in-schools.aspx"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0030",
+    "text": "Lady Michelle Obama  slam Country music industry, saying the the genre was for morons.",
+    "context": {
+      "claim_date": "2020-04-15",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Does Lady Michelle Obama like country music?",
+        "answer": "In 2009, first lady Michelle Obama created a White House music series that has celebrated jazz, country, classical, Motown and Latin music.",
+        "url": "https://www.cbsnews.com/news/president-obama-salutes-country-music/"
+      },
+      {
+        "question": "Has Michelle Obama ever celebrated country music?",
+        "answer": "The Obama's hosted a 'Country Music: In Performance at the White House', paying tribute to the genre.",
+        "url": "https://www.soundslikenashville.com/news/the-white-house-celebrates-country-music/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0022",
+    "text": "The Daughters of the Confederacy sued NASCAR for violating the First Amendment.",
+    "context": {
+      "claim_date": "2020-06-13",
+      "speaker": "Harry Helmet",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Where was this claim published?",
+        "answer": "bustaroll.org",
+        "url": "https://web.archive.org/web/20200910145412/https://bustatroll.org/2020/06/13/dont-gas-me-bro/"
+      },
+      {
+        "question": "What is bustaroll?",
+        "answer": "The site is no longer online but it was a satire website.",
+        "url": "https://mediabiasfactcheck.com/bustatroll-org/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0037",
+    "text": "Of the $150 million, only $7 million in $10,000 lots had been given out to bushfire victims by the Australian Red Cross as of the 16/02/2020.",
+    "context": {
+      "claim_date": "2020-02-16",
+      "speaker": null,
+      "location_ISO_code": "AU"
+    },
+    "evidence": [
+      {
+        "question": "At the time of the claim, how much had the Australian Red Cross distributed to victims of bushfires?",
+        "answer": "By Thursday, (January 24th 2020) the organisation said of the $115m it has raised since July, $30m had been allocated for immediate assistance, $18m would go to a three-year bushfire recovery program and $1m had been set aside for a bereavement allowance. It has already issued 690 grants, totalling $6.9m so far.",
+        "url": "https://www.theguardian.com/australia-news/2020/jan/24/australian-red-cross-defends-spending-10-of-bushfire-donations-on-office-costs"
+      },
+      {
+        "question": "What was the data for February?",
+        "answer": "These grants more than double existing immediate financial assistance, with the Red Cross Bushfire Advisory Panel allocating a further $30.5 million, with a new total of $61.5 million now available for immediate cash relief. Currently, around $1 million a day is being distributed to people impacted by the fires.",
+        "url": "https://web.archive.org/web/20221207150839/https://archive.ph/5BZhM#selection-1709.0-1709.313"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0054",
+    "text": "Trump TV Ad Misleads on Biden and Ukraine",
+    "context": {
+      "claim_date": "2019-10-04",
+      "speaker": "Trump TV",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Was Biden involved in the dismissal of the General Prosecutor Victor Shokin and Ukrainian politics",
+        "answer": "Ukraine Prosecutor Says No Evidence of Wrongdoing by Bidens",
+        "url": "https://web.archive.org/web/20210425035500/https://www.bloomberg.com/news/articles/2019-05-16/ukraine-prosecutor-says-no-evidence-of-wrongdoing-by-bidens"
+      },
+      {
+        "question": "What was the content of Trumps ad as regards Joe Biden and Ukraine",
+        "answer": "Trump said Biden threatened to withhold U.S. assistance to Ukraine unless it fired Shokin, which is true, but then implied without proof that it was done to protect Hunter Biden from prosecution.",
+        "url": "https://web.archive.org/web/20210120120008/https://www.whitehouse.gov/briefings-statements/remarks-president-trump-coast-guard-briefing-tropical-storm-imelda-houston-tx/"
+      },
+      {
+        "question": "What links of involvement were found between Joe Biden and the dismissal of Victor Shokin",
+        "answer": "“Biden was definitely not involved,” Lutsenko said. “We do not have any grounds to think that there was any wrongdoing starting from 2014.”",
+        "url": "https://web.archive.org/web/20210425035500/https://www.bloomberg.com/news/articles/2019-05-16/ukraine-prosecutor-says-no-evidence-of-wrongdoing-by-bidens"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0053",
+    "text": "Nigeria has an estimated physician-patient ratio of one doctor to every 4,000 to 5,000 patients.",
+    "context": {
+      "claim_date": "2019-10-10",
+      "speaker": "Socrates Mbamalu",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "Is it difficult to work out the physician to patient ratio?",
+        "answer": "Yes, Prof Lukoye Atwoli at Moi university in kenya said - due to the difficulty approximating the number of patients at any given time, most reports will use the doctor-population ratio as a proxy for coverage",
+        "url": "https://africacheck.org/reports/as-help-from-cuba-arrives-is-there-only-one-kenyan-doctor-for-every-16000-people/"
+      },
+      {
+        "question": "How many doctors do they have ?",
+        "answer": "Nigeria had 42,845 registered doctors, dentists and alternative medicine practitioners working in the country. Of these number, 39,912 are medical doctors.",
+        "url": "https://www.premiumtimesng.com/health/health-investigations/309633-its-official-nigeria-gravely-lacks-doctors-to-address-citizens-health-needs.html"
+      },
+      {
+        "question": "So what is the patient/doctor ratio?",
+        "answer": "1:4,000 to 1:5,000, contrary to the World Health Organisation’s (WHO) recommended 1:600.[2]",
+        "url": "https://noi-polls.com/emigration-of-medical-doctors-still-a-major-issue-in-nigeria/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0031",
+    "text": "Sanders Has Ended His Fight for Democratic Nomination",
+    "context": {
+      "claim_date": "2020-04-08",
+      "speaker": "Sen. Bernie Sanders",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did  Bernie Sanders end his battle to become the democratic presidential nominee in April 2020?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210824131549/https://twitter.com/BernieSanders/status/1247913426166280192"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0014",
+    "text": "Deaths from COVID-19 are nearing zero in the U.S. in early July 2020.",
+    "context": {
+      "claim_date": "2020-07-08",
+      "speaker": "C Michael Pickens",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What data is used to report weekly deaths?",
+        "answer": "The provisional counts for coronavirus disease 2019 (COVID-19) deaths are based on a current flow of mortality data in the National Vital Statistics System. National provisional counts include deaths occurring within the 50 states and the District of Columbia that have been received and coded as of the date specified. It is important to note that it can take several weeks for death records to be submitted to National Center for Health Statistics (NCHS), processed, coded, and tabulated. Therefore, the data shown on this page may be incomplete, and will likely not include all deaths that occurred during a given time period, especially for the more recent time periods. Death counts for earlier weeks are continually revised and may increase or decrease as new and updated death certificate data are received from the states by NCHS. COVID-19 death counts shown here may differ from other publis",
+        "url": "https://archive.ph/6OlBk#selection-871.0-871.969"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0012",
+    "text": "Border-wall construction under the Trump administration has replaced already existing barriers.",
+    "context": {
+      "claim_date": "2020-07-14",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "How many miles of wall existed when Trump took office?",
+        "answer": "When Trump took office, 655 miles of the nearly 2,000-mile border between the U.S. and Mexico already had barriers. Most were constructed during the presidencies of Barack Obama and George W. Bush, who in 2006 signed the Secure Fence Act, authorizing “hundreds of miles of additional fencing.”",
+        "url": "https://web.archive.org/web/20210906170759/https://georgewbush-whitehouse.archives.gov/news/releases/2006/10/20061026-1.html"
+      },
+      {
+        "question": "How much of the wall built during Trump's administration, was new wall?",
+        "answer": "According to CNN's fact-checker, Daniel Dale, official figures as of June 19 show that out of the 216 miles built since January 2017, only three miles were new. The rest, according to Dale, replaced old barriers or were secondary barriers.",
+        "url": "https://web.archive.org/web/20210906170759/https://georgewbush-whitehouse.archives.gov/news/releases/2006/10/20061026-1.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0045",
+    "text": "New York is trying to pass a bill that would place non mask wearers and unvaccinated people in concentration camps for forced vaccination.",
+    "context": {
+      "claim_date": "2020-01-04",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What is the name of the bill?",
+        "answer": "A416",
+        "url": "https://web.archive.org/web/20210429081457/https://www.nysenate.gov/legislation/bills/2021/A416#:~:text=A416%20(ACTIVE)%20%2D%20Summary,dangerous%20to%20the%20public%20health."
+      },
+      {
+        "question": "Was the bill created for covid-19 pandemic?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20210429081457/https://www.nysenate.gov/legislation/bills/2021/A416#:~:text=A416%20(ACTIVE)%20%2D%20Summary,dangerous%20to%20the%20public%20health."
+      },
+      {
+        "question": "Is the bill active?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20210429081457/https://www.nysenate.gov/legislation/bills/2021/A416#:~:text=A416%20(ACTIVE)%20%2D%20Summary,dangerous%20to%20the%20public%20health."
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0055",
+    "text": "Hundreds of billions of dollars have been and are coming into our country in the form of tariffs, and China’s eating the cost.",
+    "context": {
+      "claim_date": "2019-09-09",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "How much did the US collect in tariffs in 2018",
+        "answer": "Sixty-three billion dollars - that's how much the U.S. government has collected in tariffs in 2018",
+        "url": "https://web.archive.org/web/20210724055237/https://www.npr.org/2019/08/07/749163931/trumps-tariff-bounty-how-much-the-u-s-has-brought-in-and-where-the-money-is-goin"
+      },
+      {
+        "question": "How much of the tariff cost is being borne by the Chinese",
+        "answer": "The goods come from China, but it is the US importer who has assessed them that bears the cost of the tariff",
+        "url": "https://web.archive.org/web/20210724055237/https://www.npr.org/2019/08/07/749163931/trumps-tariff-bounty-how-much-the-u-s-has-brought-in-and-where-the-money-is-goin"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0038",
+    "text": "Donald Trump cited 'serious economic conditions' as the reason for reducing federal worker pay raises in early 2020",
+    "context": {
+      "claim_date": "2020-02-13",
+      "speaker": null,
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What percentage did Donald Trump originally plan to raise federal workers wages by in January 2021?",
+        "answer": "2.6%",
+        "url": "https://web.archive.org/web/20210226014239/https://federalnewsnetwork.com/pay/2020/02/in-break-with-tradition-trump-announces-1-federal-pay-raise-intentions-to-congress-months-early/"
+      },
+      {
+        "question": "Why did Donald Trump reduce federal worker pay rises in early 2020?",
+        "answer": "Trump proposed that pay raises for civilian federal workers be limited to 1% in 2021 in a bid to \"maintain efforts to put our Nation on a fiscally sustainable course.\" He described a pay increase above 1% as \"inappropriate.\"\n\"This alternative pay plan decision will not materially affect our ability to attract and retain a well qualified Federal workforce,\" the President wrote.\n\nIn limiting federal pay raises, Trump cited his statutory authority to adjust pay because of \"national emergency or serious economic conditions affecting the general welfare,\" but the President frequently touts a growing US economy, including a strong growth rate for the gross domestic product and low unemployment.",
+        "url": "https://web.archive.org/web/20210306101059/https://edition.cnn.com/2020/02/10/politics/trump-federal-employee-pay-adjustments/index.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0069",
+    "text": "80.63 lakh pregnant women have been immunized in India by August 2018.",
+    "context": {
+      "claim_date": "2019-04-02",
+      "speaker": "BJP government in India",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "How many Lakh pregnant women have been immunized in India since 2018?",
+        "answer": "81.78 lakh pregnant women have been immunized.",
+        "url": "https://www.narendramodi.in/healthy-india-541377"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0076",
+    "text": "George Stinney Jr was 14 years old when he was convicted of murder and executed by the US state of South Carolina in 1944.",
+    "context": {
+      "claim_date": "2018-10-04",
+      "speaker": "Kelvin Jurist Inanga",
+      "location_ISO_code": "ZA"
+    },
+    "evidence": [
+      {
+        "question": "How old was George Stinney when he was convicted of murder and electrocuted",
+        "answer": "South Carolina electrocuted 14-year-old George Stinney, the youngest person to be executed by an American state since the 1800s",
+        "url": "https://edition.cnn.com/2014/01/21/us/george-stinney-hearing/index.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0043",
+    "text": "The remaining male candidates for the US presidency in January 2020 (Pete Buttigieg, Joe Biden, Bernie Sanders, Tom Steyer) have collectively lost 10 elections.",
+    "context": {
+      "claim_date": "2020-01-14",
+      "speaker": "Elizabeth Warren",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Which election has Pete Buttigieg lost",
+        "answer": "He lost an election in 2010",
+        "url": "https://eu.courierpress.com/story/opinion/columnists/jon-webb/2019/04/03/pete-buttigieg-got-trounced-his-first-indiana-campaign/3341473002/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0077",
+    "text": "Shops buy apples that are coated with wax.",
+    "context": {
+      "claim_date": "2018-09-18",
+      "speaker": null,
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "Do apples naturally have a coat of wax?",
+        "answer": "Yes",
+        "url": "https://www.mcgill.ca/oss/article/you-asked/why-do-they-spray-wax-apples-0"
+      },
+      {
+        "question": "What is an apple's natural wax made of?",
+        "answer": "The wax is a mixture of up to fifty different compounds, most of which fall into the chemical category known as esters. There are also alcohols like heptacosanol and malol as well as hydrocarbons such as triacontane, C30H62. This compound can also be isolated from petroleum and is sometimes applied to fruit to supplement its natural wax. In that case chemophobes kick and scream about a petroleum derivative being applied to their fruit but there is no difference between triacontane produced by an apple isolated from petroleum.",
+        "url": "https://www.mcgill.ca/oss/article/you-asked/why-do-they-spray-wax-apples-0"
+      },
+      {
+        "question": "Do shop bought apples still have their natural wax?",
+        "answer": "No",
+        "url": "https://www.mcgill.ca/oss/article/you-asked/why-do-they-spray-wax-apples-0"
+      },
+      {
+        "question": "Do apple producers spray them with wax?",
+        "answer": "Yes",
+        "url": "https://www.mcgill.ca/oss/article/you-asked/why-do-they-spray-wax-apples-0"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0070",
+    "text": "People who are vaccinated against chickenpox need to keep getting boosters.",
+    "context": {
+      "claim_date": "2019-03-19",
+      "speaker": "US Kentucky Gov. Matt Bevin",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "How many booster shots are recommended after receiving the initial chickenpox vaccine?",
+        "answer": "One.\nThe U.S. Advisory Committee on Immunization Practices recommends two doses of the chickenpox vaccine for most children. The first dose is given around age 1 and the second around ages 4-6. A single dose of the vaccine reduces the risk of chickenpox between 70-90%, and two doses reduce the risk even more.\nThe chickenpox vaccine was added to the childhood immunization schedule in 1995. The booster dose was added in 2006.",
+        "url": "https://historyofvaccines.org/diseases/chickenpox-varicella"
+      }
+    ]
+  },
+  {
+    "id": "MFI-H-0017",
+    "text": "President Trump said coronavirus testing makes the U.S. look bad, \"so I said to my people, ‘Slow the testing down.’\"",
+    "context": {
+      "claim_date": "2020-06-22",
+      "speaker": "Priorities USA Action",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did Trump say that testing is making the US look bad?",
+        "answer": "“I personally think testing is overrated, even though I created the greatest testing machine in history,” Trump said, arguing that more tests means more confirmed cases. “In many ways, it makes us look bad.”",
+        "url": "https://www.vox.com/2020/6/18/21295826/coronavirus-us-update-trump-wsj-interview-masks-tests"
+      },
+      {
+        "question": "Did Trump say slow the testing down?",
+        "answer": "“When you do testing to that extent, you’re gonna find more people, you’re gonna find more cases. So I said to my people ‘slow the testing down, please,’” Trump said at the rally.",
+        "url": "https://www.politico.com/news/2020/06/22/white-house-testing-coronavirus-333803"
+      }
+    ]
+  }
+]

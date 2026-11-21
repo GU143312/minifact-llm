@@ -1,0 +1,17 @@
+# Prospective evaluation candidates, version 2
+
+200 news claims (100 Supported / 100 Refuted), a fixed nested set of 60 for semantic review (30 per class), and 30 separate fictional boundary cases. **Two-human semantic annotation and adjudication remain pending. No formal news inference has run.**
+
+Source: AVeriTeC (Schlichtkrull, Guo and Vlachos, 2023), train revision `7c62d1ec8df3fb560d6efe2b85fa191135636f81`, CC BY-NC 4.0. See the [source and license notice](../improvement/NOTICE.md). Upstream claim text and whole-claim labels are retained; project IDs, subsets and filtered QA projections are added. The full upstream file stays outside the repository. Boundary fixtures are project-authored, not independent human news gold.
+
+Selection uses seed 42 SHA ranking after historical normalized-text/article exclusions. Before news inference or semantic annotation, an explicitly disclosed agent-assisted event/source review read the 222 historical claims, 200 initial candidates, replacements and selected QA. Twenty upstream indices were additionally excluded: `52, 123, 466, 508, 529, 652, 655, 885, 901, 1086, 1331, 1717, 1981, 2073, 2194, 2268, 2434, 2440, 2501, 2827`. Reasons and comparison references are in `event_review.json`; they include conservative event overlaps, conflicting source dates and a claim depending on absent video. Replacements follow the same fixed ranking, without observing new-news model outputs.
+
+Actual sampling namespaces are `minifact-next-news-v1`, `minifact-next-order-v1` and `minifact-next-semantic-v1` in `next_eval/data.py`. The manifest's inherited `selection` object is the old filter/QA contract, including historical split metadata; it is not this round's sample-size/ranking declaration. The current 200/60/30 sizes are bound in `protocol.json` and validated against the actual records.
+
+These are English benchmark claims of 8–46 whitespace-separated words, with inherited claim dates from 2016-02-11 to 2020-08-24 and 370 filtered QA items. Country metadata includes 88 US, 29 IN, 15 GB, 14 NG and 24 unspecified claims. This is a balanced historical benchmark subset, not a population-matched sample of current news. Class balance does not remove geographic, source or model-pretraining biases.
+
+The event review is `agent_assisted_manual_review`, not a human truth check. Event keys identify concrete assertions/incidents; a shared topic alone does not establish a duplicate. Some conservative story clusters were excluded explicitly. Related topics can remain correlated, and source ambiguity may be found during human review. Broad evaluative wording in MFN-2814 is recorded as a limitation; annotators must not invent acts or participants to make it more specific.
+
+`dataset.json` holds inherited whole-claim gold; `inputs.json` contains only id/text/context/evidence. `manifest.json` binds immutable data and history. Creation-time pending status in the dataset/manifest is retained; effective formal readiness is computed from completed review records and the final freeze. `reviewer_a.json`, `reviewer_b.json` and `adjudication.json` remain blank templates. The four review files are editable before freeze; their completed hashes are then bound.
+
+Read the [execution protocol](../../docs/NEXT_EVALUATION.md) and [annotation guide](../../docs/NEXT_EVALUATION_ANNOTATION.md). Give A/B only their own blinded packet; retain independent files before joint adjudication. Formal news freeze rejects missing human review. Do not publish private shared documents or real reviewer identities.
