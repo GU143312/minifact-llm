@@ -25,7 +25,9 @@ def build(bundle, output):
     app = ROOT/'annotation_app'
     shell = (app/'index.html').read_text(encoding='utf-8')
     assets = {marker: (app/file).read_text(encoding='utf-8') for marker, file in
-              [('/*APP_STYLE*/','style.css'), ('/*APP_CORE*/','core.js'), ('/*APP_UI*/','app.js')]}
+              [('/*APP_STYLE*/','style.css'), ('/*APP_CORE*/','core.js'),
+               ('/*APP_UI*/','app.js'), ('/*APP_GUIDE*/','guide.html')]}
+    plain_guide = (app/'guide.txt').read_text(encoding='utf-8')
     output.mkdir(parents=True)
     for role in ('A', 'B'):
         page = output/f'MiniFact_标注页面_{role}.html'
@@ -36,17 +38,16 @@ def build(bundle, output):
         page.write_text(html, encoding='utf-8', newline='\n')
         guide = f'''MiniFact 标注者 {role} 使用说明
 
-1. 先解压整个压缩包，双击 MiniFact_标注页面_{role}.html，用 Edge 或 Chrome 打开。无需安装 Python、启动服务器或联网。
-2. 填写一个固定化名。每位标注者独立完成全部 60 条，不要与另一位交换初稿。
-3. 选中原文片段，点“用选中文字新增主张”；补全完整主张、上下文依据和限定条件。页面自动计算所有原文位置，包含重复出现的位置。
-4. 检查是否漏提及限定是否保留，勾选确认，点“确认本条完成”，再继续下一条。页面不会替你判断事实拆分或真假。
-5. 同一浏览器会尝试自动保存。每次结束前请点“下载草稿”并确认下载成功；换电脑或浏览器时，用“恢复进度”导入草稿。
-6. 全部完成后点“导出完成稿”，确认独立人工标注，下载 reviewer_{role.lower()}.json，发回协调者。你不需要打开或编辑这个 JSON。
+这是给标注者 {role} 的包。先解压，再打开 MiniFact_标注页面_{role}.html。
+全部完成后，发回网页导出的 reviewer_{role.lower()}.json 文件。
+如果已经在旧网页开始填写，请先在旧页“下载草稿”，再在新版“恢复进度”，不要只复制 HTML。
+
+{plain_guide}
 
 页面不上传内容，没有外部服务或模型调用。自动保存依赖浏览器设置；文件下载才是可携带的备份。不要只转发填过的 HTML 来回传结果：HTML 不包含浏览器保存的进度。
 独立初审完成后，协调者会组织分歧讨论并记录仲裁。此页面用于初审，不会自动把两人答案合并为金标准。
 数据版本：{bundle.name}，60 条语义子集。包内无真假标签、证据、另一位的答案或共享计划文档。
-样本来源与许可见 NOTICE.md；填写规则见网页里的“填写指南”。
+样本来源与许可见 NOTICE.md；网页里的“填写指南”也包含以上讲解。
 '''
         with ZipFile(output/f'MiniFact_标注网页分享包_{role}.zip', 'x', ZIP_DEFLATED) as z:
             z.writestr(page.name, page.read_bytes())

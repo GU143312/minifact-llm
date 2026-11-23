@@ -56,19 +56,19 @@
       const grid=el('div','field-grid'), left=el('div'),right=el('div');grid.append(left,right);card.append(grid);
       const status=el('p','span-status',spanText(f.quote));
       function quoteChange(v){f.quote=v;f.occurrences=C.spans(item().text,v);status.textContent=spanText(v);status.classList.toggle('invalid',!f.occurrences.length);changed();}
-      const quote=field(left,'原文引用（逐字复制）',f.quote,quoteChange,`quote-${fi}`);
+      const quote=field(left,'原文引用（原样复制，不改字）',f.quote,quoteChange,`quote-${fi}`);
       status.classList.toggle('invalid',!C.spans(item().text,f.quote).length);left.append(status);
       const qt=el('div','quote-tools');qt.append(button('使用选中的原文',()=>{if(!selected){notify('请先在上方原文中选择一个片段。',true);return;}quote.value=selected;quoteChange(selected);}));left.append(qt);
-      field(right,'完整主张（可补全主语、指代）',f.proposition,v=>{f.proposition=v;changed();},`proposition-${fi}`);
-      right.append(el('p','hint','补全必须有原文依据；保留否定、归因和必要宾语。'));
+      field(right,'完整说法（写清是谁、说了什么事）',f.proposition,v=>{f.proposition=v;changed();},`proposition-${fi}`);
+      right.append(el('p','hint','原句完整时可以保留；“她/他”可换成原文能确定的人名。保留“没有”“据谁说”等细节，不猜背景。'));
       const contexts=el('div','subsection'), ch=el('div','subhead'), list=el('div');
-      ch.append(el('strong','','上下文依据（按需添加）'),button('添加选中的上下文',()=>{
-        if(!selected){notify('请先在原文中选择代词或共享主语所依据的片段。',true);return;}
+      ch.append(el('strong','','上下文依据（补全时用）'),button('添加选中的上下文',()=>{
+        if(!selected){notify('请先在原文里选出能说明“是谁”的文字，例如前文的人名。',true);return;}
         if(f.context_quotes.some(c=>c.quote===selected)){notify('这段上下文已添加。');return;}
         f.context_quotes.push({quote:selected,occurrences:C.spans(item().text,selected)});changed();renderFacts();
       }));contexts.append(ch,el('p','hint','例如原文用了 She，可选中前文的人名作为补全依据。'),list);
       f.context_quotes.forEach((c,ci)=>{const row=el('div','context-row');const wrap=el('div');wrap.append(el('div','',c.quote),el('p','span-status',spanText(c.quote)));row.append(wrap,button('移除',()=>{f.context_quotes.splice(ci,1);changed();renderFacts();}));list.append(row);});card.append(contexts);
-      const quals=el('div','subsection'), qh=el('div','subhead');qh.append(el('strong','','限定条件（没有则留空）'),button('添加限定条件',()=>{f.qualifiers.push({qualifier_id:newId('q',f.qualifiers,'qualifier_id'),kind:'time',text:''});changed();renderFacts();$('facts').children[fi].querySelector('.qualifier-row:last-child input').focus();}));quals.append(qh);
+      const quals=el('div','subsection'), qh=el('div','subhead');qh.append(el('strong','','限定条件（不能丢的细节）'),button('添加限定条件',()=>{f.qualifiers.push({qualifier_id:newId('q',f.qualifiers,'qualifier_id'),kind:'time',text:''});changed();renderFacts();$('facts').children[fi].querySelector('.qualifier-row:last-child input').focus();}));quals.append(qh,el('p','hint','例如时间、数量、“没有”“如果”。选类型，再填原文中的细节；可加多条，没有则留空。完整说法里也要保留这些细节。'));
       f.qualifiers.forEach((q,qi)=>{
         const row=el('div','qualifier-row'), select=el('select'), input=el('input');select.setAttribute('aria-label',`主张 ${fi+1} 限定 ${qi+1} 类型`);
         for(const [value,label] of Object.entries(C.kinds)){const opt=el('option','',label);opt.value=value;select.append(opt);}select.value=q.kind;
