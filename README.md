@@ -6,6 +6,8 @@
 
 ## 下一轮评估：200 条新闻与双人语义标注
 
+人工初审可使用 [A/B 标注网页](docs/ANNOTATION_WEB.md)：双击打开、选择原文自动定位、表单填写、保存/恢复进度并导出。B 包可单独分享给同学，包含 60 条盲标样本，不含 A 的答案或基准标签。
+
 已实现 [六组评估协议与命令](docs/NEXT_EVALUATION.md)、[200 条候选数据和盲标模板](data/next_eval_v2/README.md)、30 条独立边界用例、配对置信区间及分别验收准确率、漏报、误报和语义质量的工具。v2 已完成明确披露的 agent 事件初筛，排除 20 个重叠或来源歧义候选。**60 条真实双人语义标注仍待完成，正式 200 条推理尚未启动。**填写方式见 [人工指南](docs/NEXT_EVALUATION_ANNOTATION.md)。缺少人工记录时，程序拒绝正式冻结；开发和合成结果不会当作正式成绩。32 条开发集的六组实际运行与审计已完成，见 [开发诊断](reports/next_eval_dev_report_20261122/REPORT.md)。
 
 30 条边界运行及 tokenizer 审计也已完成，D/E/F 为 20/30、17/30、17/30，见 [边界诊断](reports/next_eval_boundary_v2_report_20261122/REPORT.md)。当前没有默认方法升级：开发和边界均未显示 F 优于 D，且反馈未触发第二轮。代码、验证和后续人工工作集中记录在 [交付说明](reports/NEXT_EVALUATION_IMPLEMENTATION.md)。
