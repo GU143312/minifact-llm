@@ -1,0 +1,2864 @@
+{
+  "reviewer": "codex_event_screen_20261122",
+  "reviewer_type": "agent_assisted_manual_review",
+  "completed_at_utc": "2026-11-21T20:29:41.495359+00:00",
+  "historical_records": [
+    {
+      "id": "MF-P3-C-0026",
+      "text": "A Maryland man was sentenced to a year in jail for throwing parties.",
+      "article": "https://web.archive.org/web/20210720230340/https://misbar.com/en/factcheck/2020/09/28/man-sentenced-to-one-year-in-jail-for-throwing-parties"
+    },
+    {
+      "id": "MF-P1-0022",
+      "text": "Judith Collins said, on Donald Trump, \"actually, he's a damn sight better than any of the other Presidents that have been there before him, including those that you admire, Miss Arden,\"",
+      "article": "https://web.archive.org/web/20201104030820/https://www.aap.com.au/manipulated-collins-quote-misrepresents-praise-for-trump/"
+    },
+    {
+      "id": "MF-P1-0047",
+      "text": "The CDC has removed the “Covid-19 Pandemic” and replaced it with “Covid-19 Outbreak” on their website.",
+      "article": "https://web.archive.org/web/20201023003450/https://www.indiatoday.in/fact-check/story/did-top-us-health-body-replace-pandemic-with-outbreak-for-covid19-1721485-2020-09-13"
+    },
+    {
+      "id": "MF-P3-C-0047",
+      "text": "558 people were killed by the police in 2018, while 201 people died in police custody",
+      "article": "https://web.archive.org/web/20210425200940/https://africacheck.org/fact-checks/reports/police-violence-south-africa-what-do-numbers-show"
+    },
+    {
+      "id": "MF-P1-0009",
+      "text": "President Ferdinand Marcos and Dr. Jose Rizal established and founded the WORLD BANK and International Monetary Fund.",
+      "article": "https://web.archive.org/web/20210127061518/https://factcheck.afp.com/misleading-claim-circulates-world-bank-and-imf-were-established-former-dictator-ferdinand-marcos-and"
+    },
+    {
+      "id": "MF-P3-C-0032",
+      "text": "Nigeria is the leading producer of cassava in Africa and the world.",
+      "article": "https://web.archive.org/web/20210411004740/https://dubawa.org/how-true-are-claims-by-ui-professors-vying-to-become-next-vc-of-the-premier-university/"
+    },
+    {
+      "id": "MF-P1-0053",
+      "text": "US President Trump issued an executive order to reopen states in lockdown during COVID-19 pandemic; governors who refuse will be sued",
+      "article": "https://web.archive.org/web/20210711160610/https://www.usatoday.com/story/news/factcheck/2020/09/14/fact-check-list-10-donald-trump-accomplishments-3-true/3438025001/"
+    },
+    {
+      "id": "MF-P1-0050",
+      "text": "Maharashtra Navnirman Sena (MNS) chief Raj Thackeray has come forward in support of Bollywood actress Kangana Ranaut and would welcome her back to Mumbai, India.",
+      "article": "https://web.archive.org/web/20210127183852/https://www.boomlive.in/fake-news/fake-twitter-account-of-raj-thackeray-lends-support-to-kangana-ranaut-9628"
+    },
+    {
+      "id": "MF-P3-C-0005",
+      "text": "The FBI is in possession of the president of the US's son  Hunter Biden's laptop.",
+      "article": "https://web.archive.org/web/20210301201829/https://misbar.com/en/factcheck/2020/10/23/fbi-is-in-possession-of-hunter-biden%E2%80%99s-laptop"
+    },
+    {
+      "id": "MF-P3-C-0016",
+      "text": "When Joe Biden was US vice-president they took a month to act on information that might have saved Kayla Mueller, a humanitarian worker held hostage and sexually abused by the Islamic State terrorist group",
+      "article": "https://web.archive.org/web/20210118231855/https://www.washingtonpost.com/politics/2020/10/12/pences-jab-that-obama-hesitated-month-rescue-kayla-mueller/"
+    },
+    {
+      "id": "MF-P3-C-0037",
+      "text": "Iran has stockpiled 10 times as much enriched uranium as it had in 2016.",
+      "article": "https://web.archive.org/web/20201227064520/https://www.politifact.com/factchecks/2020/sep/17/joe-biden/joe-biden-says-under-donald-trump-irans-uranium-st/"
+    },
+    {
+      "id": "MF-P1-0038",
+      "text": "In 2019, 10 million fell ill from tuberculosis and 1.5 million died but nobody needs to wears a mask for tuberculosis",
+      "article": "https://web.archive.org/web/20210125220939/https://www.politifact.com/factchecks/2020/sep/18/viral-image/post-misleads-about-covid-19-using-tuberculosis-da/"
+    },
+    {
+      "id": "MF-P1-0027",
+      "text": "Donald Trump has not appoointed any black federal judges.",
+      "article": "https://web.archive.org/web/20210118031047/https://checkyourfact.com/2020/10/02/fact-check-donald-trump-not-appointed-black-federal-judges/"
+    },
+    {
+      "id": "MF-P3-C-0034",
+      "text": "Carlos Gimenez approved a 67% pay raise for himself and increased his own pension.",
+      "article": "https://web.archive.org/web/20210310031315/https://www.politifact.com/factchecks/2020/sep/30/debbie-mucarsel-powell/florida-congressional-race-carlos-gimenezs-salary-/"
+    },
+    {
+      "id": "MF-P1-0010",
+      "text": "India’s imports from China increased by 27% in April-August 2020",
+      "article": "https://web.archive.org/web/20201101024850/http://newsmobile.in/articles/2020/10/22/fact-check-has-indias-imports-from-china-increased-by-27-in-april-august-heres-the-truth/"
+    },
+    {
+      "id": "MF-P3-C-0006",
+      "text": "A third of excess deaths in the United States between 1 March and  1 August 2020 during the COVID-19 pandemic could not be directly attributed to the coronavirus",
+      "article": "https://web.archive.org/web/20210310055253/https://healthfeedback.org/claimreview/the-percentage-of-excess-deaths-in-the-u-s-not-directly-caused-by-covid-19-range-from-14-to-33-it-remains-unclear-how-lockdowns-influenced-excess-mortality/"
+    },
+    {
+      "id": "MF-P3-C-0008",
+      "text": "US Judge Amy Coney Barrett graduated at the top of her law school class at Notre Dame Law School",
+      "article": "https://web.archive.org/web/20210416111205/https://www.usatoday.com/story/news/factcheck/2020/10/18/fact-check-claim-harris-barrett-legal-backgrounds-true/3669109001/"
+    },
+    {
+      "id": "MF-P3-C-0039",
+      "text": "Joe Biden’s own chief of staff said that when Biden managed swine flu in 2009, they quote, “Did every possible thing wrong.”",
+      "article": "https://web.archive.org/web/20210426170819/https://www.factcheck.org/2020/09/trump-spins-quotes-by-about-biden/"
+    },
+    {
+      "id": "MF-P3-C-0011",
+      "text": "The gross domestic product  (GDP) figure in Nigeria for 2020 has decreased from the figure for 2019.",
+      "article": "https://web.archive.org/web/20210531024601/https://dubawa.org/fact-checking-atikus-claims-on-2021-budget-proposal/"
+    },
+    {
+      "id": "MF-P3-C-0033",
+      "text": "The White House blocked a plan to send facemasks to every household in April 2020.",
+      "article": "https://web.archive.org/web/20210615063029/https://www.poynter.org/tfcn/2020/fact-check-did-the-white-house-block-access-to-face-masks-in-april-2020/"
+    },
+    {
+      "id": "MF-P1-0024",
+      "text": "Democratic presidential nominee Joe Biden received the questions for the first presidential debate in advance.",
+      "article": "https://web.archive.org/web/20201029165437/https://checkyourfact.com/2020/10/02/fact-check-joe-biden-debate-questions-advance/"
+    },
+    {
+      "id": "MF-P1-0044",
+      "text": "Nigerian Government had placed a ban on alcohol in sachet and polythene.",
+      "article": "https://web.archive.org/web/20201102082415/https://dubawa.org/did-the-nigerian-government-ban-sachet-alcohol/"
+    },
+    {
+      "id": "MF-P3-C-0046",
+      "text": "All India Institute of Medical Sciences Nursing Officer Recruitment Common Eligibility Test 2020 was postponed.",
+      "article": "https://web.archive.org/web/20210128080554/https://newsmeter.in/aiims-nursing-officer-recruitment-common-eligibility-test-2020-postponed-is-true/"
+    },
+    {
+      "id": "MF-P1-0013",
+      "text": "Prominent US Democrat party members including Hillary and Bill Clinton, were running a child sex-trafficking ring in the basement of a Washington, D.C., pizzeria.",
+      "article": "https://web.archive.org/web/20210616174749/https://www.factcheck.org/2020/10/social-media-posts-dredge-up-baseless-child-trafficking-conspiracy-theory/"
+    },
+    {
+      "id": "MF-P3-C-0002",
+      "text": "The New York post Endorsed Donald trumps bid for re-election.",
+      "article": "https://web.archive.org/web/20210122015529/https://www.usatoday.com/story/news/factcheck/2020/12/29/fact-check-ny-post-encourages-trump-accept-bidens-victory/4075001001/"
+    },
+    {
+      "id": "MF-P1-0017",
+      "text": "A law called The Flora and Fauna Act classified aboriginal people as animals until Australian voters overturned it in the 1960s.",
+      "article": "https://web.archive.org/web/20210721135559/https://leadstories.com/hoax-alert/2020/10/fact-check-aboriginal-australians-were-not-classified-as-animals-under-the-flora-and-fauna-act-until-the-1960s.html"
+    },
+    {
+      "id": "MF-P3-C-0048",
+      "text": "Donald Trump said \"Last month, I took on Big Pharma. You think that is easy? I signed orders that would massively lower the cost of your prescription drugs.\"",
+      "article": "https://web.archive.org/web/20210227073357/https://www.politifact.com/article/2020/aug/28/fact-checking-donald-trumps-2020-rnc-speech/"
+    },
+    {
+      "id": "MF-P3-C-0050",
+      "text": "Nancy Pelosi says that China would prefer Joe Biden.",
+      "article": "https://web.archive.org/web/20210504031017/https://www.politifact.com/article/2020/aug/27/fact-checking-night-three-2020-rnc/"
+    },
+    {
+      "id": "MF-P3-C-0023",
+      "text": "Trade relations between the United States and Africa have declined significantly while Donald Trump was president of the US.",
+      "article": "https://web.archive.org/web/20210118135713/https://africacheck.org/fact-checks/reports/donald-trumps-foreign-policy-fact-checking-us166-bn-china-africa-trade-claim"
+    },
+    {
+      "id": "MF-P1-0015",
+      "text": "NASA always receives blessings from the Pope and that God’s permission must be sought before a space mission.",
+      "article": "https://web.archive.org/web/20201104033446/https://factcheck.afp.com/facebook-posts-exaggerate-popes-involvement-nasa-space-missions"
+    },
+    {
+      "id": "MF-P3-C-0049",
+      "text": "EU Trade Commissioner resigned after being accused of violating COVID-19 health rules in Ireland",
+      "article": "https://web.archive.org/web/20210117054755/https://www.covid19facts.ca/en/fact-checked/what-are-the-consequences-when-political-leaders-violate-covid-19-health-regulations"
+    },
+    {
+      "id": "MF-P1-0054",
+      "text": "Economic damage caused by the pandemic shows United States GDP (gross domestic product) falling by 33 percent compared to India's 23.9 percent drop.",
+      "article": "https://web.archive.org/web/20210328061514/https://www.thequint.com/news/webqoof/us-economy-contracted-by-9-per-cent-not-33-in-comparison-with-india"
+    },
+    {
+      "id": "MF-P1-0001",
+      "text": "Jammu and Kashmir (J&K) in Pakistan/India was removed from the United Nations (UN) list of “unresolved disputes”.",
+      "article": "https://web.archive.org/web/20210608054144/https://www.altnews.in/old-unfounded-reports-of-removal-of-jk-from-un-list-of-disputes-viral-again/"
+    },
+    {
+      "id": "MF-P1-0006",
+      "text": "COVID-19 pandemic pre-planned with the help from Bill Gates.",
+      "article": "https://web.archive.org/web/20201130202624/https://leadstories.com/hoax-alert/2020/11/fact-check-claims-in-covid-19-genocide-of-2020-video-are-not-supported-by-facts.html"
+    },
+    {
+      "id": "MF-P3-C-0044",
+      "text": "The Indian government has launched an online health consultation scheme.",
+      "article": "https://web.archive.org/web/20201026064418/https://newsmeter.in/fact-check-yes-indian-govt-has-launched-online-health-consultation-scheme/"
+    },
+    {
+      "id": "MF-P1-0037",
+      "text": "Joe Biden would be the first person without an Ivy League degree to be elected president.",
+      "article": "https://web.archive.org/web/20210118204559/https://www.washingtonpost.com/politics/2020/09/17/joe-bidens-cnn-town-hall-an-occasional-whopper/"
+    },
+    {
+      "id": "MF-P1-0045",
+      "text": "The upper age-limit for Muslim candidates for the UPCS (i.e. Union Public Service Commission for recruitment to higher Civil Services of the Government of India) exam is relaxed to be higher than that of other applicants",
+      "article": "https://web.archive.org/web/20210520181041/https://www.altnews.in/sudarshan-news-show-upsc-jihad-riddled-with-false-claims/"
+    },
+    {
+      "id": "MF-P1-0043",
+      "text": "Muslim regiment of the Indian Army had refused to fight in India’s 1965 war with Pakistan.",
+      "article": "https://web.archive.org/web/20210615011651/https://www.altnews.in/indian-army-never-had-a-muslim-regiment-false-claim-of-desertion-by-it-in-1965-india-pak-war-goes-viral/"
+    },
+    {
+      "id": "MF-P1-0005",
+      "text": "Paul Pogba, who plays for Manchester United and the French national team, retired from international football in response to French President Macron’s comments on Islamist terrorism.",
+      "article": "https://web.archive.org/web/20201101025121/https://newsmeter.in/fact-check-paul-pogba-did-not-quit-french-football-team-after-president-macrons-remarks-on-islam/"
+    },
+    {
+      "id": "MF-P1-0007",
+      "text": "Rock musician Jon Bon Jovi performed for 12 people and 7 pumpkins at a campaign event for Democratic presidential nominee Joe Biden in Pennsylvania.",
+      "article": "https://web.archive.org/web/20210121112428/https://checkyourfact.com/2020/10/27/fact-check-bon-jovi-dallas-pennsylvania-biden-drive-in-rally/"
+    },
+    {
+      "id": "MF-P1-0060",
+      "text": "The first night of the US Republican National Convention had 128.4 million viewers",
+      "article": "https://web.archive.org/web/20201101222911/https://www.usatoday.com/story/news/factcheck/2020/09/15/fact-check-rncs-first-night-viewership-not-high-posts-boast/5728110002/"
+    },
+    {
+      "id": "MF-P1-0030",
+      "text": "House Speaker Nancy Pelosi said of US employers, “Employers cutting hours is a good thing. It then gives that person time to pursue their dreams and passions.”",
+      "article": "https://web.archive.org/web/20210118141019/https://checkyourfact.com/2020/09/25/fact-check-nancy-pelosi-employers-cutting-hours-good/"
+    },
+    {
+      "id": "MF-P1-0023",
+      "text": "Judith Collins, the National Party leader stated that New Zealand was using more coal to generate electricity because of the oil and gas exploration ban.",
+      "article": "https://web.archive.org/web/20210317232351/https://www.aap.com.au/nz-national-overstates-impact-of-oil-and-gas-exploration-ban/"
+    },
+    {
+      "id": "MF-P3-C-0012",
+      "text": "Ulysses S. Grant, commander of the Union Army during the American Civil War, was a slave owner.",
+      "article": "https://web.archive.org/web/20200903014642/https://leadstories.com/hoax-alert/2020/06/fact-check-robert-e-lee-was-a-slave-owner-and-so-was-ulysses-s-grant.html"
+    },
+    {
+      "id": "MF-P3-C-0025",
+      "text": "Amy Coney Barrett has a written track record, disagreeing adamantly with the U.S. Supreme Court’s decision to uphold the Affordable Care Act.",
+      "article": "https://web.archive.org/web/20210720223641/https://www.politifact.com/factchecks/2020/sep/28/joe-biden/amy-coney-barrett-supreme-court-and-affordable-car/"
+    },
+    {
+      "id": "MF-P1-0004",
+      "text": "The Wire called Durga puja racist and the goddess Durga a sex worker",
+      "article": "https://web.archive.org/web/20201128021609/https://www.boomlive.in/fake-news/cropped-screenshot-of-the-wire-article-on-durga-puja-is-misleading-10354"
+    },
+    {
+      "id": "MF-P3-C-0019",
+      "text": "Documents show the CIA made a referral to the FBI documenting the allegation that U.S. Presidential candidate Hillary Clinton had approved a campaign plan to stir up a scandal against U.S. Presidential candidate Donald Trump by tying him to Putin and the Russians’ hacking of the Democratic National Committee.",
+      "article": "https://web.archive.org/web/20210118231614/https://www.washingtonpost.com/politics/2020/10/09/pences-allegations-about-hillary-clinton-guide-perplexed/"
+    },
+    {
+      "id": "MF-P3-C-0043",
+      "text": "Schools have resumed in New Brunswick, Canada despite the COVID-19 pandemic",
+      "article": "https://web.archive.org/web/20210118140806/https://www.covid19facts.ca/en/fact-checked/schools-have-resumed-in-new-brunswick-despite-the-covid-19-pandemic"
+    },
+    {
+      "id": "MF-P1-0035",
+      "text": "MPs are not following workplace Covid guidance by wearing masks.",
+      "article": "https://web.archive.org/web/20201021110859/https://fullfact.org/health/parliament-distancing-covid/"
+    },
+    {
+      "id": "MF-P1-0011",
+      "text": "National Testing Agency (NTA) has made a major blunder in NEET Exam Result 2020. They stated that the all India topper had failed.",
+      "article": "https://web.archive.org/web/20201101083047/http://newsmobile.in/articles/2020/10/21/fact-check-viral-news-about-major-blunder-in-neet-2020-exam-results-is-fake-heres-the-truth/"
+    },
+    {
+      "id": "MF-P3-C-0040",
+      "text": "CDC announces that ordinary (non-N95) masks (which most people are wearing) will do nothing to protect you against wildfire smoke because they do not catch small particles",
+      "article": "https://web.archive.org/web/20210422114349/https://www.politifact.com/factchecks/2020/sep/14/facebook-posts/face-masks-wildfire-smoke-protection-and-covid-19-/"
+    },
+    {
+      "id": "MF-P3-C-0031",
+      "text": "Wray Thorn is managing director of Sightway Capital.",
+      "article": "https://web.archive.org/web/20201002180455/https://leadstories.com/hoax-alert/2020/09/fact-check-george-soros-does-not-own-two-sigma-investments.html"
+    },
+    {
+      "id": "MF-P1-0026",
+      "text": "AARP endorsed President Biden and gave financial support to planned parenthood.",
+      "article": "https://web.archive.org/web/20210720224558/https://leadstories.com/hoax-alert/2020/10/fact-check-the-aarp-did-not-endorse-biden-nor-give-financial-support-to-planned-parenthood.html"
+    },
+    {
+      "id": "MF-P1-0051",
+      "text": "Viral message claims that all Haldiram’s food products were banned in USA",
+      "article": "https://web.archive.org/web/20210121184908/https://newsmeter.in/fact-check-viral-message-that-all-haldirams-food-products-were-banned-in-usa-is-false/"
+    },
+    {
+      "id": "MF-P1-0034",
+      "text": "Ruth Bader Ginsburg waged an \"active campaign\" to repeal the Mann Act and to lower the age of consent for sex",
+      "article": "https://web.archive.org/web/20210721135754/https://leadstories.com/hoax-alert/2020/09/fact-check-ruth-bader-ginsburg-did-not-wage-active-campaign-to-repeal-mann-act-or-lower-age-of-consent.html"
+    },
+    {
+      "id": "MF-P1-0003",
+      "text": "Sleeping under a mosquito bed net treated (or not treated) with insecticide is ineffective and harmful to human health.",
+      "article": "https://web.archive.org/web/20210212042422/https://dubawa.org/some-people-believe-sleeping-under-insecticide-treated-bed-net-is-harmful-but-how-true-is-this/"
+    },
+    {
+      "id": "MF-P1-0028",
+      "text": "Raveer Singh requested Narcotics Control Bureau (NCB) to let him join anxiety-prone Actor Deepika Padukone during drug interrogation.",
+      "article": "https://web.archive.org/web/20210628091134/https://www.altnews.in/media-circus-continues-did-ranveer-seek-permission-to-join-deepika-during-ncb-drug-probe/"
+    },
+    {
+      "id": "MF-P3-C-0028",
+      "text": "Americans advised to reconsider travel to Ghana due to COVID-19.",
+      "article": "https://web.archive.org/web/20210122073123/https://ghanafact.com/2020/09/true-americans-advised-to-reconsider-travel-to-ghana-due-to-covid-19/"
+    },
+    {
+      "id": "MF-P1-0041",
+      "text": "A Democratic Vice Presidential nominee, Kamala Harris, said that there will be \"a federal tax on your home for slavery reparations.\"",
+      "article": "https://web.archive.org/web/20210124222152/https://www.politifact.com/factchecks/2020/oct/07/facebook-posts/no-evidence-kamala-harris-backs-tax-pay-slavery-re/"
+    },
+    {
+      "id": "MF-P3-C-0018",
+      "text": "US President Donald Trump following his positive diagnosis of COVID-19, was given treatment developed from the use of fetal tissue, made by the company Regeneron.",
+      "article": "https://web.archive.org/web/20210228131334/https://misbar.com/en/factcheck/2020/10/30/regeneron-medicine-used-to-treat-trump-developed-from-fetal-tissue"
+    },
+    {
+      "id": "MF-P1-0036",
+      "text": "Zimbabwe recorded its first coronavirus Infection before 20 February 2020.",
+      "article": "https://web.archive.org/web/20210308194157/https://factcheck.afp.com/no-cases-novel-coronavirus-have-been-confirmed-zimbabwe-february-20-2020"
+    },
+    {
+      "id": "MF-P1-0029",
+      "text": "US President Donald Trump's executive order on September 24, 2020 legally ensures health coverage protections for those with pre existing medical conditions.",
+      "article": "https://web.archive.org/web/20210426170852/https://www.factcheck.org/2020/10/viral-post-overstates-effect-of-trumps-order-on-preexisting-conditions/"
+    },
+    {
+      "id": "MF-P1-0033",
+      "text": "California Governor Gavin Newsom made it so that convicted sexual predators have lighter sentences.",
+      "article": "https://web.archive.org/web/20210225211651/https://misbar.com/en/factcheck/2020/09/21/california-gov-newsom-didn%E2%80%99t-reduce-penalties-for-sex-crimes"
+    },
+    {
+      "id": "MF-P3-C-0042",
+      "text": "In England only 69.4% of COVID-19 contacts are now reached and asked to self-isolate.",
+      "article": "https://web.archive.org/web/20201201201601/https://fullfact.org/health/september-2020-test-trace/"
+    },
+    {
+      "id": "MF-P1-0012",
+      "text": "White House coronavirus adviser Dr. Anthony Fauci wrote a 2008 paper that found most 1918-1919 Spanish Influenza pandemic deaths were because of bacterial pneumonia from wearing masks.",
+      "article": "https://web.archive.org/web/20210306230051/https://checkyourfact.com/2020/10/22/fact-check-anthony-fauci-spanish-flu-deaths-face-masks-study/"
+    },
+    {
+      "id": "MF-P1-0019",
+      "text": "Swiss Squash player Ambre Allinckx’s refuses to play in India due to safety reasons",
+      "article": "https://web.archive.org/web/20201025164005/https://newsmeter.in/fact-check-claims-about-swiss-squash-player-ambre-allinckxs-refusal-to-play-in-india-due-to-safety-reasons-are-false/"
+    },
+    {
+      "id": "MF-P1-0016",
+      "text": "The PHE has began to combine Covid-19 and influenza statistics to make the numbers look worse.",
+      "article": "https://web.archive.org/web/20210116035044/https://fullfact.org/health/julia-hartley-brewer-flu-covid/"
+    },
+    {
+      "id": "MF-P1-0039",
+      "text": "Australian politician, Daniel Andrews said “In fact, you’d be surprised at how much can be avoided if people stop insisting on their personal freedoms. Because insisting on human rights is not only selfish, it’s stupid.”",
+      "article": "https://web.archive.org/web/20210123151451/https://factcheck.afp.com/australian-state-leader-misquoted-misleading-facebook-posts-which-shared-satirical-article-fact"
+    },
+    {
+      "id": "MF-P3-C-0004",
+      "text": "An 'anti-Black Lives Matter' flag replaced the American flag behind President Trump during a Waukesha campaign rally.",
+      "article": "https://web.archive.org/web/20210525130943/https://www.usatoday.com/story/news/factcheck/2020/10/28/fact-check-thin-blue-line-flag-prominent-trump-rallies/6058924002/"
+    },
+    {
+      "id": "MF-P3-C-0021",
+      "text": "“Wisconsin Republicans have not passed a single bill in 6 months.”",
+      "article": "https://web.archive.org/web/20210224035354/https://www.politifact.com/factchecks/2020/oct/07/facebook-posts/yes-wisconsin-legislators-havent-passed-bill-6-mon/"
+    },
+    {
+      "id": "MF-P3-C-0020",
+      "text": "The content of the conspiracy network, Radio Quebec, hosted by Alexis Cossette-Trudel is banned by Facebook.",
+      "article": "https://web.archive.org/web/20201201201402/https://www.covid19facts.ca/en/fact-checked/yes-facebook-has-banned-alexis-cossette-trudel-s-radio-quebec-conspiracy-network"
+    },
+    {
+      "id": "MF-P1-0020",
+      "text": "People in the UK who are required to self-isolate due to having tested positive for the COVID-19 virus will receive a support payment of £500 per week",
+      "article": "https://web.archive.org/web/20201020221638/https://fullfact.org/health/boris-johnson-quarantine-500/"
+    },
+    {
+      "id": "MF-P3-C-0017",
+      "text": "Trump said 'there were fine people on both sides' in far-right protests.",
+      "article": "https://web.archive.org/web/20210415192738/https://www.bbc.co.uk/news/election-us-2020-54434575"
+    },
+    {
+      "id": "MF-P1-0048",
+      "text": "PGA star Bubba Watson wrote a post that says, \"I see signs all over saying black lives matter. I’m just trying to figure out which black lives matter.”",
+      "article": "https://web.archive.org/web/20210711055550/https://www.factcheck.org/2020/09/viral-post-falsely-attributed-to-golfer-bubba-watson/"
+    },
+    {
+      "id": "MF-P3-C-0038",
+      "text": "Edo State in Nigeria has a 19% unemployment rate.",
+      "article": "https://web.archive.org/web/20210125113120/https://dubawa.org/is-edo-unemployment-rate-19-percent-as-claimed-by-obaseki/"
+    },
+    {
+      "id": "MF-P1-0055",
+      "text": "Hooligans from the Muslim community were behind the desecration of Goddess Kali Idol in a Bengal Temple in West Bengal's Murshidabad district by burning it.",
+      "article": "https://web.archive.org/web/20210612002917/https://www.indiatoday.in/fact-check/story/fact-check-the-curious-case-of-a-desecrated-kali-idol-in-a-bengal-temple-1718010-2020-09-03"
+    },
+    {
+      "id": "MF-P1-0049",
+      "text": "Math Mistake Caused U.S. Leaders To Panic And Order COVID Lockdowns",
+      "article": "https://web.archive.org/web/20210206072823/https://leadstories.com/hoax-alert/2020/09/fact-check-math-mistake-did-not-cause-u.s.-governments-to-panic-and-order-covid-lockdowns.html"
+    },
+    {
+      "id": "MF-P3-C-0010",
+      "text": "Amy Coney Barrett's nomination to the Supreme Court would be confirmed in October 2020, by a Senate majority that represents 15 million fewer people than the minority party.",
+      "article": "https://web.archive.org/web/20201127010555/https://www.usatoday.com/story/news/factcheck/2020/10/21/fact-check-minority-rule-post-has-6-true-facts-trump-barrett/3669988001/"
+    },
+    {
+      "id": "MF-P1-0052",
+      "text": "Voters in North Carolina can send their Mail-in vote and then go to the polling place to vote again to check that their mail-in vote has been counted.",
+      "article": "https://web.archive.org/web/20210423164239/https://www.politifact.com/article/2020/sep/03/trumps-bad-advice-going-polls-verify-if-your-mail-/"
+    },
+    {
+      "id": "MF-P3-C-0007",
+      "text": "Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB) is delivering 1kg bleaching powder, chlorine tablets to people’s doorsteps",
+      "article": "https://web.archive.org/web/20201028192252/https://newsmeter.in/fact-check-yes-hmwssb-delivering-1kg-bleaching-powder-chlorine-tablets-to-peoples-doorsteps/"
+    },
+    {
+      "id": "MF-P1-0042",
+      "text": "Actor Mukesh Khanna has called for a boycott of Jaya and Amitabh Bachchan.",
+      "article": "https://web.archive.org/web/20210716152415/https://www.indiatoday.in/fact-check/story/fact-check-shaktimaan-struggles-with-his-fake-avatars-on-social-media-1722179-2020-09-15"
+    },
+    {
+      "id": "MF-P3-C-0014",
+      "text": "Forty percent of Iowa’s energy resources are from renewables.",
+      "article": "https://web.archive.org/web/20210301202738/https://www.thegazette.com/factchecker/fact-checker-miller-meeks-links-excess-deaths-to-hospital-shutdowns-20201026"
+    },
+    {
+      "id": "MF-P3-C-0045",
+      "text": "Spraying of Naira notes is an offence punishable by imprisonment in Nigeria.",
+      "article": "https://web.archive.org/web/20210717101422/https://dubawa.org/spraying-of-naira-notes-is-an-offence-punishable-by-imprisonment-in-nigeria/"
+    },
+    {
+      "id": "MF-P3-C-0003",
+      "text": "The United States, New Zealand, U.K., Australia, and the EU have not included the NDF in their official list of terrorist groups.",
+      "article": "https://web.archive.org/web/20210115235946/https://verafiles.org/articles/vera-files-fact-check-dilg-usec-malaya-wrongly-claims-ndf-li"
+    },
+    {
+      "id": "MF-P1-0058",
+      "text": "US Cable news channel Fox News is unavailable in Canada due to media legislation.",
+      "article": "https://web.archive.org/web/20210301171705/https://www.boomlive.in/world/posts-that-claim-fox-news-is-unavailable-in-canada-are-false-9764"
+    },
+    {
+      "id": "MF-P3-C-0035",
+      "text": "US state of Georgia has “almost 100,000 more COVID-19 cases, almost twice as many deaths and almost 600 more nursing home deaths than North Carolina, US.",
+      "article": "https://web.archive.org/web/20210720162831/https://www.politifact.com/factchecks/2020/oct/15/roy-cooper/roy-cooper-compares-georgias-covid-19-numbers-nort/"
+    },
+    {
+      "id": "MF-P1-0057",
+      "text": "Republican Maine Sen. Susan Collins said of President Donald Trump, “Yes, I said that I wouldn’t endorse him but that doesn’t mean I don’t fully support him.”",
+      "article": "https://web.archive.org/web/20200924113815/https://checkyourfact.com/2020/09/04/fact-check-susan-collins-endorse-trump-fully-support/"
+    },
+    {
+      "id": "MF-P1-0032",
+      "text": "Due to coronavirus schools and colleges have been closed and because of this, the education of students has been affected. The government is providing free laptops to all the students so that they can complete their education and also give exams with the help of the internet",
+      "article": "https://web.archive.org/web/20201025164345/https://newsmeter.in/fact-check-viral-claim-that-government-is-distributing-free-laptops-to-students-is-fake/"
+    },
+    {
+      "id": "MF-P3-C-0027",
+      "text": "Pennsylvania ballots will be rejected without outer and inner envelopes.",
+      "article": "https://web.archive.org/web/20210128113946/https://www.usatoday.com/story/news/factcheck/2020/10/15/fact-check-pennsylvania-mail-votes-need-2-envelopes-counted/5882964002/"
+    },
+    {
+      "id": "MF-P1-0008",
+      "text": "People who do not vote for the Bharatiya Janata Party (BJP) in the 2020 elections will not get the COVID vaccine free of cost.",
+      "article": "https://web.archive.org/web/20210301174114/https://www.vishvasnews.com/english/politics/fact-check-posts-claiming-about-no-vote-no-covid-vaccine-is-misleading/"
+    },
+    {
+      "id": "MF-P3-C-0013",
+      "text": "Labour reversed the 4,400 health health worker cuts by the LNP.",
+      "article": "https://web.archive.org/web/20210722124912/https://www.abc.net.au/news/2020-10-29/fact-check-queensland-health-workers-cuts/12819864"
+    },
+    {
+      "id": "MF-P1-0025",
+      "text": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed as severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+      "article": "https://web.archive.org/web/20201128203911/https://factcheck.afp.com/online-articles-claiming-new-virus-was-spreading-china-september-2020-lack-important-context"
+    },
+    {
+      "id": "MF-P1-0002",
+      "text": "All USA Ballots Arriving After Election Day Will Be Thrown Out",
+      "article": "https://web.archive.org/web/20210222051131/https://leadstories.com/hoax-alert/2020/10/fact-check-it-is-not-true-that-all-ballots-arriving-after-election-day-will-be-thrown-out.html"
+    },
+    {
+      "id": "MF-P1-0014",
+      "text": "India's Congress party candidate Maskoor Usmani installed Jinnah's portrait at AMU.",
+      "article": "https://web.archive.org/web/20210226192757/https://www.altnews.in/aaj-tak-falselt-claims-congress-candidate-maskoor-usmani-hung-jinnahs-portrait-at-amu/"
+    },
+    {
+      "id": "MF-P3-C-0036",
+      "text": "Tourism, lockdown key to deep New Zealand recession.",
+      "article": "https://web.archive.org/web/20201227064519/https://www.aap.com.au/tourism-lockdown-linked-to-deep-new-zealand-recession/"
+    },
+    {
+      "id": "MF-P1-0040",
+      "text": "The US government has plans to force a COVID-19 vaccine on everyone.",
+      "article": "https://web.archive.org/web/20210406002158/https://www.politifact.com/factchecks/2020/oct/06/blog-posting/no-government-hasnt-released-plans-force-covid-19-/"
+    },
+    {
+      "id": "MF-P3-C-0024",
+      "text": "At independence in 1960  Nigeria had a population of 45 million.",
+      "article": "https://web.archive.org/web/20210526202243/https://africacheck.org/fact-checks/reports/nigerias-population-economy-and-history-fact-checking-buharis-independence-day"
+    },
+    {
+      "id": "MF-P3-C-0030",
+      "text": "US Supreme Court Justice, Ruth Bader Ginsburg, fought cancer for decades before she passed away in September 2020.",
+      "article": "https://web.archive.org/web/20210302133718/https://misbar.com/en/factcheck/2020/09/21/ginsburg-fought-bravely-against-cancer-for-decades"
+    },
+    {
+      "id": "MF-P1-0059",
+      "text": "Suresh Raina, the Chennai Super Kings (CSK) cricketer, has withdrawn from the upcoming 2020 edition of the IPL after testing positive for COVID-19.",
+      "article": "https://web.archive.org/web/20210721091854/https://newsmobile.in/articles/2020/08/31/fact-check-suresh-raina-did-not-test-positive-for-covid-19-dont-fall-for-fake-reports/"
+    },
+    {
+      "id": "MF-P3-C-0015",
+      "text": "Charlotta Bass was the first Black woman to run for vice president in 1952",
+      "article": "https://web.archive.org/web/20210131002830/https://www.usatoday.com/story/news/factcheck/2020/10/13/fact-check-charlotta-bass-first-black-woman-run-vp/5940196002/"
+    },
+    {
+      "id": "MF-P1-0021",
+      "text": "All students in India who had to switch to an online mode of education due to the coronavirus pandemic are being provided free Android smartphones by the government.",
+      "article": "https://web.archive.org/web/20210722140932/https://newsmobile.in/articles/2020/10/06/fact-check-no-the-govt-is-not-providing-free-android-smartphones-to-students/"
+    },
+    {
+      "id": "MF-P1-0056",
+      "text": "The World Health Organization (WHO) says there is no proof that face masks protect against Covid-19.",
+      "article": "https://web.archive.org/web/20210220191047/https://factcheck.afp.com/poster-shared-south-africa-makes-false-claims-about-face-masks"
+    },
+    {
+      "id": "MF-P3-C-0041",
+      "text": "Clinical trials of a vaccine against COVID-19 were paused",
+      "article": "https://web.archive.org/web/20210121152243/https://www.covid19facts.ca/en/fact-checked/clinical-trials-of-a-vaccine-against-covid-19-were-interrupted"
+    },
+    {
+      "id": "MF-P3-C-0009",
+      "text": "The iPhone 12 won’t come with earphones and a charging adapter.",
+      "article": "https://web.archive.org/web/20210301220920/https://misbar.com/en/factcheck/2020/10/14/iphone-12-will-come-without-charger-and-headphones"
+    },
+    {
+      "id": "MF-P3-C-0029",
+      "text": "U.S. Supreme Court Justice Ruth Bader Ginsburg is the first woman in American history to lie in state at the U.S. Capitol.",
+      "article": "https://web.archive.org/web/20210722084459/https://misbar.com/en/factcheck/2020/09/30/rbg-is-the-first-woman-to-lie-in-the-u-s-capitol"
+    },
+    {
+      "id": "MF-P1-0018",
+      "text": "Joe Biden proposed a US wide 2% property tax increase.",
+      "article": "https://web.archive.org/web/20210316205550/https://checkyourfact.com/2020/10/16/fact-check-joe-biden-federal-property-tax-increase/"
+    },
+    {
+      "id": "MF-P1-0046",
+      "text": "US Democratic Vice Presidential nominee Kamala Harris tweeted that she ‘filed a complaint’ to remove a specific Instagram account.",
+      "article": "https://web.archive.org/web/20210110233612/https://checkyourfact.com/2020/09/30/fact-check-kamala-harris-tweet-complaint-instagram-account-police/"
+    },
+    {
+      "id": "MF-P1-0031",
+      "text": "Shah Rukh Khan's Kolkata Knight Riders (KKR) is acquiring a 1.28 per cent stake in Reliance Retail at Rs 5,500 crore",
+      "article": "https://web.archive.org/web/20210628072212/https://www.indiatoday.in/fact-check/story/viral-ipl-shah-rukh-khan-kkr-investing-reliance-digital-us-firm-1725188-2020-09-25"
+    },
+    {
+      "id": "MF-P3-C-0001",
+      "text": "Amy Coney Barrett was confirmed as US Supreme Court Justice on October 26, 2020",
+      "article": "https://web.archive.org/web/20210226092601/https://misbar.com/en/factcheck/2020/10/27/senate-confirms-amy-coney-barrett-to-supreme-court"
+    },
+    {
+      "id": "MF-P3-C-0022",
+      "text": "The ex-Prime Minister of India Lal Bahadur Shastri took a loan to buy a car.",
+      "article": "https://web.archive.org/web/20201019235720/https://newsmeter.in/ex-pm-lal-bahadur-shastris-wife-repaid-rs-5k-loan-taken-from-pnb-after-his-death/"
+    },
+    {
+      "id": "MFI-D-0010",
+      "text": "Nigeria's debt had been paid off by the time former President Obasanjo and VP Abubakar exited office in 2007.",
+      "article": "https://web.archive.org/web/20210719201019/https://africacheck.org/fact-checks/reports/covid-19-pandemic-fact-checking-former-nigeria-vp-abubakars-claims-about"
+    },
+    {
+      "id": "MFI-D-0017",
+      "text": "Kenyan President Kenyatta in national day speech stated Under this administration … at Kilindini we have more than doubled the volume of cleared cargo passing [through] the port annually.",
+      "article": "https://web.archive.org/web/20210720135839/https://africacheck.org/fact-checks/reports/fact-checked-5-claims-kenyan-president-kenyatta-national-day-speech"
+    },
+    {
+      "id": "MFI-D-0025",
+      "text": "US House Speaker Nancy Pelosi said, “Waiting hours longer in the waiting room will allow you to make new friends.” This is regarding emergency care waits.",
+      "article": "https://web.archive.org/web/20201107232538/https://checkyourfact.com/2019/06/17/fact-check-nancy-pelosi-hours-waiting-room-new-friends/"
+    },
+    {
+      "id": "MFI-D-0009",
+      "text": "Professor Tasuku Honjo said that coronavirus is “not natural”.",
+      "article": "https://web.archive.org/web/20210620150608/https://fullfact.org/online/tasuku-honjo-coronavirus/"
+    },
+    {
+      "id": "MFI-D-0020",
+      "text": "Lewis Carroll once wrote, “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”",
+      "article": "https://web.archive.org/web/20201101025608/https://checkyourfact.com/2019/10/17/fact-check-lewis-carroll-issue-world-magical-solution-problems-believe-magic/"
+    },
+    {
+      "id": "MFI-D-0031",
+      "text": "Expanding Medicaid would bring 40,000 jobs to North Carolina.",
+      "article": "https://web.archive.org/web/20210719175419/https://www.politifact.com/factchecks/2019/feb/13/darren-jackson/would-medicaid-expansion-bring-40000-jobs-north-ca/"
+    },
+    {
+      "id": "MFI-D-0029",
+      "text": "South Africa have launched the Youth Employment Service, which is placing unemployed youth in paid internships in companies across the country.",
+      "article": "https://web.archive.org/web/20210226001653/https://africacheck.org/fact-checks/reports/state-facts-verifying-cyril-ramaphosas-sona2019-claims"
+    },
+    {
+      "id": "MFI-D-0001",
+      "text": "Ghana's economy previously grew at 3.4% under the form President Mahama's government and on average, for three successive years, at 7% per year with the current administration.",
+      "article": "https://web.archive.org/web/20210228151829/https://ghanafact.com/2020/08/fact-check-akufo-addos-speech-at-npp-manifesto-launch/"
+    },
+    {
+      "id": "MFI-D-0014",
+      "text": "House Speaker Nancy Pelosi approved $4.8 million in impeachment-related consulting fees to the Clinton Foundation.",
+      "article": "https://web.archive.org/web/20200427101439/https://leadstories.com/hoax-alert/2019/12/fake-news-nancy-pelosi-did-not-approve-48-million-in-impeachment-consulting-fees-to-clinton-foundation.html"
+    },
+    {
+      "id": "MFI-D-0004",
+      "text": "A rare yellow turtle was spotted in Balasore, Odisha.",
+      "article": "https://web.archive.org/web/20200923050534/https://newsmeter.in/fact-check-yes-a-rare-yellow-turtle-was-spotted-in-balasore-odisha/"
+    },
+    {
+      "id": "MFI-D-0032",
+      "text": "The question of Almajiris’ lack of primary or basic education are all local government problems.",
+      "article": "https://web.archive.org/web/20210720180153/https://africacheck.org/fact-checks/reports/battle-titans-fact-checking-arch-rivals-race-nigerias-presidency"
+    },
+    {
+      "id": "MFI-D-0007",
+      "text": "President Muhammadu Buhari of Nigeria said Nigeria is now rated as one of the top ten reforming countries.",
+      "article": "https://web.archive.org/web/20210130082541/https://africacheck.org/fact-checks/reports/fact-checking-buharis-democracy-day-claims-about-his-economic-achievements"
+    },
+    {
+      "id": "MFI-D-0024",
+      "text": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+      "article": "https://web.archive.org/web/20200720171212/https://factly.in/fact-checking-government-claims-on-ayushman-bharat/"
+    },
+    {
+      "id": "MFI-D-0008",
+      "text": "North Korea cancels all communication with South Korea.",
+      "article": "https://web.archive.org/web/20210721130549/https://misbar.com/en/factcheck/2020/06/10/has-north-korea-severed-all-communication-with-south-korea"
+    },
+    {
+      "id": "MFI-D-0028",
+      "text": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
+      "article": "https://web.archive.org/web/20210426180346/https://www.politifact.com/factchecks/2019/mar/28/quentin-miller/nc-sheriff-right-ice-detainers-are-not-valid-warra/"
+    },
+    {
+      "id": "MFI-D-0005",
+      "text": "In June 2020, Nigerian debt servicing obligations stood at N943.12 billion.",
+      "article": "https://web.archive.org/web/20210720231105/https://africacheck.org/fact-checks/reports/nigeria-officially-broke-why-prominent-economists-warning-needs-larger-view"
+    },
+    {
+      "id": "MFI-D-0026",
+      "text": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+      "article": "https://web.archive.org/web/20210118134705/https://africacheck.org/fact-checks/reports/fact-checking-5-claims-kenyas-deputy-president-ruto-including-corruption-and"
+    },
+    {
+      "id": "MFI-D-0021",
+      "text": "West Virginia highways move up twenty places in the U.S national highway system to place sixteenth, and affirms all the hard work we do on our states roads.",
+      "article": "https://web.archive.org/web/20201227045803/https://www.politifact.com/factchecks/2019/oct/01/jim-justice/fact-checking-jim-justices-boast-about-wva-highway/"
+    },
+    {
+      "id": "MFI-D-0013",
+      "text": "Over the past two years, climate and weather disaster damage has cost the U.S. over $400 billion.",
+      "article": "https://web.archive.org/web/20201104221801/https://www.politifact.com/factchecks/2020/feb/05/tammy-baldwin/wisconsin-sen-baldwin-makes-cents-costs-climate-ch/"
+    },
+    {
+      "id": "MFI-D-0027",
+      "text": "Since 1973 the income of the bottom 90% of Americans didn't budge.",
+      "article": "https://web.archive.org/web/20201227055603/https://www.politifact.com/factchecks/2019/apr/05/pete-buttigieg/has-income-stalled-bottom-90-1970s-pete-buttigieg-/"
+    },
+    {
+      "id": "MFI-D-0030",
+      "text": "According to a 2017 Doctors Without Borders Report, more than 30 percent of women are sexually assaulted on the trek to the border.",
+      "article": "https://web.archive.org/web/20201227052454/https://www.politifact.com/article/2019/feb/05/fact-checking-state-union-2019/"
+    },
+    {
+      "id": "MFI-D-0006",
+      "text": "An Expansion of Mail-in Ballots would increase the chance of theft in the USA.",
+      "article": "https://web.archive.org/web/20210713125537/https://www.factcheck.org/2020/06/trumps-absentee-vs-mail-in-ballot-spin/"
+    },
+    {
+      "id": "MFI-D-0023",
+      "text": "Since 2013, County Governments in Kenya have cumulatively received KSh1.57 trillion worth of the equitable share of the allocation of the consolidated fund revenue budget.",
+      "article": "https://web.archive.org/web/20210720042508/https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address"
+    },
+    {
+      "id": "MFI-D-0012",
+      "text": "Man accused of sexual Harassment of minor girls is a muslim.",
+      "article": "https://web.archive.org/web/20201129180919/https://www.altnews.in/man-accused-of-sexual-harassment-of-minor-girls-falsely-claimed-to-be-muslim/"
+    },
+    {
+      "id": "MFI-D-0003",
+      "text": "The USA has only 4% of the worlds population but has 25% of the worlds Covid-19 Cases.",
+      "article": "https://web.archive.org/web/20210304150502/https://www.politifact.com/article/2020/aug/19/fact-checking-second-night-2020-democratic-nationa/"
+    },
+    {
+      "id": "MFI-D-0016",
+      "text": "Over 200,000 NHS nurses have resigned since 2010.",
+      "article": "https://web.archive.org/web/20201126101601/https://fullfact.org/health/adult-social-care-nurse-numbers/"
+    },
+    {
+      "id": "MFI-D-0002",
+      "text": "world bank currently rates Nigeria as one of ten top performing countries on its Doing Business Index.",
+      "article": "https://web.archive.org/web/20210411050242/https://dubawa.org/explainer-this-is-how-nigeria-became-one-of-the-top-10-rated-nations-in-ease-of-doing-business/"
+    },
+    {
+      "id": "MFI-D-0015",
+      "text": "Access to antiretroviral therapy in the South African public health sector was given to 45,500 patients in 2004.",
+      "article": "https://web.archive.org/web/20210118230239/https://africacheck.org/fact-checks/reports/fact-checked-president-cyril-ramaphosas-claims-about-progress-south-africa-1994"
+    },
+    {
+      "id": "MFI-D-0022",
+      "text": "President Trump fully co-operated with the investigation into Russian interference in the 2016 U.S presidential campaign.",
+      "article": "https://web.archive.org/web/20210119181232/https://www.factcheck.org/2019/07/factchecking-the-mueller-hearings/"
+    },
+    {
+      "id": "MFI-D-0019",
+      "text": "Science fiction and popular science writer Isaac Asimov said your assumptions are your windows on the world.Scrub them off every once in a while, or the light won’t come in.",
+      "article": "https://web.archive.org/web/20210720201359/https://checkyourfact.com/2019/09/19/fact-check-isaac-asimov-assumptions-windows-world-light-alan-alda/"
+    },
+    {
+      "id": "MFI-D-0011",
+      "text": "The U.S. Centers for Disease Control and Prevention are planning, in the next 10 days, to change guidance and advise Americans to wear masks in everyday life.",
+      "article": "https://web.archive.org/web/20210322190757/https://leadstories.com/hoax-alert/2020/03/fact-check-cdc-is-not-scheduled-to-recommend-masks-for-everyday-life.html"
+    },
+    {
+      "id": "MFI-D-0018",
+      "text": "ERNEST HEMINGWAY SAID, WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN",
+      "article": "https://web.archive.org/web/20201020172417/https://checkyourfact.com/2019/10/28/fact-check-ernest-hemingway-quote-all-broken-light/"
+    },
+    {
+      "id": "MFI-H-0003",
+      "text": "The United States has reached herd immunity for COVID-19",
+      "article": "https://web.archive.org/web/20201215010802/https://www.boomlive.in/world/has-the-us-achieved-herd-immunity-for-covid-19-far-from-it-9311"
+    },
+    {
+      "id": "MFI-H-0026",
+      "text": "Two-thirds of Americans disapprove of Donald Trump not wearing a face mask in public.",
+      "article": "https://web.archive.org/web/20210610184735/https://www.politifact.com/factchecks/2020/jun/01/darren-jackson/north-carolina-democrat-right-most-americans-want-/"
+    },
+    {
+      "id": "MFI-H-0020",
+      "text": "Police departments in Germany were defunded and eliminated by the Nazis under Hermann Goering.",
+      "article": "https://web.archive.org/web/20210128123136/https://www.boomlive.in/world/no-nazis-under-hermann-goering-did-not-defund-german-police-8664"
+    },
+    {
+      "id": "MFI-H-0036",
+      "text": "Mexico does not have any cases of the novel coronavirus.",
+      "article": "https://web.archive.org/web/20210306080005/https://checkyourfact.com/2020/03/16/fact-check-viral-post-mexico-coronavirus-no-cases/"
+    },
+    {
+      "id": "MFI-H-0027",
+      "text": "President Donald Trump took more than a month to allocate Congress’ emergency funding to Native American tribes.",
+      "article": "https://web.archive.org/web/20201226093124/https://www.politifact.com/factchecks/2020/jun/01/joe-biden/fact-checking-joe-bidens-claim-trump-delayed-8-bil/"
+    },
+    {
+      "id": "MFI-H-0033",
+      "text": "Democratic nominee for president Joe Biden has received campaign donations from Antifa.",
+      "article": "https://web.archive.org/web/20200719164826/https://leadstories.com/hoax-alert/2020/06/fact-check-biden-did-not-accept-campaign-donation-from-antifa.html"
+    },
+    {
+      "id": "MFI-H-0006",
+      "text": "Devender Sharma fabricated false covid-19 positive reports for patients  in order to get them admitted for kidney harvesting.",
+      "article": "https://web.archive.org/web/20201115140322/https://www.boomlive.in/fake-news/delhis-killer-doctors-story-viral-with-fake-covid-19-twist-9166"
+    },
+    {
+      "id": "MFI-H-0056",
+      "text": "Florida’s red flag gun law has been used about five times a day.",
+      "article": "https://web.archive.org/web/20210408160024/https://www.politifact.com/factchecks/2019/sep/03/dave-aronberg/explaining-how-floridas-red-flag-gun-law-works/"
+    },
+    {
+      "id": "MFI-H-0049",
+      "text": "Adam Schiff used tax dollars to settle sexual harassment lawsuit witha 19 year old man.",
+      "article": "https://web.archive.org/web/20201111194821/https://checkyourfact.com/2019/11/29/fact-check-adam-schiff-sexual-harassment-lawsuit-tax-dollars-man/"
+    },
+    {
+      "id": "MFI-H-0019",
+      "text": "Melania Trump tweeted in support of India, following the Indo-China clash at Galwan Valley.",
+      "article": "https://web.archive.org/web/20210716025148/https://thelogicalindian.com/fact-check/leaders-tweet-i-stand-with-india-indo-china-galwan-valley-21779"
+    },
+    {
+      "id": "MFI-H-0066",
+      "text": "The Mortality Rate for Road Accidents Drops in Russia.",
+      "article": "https://web.archive.org/web/20210116075916/https://www.polygraph.info/a/mortality-rate-road-accidents-dropping-russia-fact-check/29959778.html"
+    },
+    {
+      "id": "MFI-H-0061",
+      "text": "The European Union asked for a 100 billion euro settlement for the UK to leave the EU.",
+      "article": "https://web.archive.org/web/20210616041052/https://fullfact.org/europe/eu-divorce-bill/"
+    },
+    {
+      "id": "MFI-H-0059",
+      "text": "Mental illness is main driver of mass shootings says Donald trump when talking about the shootings in Texas and Ohio that killed 31 people.",
+      "article": "https://web.archive.org/web/20201205130409/https://www.cbsnews.com/news/el-paso-dayton-mass-shootings-role-of-mental-illness/"
+    },
+    {
+      "id": "MFI-H-0009",
+      "text": "Medical experts from the World Health Organization (WHO), US Centers for Disease Control and Prevention (CDC) and The New England Journal of Medicine have warned against wearing face masks because they can cause “severe health issues”.",
+      "article": "https://web.archive.org/web/20210411012701/https://factcheck.afp.com/social-media-posts-misquote-face-mask-advice-international-health-authorities-and-academics"
+    },
+    {
+      "id": "MFI-H-0018",
+      "text": "Alex Jones claimed on the InfoWars website that Democratic-led areas told people to ‘never’ remove their masks during the pandemic.",
+      "article": "https://web.archive.org/web/20210517181013/https://factcheck.afp.com/conspiracy-theorist-hoax-pandemic-video-goes-viral-despite-facebook-ban"
+    },
+    {
+      "id": "MFI-H-0034",
+      "text": "Several First Nations communities in Canada have closed their borders to avoid COVID-19",
+      "article": "https://web.archive.org/web/20201201211912/https://www.covid19facts.ca/en/fact-checked/several-first-nations-communities-in-canada-have-closed-their-borders-to-avoid-covid-19"
+    },
+    {
+      "id": "MFI-H-0039",
+      "text": "President Trump said he removed Lt. Col. Alexander Vindman from the White House's National security Council because his superior publicly stated that 'Vindman had problems with judgment, adhering to the chain of command, and leaking information'",
+      "article": "https://web.archive.org/web/20210225141309/https://www.factcheck.org/2020/02/fact-checking-trumps-defense-for-removing-vindman/"
+    },
+    {
+      "id": "MFI-H-0080",
+      "text": "Donald Trump's Grandfather was a pimp and a tax evader.",
+      "article": "https://web.archive.org/web/20210401163758/https://leadstories.com/hoax-alert/2019/10/fake-news-no-proof-trumps-grandfather-was-pimp-father-member-of-KKK.html"
+    },
+    {
+      "id": "MFI-H-0044",
+      "text": "Each month 22 NHS patients with glaucoma unnecessarily lose their sight due to NHS treatment delays.",
+      "article": "https://web.archive.org/web/20200923231716/https://fullfact.org/health/vision-loss-delays/"
+    },
+    {
+      "id": "MFI-H-0052",
+      "text": "There has been a reduction in Right to Information (RTI) applications filed in the last few years leading upto 2019.",
+      "article": "https://web.archive.org/web/20200711183348/https://factly.in/fact-check-has-there-been-a-reduction-in-the-number-of-rti-applications-filed-in-the-last-few-years/"
+    },
+    {
+      "id": "MFI-H-0065",
+      "text": "Texas leads in the number of Confederate monuments removed from public land.",
+      "article": "https://web.archive.org/web/20210227071757/https://www.politifact.com/factchecks/2019/may/10/brandon-creighton/its-true-texas-has-removed-more-confederate-monume/"
+    },
+    {
+      "id": "MFI-H-0011",
+      "text": "The Democrats want to abolish US police departments. They want to abolish our prisons, I guess.",
+      "article": "https://web.archive.org/web/20210504072937/https://www.politifact.com/article/2020/jul/19/fact-checking-donald-trump-joe-biden-biden-sanders/"
+    },
+    {
+      "id": "MFI-H-0079",
+      "text": "Pakistani media reported Clashes between Indian & Chinese forces in Naku La sector of North Sikkim resulted in China killing 158 Indian soldiers, Which is the same number which Pakistan beat India by in the Champion trophy final cricket game at the oval in England.",
+      "article": "https://web.archive.org/web/20200603234152/http://newsmobile.in:80/articles/2020/06/03/fact-check-did-china-kill-158-indian-soldiers-in-sikkim-heres-the-truth/"
+    },
+    {
+      "id": "MFI-H-0047",
+      "text": "An irrational House Speaker Nancy Pelosi was handcuffed by federal agents as they raided her office.",
+      "article": "https://web.archive.org/web/20210308125140/https://leadstories.com/hoax-alert/2021/01/fact-check-pelosi-raided-handcuffed-by-feds.html"
+    },
+    {
+      "id": "MFI-H-0005",
+      "text": "Massive international study shows a much lower COVID-19 mortality rate in countries where hydroxychloroquine was prescribed to patients.",
+      "article": "https://web.archive.org/web/20210625141430/https://leadstories.com/hoax-alert/2020/09/fact-check-no-massive-international-study-shows-countries-with-early-hcq-use-had-79-percent-lower-mortality-rate.html"
+    },
+    {
+      "id": "MFI-H-0029",
+      "text": "New York Gov. Andrew Cuomo said that “with all the technology we have, we don't need actual classrooms.”",
+      "article": "https://web.archive.org/web/20210531111959/https://www.politifact.com/factchecks/2020/jun/12/beth-parlato/congressional-candidate-stretches-cuomos-remarks-e/"
+    },
+    {
+      "id": "MFI-H-0001",
+      "text": "The Kenyan judiciary does not even get 1% of the national budget.",
+      "article": "https://web.archive.org/web/20210127231105/https://africacheck.org/fact-checks/reports/factchecking-kenyas-chief-justice-judiciary-funding-and-backlog-cases"
+    },
+    {
+      "id": "MFI-H-0023",
+      "text": "Black Lives Matter Scotland have produced posters and stickers with phrases such as “Kill a white on sight” on them.",
+      "article": "https://web.archive.org/web/20210116034943/https://fullfact.org/online/black-lives-matter-stickers/"
+    },
+    {
+      "id": "MFI-H-0078",
+      "text": "Kansas City Chiefs CEO Clark Hunt said \"You will stand, with your hand over your heart and with respect, when our country’s national anthem is being played or you will no longer be a Kansas City Chief, a coach for the Kansas City Chiefs or have any association with the Chiefs organization. I will immediately fire you, no matter who you are!\"",
+      "article": "https://web.archive.org/web/20210109172700/https://www.politifact.com/factchecks/2020/jul/08/viral-image/kansas-city-chiefs-ceo-clark-hunt-says-statement-a/"
+    },
+    {
+      "id": "MFI-H-0013",
+      "text": "A letter from a consultant at a hospital in Surrey claims that hospitals are empty and that there is no pandemic.",
+      "article": "https://web.archive.org/web/20210626132017/https://fullfact.org/health/letter-doctor-surrey/"
+    },
+    {
+      "id": "MFI-H-0032",
+      "text": "People with lupus who take hydroxychloroquine have protection against COVID-19.",
+      "article": "https://web.archive.org/web/20210426030522/https://www.factcheck.org/2020/04/trumps-false-coronavirus-claim-about-lupus-patients/"
+    },
+    {
+      "id": "MFI-H-0016",
+      "text": "The United States Annual Arms Control Compliance Report does not address the U.S. withdrawal from the Arms Trade Treaty (ATT).",
+      "article": "https://web.archive.org/web/20210308130910/https://www.polygraph.info/a/fact-check-china-us-arms-control/30710428.html"
+    },
+    {
+      "id": "MFI-H-0021",
+      "text": "Milwaukee declared racism as a public health crisis in 2019.",
+      "article": "https://web.archive.org/web/20210618115911/https://www.politifact.com/factchecks/2020/jun/18/jeanette-kowalik/milwaukee-was-among-first-declare-racism-public-he/"
+    },
+    {
+      "id": "MFI-H-0028",
+      "text": "World Bank blacklisted China Civil Engineering Construction Corporation, a company that has executed projects in Nigeria under foreign agreements with China.",
+      "article": "https://web.archive.org/web/20210720233446/https://dubawa.org/did-china-issue-loan-documents-to-nigeria-in-mandarin/"
+    },
+    {
+      "id": "MFI-H-0041",
+      "text": "Biden Is The First President to Denounce White Supremacy in His Inaugural Address?",
+      "article": "https://web.archive.org/web/20210414032605/https://www.newsweek.com/fact-check-biden-first-president-denounce-white-supremacy-his-inaugural-address-1563203"
+    },
+    {
+      "id": "MFI-H-0010",
+      "text": "United States citizens don't get the level of benefits that Bidens policy would be looking to give illegal immigrants",
+      "article": "https://web.archive.org/web/20210120004510/https://www.politifact.com/factchecks/2020/jul/17/donald-trump/donald-trump-gives-false-version-joe-biden-bernie-/"
+    },
+    {
+      "id": "MFI-H-0058",
+      "text": "TRUMP SAID Earlier this month, the U.S. government officially labeled China for the first time ever a currency manipulator — another promise kept.",
+      "article": "https://web.archive.org/web/20210708054917/https://www.nytimes.com/2019/08/15/us/politics/fact-check-trump-new-hampshire.html"
+    },
+    {
+      "id": "MFI-H-0073",
+      "text": "Alexandria-Ocasio Cortez puts out a press release on Twitter demanding that President Trump should be blocked from stopping the return of a heroic mother from Alabama who supports ISIS.",
+      "article": "https://web.archive.org/web/20201201233554/https://leadstories.com/hoax-alert/2019/03/parody-AOC-tweet-welcome-home-sister.html"
+    },
+    {
+      "id": "MFI-H-0007",
+      "text": "Russia offered bounties to the Taliban to kill U.S. troops in Afghanistan.",
+      "article": "https://web.archive.org/web/20210118124433/https://www.washingtonpost.com/politics/2020/07/30/trumps-four-pinocchio-interview-russian-bounties/"
+    },
+    {
+      "id": "MFI-H-0046",
+      "text": "Iihan Omar tweeted \"There is no way to overstate how ASHAMED I am to be called an 'American'. We need every world leader to rise up and demand that someone stops Trump from starting a catastrophic war with Iran.\" THE TIME FOR VIOLENCE IS NOW! #NoWarWithIran",
+      "article": "https://web.archive.org/web/20200417073632/https://leadstories.com/hoax-alert/2020/01/fake-news-ilhan-omar-time-for-violence-is-now.html"
+    },
+    {
+      "id": "MFI-H-0071",
+      "text": "52 counties in the state of New York have average taxes of above the SALT (state and local taxes) $10,000 cap",
+      "article": "https://web.archive.org/web/20201227053818/https://www.politifact.com/factchecks/2019/apr/17/andrew-cuomo/cuomo-claims-tax-change-bad-ny/"
+    },
+    {
+      "id": "MFI-H-0072",
+      "text": "Man who cited religious reasons for not paying his income taxes “has won a historic lawsuit against the IRS.”",
+      "article": "https://web.archive.org/web/20210124154128/https://www.factcheck.org/2019/04/old-decision-in-tax-lawsuit-gets-new-spin/"
+    },
+    {
+      "id": "MFI-H-0068",
+      "text": "The number of electricity connections in Kenya rose from 2.2 million in March 2013 to 7.1 million as at March 2019.",
+      "article": "https://web.archive.org/web/20210719170145/https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+    },
+    {
+      "id": "MFI-H-0051",
+      "text": "US Red flag laws allow gun seizure without a judge's ok.",
+      "article": "https://web.archive.org/web/20201227051130/https://www.politifact.com/factchecks/2019/oct/28/robin-vos/do-red-flag-laws-allow-gun-seizure-without-judges-/"
+    },
+    {
+      "id": "MFI-H-0063",
+      "text": "Pakistan cricketers were out till late at night smoking hookah before their match against India which led to their loss",
+      "article": "https://web.archive.org/web/20210302213945/https://www.indiatoday.in/fact-check/story/fact-check-pakistan-cricket-fans-use-two-day-old-video-to-bash-up-team-after-loss-to-india-1550845-2019-06-17"
+    },
+    {
+      "id": "MFI-H-0074",
+      "text": "When countries put people into the diversity visa lottery program, they’re putting some very bad people in the lottery",
+      "article": "https://web.archive.org/web/20210702112300/https://www.politifact.com/article/2019/feb/15/donald-trumps-news-conference-about-national-emerg/"
+    },
+    {
+      "id": "MFI-H-0025",
+      "text": "A German Shephard dog in New York state, USA was the first domesticated dog in the United States to test positive for Covid-19 infection.",
+      "article": "https://web.archive.org/web/20210719193701/https://misbar.com/en/factcheck/2020/06/18/did-a-dog-in-the-united-states-test-positive-for-covid-19"
+    },
+    {
+      "id": "MFI-H-0015",
+      "text": "Photos showing sewer, sacks and trash-filled beaches in Boracay were taken during the past administration of former president Benigno Aquino III.",
+      "article": "https://web.archive.org/web/20210124054027/https://verafiles.org/articles/vera-files-fact-check-disente-vs-bastos-time-posts-boracay-m"
+    },
+    {
+      "id": "MFI-H-0057",
+      "text": "40% of NI Unionists are happy about a potential trade border in the Irish Sea.",
+      "article": "https://web.archive.org/web/20210303200540/https://factcheckni.org/articles/do-40-of-unionists-support-a-potential-irish-sea-trade-border/"
+    },
+    {
+      "id": "MFI-H-0002",
+      "text": "South Africans that drink are amongst the top drinkers in the world.",
+      "article": "https://web.archive.org/web/20210102061347/https://africacheck.org/reports/fact-checking-south-africas-health-minister-on-the-countrys-relationship-with-alcohol/"
+    },
+    {
+      "id": "MFI-H-0024",
+      "text": "Prince Andrew is accused of pedophilia and was extremely close with Jeffrey Epstein.",
+      "article": "https://web.archive.org/web/20201012131543/https://leadstories.com/hoax-alert/2020/06/fact-check-22-point-meme-is-mix-of-false-truth-opinion.html"
+    },
+    {
+      "id": "MFI-H-0040",
+      "text": "A ‘HUGE PERCENTAGE’ OF DEPORTED SALVADORANS KILLED OR HARMED UPON RETURN TO EL SALVADOR",
+      "article": "https://web.archive.org/web/20201227072716/https://checkyourfact.com/2020/02/11/fact-check-daily-beast-deported-salvadorans-killed-harmed-percentage/"
+    },
+    {
+      "id": "MFI-H-0064",
+      "text": "Mexican drug cartels make £500 billion a year.",
+      "article": "https://web.archive.org/web/20210323224853/https://www.washingtonpost.com/politics/2019/06/24/do-mexican-drug-cartels-make-billion-year/"
+    },
+    {
+      "id": "MFI-H-0062",
+      "text": "US Republican Alexandria Ocasio-Cortez opposed it a proposed $4.6 billion US emergency aid bill, saying it wasn’t humanitarian.",
+      "article": "https://web.archive.org/web/20210127112217/https://www.factcheck.org/2019/07/confusion-at-the-border/"
+    },
+    {
+      "id": "MFI-H-0008",
+      "text": "The New York state Labor Department is giving essential workers $4,800 in hazard pay.",
+      "article": "https://web.archive.org/web/20210104130302/https://www.politifact.com/factchecks/2020/jul/30/facebook-posts/no-labor-department-isnt-giving-essential-workers-/"
+    },
+    {
+      "id": "MFI-H-0004",
+      "text": "The murder of Oscar Grant, by a police officer in the United States, was never prosecuted by the DA.",
+      "article": "https://web.archive.org/web/20210310111006/https://www.politifact.com/factchecks/2020/aug/14/viral-image/no-kamala-harris-wasnt-prosecutor-fruitvale-statio/"
+    },
+    {
+      "id": "MFI-H-0048",
+      "text": "A study showed one in four people have had a package stolen from their residence in the U.S.",
+      "article": "https://web.archive.org/web/20201226093132/https://www.politifact.com/factchecks/2019/dec/13/rob-hutton/wisconsin-state-rep-hutton-delivers-claim-about-le/"
+    },
+    {
+      "id": "MFI-H-0067",
+      "text": "74% of the people in Texas are crammed into 4% of the land.",
+      "article": "https://web.archive.org/web/20210501062233/https://www.politifact.com/factchecks/2019/apr/26/bennett-sandlin/its-true-74-percent-texans-live-4-percent-states-l/"
+    },
+    {
+      "id": "MFI-H-0042",
+      "text": "Witnesses have been part of \"every other impeachment trial the US Senate has ever had.",
+      "article": "https://web.archive.org/web/20210124031156/https://www.politifact.com/factchecks/2020/jan/21/tammy-baldwin/Trump-every-other-senate-impeachment-had-witnesses/"
+    },
+    {
+      "id": "MFI-H-0060",
+      "text": "Robert S Mueller's investigation into Russia’s interference in the 2016 presidential election took over 2 years and cost over £25 million.",
+      "article": "https://web.archive.org/web/20210119192011/https://www.factcheck.org/2019/07/a-misleading-message-on-muellers-conclusions/"
+    },
+    {
+      "id": "MFI-H-0050",
+      "text": "The Information and Communication Technology sector contributes more to Nigeria’s Gross Domestic Product than the Oil and Gas sector.",
+      "article": "https://web.archive.org/web/20210304005306/https://dubawa.org/is-ict-the-next-oil-money-source/"
+    },
+    {
+      "id": "MFI-H-0075",
+      "text": "The current Kenyan government has built a standard-gauge railway of 600 kilometres in the last five years.",
+      "article": "https://web.archive.org/web/20210719202020/https://africacheck.org/fact-checks/reports/kenyas-ruto-chatham-house-verifying-deputy-presidents-london-speech"
+    },
+    {
+      "id": "MFI-H-0035",
+      "text": "The Australian state of Western Australia has recently passed a “COVID-19 Emergency Powers Act” that authorises forcible medical examination and vaccination in schools.",
+      "article": "https://web.archive.org/web/20210118081446/https://factcheck.afp.com/hoax-circulates-about-new-covid-19-vaccine-law-western-australia"
+    },
+    {
+      "id": "MFI-H-0030",
+      "text": "Lady Michelle Obama  slam Country music industry, saying the the genre was for morons.",
+      "article": "https://web.archive.org/web/20210120100650/https://leadstories.com/hoax-alert/2020/05/fact-check-michelle-obama-did-not-slam-country-music-says-its-music-for-morons.html"
+    },
+    {
+      "id": "MFI-H-0022",
+      "text": "The Daughters of the Confederacy sued NASCAR for violating the First Amendment.",
+      "article": "https://web.archive.org/web/20200903000207/https://leadstories.com/hoax-alert/2020/06/fact-check-daughters-of-the-confederacy-group-did-not-sue-nascar-for-violating-1st-amendment.html"
+    },
+    {
+      "id": "MFI-H-0037",
+      "text": "Of the $150 million, only $7 million in $10,000 lots had been given out to bushfire victims by the Australian Red Cross as of the 16/02/2020.",
+      "article": "https://web.archive.org/web/20201227070409/https://www.aap.com.au/australian-bushfire-donations-post-leaves-charity-cross/"
+    },
+    {
+      "id": "MFI-H-0054",
+      "text": "Trump TV Ad Misleads on Biden and Ukraine",
+      "article": "https://web.archive.org/web/20210426170739/https://www.factcheck.org/2019/10/fact-trump-tv-ad-misleads-on-biden-and-ukraine/"
+    },
+    {
+      "id": "MFI-H-0053",
+      "text": "Nigeria has an estimated physician-patient ratio of one doctor to every 4,000 to 5,000 patients.",
+      "article": "https://web.archive.org/web/20210127230319/https://africacheck.org/fact-checks/reports/fact-checked-al-jazeeras-claims-about-nigerias-mental-health-problem"
+    },
+    {
+      "id": "MFI-H-0031",
+      "text": "Sanders Has Ended His Fight for Democratic Nomination",
+      "article": "https://web.archive.org/web/20210712105012/https://www.factcheck.org/2020/04/yes-sanders-has-ended-his-fight-for-democratic-nomination/"
+    },
+    {
+      "id": "MFI-H-0014",
+      "text": "Deaths from COVID-19 are nearing zero in the U.S. in early July 2020.",
+      "article": "https://web.archive.org/web/20210310024508/https://healthfeedback.org/claimreview/u-s-covid-19-related-deaths-in-july-2020-may-not-be-as-low-as-preliminary-data-suggest/"
+    },
+    {
+      "id": "MFI-H-0012",
+      "text": "Border-wall construction under the Trump administration has replaced already existing barriers.",
+      "article": "https://web.archive.org/web/20210720214139/https://www.polygraph.info/a/trumps-border-wall-claims-fall-short/30733505.html"
+    },
+    {
+      "id": "MFI-H-0045",
+      "text": "New York is trying to pass a bill that would place non mask wearers and unvaccinated people in concentration camps for forced vaccination.",
+      "article": "https://web.archive.org/web/20210425024922/https://www.politifact.com/factchecks/2021/jan/05/facebook-posts/new-york-isnt-trying-pass-bill-put-non-mask-wearer/"
+    },
+    {
+      "id": "MFI-H-0055",
+      "text": "Hundreds of billions of dollars have been and are coming into our country in the form of tariffs, and China’s eating the cost.",
+      "article": "https://web.archive.org/web/20210314222337/https://www.washingtonpost.com/politics/2019/09/11/fact-checking-trumps-claims-about-chinas-economy/"
+    },
+    {
+      "id": "MFI-H-0038",
+      "text": "Donald Trump cited 'serious economic conditions' as the reason for reducing federal worker pay raises in early 2020",
+      "article": "https://web.archive.org/web/20210304162737/https://www.politifact.com/factchecks/2020/feb/17/facebook-posts/trump-cited-serious-economic-conditions-reducing-f/"
+    },
+    {
+      "id": "MFI-H-0069",
+      "text": "80.63 lakh pregnant women have been immunized in India by August 2018.",
+      "article": "https://web.archive.org/web/20200919020333/https://factly.in/fact-checking-government-claims-about-mission-indradhanush/"
+    },
+    {
+      "id": "MFI-H-0076",
+      "text": "George Stinney Jr was 14 years old when he was convicted of murder and executed by the US state of South Carolina in 1944.",
+      "article": "https://web.archive.org/web/20210721124836/https://africacheck.org/fact-checks/fbchecks/yes-basic-facts-george-stinney-jr-14-year-old-black-child-executed-us-1944-are"
+    },
+    {
+      "id": "MFI-H-0043",
+      "text": "The remaining male candidates for the US presidency in January 2020 (Pete Buttigieg, Joe Biden, Bernie Sanders, Tom Steyer) have collectively lost 10 elections.",
+      "article": "https://web.archive.org/web/20210602023407/https://www.politifact.com/factchecks/2020/jan/15/elizabeth-warren/democratic-debates-biggest-electoral-losers-number/"
+    },
+    {
+      "id": "MFI-H-0077",
+      "text": "Shops buy apples that are coated with wax.",
+      "article": "https://web.archive.org/web/20210720115450/https://fullfact.org/online/shocking-food-facts/"
+    },
+    {
+      "id": "MFI-H-0070",
+      "text": "People who are vaccinated against chickenpox need to keep getting boosters.",
+      "article": "https://web.archive.org/web/20201107232346/https://www.factcheck.org/2019/03/kentucky-gov-misguides-on-chickenpox/"
+    },
+    {
+      "id": "MFI-H-0017",
+      "text": "President Trump said coronavirus testing makes the U.S. look bad, \"so I said to my people, ‘Slow the testing down.’\"",
+      "article": "https://web.archive.org/web/20210502013724/https://www.politifact.com/factchecks/2020/jun/24/priorities-usa-action/trump-positive-coronavirus-tests-slowdown-look-bad/"
+    }
+  ],
+  "items": [
+    {
+      "id": "MFN-0781",
+      "text": "Virtually no-one could have predicted that COVID-19 would spread exponentially in the U.S from February 2020 to May 2020.",
+      "decision": "include",
+      "event_key": "assertion:virtually-no-one-could-have-predicted-that-covid-19-would-spread-exponentially-in-the-u-s-from-february-2020-to-may-2020",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0886",
+      "text": "The US media minimized the risk of the new coronavirus from the start,",
+      "decision": "include",
+      "event_key": "assertion:the-us-media-minimized-the-risk-of-the-new-coronavirus-from-the-start",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0178",
+      "text": "Michigan Senator Gary Peters is known for doing nothing, where he has skipped 84% of small business hearings and 89% of hearings on China.",
+      "decision": "include",
+      "event_key": "assertion:michigan-senator-gary-peters-is-known-for-doing-nothing-where-he-has-skipped-84-of-small-business-hearings-and-89-of-hearings-on-china",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2146",
+      "text": "Most research shows that (UW salaries) are a little behind, and (in) some areas we're behind more than others.",
+      "decision": "include",
+      "event_key": "assertion:most-research-shows-that-uw-salaries-are-a-little-behind-and-in-some-areas-we-re-behind-more-than-others",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0720",
+      "text": "China is not the only source of serious viral outbreaks around the world",
+      "decision": "include",
+      "event_key": "assertion:china-is-not-the-only-source-of-serious-viral-outbreaks-around-the-world",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1690",
+      "text": "Minneapolis \"city government preemptively informed the Target Center that it would be responsible for $530,000 in security and other costs\" related to a Trump rally, \"more than 26 times the estimated security costs for a 2009 Target Center health care rally held by President Barack Obama.",
+      "decision": "include",
+      "event_key": "assertion:minneapolis-city-government-preemptively-informed-the-target-center-that-it-would-be-responsible-for-530-000-in-security-and-other-costs-related-to-a-trump-rally-more-than-26-times-the-estimated-security-costs-for-a-2009-target-center-health-care-rally-held-by-president-barack-obama",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2867",
+      "text": "e-trading platforms, 585 regulated markets, to fetch the best prices for farmers in India.",
+      "decision": "include",
+      "event_key": "assertion:e-trading-platforms-585-regulated-markets-to-fetch-the-best-prices-for-farmers-in-india",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0588",
+      "text": "The United Nations is creating a new country out of Nigeria to be called Ambazonia or the new State of Cameroon.",
+      "decision": "include",
+      "event_key": "assertion:the-united-nations-is-creating-a-new-country-out-of-nigeria-to-be-called-ambazonia-or-the-new-state-of-cameroon",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2920",
+      "text": "To curb water wastage, the Department of Water and Sanitation has begun its programme of training 15,000 young people as artisans",
+      "decision": "include",
+      "event_key": "assertion:to-curb-water-wastage-the-department-of-water-and-sanitation-has-begun-its-programme-of-training-15-000-young-people-as-artisans",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1520",
+      "text": "In 2019 there have been over fifty reports of attacks and harassment on Nigerian journalists.",
+      "decision": "include",
+      "event_key": "assertion:in-2019-there-have-been-over-fifty-reports-of-attacks-and-harassment-on-nigerian-journalists",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0294",
+      "text": "Washing glasses with soap will prevent lenses from fogging whilst wearing a mask.",
+      "decision": "include",
+      "event_key": "assertion:washing-glasses-with-soap-will-prevent-lenses-from-fogging-whilst-wearing-a-mask",
+      "overlaps_history": false,
+      "reason": "Soap prevents glasses fogging; distinct object/outcome from MFN-1108 handwashing infection prevention."
+    },
+    {
+      "id": "MFN-2476",
+      "text": "Kenya has one of the worst maternal mortality rates in the world.",
+      "decision": "include",
+      "event_key": "assertion:kenya-has-one-of-the-worst-maternal-mortality-rates-in-the-world",
+      "overlaps_history": false,
+      "reason": "Kenyan maternal mortality ranking differs from Nigerian World Bank business ranking."
+    },
+    {
+      "id": "MFN-0332",
+      "text": "Clinical trials have been completed for potential Russian COVID-19 vaccine.",
+      "decision": "include",
+      "event_key": "assertion:clinical-trials-have-been-completed-for-potential-russian-covid-19-vaccine",
+      "overlaps_history": false,
+      "reason": "Russian vaccine completion claim differs from the historical AstraZeneca/Oxford trial pause, confirmed in historical QA."
+    },
+    {
+      "id": "MFN-2065",
+      "text": "Irish poet and playwright Oscar Wilde once said, “Some cause happiness wherever they go; others whenever they go.”",
+      "decision": "include",
+      "event_key": "assertion:irish-poet-and-playwright-oscar-wilde-once-said-some-cause-happiness-wherever-they-go-others-whenever-they-go",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1108",
+      "text": "Hand-washing with an ordinary soap protects against COVID-19.",
+      "decision": "include",
+      "event_key": "assertion:hand-washing-with-an-ordinary-soap-protects-against-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2848",
+      "text": "The Indian Government (BJP) claimed that the Pradhan Mantri Matru Vandana Yojana programme (PMMVY) provided a cash incentive of 6000 rupees to the pregnant/lactating women.",
+      "decision": "include",
+      "event_key": "assertion:the-indian-government-bjp-claimed-that-the-pradhan-mantri-matru-vandana-yojana-programme-pmmvy-provided-a-cash-incentive-of-6000-rupees-to-the-pregnant-lactating-women",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1079",
+      "text": "Disposable masks should be worn white-side-out to keep COVID-19 out",
+      "decision": "include",
+      "event_key": "assertion:disposable-masks-should-be-worn-white-side-out-to-keep-covid-19-out",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0411",
+      "text": "Democrat-controlled states suffered the harshest restriction in the US during the coronavirus pandemic.",
+      "decision": "include",
+      "event_key": "assertion:democrat-controlled-states-suffered-the-harshest-restriction-in-the-us-during-the-coronavirus-pandemic",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0373",
+      "text": "American rapper Kanye West is running for President of the United States in the 2020 elections.",
+      "decision": "include",
+      "event_key": "assertion:american-rapper-kanye-west-is-running-for-president-of-the-united-states-in-the-2020-elections",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0363",
+      "text": "Ghana’s Health Minister, Kwaku Agyeman-Manu claims that President Akufo-Addo is tired of the coronavirus fight due to citizens reluctance to adhere to the preventive protocols.",
+      "decision": "include",
+      "event_key": "assertion:ghana-s-health-minister-kwaku-agyeman-manu-claims-that-president-akufo-addo-is-tired-of-the-coronavirus-fight-due-to-citizens-reluctance-to-adhere-to-the-preventive-protocols",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1668",
+      "text": "The snake found in the Amazon is 134 feet long and 2067 kgs",
+      "decision": "include",
+      "event_key": "assertion:the-snake-found-in-the-amazon-is-134-feet-long-and-2067-kgs",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2228",
+      "text": "US president claims that the $2 Trillion tax cut did not benefit most people as it all went to the folks at the top and corporations that pay no taxes.",
+      "decision": "include",
+      "event_key": "assertion:us-president-claims-that-the-2-trillion-tax-cut-did-not-benefit-most-people-as-it-all-went-to-the-folks-at-the-top-and-corporations-that-pay-no-taxes",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0522",
+      "text": "There will be a strict lockdown reimposed in Delhi starting June 18, 2020 to contain the spread of COVID-19.",
+      "decision": "include",
+      "event_key": "assertion:there-will-be-a-strict-lockdown-reimposed-in-delhi-starting-june-18-2020-to-contain-the-spread-of-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1907",
+      "text": "Some government buildings in London are operating under sharia law.",
+      "decision": "include",
+      "event_key": "assertion:some-government-buildings-in-london-are-operating-under-sharia-law",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0580",
+      "text": "The Federal Police did not use chemical irritants to clear the area around St. John's Church in Washington, D.C.",
+      "decision": "include",
+      "event_key": "assertion:the-federal-police-did-not-use-chemical-irritants-to-clear-the-area-around-st-john-s-church-in-washington-d-c",
+      "overlaps_history": false,
+      "reason": "Specific Lafayette Square/St Johns police-conduct episode; distinguish from national protest damage aggregate. Shared wider protest context remains a limitation."
+    },
+    {
+      "id": "MFN-2838",
+      "text": "There is a new initiative under the National program for Bovine Breeding and Dairy development with an allocation of 500 crore rupees",
+      "decision": "include",
+      "event_key": "assertion:there-is-a-new-initiative-under-the-national-program-for-bovine-breeding-and-dairy-development-with-an-allocation-of-500-crore-rupees",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1311",
+      "text": "Punjab province in Pakistan issued a warning against eating goat meat for 60 days following a coronavirus outbreak in the livestock.",
+      "decision": "include",
+      "event_key": "assertion:punjab-province-in-pakistan-issued-a-warning-against-eating-goat-meat-for-60-days-following-a-coronavirus-outbreak-in-the-livestock",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0930",
+      "text": "Two nurses who were in intensive therapy units (ITUs) in Swansea, Wales have died and three more ventilated.",
+      "decision": "include",
+      "event_key": "assertion:two-nurses-who-were-in-intensive-therapy-units-itus-in-swansea-wales-have-died-and-three-more-ventilated",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1615",
+      "text": "Pricking a needle on the fingertips of a stroke victim can save their life as they will gain consciousness in some time.",
+      "decision": "include",
+      "event_key": "assertion:pricking-a-needle-on-the-fingertips-of-a-stroke-victim-can-save-their-life-as-they-will-gain-consciousness-in-some-time",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1321",
+      "text": "The Chinese Communist Party \"will finally admit that the real source of the coronavirus is from ‘a lab in Wuhan’ linked to its covert biological weapon programs.",
+      "decision": "include",
+      "event_key": "assertion:the-chinese-communist-party-will-finally-admit-that-the-real-source-of-the-coronavirus-is-from-a-lab-in-wuhan-linked-to-its-covert-biological-weapon-programs",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0072",
+      "text": "Mughal Gardens Renamed To Dr. Rajendra Prasad Garden",
+      "decision": "include",
+      "event_key": "assertion:mughal-gardens-renamed-to-dr-rajendra-prasad-garden",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1572",
+      "text": "The Conservatives plan to take on 6,000 more police officers in 12 months at a cost of £750 million.",
+      "decision": "include",
+      "event_key": "assertion:the-conservatives-plan-to-take-on-6-000-more-police-officers-in-12-months-at-a-cost-of-750-million",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0082",
+      "text": "Auto workers across Michigan could have lost their jobs if not for Barack Obama and Joe Biden",
+      "decision": "include",
+      "event_key": "assertion:auto-workers-across-michigan-could-have-lost-their-jobs-if-not-for-barack-obama-and-joe-biden",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2423",
+      "text": "“In 2017, there were more marijuana arrests in this country than all violent crime arrests combined.”",
+      "decision": "include",
+      "event_key": "assertion:in-2017-there-were-more-marijuana-arrests-in-this-country-than-all-violent-crime-arrests-combined",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0975",
+      "text": "If you ask Amazon’s Alexa about the origin of the coronavirus pandemic, it says “the government planned” it.",
+      "decision": "include",
+      "event_key": "assertion:if-you-ask-amazon-s-alexa-about-the-origin-of-the-coronavirus-pandemic-it-says-the-government-planned-it",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1736",
+      "text": "President Muhammadu Buhari of Nigeria told the United Nations Climate Action Summit in New York last month that the Lake Chad basin has shrunk significantly due to climate change, depriving many people of their livelihood in the region.",
+      "decision": "include",
+      "event_key": "assertion:president-muhammadu-buhari-of-nigeria-told-the-united-nations-climate-action-summit-in-new-york-last-month-that-the-lake-chad-basin-has-shrunk-significantly-due-to-climate-change-depriving-many-people-of-their-livelihood-in-the-region",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1809",
+      "text": "Proscribed indigenous leader of Biafra, Nnamdi Kanu ordered members of the Indigenous People of Biafra (IPOB) to arrest the Nigerian president and hand him over to the Japanese authorities.",
+      "decision": "include",
+      "event_key": "assertion:proscribed-indigenous-leader-of-biafra-nnamdi-kanu-ordered-members-of-the-indigenous-people-of-biafra-ipob-to-arrest-the-nigerian-president-and-hand-him-over-to-the-japanese-authorities",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2118",
+      "text": "Three men were hung on a crane and shot for the rape and murder of a 10-year-old boy in Yemen in August 2018",
+      "decision": "include",
+      "event_key": "assertion:three-men-were-hung-on-a-crane-and-shot-for-the-rape-and-murder-of-a-10-year-old-boy-in-yemen-in-august-2018",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1421",
+      "text": "Pervez Musharraf led a Pakistani commando unit to flush out rebels occupying the Grand Mosque in Mecca, Saudi Arabia in 1979.",
+      "decision": "include",
+      "event_key": "assertion:pervez-musharraf-led-a-pakistani-commando-unit-to-flush-out-rebels-occupying-the-grand-mosque-in-mecca-saudi-arabia-in-1979",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1567",
+      "text": "Drinking Cold Water After Meals Can Cause Cancer",
+      "decision": "include",
+      "event_key": "assertion:drinking-cold-water-after-meals-can-cause-cancer",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1768",
+      "text": "Some women have no choice but to take epidural injections during childbirth.",
+      "decision": "include",
+      "event_key": "assertion:some-women-have-no-choice-but-to-take-epidural-injections-during-childbirth",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1429",
+      "text": "Donald Trump is rated international public opinion polls below Xi Jinping.",
+      "decision": "include",
+      "event_key": "assertion:donald-trump-is-rated-international-public-opinion-polls-below-xi-jinping",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1141",
+      "text": "The novel coronavirus has been found in crawfish in Mobile, Alabama.",
+      "decision": "include",
+      "event_key": "assertion:the-novel-coronavirus-has-been-found-in-crawfish-in-mobile-alabama",
+      "overlaps_history": false,
+      "reason": "Crawfish infection claim differs from both Mexico national cases and Tuscaloosa unused-test-kit story."
+    },
+    {
+      "id": "MFN-1276",
+      "text": "Three people have more wealth than the bottom half of American society",
+      "decision": "include",
+      "event_key": "assertion:three-people-have-more-wealth-than-the-bottom-half-of-american-society",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0789",
+      "text": "Retail milk prices have gone up, farmer price pay has dropped",
+      "decision": "include",
+      "event_key": "assertion:retail-milk-prices-have-gone-up-farmer-price-pay-has-dropped",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0882",
+      "text": "An employee at a funeral home in New York City was accidentally cremated while taking a nap during the 2020 COVID-19 crisis",
+      "decision": "include",
+      "event_key": "assertion:an-employee-at-a-funeral-home-in-new-york-city-was-accidentally-cremated-while-taking-a-nap-during-the-2020-covid-19-crisis",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1057",
+      "text": "The World Health Organization's director-general, Tedros Adhanom Ghebreyesus, overstated the COVID-19 fatality rate.",
+      "decision": "include",
+      "event_key": "assertion:the-world-health-organization-s-director-general-tedros-adhanom-ghebreyesus-overstated-the-covid-19-fatality-rate",
+      "overlaps_history": false,
+      "reason": "Tedros fatality-rate assertion differs from WHO mask recommendation."
+    },
+    {
+      "id": "MFN-1370",
+      "text": "6 months ago the DWP promised a review of Universal Credit for the terminally ill.",
+      "decision": "include",
+      "event_key": "assertion:6-months-ago-the-dwp-promised-a-review-of-universal-credit-for-the-terminally-ill",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1390",
+      "text": "Amy Klobuchar has won Michele Bachmann's district every one of her 3 U.S Senate campaigns.",
+      "decision": "include",
+      "event_key": "assertion:amy-klobuchar-has-won-michele-bachmann-s-district-every-one-of-her-3-u-s-senate-campaigns",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2787",
+      "text": "Iraq and Syria have been liberated from ISIS.",
+      "decision": "include",
+      "event_key": "assertion:iraq-and-syria-have-been-liberated-from-isis",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0775",
+      "text": "Billionaire philanthropist and Microsoft founder Bill Gates promotes lab grown meat.",
+      "decision": "include",
+      "event_key": "assertion:billionaire-philanthropist-and-microsoft-founder-bill-gates-promotes-lab-grown-meat",
+      "overlaps_history": false,
+      "reason": "Gates lab-grown-meat activity differs from excluded Gates coronavirus-origin conspiracy story."
+    },
+    {
+      "id": "MFN-1788",
+      "text": "Author Theodor Seuss Geisel once said, “Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.”",
+      "decision": "include",
+      "event_key": "assertion:author-theodor-seuss-geisel-once-said-be-who-you-are-and-say-what-you-feel-because-those-who-mind-don-t-matter-and-those-who-matter-don-t-mind",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2485",
+      "text": "The Nigerian Supreme Court nullified the results of the 2019 Nigerian Presidential Election.",
+      "decision": "include",
+      "event_key": "assertion:the-nigerian-supreme-court-nullified-the-results-of-the-2019-nigerian-presidential-election",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2213",
+      "text": "Nigeria has the highest number of out-of-school children in sub-Saharan Africa.",
+      "decision": "include",
+      "event_key": "assertion:nigeria-has-the-highest-number-of-out-of-school-children-in-sub-saharan-africa",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1581",
+      "text": "Obama tweeted on Al Baghdad \"he was a great man, an innocent man and my friend\".",
+      "decision": "include",
+      "event_key": "assertion:obama-tweeted-on-al-baghdad-he-was-a-great-man-an-innocent-man-and-my-friend",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0485",
+      "text": "Chancellor of Germany Angela Merkel tweeted \"I stand with India\" after clash between the Indian Army and the Chinese PLA",
+      "decision": "include",
+      "event_key": "assertion:chancellor-of-germany-angela-merkel-tweeted-i-stand-with-india-after-clash-between-the-indian-army-and-the-chinese-pla",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0096",
+      "text": "warm water is effective in curing joint pain",
+      "decision": "include",
+      "event_key": "assertion:warm-water-is-effective-in-curing-joint-pain",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0888",
+      "text": "Some 150 foreigners attended spiritual leader Jaggi Vasudev aka Sadhguru's event in March 2020, which has led to over 1,000 corona cases in Tamil Nadu. The foreigners are quarantined at Isha Yoga Center.",
+      "decision": "include",
+      "event_key": "assertion:some-150-foreigners-attended-spiritual-leader-jaggi-vasudev-aka-sadhguru-s-event-in-march-2020-which-has-led-to-over-1-000-corona-cases-in-tamil-nadu-the-foreigners-are-quarantined-at-isha-yoga-center",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0556",
+      "text": "A white armed-robbery suspect was sentenced to two years in jail while a black armed-robbery suspect was sentenced to 26 years in prison by the same Florida judge.",
+      "decision": "include",
+      "event_key": "assertion:a-white-armed-robbery-suspect-was-sentenced-to-two-years-in-jail-while-a-black-armed-robbery-suspect-was-sentenced-to-26-years-in-prison-by-the-same-florida-judge",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1748",
+      "text": "Your reaction to an optical illusion is an indication of your state of mind.",
+      "decision": "include",
+      "event_key": "assertion:your-reaction-to-an-optical-illusion-is-an-indication-of-your-state-of-mind",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0224",
+      "text": "Nigeria recorded 1.25 million abortion cases in 2012 alone, but that this figure represented double the 1996 figures.",
+      "decision": "include",
+      "event_key": "assertion:nigeria-recorded-1-25-million-abortion-cases-in-2012-alone-but-that-this-figure-represented-double-the-1996-figures",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1914",
+      "text": "President Donald Trump’s 2020 campaign is selling plastic straws with the president’s name on them.",
+      "decision": "include",
+      "event_key": "assertion:president-donald-trump-s-2020-campaign-is-selling-plastic-straws-with-the-president-s-name-on-them",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2795",
+      "text": "Black Friday originated with the practice of selling off slaves on the day after Thanksgiving.",
+      "decision": "include",
+      "event_key": "assertion:black-friday-originated-with-the-practice-of-selling-off-slaves-on-the-day-after-thanksgiving",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0965",
+      "text": "Coronavirus is part of a conspiracy designed to introduce a \"new world order.",
+      "decision": "include",
+      "event_key": "assertion:coronavirus-is-part-of-a-conspiracy-designed-to-introduce-a-new-world-order",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1484",
+      "text": "Democratic presidential candidate and New Jersey Sen. Cory Booker was a Rhodes scholar.",
+      "decision": "include",
+      "event_key": "assertion:democratic-presidential-candidate-and-new-jersey-sen-cory-booker-was-a-rhodes-scholar",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0434",
+      "text": "Covid-19 surcharges are being applied in the USA.",
+      "decision": "include",
+      "event_key": "assertion:covid-19-surcharges-are-being-applied-in-the-usa",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2786",
+      "text": "Vegans now claiming that stuffing a turkey is sexual assault",
+      "decision": "include",
+      "event_key": "assertion:vegans-now-claiming-that-stuffing-a-turkey-is-sexual-assault",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0524",
+      "text": "Actor Matt Damon was planning on leaving the United States for Australia to get away from President Trump.",
+      "decision": "include",
+      "event_key": "assertion:actor-matt-damon-was-planning-on-leaving-the-united-states-for-australia-to-get-away-from-president-trump",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1222",
+      "text": "Mayor Bloomberg blamed African Americans & Latinos for the housing crash of 2008.",
+      "decision": "include",
+      "event_key": "assertion:mayor-bloomberg-blamed-african-americans-latinos-for-the-housing-crash-of-2008",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2237",
+      "text": "A Facebook post claims that Joe Biden has run for President 3 times (1984, 1988, and 2008).",
+      "decision": "include",
+      "event_key": "assertion:a-facebook-post-claims-that-joe-biden-has-run-for-president-3-times-1984-1988-and-2008",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0213",
+      "text": "Actor Sonu Sood launched a toll-free number on May 26 to facilitate migrants to reach their home. Through this toll-free number, one can easily reach out to Sonu Sood’s team for help.",
+      "decision": "include",
+      "event_key": "assertion:actor-sonu-sood-launched-a-toll-free-number-on-may-26-to-facilitate-migrants-to-reach-their-home-through-this-toll-free-number-one-can-easily-reach-out-to-sonu-sood-s-team-for-help",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2048",
+      "text": "A group of 15-20 miscreants are on the loose in parts of Malad and Dahisar and asks residents not to open their doors at night if they hear a baby crying outside.",
+      "decision": "include",
+      "event_key": "assertion:a-group-of-15-20-miscreants-are-on-the-loose-in-parts-of-malad-and-dahisar-and-asks-residents-not-to-open-their-doors-at-night-if-they-hear-a-baby-crying-outside",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2414",
+      "text": "Since US President Trump's election in November 2016, 5.5 million new jobs have been created.",
+      "decision": "include",
+      "event_key": "assertion:since-us-president-trump-s-election-in-november-2016-5-5-million-new-jobs-have-been-created",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0717",
+      "text": "Airline travelers to Florida must fill out a form at the airport with contact information and trip details and self-quarantine for 14 days",
+      "decision": "include",
+      "event_key": "assertion:airline-travelers-to-florida-must-fill-out-a-form-at-the-airport-with-contact-information-and-trip-details-and-self-quarantine-for-14-days",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1837",
+      "text": "Would Florida assault weapon law amendment proposal ban virtually all guns?",
+      "decision": "include",
+      "event_key": "assertion:would-florida-assault-weapon-law-amendment-proposal-ban-virtually-all-guns",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0214",
+      "text": "Hetero is selling 6 vials of Remdesivir at Rs 32,400 at Kukatpally",
+      "decision": "include",
+      "event_key": "assertion:hetero-is-selling-6-vials-of-remdesivir-at-rs-32-400-at-kukatpally",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0184",
+      "text": "1.110,000 Delicious Laddus are being prepared for the Bhoomi Poojan Ceremony at Sri Ramachandra Janmabhoomi Ayodhya",
+      "decision": "include",
+      "event_key": "assertion:1-110-000-delicious-laddus-are-being-prepared-for-the-bhoomi-poojan-ceremony-at-sri-ramachandra-janmabhoomi-ayodhya",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2409",
+      "text": "There is an agreement on real time information sharing between India and Switzerland.",
+      "decision": "include",
+      "event_key": "assertion:there-is-an-agreement-on-real-time-information-sharing-between-india-and-switzerland",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0116",
+      "text": "Former president Pranab Mukherjee from India has passed away.",
+      "decision": "include",
+      "event_key": "assertion:former-president-pranab-mukherjee-from-india-has-passed-away",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2019",
+      "text": "Cory Brooker vowed not to take contributions from pharma companies, pharma executives or corporate PAC's before his presidential campaign in 2019",
+      "decision": "include",
+      "event_key": "assertion:cory-brooker-vowed-not-to-take-contributions-from-pharma-companies-pharma-executives-or-corporate-pac-s-before-his-presidential-campaign-in-2019",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0359",
+      "text": "International students contributed over $40 billion to the U.S. economy in 2018-19.",
+      "decision": "include",
+      "event_key": "assertion:international-students-contributed-over-40-billion-to-the-u-s-economy-in-2018-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0943",
+      "text": "Dr Charles Lieber of Harvard University was arrested for manufacturing the novel coronavirus in collusion with China.",
+      "decision": "include",
+      "event_key": "assertion:dr-charles-lieber-of-harvard-university-was-arrested-for-manufacturing-the-novel-coronavirus-in-collusion-with-china",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0870",
+      "text": "There are 360,000 deaths a year in the US from swimming pools. But we don’t shut the country down for that.",
+      "decision": "include",
+      "event_key": "assertion:there-are-360-000-deaths-a-year-in-the-us-from-swimming-pools-but-we-don-t-shut-the-country-down-for-that",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0300",
+      "text": "if the Trump administration “had done its job, the virus wouldn’t come” to New York",
+      "decision": "include",
+      "event_key": "assertion:if-the-trump-administration-had-done-its-job-the-virus-wouldn-t-come-to-new-york",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0986",
+      "text": "Illinois banned the sale of alcohol on March 30 2020",
+      "decision": "include",
+      "event_key": "assertion:illinois-banned-the-sale-of-alcohol-on-march-30-2020",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0585",
+      "text": "Wastewater can be an early indicator for a coronavirus outbreak.",
+      "decision": "include",
+      "event_key": "assertion:wastewater-can-be-an-early-indicator-for-a-coronavirus-outbreak",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0225",
+      "text": "Your face will become exposed to the virus if you wear your mask on your chin.",
+      "decision": "include",
+      "event_key": "assertion:your-face-will-become-exposed-to-the-virus-if-you-wear-your-mask-on-your-chin",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0860",
+      "text": "Chief of Staff to the President of Nigeria, Mallam Abba Kyari, died of ulcer and not coronavirus.",
+      "decision": "include",
+      "event_key": "assertion:chief-of-staff-to-the-president-of-nigeria-mallam-abba-kyari-died-of-ulcer-and-not-coronavirus",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1350",
+      "text": "The NHS operate on the wrong part of someone’s body four times a day.",
+      "decision": "include",
+      "event_key": "assertion:the-nhs-operate-on-the-wrong-part-of-someone-s-body-four-times-a-day",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2212",
+      "text": "US Interior Secretary Ryan Zinke ordered a special flag to be raised whenever he entered the building.",
+      "decision": "include",
+      "event_key": "assertion:us-interior-secretary-ryan-zinke-ordered-a-special-flag-to-be-raised-whenever-he-entered-the-building",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0243",
+      "text": "Target ended its “Heroes & Helpers” program that pairs children with police officers for holiday shopping trips",
+      "decision": "include",
+      "event_key": "assertion:target-ended-its-heroes-helpers-program-that-pairs-children-with-police-officers-for-holiday-shopping-trips",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1841",
+      "text": "In the weeks following El Paso and Dayton, evidence of an impending mass shooting spread on Snapchat and iMessage.",
+      "decision": "include",
+      "event_key": "assertion:in-the-weeks-following-el-paso-and-dayton-evidence-of-an-impending-mass-shooting-spread-on-snapchat-and-imessage",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2222",
+      "text": "Singapore's prime minister has one of the highest salaries of any world leader.",
+      "decision": "include",
+      "event_key": "assertion:singapore-s-prime-minister-has-one-of-the-highest-salaries-of-any-world-leader",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1906",
+      "text": "Police in Gujarat seized weapons from a mosque.",
+      "decision": "include",
+      "event_key": "assertion:police-in-gujarat-seized-weapons-from-a-mosque",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2821",
+      "text": "Iain Duncan Smith gets free transport as a financial benefit for being an MP in the UK House of Commons.",
+      "decision": "include",
+      "event_key": "assertion:iain-duncan-smith-gets-free-transport-as-a-financial-benefit-for-being-an-mp-in-the-uk-house-of-commons",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2121",
+      "text": "Taylor Swift says most Democrats, independents, Republicans back nondiscrimination for LGBTQ people.",
+      "decision": "include",
+      "event_key": "assertion:taylor-swift-says-most-democrats-independents-republicans-back-nondiscrimination-for-lgbtq-people",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0611",
+      "text": "The COVID-19 pandemic has helped bolster the relationship between China and Middle Eastern countries.",
+      "decision": "include",
+      "event_key": "assertion:the-covid-19-pandemic-has-helped-bolster-the-relationship-between-china-and-middle-eastern-countries",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0345",
+      "text": "A graphic from the World Health Organization (WHO) lists the “7 biggest brain damaging habits",
+      "decision": "include",
+      "event_key": "assertion:a-graphic-from-the-world-health-organization-who-lists-the-7-biggest-brain-damaging-habits",
+      "overlaps_history": false,
+      "reason": "WHO attribution of brain-habit graphic differs from WHO mask guidance."
+    },
+    {
+      "id": "MFN-2437",
+      "text": "CAIR was founded after 9/11, because they recognized that some people did something and that all of us were starting to lose access to our civil liberties",
+      "decision": "include",
+      "event_key": "assertion:cair-was-founded-after-9-11-because-they-recognized-that-some-people-did-something-and-that-all-of-us-were-starting-to-lose-access-to-our-civil-liberties",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2432",
+      "text": "South Africa’s official opposition party, the Democratic Alliance (DA), launched its election manifesto in Johannesburg on 23 February 2019.",
+      "decision": "include",
+      "event_key": "assertion:south-africa-s-official-opposition-party-the-democratic-alliance-da-launched-its-election-manifesto-in-johannesburg-on-23-february-2019",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1549",
+      "text": "Donald Trump and the Republicans have spent the past four years trying to dismantle the Affordable Care Act. They are doing everything they can — without a plan to replace it",
+      "decision": "include",
+      "event_key": "assertion:donald-trump-and-the-republicans-have-spent-the-past-four-years-trying-to-dismantle-the-affordable-care-act-they-are-doing-everything-they-can-without-a-plan-to-replace-it",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1510",
+      "text": "The U.S. Constitution sets up the  election redistricting process to be partisan.",
+      "decision": "include",
+      "event_key": "assertion:the-u-s-constitution-sets-up-the-election-redistricting-process-to-be-partisan",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1770",
+      "text": "VA hospitals were removing Bibles and banning Christmas carols under Obama administration",
+      "decision": "include",
+      "event_key": "assertion:va-hospitals-were-removing-bibles-and-banning-christmas-carols-under-obama-administration",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0449",
+      "text": "Glenmark Pharmaceuticals received approvals from Drug Controller General of India to manufacture and market Favipiravir, an anti-viral drug, to treat COVID-19 patients.",
+      "decision": "include",
+      "event_key": "assertion:glenmark-pharmaceuticals-received-approvals-from-drug-controller-general-of-india-to-manufacture-and-market-favipiravir-an-anti-viral-drug-to-treat-covid-19-patients",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2138",
+      "text": "Literal manure is coming out of taps in some US counties with CAFOs.",
+      "decision": "include",
+      "event_key": "assertion:literal-manure-is-coming-out-of-taps-in-some-us-counties-with-cafos",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0918",
+      "text": "There's a lot of fraudulent voting in the US elections.",
+      "decision": "include",
+      "event_key": "assertion:there-s-a-lot-of-fraudulent-voting-in-the-us-elections",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0659",
+      "text": "U.S. House Speaker Nancy Pelosi deferred $2.2 billion from Social Security to New York Gov. Andrew Cuomo's budget amid the ongoing battle against the coronavirus pandemic.",
+      "decision": "include",
+      "event_key": "assertion:u-s-house-speaker-nancy-pelosi-deferred-2-2-billion-from-social-security-to-new-york-gov-andrew-cuomo-s-budget-amid-the-ongoing-battle-against-the-coronavirus-pandemic",
+      "overlaps_history": false,
+      "reason": "Pelosi/Cuomo Social Security transfer story retained over MFN-0652 by fixed SHA rank; distinct from historical Cuomo classroom quote and Pelosi impeachment-fee claim."
+    },
+    {
+      "id": "MFN-2814",
+      "text": "Egyptian authorities are carrying atrocious acts which results in injustice",
+      "decision": "include",
+      "event_key": "assertion:egyptian-authorities-are-carrying-atrocious-acts-which-results-in-injustice",
+      "overlaps_history": false,
+      "reason": "No matching historical event found; statement is broad/evaluative. Human semantic review must not invent unspecified acts or victims."
+    },
+    {
+      "id": "MFN-2771",
+      "text": "More than R2 trillion was invested in South Africa in infrastructure projects over 10 years (2008-2018) to build more schools, clinics, roads and the freight logistics network.",
+      "decision": "include",
+      "event_key": "assertion:more-than-r2-trillion-was-invested-in-south-africa-in-infrastructure-projects-over-10-years-2008-2018-to-build-more-schools-clinics-roads-and-the-freight-logistics-network",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0328",
+      "text": "Bonnie Henry issued advice about living with the threat of Covid-19.",
+      "decision": "include",
+      "event_key": "assertion:bonnie-henry-issued-advice-about-living-with-the-threat-of-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0484",
+      "text": "Telangana govt has released guidelines to reopen schools in the state",
+      "decision": "include",
+      "event_key": "assertion:telangana-govt-has-released-guidelines-to-reopen-schools-in-the-state",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1292",
+      "text": "The EU did not help Britain during the Falklands War, and instead sent weapons to Argentina.",
+      "decision": "include",
+      "event_key": "assertion:the-eu-did-not-help-britain-during-the-falklands-war-and-instead-sent-weapons-to-argentina",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0139",
+      "text": "T cells may play a role in the body’s immune response against the virus SARS-CoV-2",
+      "decision": "include",
+      "event_key": "assertion:t-cells-may-play-a-role-in-the-body-s-immune-response-against-the-virus-sars-cov-2",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1956",
+      "text": "Biden's crime bill  included Violence Against Women Act, It also included strengthening the Brady Bill on background checks, eliminated assault weapons.",
+      "decision": "include",
+      "event_key": "assertion:biden-s-crime-bill-included-violence-against-women-act-it-also-included-strengthening-the-brady-bill-on-background-checks-eliminated-assault-weapons",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0718",
+      "text": "Corona Virus is less likely to spread in a retail setting because people are moving around frequently and not just sitting or standing indoors for long periods of time during Worships.",
+      "decision": "include",
+      "event_key": "assertion:corona-virus-is-less-likely-to-spread-in-a-retail-setting-because-people-are-moving-around-frequently-and-not-just-sitting-or-standing-indoors-for-long-periods-of-time-during-worships",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1836",
+      "text": "CNN's Chris Cuomo exploded at a man who called him fredo.",
+      "decision": "include",
+      "event_key": "assertion:cnn-s-chris-cuomo-exploded-at-a-man-who-called-him-fredo",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1074",
+      "text": "A charitable hospital in Pakistan charged patients for novel coronavirus tests",
+      "decision": "include",
+      "event_key": "assertion:a-charitable-hospital-in-pakistan-charged-patients-for-novel-coronavirus-tests",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0818",
+      "text": "US President Donald Trump tried to defund the National Institute of Health.",
+      "decision": "include",
+      "event_key": "assertion:us-president-donald-trump-tried-to-defund-the-national-institute-of-health",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2798",
+      "text": "the United States ranks third in murders throughout the world",
+      "decision": "include",
+      "event_key": "assertion:the-united-states-ranks-third-in-murders-throughout-the-world",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1561",
+      "text": "Indian social activist Mahatma Gandhi once said, “First they ignore you, then they laugh at you, then they fight you, then you win.”",
+      "decision": "include",
+      "event_key": "assertion:indian-social-activist-mahatma-gandhi-once-said-first-they-ignore-you-then-they-laugh-at-you-then-they-fight-you-then-you-win",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0017",
+      "text": "In 2019 the US Police were 20.8 times more likely to kill than be killed by a criminal",
+      "decision": "include",
+      "event_key": "assertion:in-2019-the-us-police-were-20-8-times-more-likely-to-kill-than-be-killed-by-a-criminal",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0809",
+      "text": "The Democrats' H.R. 5717 bill would implement a 30% tax on all gun sales and a 50% tax on all ammunition sales.",
+      "decision": "include",
+      "event_key": "assertion:the-democrats-h-r-5717-bill-would-implement-a-30-tax-on-all-gun-sales-and-a-50-tax-on-all-ammunition-sales",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0467",
+      "text": "A phishing attack that seemed like an official communique on the COVID-19 pandemic was expected to be launched from June 21 2020 onwards in major metropolitan cities of India.",
+      "decision": "include",
+      "event_key": "assertion:a-phishing-attack-that-seemed-like-an-official-communique-on-the-covid-19-pandemic-was-expected-to-be-launched-from-june-21-2020-onwards-in-major-metropolitan-cities-of-india",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0878",
+      "text": "US Centers for Disease Control and Prevention lied about the number of deaths caused by COVID-19 by combining the count with pneumonia and influenza fatalities.",
+      "decision": "include",
+      "event_key": "assertion:us-centers-for-disease-control-and-prevention-lied-about-the-number-of-deaths-caused-by-covid-19-by-combining-the-count-with-pneumonia-and-influenza-fatalities",
+      "overlaps_history": false,
+      "reason": "CDC mortality-count allegation differs from CDC mask guidance and UK PHE count aggregation (different agency/country)."
+    },
+    {
+      "id": "MFN-1131",
+      "text": "Whole of Italy goes into quarantine, In Italy, people must stay home except for work or emergencies",
+      "decision": "include",
+      "event_key": "assertion:whole-of-italy-goes-into-quarantine-in-italy-people-must-stay-home-except-for-work-or-emergencies",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2844",
+      "text": "The Indian government has procured 16.24 lakh metric tonnes of pulses as of March 2018",
+      "decision": "include",
+      "event_key": "assertion:the-indian-government-has-procured-16-24-lakh-metric-tonnes-of-pulses-as-of-march-2018",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1858",
+      "text": "The common theme with mass shooters is that the assailants were on psychotropic drugs.",
+      "decision": "include",
+      "event_key": "assertion:the-common-theme-with-mass-shooters-is-that-the-assailants-were-on-psychotropic-drugs",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2456",
+      "text": "Sen. Kirsten Gillibrand has the most votes against Donald Trump cabinet nominees",
+      "decision": "include",
+      "event_key": "assertion:sen-kirsten-gillibrand-has-the-most-votes-against-donald-trump-cabinet-nominees",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2070",
+      "text": "Two brands of salt in India, Samnhar refined salt and Tata salt contain high levels of toxic compound potassium ferrocyanide.",
+      "decision": "include",
+      "event_key": "assertion:two-brands-of-salt-in-india-samnhar-refined-salt-and-tata-salt-contain-high-levels-of-toxic-compound-potassium-ferrocyanide",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1087",
+      "text": "The US has a lack of medical personnel and hospitals may not have the capacity to deal with hundreds of thousands of people at the peak of the coronavirus pandemic.",
+      "decision": "include",
+      "event_key": "assertion:the-us-has-a-lack-of-medical-personnel-and-hospitals-may-not-have-the-capacity-to-deal-with-hundreds-of-thousands-of-people-at-the-peak-of-the-coronavirus-pandemic",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0233",
+      "text": "BLM injures 1000 police officers, kills36 people and does $8 billion in damage .",
+      "decision": "include",
+      "event_key": "assertion:blm-injures-1000-police-officers-kills36-people-and-does-8-billion-in-damage",
+      "overlaps_history": false,
+      "reason": "Conservative Floyd/protest cluster representative by fixed SHA rank; MFN-0529 and MFN-0655 excluded."
+    },
+    {
+      "id": "MFN-0480",
+      "text": "Nigeria bears 50% of the global sickle cell burden",
+      "decision": "include",
+      "event_key": "assertion:nigeria-bears-50-of-the-global-sickle-cell-burden",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1258",
+      "text": "The salaries of MPs in the UK have grown faster than the starting salaries of nurses, teachers and police officers between 2010 and 2020.",
+      "decision": "include",
+      "event_key": "assertion:the-salaries-of-mps-in-the-uk-have-grown-faster-than-the-starting-salaries-of-nurses-teachers-and-police-officers-between-2010-and-2020",
+      "overlaps_history": false,
+      "reason": "Relative wage growth differs from historical NHS nurse resignation counts."
+    },
+    {
+      "id": "MFN-0708",
+      "text": "Rwanda gets its electricity from 70% renewable energy",
+      "decision": "include",
+      "event_key": "assertion:rwanda-gets-its-electricity-from-70-renewable-energy",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0209",
+      "text": "John Mahama presided over a decline in Ghana's agriculture. Nana Akufo-Addo increased Ghana's agricultural output.",
+      "decision": "include",
+      "event_key": "assertion:john-mahama-presided-over-a-decline-in-ghana-s-agriculture-nana-akufo-addo-increased-ghana-s-agricultural-output",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1735",
+      "text": "The Trump family took seats reserved for disabled guests at the 74th session of the UN General Assembly.",
+      "decision": "include",
+      "event_key": "assertion:the-trump-family-took-seats-reserved-for-disabled-guests-at-the-74th-session-of-the-un-general-assembly",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0799",
+      "text": "Men are more likely to die than women from Covid-19.",
+      "decision": "include",
+      "event_key": "assertion:men-are-more-likely-to-die-than-women-from-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1153",
+      "text": "Kim Jong Un, Supreme Leader of North Korea, rejected calls from the Obama administration",
+      "decision": "include",
+      "event_key": "assertion:kim-jong-un-supreme-leader-of-north-korea-rejected-calls-from-the-obama-administration",
+      "overlaps_history": false,
+      "reason": "Kim/Obama phone-call claim differs in counterpart and administration period from 2020 inter-Korean communication shutdown."
+    },
+    {
+      "id": "MFN-0194",
+      "text": "In the UK the new daily allowance for peers in the House of Lords in 2020 is £323.",
+      "decision": "include",
+      "event_key": "assertion:in-the-uk-the-new-daily-allowance-for-peers-in-the-house-of-lords-in-2020-is-323",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0113",
+      "text": "Vitamin D prevents COVID-19 infection and reduces severity.",
+      "decision": "include",
+      "event_key": "assertion:vitamin-d-prevents-covid-19-infection-and-reduces-severity",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1381",
+      "text": "Iran’s hostilities substantially increased after the foolish Iran nuclear deal was signed in 2013 and they were given $150 billion, not to mention $1.8 billion in cash",
+      "decision": "include",
+      "event_key": "assertion:iran-s-hostilities-substantially-increased-after-the-foolish-iran-nuclear-deal-was-signed-in-2013-and-they-were-given-150-billion-not-to-mention-1-8-billion-in-cash",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1162",
+      "text": "HHS has designated the coronavirus test as an essential health benefit. That means, by definition, it's covered in the private health insurance of every American, as well as covered by Medicare and Medicaid.",
+      "decision": "include",
+      "event_key": "assertion:hhs-has-designated-the-coronavirus-test-as-an-essential-health-benefit-that-means-by-definition-it-s-covered-in-the-private-health-insurance-of-every-american-as-well-as-covered-by-medicare-and-medicaid",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2103",
+      "text": "Nigeria has made solid progress in fighting corruption in the past four years",
+      "decision": "include",
+      "event_key": "assertion:nigeria-has-made-solid-progress-in-fighting-corruption-in-the-past-four-years",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0211",
+      "text": "Republican bill says no medical malpractice suits until 2024.",
+      "decision": "include",
+      "event_key": "assertion:republican-bill-says-no-medical-malpractice-suits-until-2024",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0698",
+      "text": "House of Representatives revoked the passage of the Media network ABS-CBN Franchise Bill on second reading in the Philipines.",
+      "decision": "include",
+      "event_key": "assertion:house-of-representatives-revoked-the-passage-of-the-media-network-abs-cbn-franchise-bill-on-second-reading-in-the-philipines",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1096",
+      "text": "An Italian company threatened to sue two men for 3D printing valves for a respiratory device.",
+      "decision": "include",
+      "event_key": "assertion:an-italian-company-threatened-to-sue-two-men-for-3d-printing-valves-for-a-respiratory-device",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0648",
+      "text": "18 CHINESE people were sent packing back to China on Wednesday 27th May 2020 after the president of Rwanda found out that they were mistreating Rwandan workers.",
+      "decision": "include",
+      "event_key": "assertion:18-chinese-people-were-sent-packing-back-to-china-on-wednesday-27th-may-2020-after-the-president-of-rwanda-found-out-that-they-were-mistreating-rwandan-workers",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1872",
+      "text": "Joe Biden, whilst vice president, said the Obama administration had passed the criminal justice reform bill.",
+      "decision": "include",
+      "event_key": "assertion:joe-biden-whilst-vice-president-said-the-obama-administration-had-passed-the-criminal-justice-reform-bill",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1453",
+      "text": "The Export-Import Bank “costs taxpayers billions in corporate welfare subsidies.",
+      "decision": "include",
+      "event_key": "assertion:the-export-import-bank-costs-taxpayers-billions-in-corporate-welfare-subsidies",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0690",
+      "text": "The deaths of 181 NHS workers have involved Covid-19.",
+      "decision": "include",
+      "event_key": "assertion:the-deaths-of-181-nhs-workers-have-involved-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1404",
+      "text": "Former secretary of state Hillary Clinton let four Americans die in Benghazi.",
+      "decision": "include",
+      "event_key": "assertion:former-secretary-of-state-hillary-clinton-let-four-americans-die-in-benghazi",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2199",
+      "text": "Ondo state’s monthly IGR has increased to over N1.5 billion.",
+      "decision": "include",
+      "event_key": "assertion:ondo-state-s-monthly-igr-has-increased-to-over-n1-5-billion",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1727",
+      "text": "During his telephone call with Ukrainian President Zelensky on 25th July 2019 Donald Trump said the United States had been good to Ukraine.",
+      "decision": "include",
+      "event_key": "assertion:during-his-telephone-call-with-ukrainian-president-zelensky-on-25th-july-2019-donald-trump-said-the-united-states-had-been-good-to-ukraine",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1359",
+      "text": "Senator Bernie Saunders told a Democratic presidential primary debate that the healthcare industry makes $100 billion a year.",
+      "decision": "include",
+      "event_key": "assertion:senator-bernie-saunders-told-a-democratic-presidential-primary-debate-that-the-healthcare-industry-makes-100-billion-a-year",
+      "overlaps_history": false,
+      "reason": "January Democratic primary healthcare statement differs from historical presidential-debate question-leak claim."
+    },
+    {
+      "id": "MFN-2862",
+      "text": "colon cancer begins in the intestine then spreads to other parts of the body",
+      "decision": "include",
+      "event_key": "assertion:colon-cancer-begins-in-the-intestine-then-spreads-to-other-parts-of-the-body",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1761",
+      "text": "The Conservatives are levelling up per pupil funding in schools in the UK.",
+      "decision": "include",
+      "event_key": "assertion:the-conservatives-are-levelling-up-per-pupil-funding-in-schools-in-the-uk",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0734",
+      "text": "U.S. Rep. Alexandria Ocasio-Cortez authored a bill that would strike from the voting rolls anyone in the United States who is 65 or older.",
+      "decision": "include",
+      "event_key": "assertion:u-s-rep-alexandria-ocasio-cortez-authored-a-bill-that-would-strike-from-the-voting-rolls-anyone-in-the-united-states-who-is-65-or-older",
+      "overlaps_history": false,
+      "reason": "Alleged older-voter exclusion bill differs from AOC position on border-aid bill."
+    },
+    {
+      "id": "MFN-0429",
+      "text": "South Africa is number one in the killing of women internationally.",
+      "decision": "include",
+      "event_key": "assertion:south-africa-is-number-one-in-the-killing-of-women-internationally",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1448",
+      "text": "Trump Mocks Global Warming, Lowballs Sea Level Rise",
+      "decision": "include",
+      "event_key": "assertion:trump-mocks-global-warming-lowballs-sea-level-rise",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1216",
+      "text": "Kunal Kamra said, The RDX laden car which caused the blast in Pulwama, RTO has not been able to access its papers stating under whose name it was registered, till date. The government wants more than 70 year old papers in the NRC.",
+      "decision": "include",
+      "event_key": "assertion:kunal-kamra-said-the-rdx-laden-car-which-caused-the-blast-in-pulwama-rto-has-not-been-able-to-access-its-papers-stating-under-whose-name-it-was-registered-till-date-the-government-wants-more-than-70-year-old-papers-in-the-nrc",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0576",
+      "text": "52 free horses in June  2020 needed rehoming in Ohio because their owner died of Covid-19",
+      "decision": "include",
+      "event_key": "assertion:52-free-horses-in-june-2020-needed-rehoming-in-ohio-because-their-owner-died-of-covid-19",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0935",
+      "text": "Cadbury gave away 500 Free baskets of Cadbury Chocolate to celebrate its 196th Anniversary.",
+      "decision": "include",
+      "event_key": "assertion:cadbury-gave-away-500-free-baskets-of-cadbury-chocolate-to-celebrate-its-196th-anniversary",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1681",
+      "text": "Joe Biden wants to abolish the \"stepped up basis\" that currently reduces inheritance taxes.",
+      "decision": "include",
+      "event_key": "assertion:joe-biden-wants-to-abolish-the-stepped-up-basis-that-currently-reduces-inheritance-taxes",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0741",
+      "text": "Billionaire currency speculator George Soros has hailed the Covid-19 pandemic as the crisis of his lifetime, all but salivating over the chance to remake society amid the revolutionary moment he claims preceded the virus.",
+      "decision": "include",
+      "event_key": "assertion:billionaire-currency-speculator-george-soros-has-hailed-the-covid-19-pandemic-as-the-crisis-of-his-lifetime-all-but-salivating-over-the-chance-to-remake-society-amid-the-revolutionary-moment-he-claims-preceded-the-virus",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2486",
+      "text": "MMR Vaccine does not causes autism in Children.",
+      "decision": "include",
+      "event_key": "assertion:mmr-vaccine-does-not-causes-autism-in-children",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0976",
+      "text": "Jio is giving Indian users a free recharge of ₹498.",
+      "decision": "include",
+      "event_key": "assertion:jio-is-giving-indian-users-a-free-recharge-of-498",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1787",
+      "text": "Dan McCready, a Democratic candidate standing in the special election for North Carolina’s 9th Congressional District, is a socialist.",
+      "decision": "include",
+      "event_key": "assertion:dan-mccready-a-democratic-candidate-standing-in-the-special-election-for-north-carolina-s-9th-congressional-district-is-a-socialist",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0920",
+      "text": "The World Health Organisation states that there are up to 650,000 deaths per year associated with respiratory illnesses linked to seasonal flu.",
+      "decision": "include",
+      "event_key": "assertion:the-world-health-organisation-states-that-there-are-up-to-650-000-deaths-per-year-associated-with-respiratory-illnesses-linked-to-seasonal-flu",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2247",
+      "text": "In my own state of Vermont, from the very first days of our state's history, what our Constitution says is that everybody can vote. That is true. So people in jail can vote.\"",
+      "decision": "include",
+      "event_key": "assertion:in-my-own-state-of-vermont-from-the-very-first-days-of-our-state-s-history-what-our-constitution-says-is-that-everybody-can-vote-that-is-true-so-people-in-jail-can-vote",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2883",
+      "text": "Sir Roger Moore Died Aged 89 in 2017",
+      "decision": "include",
+      "event_key": "assertion:sir-roger-moore-died-aged-89-in-2017",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0158",
+      "text": "With African Americans, Trump is doing very well. They had the best employment numbers they’ve ever had. ... They were making more money than they ever made.",
+      "decision": "include",
+      "event_key": "assertion:with-african-americans-trump-is-doing-very-well-they-had-the-best-employment-numbers-they-ve-ever-had-they-were-making-more-money-than-they-ever-made",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0633",
+      "text": "On Kenyas independence, they only had 1,800 kilometres of tarmacked roads",
+      "decision": "include",
+      "event_key": "assertion:on-kenyas-independence-they-only-had-1-800-kilometres-of-tarmacked-roads",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1441",
+      "text": "RBI has said that ₹2000 notes are banned and ₹1000 notes have been introduced",
+      "decision": "include",
+      "event_key": "assertion:rbi-has-said-that-2000-notes-are-banned-and-1000-notes-have-been-introduced",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1486",
+      "text": "Nigeria was exposed to less than $7 billion of debt in 2015.",
+      "decision": "include",
+      "event_key": "assertion:nigeria-was-exposed-to-less-than-7-billion-of-debt-in-2015",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0590",
+      "text": "By June 2020 autopsies performed by the Italian pathologists proved that COVID-19, as a Disseminated Intravascular Coagulation, ought to be fought with antibiotics, antivirals, anti-inflammatories and anticoagulants",
+      "decision": "include",
+      "event_key": "assertion:by-june-2020-autopsies-performed-by-the-italian-pathologists-proved-that-covid-19-as-a-disseminated-intravascular-coagulation-ought-to-be-fought-with-antibiotics-antivirals-anti-inflammatories-and-anticoagulants",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1931",
+      "text": "George Washington said, \"It is impossible to rightly govern a nation without God and the Bible.\"",
+      "decision": "include",
+      "event_key": "assertion:george-washington-said-it-is-impossible-to-rightly-govern-a-nation-without-god-and-the-bible",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0334",
+      "text": "South Africa has “expertise in the development and trial of a range of vaccines”",
+      "decision": "include",
+      "event_key": "assertion:south-africa-has-expertise-in-the-development-and-trial-of-a-range-of-vaccines",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2309",
+      "text": "Previous claims that one or two drinks a day might protect against stroke are not true.",
+      "decision": "include",
+      "event_key": "assertion:previous-claims-that-one-or-two-drinks-a-day-might-protect-against-stroke-are-not-true",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1521",
+      "text": "Political Scientist Alexey Martynov said ‘Transnistria is an Independent State.’",
+      "decision": "include",
+      "event_key": "assertion:political-scientist-alexey-martynov-said-transnistria-is-an-independent-state",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2120",
+      "text": "Former Minnesota Senator Franken was accused credibly by eight women of groping and forceable kissing, all of which were corroborated in real time.",
+      "decision": "include",
+      "event_key": "assertion:former-minnesota-senator-franken-was-accused-credibly-by-eight-women-of-groping-and-forceable-kissing-all-of-which-were-corroborated-in-real-time",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0864",
+      "text": "There is always the possibility of an iatrogenic reaction to a vaccine.",
+      "decision": "include",
+      "event_key": "assertion:there-is-always-the-possibility-of-an-iatrogenic-reaction-to-a-vaccine",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2726",
+      "text": "IN 2016-17 80% of income received by farmers in Northern Ireland came from the European Union",
+      "decision": "include",
+      "event_key": "assertion:in-2016-17-80-of-income-received-by-farmers-in-northern-ireland-came-from-the-european-union",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0236",
+      "text": "Wisconsin Democrats say lawmakers in neighbouring states have implemented more safety precautions against the spread of COVID-19 than state GOP.",
+      "decision": "include",
+      "event_key": "assertion:wisconsin-democrats-say-lawmakers-in-neighbouring-states-have-implemented-more-safety-precautions-against-the-spread-of-covid-19-than-state-gop",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0424",
+      "text": "Seven people were shot in the neighbourhood of Newark in June 2018.",
+      "decision": "include",
+      "event_key": "assertion:seven-people-were-shot-in-the-neighbourhood-of-newark-in-june-2018",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1236",
+      "text": "FBI Ignored Evidence That Hillary Clinton Put A Hit Out On Brett Kavanaugh.",
+      "decision": "include",
+      "event_key": "assertion:fbi-ignored-evidence-that-hillary-clinton-put-a-hit-out-on-brett-kavanaugh",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0978",
+      "text": "In Serbia, the stricter Covid19 curfew measures prevented dog walking for up to 14 hours at a time.",
+      "decision": "include",
+      "event_key": "assertion:in-serbia-the-stricter-covid19-curfew-measures-prevented-dog-walking-for-up-to-14-hours-at-a-time",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2832",
+      "text": "Donald Trump is destroying the \"New World Order,\" says American film maker David Lynch in an interview with The Guardian in 2018.",
+      "decision": "include",
+      "event_key": "assertion:donald-trump-is-destroying-the-new-world-order-says-american-film-maker-david-lynch-in-an-interview-with-the-guardian-in-2018",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1519",
+      "text": "Tirupati Balaji Temple Will Donate Rs. 100 Crores For Ram Mandir.",
+      "decision": "include",
+      "event_key": "assertion:tirupati-balaji-temple-will-donate-rs-100-crores-for-ram-mandir",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1320",
+      "text": "Nobody had ever even heard of Ebola before 2014",
+      "decision": "include",
+      "event_key": "assertion:nobody-had-ever-even-heard-of-ebola-before-2014",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1473",
+      "text": "Donald Trump is waging a trade war against Wisconsin farmers forcing 1600 dairy farms to close.",
+      "decision": "include",
+      "event_key": "assertion:donald-trump-is-waging-a-trade-war-against-wisconsin-farmers-forcing-1600-dairy-farms-to-close",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1832",
+      "text": "Professor HC Verma still drives an old scooter.",
+      "decision": "include",
+      "event_key": "assertion:professor-hc-verma-still-drives-an-old-scooter",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1876",
+      "text": "Companies like Amazon that made billions in profits did not pay one nickel in federal income tax",
+      "decision": "include",
+      "event_key": "assertion:companies-like-amazon-that-made-billions-in-profits-did-not-pay-one-nickel-in-federal-income-tax",
+      "overlaps_history": false,
+      "reason": "Amazon federal-tax assertion retained; replacement paraphrase MFN-2268 excluded."
+    },
+    {
+      "id": "MFN-2895",
+      "text": "Two men, Mateusz Pawlikowski and Piotr Czak-Zukowski, who threw bacon at a mosque are sentenced to eight months in jail.",
+      "decision": "include",
+      "event_key": "assertion:two-men-mateusz-pawlikowski-and-piotr-czak-zukowski-who-threw-bacon-at-a-mosque-are-sentenced-to-eight-months-in-jail",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-0440",
+      "text": "In 1977, U.S. President Joe Biden said integrating black students would turn schools into \"a jungle… a racial jungle.\"",
+      "decision": "include",
+      "event_key": "assertion:in-1977-u-s-president-joe-biden-said-integrating-black-students-would-turn-schools-into-a-jungle-a-racial-jungle",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1125",
+      "text": "Republican Florida Rep. Ted Yoho said that black Americans should only get three-fifths of a vote.",
+      "decision": "include",
+      "event_key": "assertion:republican-florida-rep-ted-yoho-said-that-black-americans-should-only-get-three-fifths-of-a-vote",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-1332",
+      "text": "Presidential candidate Joe Biden fought for decades to cut social security in the US.",
+      "decision": "include",
+      "event_key": "assertion:presidential-candidate-joe-biden-fought-for-decades-to-cut-social-security-in-the-us",
+      "overlaps_history": false,
+      "reason": "Biden Social Security record retained; ambiguous quoted-address variant MFN-1086 excluded."
+    },
+    {
+      "id": "MFN-0446",
+      "text": "Unused COVID-19 tests that already showed positive results were found in Tuscaloosa, Alabama.",
+      "decision": "include",
+      "event_key": "assertion:unused-covid-19-tests-that-already-showed-positive-results-were-found-in-tuscaloosa-alabama",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2079",
+      "text": "25% of drug users in Nigeria are women",
+      "decision": "include",
+      "event_key": "assertion:25-of-drug-users-in-nigeria-are-women",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2804",
+      "text": "Irregular expenditure by the government of South Africa’s Western Cape province rose from R23 million in the 2016/17 financial year to R44 million in 2017/18 – an increase of R21 million.",
+      "decision": "include",
+      "event_key": "assertion:irregular-expenditure-by-the-government-of-south-africa-s-western-cape-province-rose-from-r23-million-in-the-2016-17-financial-year-to-r44-million-in-2017-18-an-increase-of-r21-million",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    },
+    {
+      "id": "MFN-2078",
+      "text": "On 13 June 2019 Kenya’s finance minister Henry Rotich claimed that Kenyas  growth is the highest to have been recorded for the past 8 years.",
+      "decision": "include",
+      "event_key": "assertion:on-13-june-2019-kenya-s-finance-minister-henry-rotich-claimed-that-kenyas-growth-is-the-highest-to-have-been-recorded-for-the-past-8-years",
+      "overlaps_history": false,
+      "reason": "Reviewed against historical claims and other retained candidates; no same concrete incident/assertion identified. Shared topic/person alone is not an event match. Agent screening, not independent human verification."
+    }
+  ],
+  "review_basis": "AI assistant read all 200 retained claims, 222 historical claims and each replacement, reviewed lexical nearest-neighbour pairs and selected upstream QA for ambiguous trial/date/video references. This is NOT independent human annotation or truth verification.",
+  "event_definition": "Same concrete incident, viral assertion, named policy action or historical statistic; shared public figure/country/topic alone does not merge items. Some broader exposed or within-candidate narratives are conservatively excluded as explicitly documented.",
+  "limitations": "No exhaustive guarantee of semantic or event independence. Broad topics remain correlated; human semantic adjudication may reveal additional source ambiguity. Benchmark labels are inherited, not independently reverified.",
+  "excluded_candidates": [
+    {
+      "source_record_index": 52,
+      "id": "MFN-0052",
+      "reason_type": "historical_event",
+      "reference": "MFI-H-0002",
+      "reason": "Same South African drinking-ranking assertion."
+    },
+    {
+      "source_record_index": 123,
+      "id": "MFN-0123",
+      "reason_type": "historical_event",
+      "reference": "MFI-H-0004",
+      "reason": "Same Oscar Grant killing / prosecutor-accountability episode."
+    },
+    {
+      "source_record_index": 466,
+      "id": "MFN-0466",
+      "reason_type": "within_candidate_event",
+      "reference": "MFN-0467",
+      "reason": "Same incident/assertion under different fact-check URLs; keep earlier fixed SHA rank."
+    },
+    {
+      "source_record_index": 508,
+      "id": "MFN-0508",
+      "reason_type": "related_historical_story",
+      "reference": "MFI-D-0008;MFN-1981",
+      "reason": "Replacement repeats the inter-Korean liaison-office episode already conservatively excluded; correct date does not remove historical story overlap."
+    },
+    {
+      "source_record_index": 529,
+      "id": "MFN-0529",
+      "reason_type": "conservative_within_candidate_story_cluster",
+      "reference": "MFN-0233",
+      "reason": "Conservatively group George Floyd killing and associated Minneapolis/national-protest narratives; retain earliest fixed SHA rank, not best model outcome."
+    },
+    {
+      "source_record_index": 652,
+      "id": "MFN-0652",
+      "reason_type": "within_candidate_event",
+      "reference": "MFN-0659",
+      "reason": "Same incident/assertion under different fact-check URLs; keep earlier fixed SHA rank."
+    },
+    {
+      "source_record_index": 655,
+      "id": "MFN-0655",
+      "reason_type": "conservative_within_candidate_story_cluster",
+      "reference": "MFN-0233",
+      "reason": "Conservatively group George Floyd killing and associated Minneapolis/national-protest narratives; retain earliest fixed SHA rank, not best model outcome."
+    },
+    {
+      "source_record_index": 885,
+      "id": "MFN-0885",
+      "reason_type": "related_historical_story",
+      "reference": "MF-P1-0053",
+      "reason": "Conservatively exclude the same Trump-versus-states reopening-authority story."
+    },
+    {
+      "source_record_index": 901,
+      "id": "MFN-0901",
+      "reason_type": "related_historical_story",
+      "reference": "MF-P1-0006",
+      "reason": "Conservatively exclude the Bill Gates coronavirus-origin/planning narrative."
+    },
+    {
+      "source_record_index": 1086,
+      "id": "MFN-1086",
+      "reason_type": "unresolved_target_and_duplicate",
+      "reference": "MFN-1332",
+      "reason": "Quoted You lacks its addressee in the supplied statement; also overlaps Biden Social Security-cutting record."
+    },
+    {
+      "source_record_index": 1331,
+      "id": "MFN-1331",
+      "reason_type": "temporal_metadata_conflict",
+      "reference": "upstream_record.questions",
+      "reason": "claim_date is January 2020; linked fact-check and Google reference concern January 2021. Exclude without silently correcting metadata."
+    },
+    {
+      "source_record_index": 1717,
+      "id": "MFN-1717",
+      "reason_type": "temporal_metadata_risk",
+      "reference": "upstream_record.questions",
+      "reason": "October 2019 claim_date is paired with explicitly COVID-19 QA archived in 2020; historical reference time is unresolved."
+    },
+    {
+      "source_record_index": 1981,
+      "id": "MFN-1981",
+      "reason_type": "temporal_metadata_and_related_story",
+      "reference": "MFI-D-0008",
+      "reason": "June 2019 metadata but fact-check URL is June 2020; also overlaps inter-Korean communication breakdown."
+    },
+    {
+      "source_record_index": 2073,
+      "id": "MFN-2073",
+      "reason_type": "visual_dependency",
+      "reference": "upstream_record.questions",
+      "reason": "QA explicitly asks about a particular video; visual referent is absent from text-only input."
+    },
+    {
+      "source_record_index": 2194,
+      "id": "MFN-2194",
+      "reason_type": "temporal_metadata_conflict",
+      "reference": "upstream_record.questions",
+      "reason": "May 2019 metadata paired with Scottish COVID-19 counts from a May 2020 snapshot."
+    },
+    {
+      "source_record_index": 2268,
+      "id": "MFN-2268",
+      "reason_type": "within_candidate_event",
+      "reference": "MFN-1876",
+      "reason": "Replacement repeats the same Amazon zero-federal-income-tax assertion; retain earlier fixed selection rank."
+    },
+    {
+      "source_record_index": 2434,
+      "id": "MFN-2434",
+      "reason_type": "related_historical_story",
+      "reference": "MFI-H-0060;MFI-D-0022",
+      "reason": "Conservative event grouping: Mueller investigation/report and its historical context already exposed."
+    },
+    {
+      "source_record_index": 2440,
+      "id": "MFN-2440",
+      "reason_type": "temporal_metadata_conflict",
+      "reference": "upstream_record.questions",
+      "reason": "Questions explicitly ask about 2019 but answers describe COVID-19 vaccine exports in March/April 2021."
+    },
+    {
+      "source_record_index": 2501,
+      "id": "MFN-2501",
+      "reason_type": "historical_event",
+      "reference": "MFI-H-0074",
+      "reason": "Same diversity-visa lottery claim about foreign governments sending unwanted people."
+    },
+    {
+      "source_record_index": 2827,
+      "id": "MFN-2827",
+      "reason_type": "related_historical_story",
+      "reference": "MFI-H-0060;MFI-D-0022",
+      "reason": "Conservatively remove another Mueller-investigation claim from the exposed story cluster."
+    }
+  ]
+}

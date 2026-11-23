@@ -1,0 +1,1035 @@
+{
+  "split": "dev",
+  "arms": {
+    "legacy_direct": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 0,
+          "REFUTED": 14,
+          "NOT_ENOUGH_INFO": 18,
+          "INVALID": 0
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 0,
+            "REFUTED": 6,
+            "NOT_ENOUGH_INFO": 10,
+            "INVALID": 0
+          },
+          "REFUTED": {
+            "SUPPORTED": 0,
+            "REFUTED": 8,
+            "NOT_ENOUGH_INFO": 8,
+            "INVALID": 0
+          }
+        },
+        "correct_samples": 8,
+        "accuracy": 0.25,
+        "binary_decisions": 14,
+        "binary_coverage": 0.4375,
+        "accuracy_on_binary_decisions": 0.5714285714285714,
+        "detected_errors": 8,
+        "error_recall": 0.5,
+        "false_negatives_supported": 0,
+        "false_negative_rate": 0.0,
+        "abstained_errors": 8,
+        "invalid_errors": 0,
+        "missed_errors_including_abstentions": 8,
+        "missed_error_rate_including_abstentions": 0.5,
+        "false_positives": 6,
+        "false_positive_rate": 0.375,
+        "supported_recall": 0.0,
+        "abstentions_by_gold": {
+          "SUPPORTED": 10,
+          "REFUTED": 8
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": -0.01643454660958284,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": 0.04734474623449358,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 11,
+            "coverage": 0.34375,
+            "correct_retained_decisions": 7,
+            "accuracy_on_retained_decisions": 0.6363636363636364,
+            "accuracy_on_all_samples": 0.21875,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 7,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 9,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 9,
+            "missed_error_rate_including_abstentions": 0.5625,
+            "false_positives": 4,
+            "false_positive_rate": 0.25
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 14,
+            "coverage": 0.4375,
+            "correct_retained_decisions": 8,
+            "accuracy_on_retained_decisions": 0.5714285714285714,
+            "accuracy_on_all_samples": 0.25,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 8,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 8,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 8,
+            "missed_error_rate_including_abstentions": 0.5,
+            "false_positives": 6,
+            "false_positive_rate": 0.375
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 14,
+            "coverage": 0.4375,
+            "correct_retained_decisions": 8,
+            "accuracy_on_retained_decisions": 0.5714285714285714,
+            "accuracy_on_all_samples": 0.25,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 8,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 8,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 8,
+            "missed_error_rate_including_abstentions": 0.5,
+            "false_positives": 6,
+            "false_positive_rate": 0.375
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 14,
+            "coverage": 0.4375,
+            "correct_retained_decisions": 8,
+            "accuracy_on_retained_decisions": 0.5714285714285714,
+            "accuracy_on_all_samples": 0.25,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 8,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 8,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 8,
+            "missed_error_rate_including_abstentions": 0.5,
+            "false_positives": 6,
+            "false_positive_rate": 0.375
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 32,
+        "prompt_tokens": 5828,
+        "generated_tokens_including_eos": 146,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 47.20686219999334
+      }
+    },
+    "legacy_dual": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 4,
+          "REFUTED": 22,
+          "NOT_ENOUGH_INFO": 6,
+          "INVALID": 0
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 3,
+            "REFUTED": 10,
+            "NOT_ENOUGH_INFO": 3,
+            "INVALID": 0
+          },
+          "REFUTED": {
+            "SUPPORTED": 1,
+            "REFUTED": 12,
+            "NOT_ENOUGH_INFO": 3,
+            "INVALID": 0
+          }
+        },
+        "correct_samples": 15,
+        "accuracy": 0.46875,
+        "binary_decisions": 26,
+        "binary_coverage": 0.8125,
+        "accuracy_on_binary_decisions": 0.5769230769230769,
+        "detected_errors": 12,
+        "error_recall": 0.75,
+        "false_negatives_supported": 1,
+        "false_negative_rate": 0.0625,
+        "abstained_errors": 3,
+        "invalid_errors": 0,
+        "missed_errors_including_abstentions": 4,
+        "missed_error_rate_including_abstentions": 0.25,
+        "false_positives": 10,
+        "false_positive_rate": 0.625,
+        "supported_recall": 0.1875,
+        "abstentions_by_gold": {
+          "SUPPORTED": 3,
+          "REFUTED": 3
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": -0.06362284541656453,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": 0.1232134449153269,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 16,
+            "coverage": 0.5,
+            "correct_retained_decisions": 9,
+            "accuracy_on_retained_decisions": 0.5625,
+            "accuracy_on_all_samples": 0.28125,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 7,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 9,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 9,
+            "missed_error_rate_including_abstentions": 0.5625,
+            "false_positives": 7,
+            "false_positive_rate": 0.4375
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 19,
+            "coverage": 0.59375,
+            "correct_retained_decisions": 12,
+            "accuracy_on_retained_decisions": 0.631578947368421,
+            "accuracy_on_all_samples": 0.375,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 9,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 7,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 7,
+            "missed_error_rate_including_abstentions": 0.4375,
+            "false_positives": 7,
+            "false_positive_rate": 0.4375
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 26,
+            "coverage": 0.8125,
+            "correct_retained_decisions": 15,
+            "accuracy_on_retained_decisions": 0.5769230769230769,
+            "accuracy_on_all_samples": 0.46875,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 1,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0625,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 10,
+            "false_positive_rate": 0.625
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 26,
+            "coverage": 0.8125,
+            "correct_retained_decisions": 15,
+            "accuracy_on_retained_decisions": 0.5769230769230769,
+            "accuracy_on_all_samples": 0.46875,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 1,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0625,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 10,
+            "false_positive_rate": 0.625
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 186,
+        "prompt_tokens": 43730,
+        "generated_tokens_including_eos": 1550,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 467.81357360002585
+      }
+    },
+    "neutral": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 0,
+          "REFUTED": 0,
+          "NOT_ENOUGH_INFO": 32,
+          "INVALID": 0
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 0,
+            "REFUTED": 0,
+            "NOT_ENOUGH_INFO": 16,
+            "INVALID": 0
+          },
+          "REFUTED": {
+            "SUPPORTED": 0,
+            "REFUTED": 0,
+            "NOT_ENOUGH_INFO": 16,
+            "INVALID": 0
+          }
+        },
+        "correct_samples": 0,
+        "accuracy": 0.0,
+        "binary_decisions": 0,
+        "binary_coverage": 0.0,
+        "accuracy_on_binary_decisions": null,
+        "detected_errors": 0,
+        "error_recall": 0.0,
+        "false_negatives_supported": 0,
+        "false_negative_rate": 0.0,
+        "abstained_errors": 16,
+        "invalid_errors": 0,
+        "missed_errors_including_abstentions": 16,
+        "missed_error_rate_including_abstentions": 1.0,
+        "false_positives": 0,
+        "false_positive_rate": 0.0,
+        "supported_recall": 0.0,
+        "abstentions_by_gold": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": -0.07781785731640412,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": 0.191936310424353,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 0,
+            "coverage": 0.0,
+            "correct_retained_decisions": 0,
+            "accuracy_on_retained_decisions": null,
+            "accuracy_on_all_samples": 0.0,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 0,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 16,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 16,
+            "missed_error_rate_including_abstentions": 1.0,
+            "false_positives": 0,
+            "false_positive_rate": 0.0
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 0,
+            "coverage": 0.0,
+            "correct_retained_decisions": 0,
+            "accuracy_on_retained_decisions": null,
+            "accuracy_on_all_samples": 0.0,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 0,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 16,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 16,
+            "missed_error_rate_including_abstentions": 1.0,
+            "false_positives": 0,
+            "false_positive_rate": 0.0
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 0,
+            "coverage": 0.0,
+            "correct_retained_decisions": 0,
+            "accuracy_on_retained_decisions": null,
+            "accuracy_on_all_samples": 0.0,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 0,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 16,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 16,
+            "missed_error_rate_including_abstentions": 1.0,
+            "false_positives": 0,
+            "false_positive_rate": 0.0
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 0,
+            "coverage": 0.0,
+            "correct_retained_decisions": 0,
+            "accuracy_on_retained_decisions": null,
+            "accuracy_on_all_samples": 0.0,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 0,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 16,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 16,
+            "missed_error_rate_including_abstentions": 1.0,
+            "false_positives": 0,
+            "false_positive_rate": 0.0
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 32,
+        "prompt_tokens": 4737,
+        "generated_tokens_including_eos": 64,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 36.99116900010267
+      }
+    },
+    "binary": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 4,
+          "REFUTED": 23,
+          "NOT_ENOUGH_INFO": 0,
+          "INVALID": 5
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 2,
+            "REFUTED": 11,
+            "NOT_ENOUGH_INFO": 0,
+            "INVALID": 3
+          },
+          "REFUTED": {
+            "SUPPORTED": 2,
+            "REFUTED": 12,
+            "NOT_ENOUGH_INFO": 0,
+            "INVALID": 2
+          }
+        },
+        "correct_samples": 14,
+        "accuracy": 0.4375,
+        "binary_decisions": 27,
+        "binary_coverage": 0.84375,
+        "accuracy_on_binary_decisions": 0.5185185185185185,
+        "detected_errors": 12,
+        "error_recall": 0.75,
+        "false_negatives_supported": 2,
+        "false_negative_rate": 0.125,
+        "abstained_errors": 0,
+        "invalid_errors": 2,
+        "missed_errors_including_abstentions": 4,
+        "missed_error_rate_including_abstentions": 0.25,
+        "false_positives": 11,
+        "false_positive_rate": 0.6875,
+        "supported_recall": 0.125,
+        "abstentions_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 3,
+          "REFUTED": 2
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 27,
+            "samples_without_valid_score": 5,
+            "sample_mean_of_label_token_means": -0.07130812732160578,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 27,
+            "samples_without_valid_score": 5,
+            "sample_mean_of_label_token_means": 0.11669866960383607,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 22,
+            "coverage": 0.6875,
+            "correct_retained_decisions": 13,
+            "accuracy_on_retained_decisions": 0.5909090909090909,
+            "accuracy_on_all_samples": 0.40625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 1,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0625,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 8,
+            "false_positive_rate": 0.5
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 23,
+            "coverage": 0.71875,
+            "correct_retained_decisions": 13,
+            "accuracy_on_retained_decisions": 0.5652173913043478,
+            "accuracy_on_all_samples": 0.40625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 1,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0625,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 9,
+            "false_positive_rate": 0.5625
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 24,
+            "coverage": 0.75,
+            "correct_retained_decisions": 13,
+            "accuracy_on_retained_decisions": 0.5416666666666666,
+            "accuracy_on_all_samples": 0.40625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 2,
+            "abstained_or_invalid_errors": 2,
+            "false_negative_rate": 0.125,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 9,
+            "false_positive_rate": 0.5625
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 25,
+            "coverage": 0.78125,
+            "correct_retained_decisions": 14,
+            "accuracy_on_retained_decisions": 0.56,
+            "accuracy_on_all_samples": 0.4375,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 2,
+            "abstained_or_invalid_errors": 2,
+            "false_negative_rate": 0.125,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 9,
+            "false_positive_rate": 0.5625
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 32,
+        "prompt_tokens": 5313,
+        "generated_tokens_including_eos": 69,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 42.14689919995726
+      }
+    },
+    "structured": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 4,
+          "REFUTED": 28,
+          "NOT_ENOUGH_INFO": 0,
+          "INVALID": 0
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 2,
+            "REFUTED": 14,
+            "NOT_ENOUGH_INFO": 0,
+            "INVALID": 0
+          },
+          "REFUTED": {
+            "SUPPORTED": 2,
+            "REFUTED": 14,
+            "NOT_ENOUGH_INFO": 0,
+            "INVALID": 0
+          }
+        },
+        "correct_samples": 16,
+        "accuracy": 0.5,
+        "binary_decisions": 32,
+        "binary_coverage": 1.0,
+        "accuracy_on_binary_decisions": 0.5,
+        "detected_errors": 14,
+        "error_recall": 0.875,
+        "false_negatives_supported": 2,
+        "false_negative_rate": 0.125,
+        "abstained_errors": 0,
+        "invalid_errors": 0,
+        "missed_errors_including_abstentions": 2,
+        "missed_error_rate_including_abstentions": 0.125,
+        "false_positives": 14,
+        "false_positive_rate": 0.875,
+        "supported_recall": 0.125,
+        "abstentions_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": -0.02681692125366908,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": 0.08098057816278015,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 26,
+            "coverage": 0.8125,
+            "correct_retained_decisions": 13,
+            "accuracy_on_retained_decisions": 0.5,
+            "accuracy_on_all_samples": 0.40625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 13,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 3,
+            "missed_error_rate_including_abstentions": 0.1875,
+            "false_positives": 13,
+            "false_positive_rate": 0.8125
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 28,
+            "coverage": 0.875,
+            "correct_retained_decisions": 14,
+            "accuracy_on_retained_decisions": 0.5,
+            "accuracy_on_all_samples": 0.4375,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 13,
+            "false_negatives_supported": 1,
+            "abstained_or_invalid_errors": 2,
+            "false_negative_rate": 0.0625,
+            "missed_errors_including_abstentions": 3,
+            "missed_error_rate_including_abstentions": 0.1875,
+            "false_positives": 13,
+            "false_positive_rate": 0.8125
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 32,
+            "coverage": 1.0,
+            "correct_retained_decisions": 16,
+            "accuracy_on_retained_decisions": 0.5,
+            "accuracy_on_all_samples": 0.5,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 14,
+            "false_negatives_supported": 2,
+            "abstained_or_invalid_errors": 0,
+            "false_negative_rate": 0.125,
+            "missed_errors_including_abstentions": 2,
+            "missed_error_rate_including_abstentions": 0.125,
+            "false_positives": 14,
+            "false_positive_rate": 0.875
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 32,
+            "coverage": 1.0,
+            "correct_retained_decisions": 16,
+            "accuracy_on_retained_decisions": 0.5,
+            "accuracy_on_all_samples": 0.5,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 14,
+            "false_negatives_supported": 2,
+            "abstained_or_invalid_errors": 0,
+            "false_negative_rate": 0.125,
+            "missed_errors_including_abstentions": 2,
+            "missed_error_rate_including_abstentions": 0.125,
+            "false_positives": 14,
+            "false_positive_rate": 0.875
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 64,
+        "prompt_tokens": 21090,
+        "generated_tokens_including_eos": 1171,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 355.50708169993595
+      }
+    },
+    "evidence": {
+      "metrics": {
+        "evaluation_unit": "whole_sample",
+        "positive_class": "REFUTED",
+        "total_samples": 32,
+        "gold_counts": {
+          "SUPPORTED": 16,
+          "REFUTED": 16
+        },
+        "prediction_counts": {
+          "SUPPORTED": 9,
+          "REFUTED": 21,
+          "NOT_ENOUGH_INFO": 2,
+          "INVALID": 0
+        },
+        "confusion_matrix": {
+          "SUPPORTED": {
+            "SUPPORTED": 9,
+            "REFUTED": 6,
+            "NOT_ENOUGH_INFO": 1,
+            "INVALID": 0
+          },
+          "REFUTED": {
+            "SUPPORTED": 0,
+            "REFUTED": 15,
+            "NOT_ENOUGH_INFO": 1,
+            "INVALID": 0
+          }
+        },
+        "correct_samples": 24,
+        "accuracy": 0.75,
+        "binary_decisions": 30,
+        "binary_coverage": 0.9375,
+        "accuracy_on_binary_decisions": 0.8,
+        "detected_errors": 15,
+        "error_recall": 0.9375,
+        "false_negatives_supported": 0,
+        "false_negative_rate": 0.0,
+        "abstained_errors": 1,
+        "invalid_errors": 0,
+        "missed_errors_including_abstentions": 1,
+        "missed_error_rate_including_abstentions": 0.0625,
+        "false_positives": 6,
+        "false_positive_rate": 0.375,
+        "supported_recall": 0.5625,
+        "abstentions_by_gold": {
+          "SUPPORTED": 1,
+          "REFUTED": 1
+        },
+        "invalid_by_gold": {
+          "SUPPORTED": 0,
+          "REFUTED": 0
+        },
+        "score_summaries": {
+          "mean_label_token_logprob": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": -0.1028690243684025,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          },
+          "mean_label_token_full_vocab_entropy_nats": {
+            "samples_with_valid_score": 32,
+            "samples_without_valid_score": 0,
+            "sample_mean_of_label_token_means": 0.20968798965805036,
+            "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+          }
+        },
+        "selective_results": [
+          {
+            "minimum_mean_label_token_logprob": -0.05,
+            "total_samples": 32,
+            "retained_binary_decisions": 20,
+            "coverage": 0.625,
+            "correct_retained_decisions": 18,
+            "accuracy_on_retained_decisions": 0.9,
+            "accuracy_on_all_samples": 0.5625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 9,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 7,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 7,
+            "missed_error_rate_including_abstentions": 0.4375,
+            "false_positives": 2,
+            "false_positive_rate": 0.125
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.1,
+            "total_samples": 32,
+            "retained_binary_decisions": 25,
+            "coverage": 0.78125,
+            "correct_retained_decisions": 21,
+            "accuracy_on_retained_decisions": 0.84,
+            "accuracy_on_all_samples": 0.65625,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 12,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 4,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 4,
+            "missed_error_rate_including_abstentions": 0.25,
+            "false_positives": 4,
+            "false_positive_rate": 0.25
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.25,
+            "total_samples": 32,
+            "retained_binary_decisions": 26,
+            "coverage": 0.8125,
+            "correct_retained_decisions": 22,
+            "accuracy_on_retained_decisions": 0.8461538461538461,
+            "accuracy_on_all_samples": 0.6875,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 13,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 3,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 3,
+            "missed_error_rate_including_abstentions": 0.1875,
+            "false_positives": 4,
+            "false_positive_rate": 0.25
+          },
+          {
+            "minimum_mean_label_token_logprob": -0.5,
+            "total_samples": 32,
+            "retained_binary_decisions": 29,
+            "coverage": 0.90625,
+            "correct_retained_decisions": 23,
+            "accuracy_on_retained_decisions": 0.7931034482758621,
+            "accuracy_on_all_samples": 0.71875,
+            "gold_refuted": 16,
+            "gold_supported": 16,
+            "detected_errors": 14,
+            "false_negatives_supported": 0,
+            "abstained_or_invalid_errors": 2,
+            "false_negative_rate": 0.0,
+            "missed_errors_including_abstentions": 2,
+            "missed_error_rate_including_abstentions": 0.125,
+            "false_positives": 6,
+            "false_positive_rate": 0.375
+          }
+        ],
+        "definitions": {
+          "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+          "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+          "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+          "selective_results": "Fixed descriptive thresholds, applied equally to both arms. Rejected or unavailable scores abstain; no threshold is selected from test outcomes.",
+          "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+        }
+      },
+      "cost": {
+        "calls": 32,
+        "prompt_tokens": 9849,
+        "generated_tokens_including_eos": 64,
+        "generations_without_eos": 0,
+        "elapsed_seconds": 28.13591140002245
+      }
+    }
+  },
+  "paired_vs_legacy_dual": {
+    "legacy_direct": {
+      "total_samples": 32,
+      "both_correct": 7,
+      "both_incorrect": 16,
+      "baseline_only_correct": 8,
+      "dual_only_correct": 1,
+      "changed_verdicts": 15,
+      "accuracy_difference_dual_minus_baseline": -0.21875,
+      "mcnemar_exact_two_sided_p": 0.0390625,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "neutral": {
+      "total_samples": 32,
+      "both_correct": 0,
+      "both_incorrect": 17,
+      "baseline_only_correct": 15,
+      "dual_only_correct": 0,
+      "changed_verdicts": 26,
+      "accuracy_difference_dual_minus_baseline": -0.46875,
+      "mcnemar_exact_two_sided_p": 6.103515625e-05,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "binary": {
+      "total_samples": 32,
+      "both_correct": 12,
+      "both_incorrect": 15,
+      "baseline_only_correct": 3,
+      "dual_only_correct": 2,
+      "changed_verdicts": 12,
+      "accuracy_difference_dual_minus_baseline": -0.03125,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "structured": {
+      "total_samples": 32,
+      "both_correct": 13,
+      "both_incorrect": 14,
+      "baseline_only_correct": 2,
+      "dual_only_correct": 3,
+      "changed_verdicts": 8,
+      "accuracy_difference_dual_minus_baseline": 0.03125,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "evidence": {
+      "total_samples": 32,
+      "both_correct": 13,
+      "both_incorrect": 6,
+      "baseline_only_correct": 2,
+      "dual_only_correct": 11,
+      "changed_verdicts": 15,
+      "accuracy_difference_dual_minus_baseline": 0.28125,
+      "mcnemar_exact_two_sided_p": 0.0224609375,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    }
+  },
+  "limitations": [
+    "Closed-book and supplied-evidence conditions must be reported separately.",
+    "Inherited whole-sample labels are not independently reverified atomic gold.",
+    "Generated-label confidence scores are not truth probabilities.",
+    "No claim of end-to-end web retrieval or unseen-pretraining data."
+  ],
+  "run_sha256": "bc6b9ce45c73face19760f73a6f57720337fd0e4dcd90b676836341433c2ac20"
+}

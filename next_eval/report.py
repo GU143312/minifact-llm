@@ -1,0 +1,81 @@
+"""Static research figures and a traceable report, including failed/pending gates."""
+import math
+from pathlib import Path
+
+from next_eval.common import PROTOCOL, read, require, sha, write_new
+
+
+def publish(metrics_path, output):
+    output = Path(output)
+    require(not output.exists(), 'Report directory exists; choose a new version')
+    data = read(metrics_path)
+    output.mkdir(parents=True)
+    figures = []
+    if 'arms' in data:
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        arms = list(data['arms'])
+        labels = [f"{a}: {PROTOCOL['arms'][a]}" for a in arms]
+        colors = ['#888888','#4477aa','#66aacc','#8855aa','#aa77cc','#552277']
+        fig,axes = plt.subplots(2,2,figsize=(12,9),layout='constrained')
+        for ax,(key,title) in zip(axes.flat,[('accuracy','Accuracy'),('false_negative_rate','Strict false-negative rate'),
+                ('missed_error_rate_including_abstentions','Missed errors including abstentions'),('false_positive_rate','False-positive rate')]):
+            values = [data['arms'][a][key] for a in arms]
+            ax.barh(labels,[100*v for v in values],color=colors)
+            ax.set(xlim=(0,100),xlabel='Percent',title=title)
+            for i,value in enumerate(values): ax.text(min(95,100*value+1),i,f'{100*value:.1f}%',va='center',fontsize=8)
+        fig.suptitle(f"MiniFact {data['stage']} — A/B text; C context; D/E/F identical supplied QA",fontsize=12)
+        for ext in ('png','svg'):
+            name='outcomes.'+ext; fig.savefig(output/name,dpi=160); figures.append(name)
+        plt.close(fig)
+        fig,axes=plt.subplots(2,3,figsize=(12,7),layout='constrained')
+        cols=('SUPPORTED','REFUTED','NOT_ENOUGH_INFO','INVALID')
+        for ax,a in zip(axes.flat,arms):
+            values=[[data['arms'][a]['confusion_matrix'][g][p] for p in cols] for g in ('SUPPORTED','REFUTED')]
+            ax.imshow(values,cmap='Blues',vmin=0,vmax=max(sum(v) for v in values))
+            ax.set_xticks(range(4),['S','R','NEI','Invalid']); ax.set_yticks(range(2),['Gold S','Gold R']); ax.set_title(a)
+            for y in range(2):
+                for x in range(4): ax.text(x,y,str(values[y][x]),ha='center',va='center',color='black')
+        for ext in ('png','svg'):
+            name='confusions.'+ext; fig.savefig(output/name,dpi=160); figures.append(name)
+        plt.close(fig)
+        fig,ax=plt.subplots(figsize=(7,4),layout='constrained')
+        for i,a in enumerate(arms):
+            m=data['arms'][a]; x=m['cost_and_extraction']['mean_elapsed_seconds']; y=m['accuracy']*100
+            ax.scatter(x,y,color=colors[i],marker='D' if a in 'DEF' else 'o'); ax.annotate(a,(x,y),xytext=(4,4),textcoords='offset points')
+        ax.set(xlabel='Observed mean seconds per sample (loading excluded)',ylabel='Accuracy (%)',title='Cost and accuracy; diamond = supplied QA')
+        for ext in ('png','svg'):
+            name='cost_accuracy.'+ext; fig.savefig(output/name,dpi=160); figures.append(name)
+        plt.close(fig)
+    lines=['# MiniFact 下一轮评估记录','',f"阶段：`{data['stage']}`。指标文件 SHA256：`{sha(metrics_path)}`。",
+           '', '开发集和合成边界用例不能替代正式新闻测试。提供 QA 的条件不是自动联网核查。','']
+    if 'arms' in data:
+        lines += ['| 组别 | 正确/总数 | 准确率 | 严格漏报 | 含弃答未检出 | 误报 | 平均秒 |','|---|---:|---:|---:|---:|---:|---:|']
+        for arm,m in data['arms'].items():
+            rates=' | '.join(f'{100*m[k]:.2f}%' for k in ('accuracy','false_negative_rate','missed_error_rate_including_abstentions','false_positive_rate'))
+            lines.append(f"| {arm} | {m['correct_samples']}/{m['total_samples']} | {rates} | {m['cost_and_extraction']['mean_elapsed_seconds']:.3f} |")
+        lines += ['', '![分项结果](outcomes.png)','', '![混淆矩阵](confusions.png)','', '![成本与准确率](cost_accuracy.png)','']
+        p=data['paired']['F_minus_D']
+        lines.append(f"主要比较 F−D：{100*p['accuracy_difference_dual_minus_baseline']:.2f} 个百分点；配对 95% 区间 {p['bootstrap']['ci95']}（比例单位）。")
+        lines += ['', '## 分数与覆盖','', '| 组别 | 标签平均 logprob | 正误 AUROC | 二分类覆盖 |','|---|---:|---:|---:|']
+        for arm,m in data['arms'].items():
+            mean=m['score_summaries']['mean_label_token_logprob']['sample_mean_of_label_token_means']
+            auc=m['uncertainty']['correctness_auroc']
+            lines.append(f"| {arm} | {mean if mean is not None else '不适用：候选评分'} | {auc if auc is not None else '不可计算'} | {100*m['binary_coverage']:.2f}% |")
+        lines += ['', '标签 logprob 是每条样本标签 token 均值的算术平均。A 的 AUROC 使用距冻结阈值的绝对 margin；其他组使用实际生成标签均值，不能跨组解释成同一真假概率刻度。']
+    if data.get('semantics'):
+        lines += ['', '## 人工语义评估','', '| 组别 | 事实召回 | 原子性 | 忠实性 | 条件限定保留 | 端到端限定保留 |', '|---|---:|---:|---:|---:|---:|']
+        for arm,m in data['semantics'].items():
+            values = [m[k] for k in ('fact_recall','atomicity','faithfulness','qualifier_retention','end_to_end_qualifier_retention')]
+            lines.append('| '+arm+' | '+' | '.join('无分母' if v is None else f'{100*v:.2f}%' for v in values)+' |')
+    lines += ['', '## 验收状态','',f"评估交付完成：**{data['acceptance']['evaluation_complete']}**；升级默认方法：**{data['acceptance']['upgrade_default_method']}**。",
+              '', '缺少人工语义对齐时不填充语义成绩；位置逐字匹配不代表事实独立或提全。所有分项计数、区间、拒绝、弃答与成本保留在指标 JSON 中。','',
+              '双角色与直接组计算预算不同。额外轮次的收益不单独证明反馈或 logprob 的因果作用。分数不是校准后的真假概率。','']
+    if 'checks' in data['acceptance']:
+        lines += ['| 升级检查 | 结果 |','|---|---|']
+        lines += [f'| {k} | {v if v is not None else "待人工标注"} |' for k,v in data['acceptance']['checks'].items()]
+    (output/'REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
+    write_new(output/'chart_data.json',{'metrics_sha256':sha(metrics_path),'data':data,
+        'artifacts_sha256':{n:sha(output/n) for n in [*figures,'REPORT.md']}})
+    return {'report':'REPORT.md','figures':figures}

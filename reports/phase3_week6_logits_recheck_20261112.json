@@ -1,0 +1,240 @@
+{
+  "created_at_utc": "2026-11-12T08:16:44.475327+00:00",
+  "run_sha256": "c8e1331a734957269807844f962b8d5cb16264418ddcab079f89c1798ac28fc5",
+  "source_files_sha256": {
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+    "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+    "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+    "scripts/run_phase2.py": "4f935d2f32c03dbc2e8a5bbed22de091b6403e30413ecff1d129c52a8ebf469d",
+    "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+    "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+    "scripts/run_phase3.py": "8292c8ec8340d2545f20a43cff3102d6529e8bfc5acb61f98ef733388ce99ffa",
+    "scripts/evaluate_phase3.py": "9084397afed1b2dd8a37185c64a8c13ea82f74e01e5508141ccc8af54b3da5da",
+    "scripts/audit_phase2_run.py": "61162c32cf591fa5bd5f6dad99bd6d73b63902cde46e2f0843e254c4fc9fafee",
+    "data/phase3/dataset.json": "8387c0ae6fb95fd0549c52ff890024fe8c7b50da4222c734ac242cd9fbd950d4",
+    "data/phase3/curation.json": "7d151a3e80ffb86ea940bcd3cfe3343345bdeb35be06b2d67003d7a87538232d",
+    "scripts/recheck_phase3_logits.py": "c8b2b5e1cf86f2ca5bf72103eb1c0d37b493649fc000c997ef8c3bd1427cd06e",
+    "scripts/recheck_phase2_logits.py": "1911d826c3d5f00158f6f2006878dc971867737c5058d0bcbc73ff520ddf2192"
+  },
+  "selection_rule": "Both final verdicts from first row of the completed run; no gold/correctness selection.",
+  "scope": {
+    "samples": 1,
+    "traces": 2,
+    "arms": [
+      "direct",
+      "dual"
+    ]
+  },
+  "method": "Two full-sequence teacher-forced forward passes on saved chat prompt IDs and actual generated token IDs, including EOS when present. No text generation. Logits projection retains only the generated-token prediction positions.",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "dtype": "float16",
+  "attention_implementation": "eager",
+  "device_map": {
+    "model.embed_tokens": "0",
+    "lm_head": "0",
+    "model.layers.0": "0",
+    "model.layers.1": "0",
+    "model.layers.2": "0",
+    "model.layers.3": "0",
+    "model.layers.4": "0",
+    "model.layers.5": "0",
+    "model.layers.6": "0",
+    "model.layers.7": "0",
+    "model.layers.8": "0",
+    "model.layers.9": "0",
+    "model.layers.10": "0",
+    "model.layers.11": "0",
+    "model.layers.12": "0",
+    "model.layers.13": "0",
+    "model.layers.14": "0",
+    "model.layers.15": "0",
+    "model.layers.16": "0",
+    "model.layers.17": "0",
+    "model.layers.18": "0",
+    "model.layers.19": "0",
+    "model.layers.20": "0",
+    "model.layers.21": "0",
+    "model.layers.22": "0",
+    "model.layers.23": "0",
+    "model.layers.24": "0",
+    "model.layers.25": "0",
+    "model.layers.26": "0",
+    "model.layers.27": "0",
+    "model.layers.28": "0",
+    "model.layers.29": "cpu",
+    "model.layers.30": "cpu",
+    "model.layers.31": "cpu",
+    "model.layers.32": "cpu",
+    "model.layers.33": "cpu",
+    "model.layers.34": "cpu",
+    "model.layers.35": "cpu",
+    "model.norm": "cpu",
+    "model.rotary_emb": "cpu"
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "os": "Windows",
+    "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "4.57.6",
+      "accelerate": "1.15.0",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    },
+    "cuda_build": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "results": [
+    {
+      "selection": {
+        "sample_id": "MF-P3-C-0026",
+        "sample_index": 0,
+        "arm": "direct",
+        "saved_verdict": "NOT_ENOUGH_INFO"
+      },
+      "prompt_token_count": 171,
+      "generated_token_count": 5,
+      "ended_with_eos": true,
+      "tokenizer_checks": "passed",
+      "comparison": {
+        "tokens": [
+          {
+            "step": 0,
+            "token_id": 14065,
+            "special": false,
+            "decoded_piece": "NOT",
+            "saved_raw_logprob": -0.016036340966820717,
+            "recomputed_raw_logprob": -0.017598548904061317,
+            "absolute_logprob_error": 0.0015622079372406006,
+            "saved_full_vocab_entropy_nats": 0.08168066293001175,
+            "recomputed_full_vocab_entropy_nats": 0.08794531226158142,
+            "absolute_entropy_error": 0.006264649331569672
+          },
+          {
+            "step": 1,
+            "token_id": 6300,
+            "special": false,
+            "decoded_piece": "_EN",
+            "saved_raw_logprob": -0.0009214208112098277,
+            "recomputed_raw_logprob": -0.0009384519071318209,
+            "absolute_logprob_error": 1.7031095921993256e-05,
+            "saved_full_vocab_entropy_nats": 0.008334983140230179,
+            "recomputed_full_vocab_entropy_nats": 0.00847184844315052,
+            "absolute_entropy_error": 0.0001368653029203415
+          },
+          {
+            "step": 2,
+            "token_id": 83733,
+            "special": false,
+            "decoded_piece": "OUGH",
+            "saved_raw_logprob": -2.50339189733495e-06,
+            "recomputed_raw_logprob": -2.50339189733495e-06,
+            "absolute_logprob_error": 0.0,
+            "saved_full_vocab_entropy_nats": 3.57482313120272e-05,
+            "recomputed_full_vocab_entropy_nats": 3.560461482265964e-05,
+            "absolute_entropy_error": 1.4361648936755955e-07
+          },
+          {
+            "step": 3,
+            "token_id": 9068,
+            "special": false,
+            "decoded_piece": "_INFO",
+            "saved_raw_logprob": -0.0007376333815045655,
+            "recomputed_raw_logprob": -0.0007265550084412098,
+            "absolute_logprob_error": 1.1078373063355684e-05,
+            "saved_full_vocab_entropy_nats": 0.006336573977023363,
+            "recomputed_full_vocab_entropy_nats": 0.006252991035580635,
+            "absolute_entropy_error": 8.358294144272804e-05
+          },
+          {
+            "step": 4,
+            "token_id": 151645,
+            "special": true,
+            "decoded_piece": "",
+            "saved_raw_logprob": -7.378782902378589e-05,
+            "recomputed_raw_logprob": -7.366862701019272e-05,
+            "absolute_logprob_error": 1.1920201359316707e-07,
+            "saved_full_vocab_entropy_nats": 0.00103148038033396,
+            "recomputed_full_vocab_entropy_nats": 0.0010333196260035038,
+            "absolute_entropy_error": 1.8392456695437431e-06
+          }
+        ],
+        "max_absolute_logprob_error": 0.0015622079372406006,
+        "max_absolute_entropy_error_nats": 0.006264649331569672
+      }
+    },
+    {
+      "selection": {
+        "sample_id": "MF-P3-C-0026",
+        "sample_index": 0,
+        "arm": "dual",
+        "saved_verdict": "REFUTED"
+      },
+      "prompt_token_count": 394,
+      "generated_token_count": 4,
+      "ended_with_eos": true,
+      "tokenizer_checks": "passed",
+      "comparison": {
+        "tokens": [
+          {
+            "step": 0,
+            "token_id": 5996,
+            "special": false,
+            "decoded_piece": "REF",
+            "saved_raw_logprob": -0.15674050152301788,
+            "recomputed_raw_logprob": -0.1621755063533783,
+            "absolute_logprob_error": 0.005435004830360413,
+            "saved_full_vocab_entropy_nats": 0.485774427652359,
+            "recomputed_full_vocab_entropy_nats": 0.49736160039901733,
+            "absolute_entropy_error": 0.011587172746658325
+          },
+          {
+            "step": 1,
+            "token_id": 1381,
+            "special": false,
+            "decoded_piece": "UT",
+            "saved_raw_logprob": -4.887569048150908e-06,
+            "recomputed_raw_logprob": -4.887569048150908e-06,
+            "absolute_logprob_error": 0.0,
+            "saved_full_vocab_entropy_nats": 7.45966171962209e-05,
+            "recomputed_full_vocab_entropy_nats": 7.477150938939303e-05,
+            "absolute_entropy_error": 1.74892193172127e-07
+          },
+          {
+            "step": 2,
+            "token_id": 1479,
+            "special": false,
+            "decoded_piece": "ED",
+            "saved_raw_logprob": -0.0012584156356751919,
+            "recomputed_raw_logprob": -0.0012675831094384193,
+            "absolute_logprob_error": 9.167473763227463e-06,
+            "saved_full_vocab_entropy_nats": 0.010404711589217186,
+            "recomputed_full_vocab_entropy_nats": 0.010481172241270542,
+            "absolute_entropy_error": 7.646065205335617e-05
+          },
+          {
+            "step": 3,
+            "token_id": 151645,
+            "special": true,
+            "decoded_piece": "",
+            "saved_raw_logprob": -8.83301836438477e-05,
+            "recomputed_raw_logprob": -8.809178689261898e-05,
+            "absolute_logprob_error": 2.3839675122871995e-07,
+            "saved_full_vocab_entropy_nats": 0.0011220923624932766,
+            "recomputed_full_vocab_entropy_nats": 0.0011195343686267734,
+            "absolute_entropy_error": 2.5579938665032387e-06
+          }
+        ],
+        "max_absolute_logprob_error": 0.005435004830360413,
+        "max_absolute_entropy_error_nats": 0.011587172746658325
+      }
+    }
+  ],
+  "limitations": [
+    "Two final verdict traces from one sample only; no claim about other traces or semantic accuracy.",
+    "Recorded revision and requested local snapshot are checked; the original run does not prove identical physical cache or weight bytes.",
+    "Full-sequence teacher forcing and incremental KV-cached generation may differ through floating-point rounding or device placement; observed numeric differences are reported without assuming equality."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "minifact-next-evaluation-v1",
+  "seed": 42,
+  "news_count": 200,
+  "per_class": 100,
+  "semantic_count": 60,
+  "boundary_count": 30,
+  "primary_comparison": [
+    "D",
+    "F"
+  ],
+  "bootstrap_repetitions": 10000,
+  "arms": {
+    "A": "frozen_closed_book_threshold",
+    "B": "text_direct",
+    "C": "context_direct",
+    "D": "context_qa_direct",
+    "E": "context_qa_one_round",
+    "F": "context_qa_up_to_two_rounds"
+  },
+  "caps": {
+    "decision": 16,
+    "extract": 256,
+    "feedback": 64
+  },
+  "upgrade": {
+    "accuracy": 0.8,
+    "accuracy_gain": 0.05,
+    "strict_fnr": 0.1,
+    "missed_error_rate": 0.15,
+    "fpr": 0.25,
+    "risk_increase": 0.02,
+    "fact_recall": 0.9,
+    "atomicity": 0.95,
+    "faithfulness": 0.95,
+    "qualifier_retention": 0.95,
+    "accepted_span_precision": 1.0
+  },
+  "semantic_matching": "Human alignment; distinct reference facts count once; omitted facts remain in recall denominator.",
+  "uncertainty": "Scores are not truth probabilities. Development quantiles only; never fit on news test outcomes.",
+  "information": "No model receives IDs, gold, curator justification, URL strings or reviewer annotations."
+}

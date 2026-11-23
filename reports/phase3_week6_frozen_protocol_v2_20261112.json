@@ -1,0 +1,85 @@
+{
+  "frozen_at_utc": "2026-11-12T07:51:29.835988+00:00",
+  "contract": {
+    "protocol": "phase3-week6-paired-v1",
+    "input_sha256": "c026dea203f713da2b66c39fd16ecc253ee78027dfeae40cf7c6163f27bd4998",
+    "files_sha256": {
+      "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+      "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+      "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+      "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+      "scripts/run_phase2.py": "4f935d2f32c03dbc2e8a5bbed22de091b6403e30413ecff1d129c52a8ebf469d",
+      "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+      "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+      "scripts/run_phase3.py": "8292c8ec8340d2545f20a43cff3102d6529e8bfc5acb61f98ef733388ce99ffa",
+      "scripts/evaluate_phase3.py": "9084397afed1b2dd8a37185c64a8c13ea82f74e01e5508141ccc8af54b3da5da",
+      "scripts/audit_phase2_run.py": "61162c32cf591fa5bd5f6dad99bd6d73b63902cde46e2f0843e254c4fc9fafee",
+      "data/phase3/dataset.json": "8387c0ae6fb95fd0549c52ff890024fe8c7b50da4222c734ac242cd9fbd950d4",
+      "data/phase3/curation.json": "7d151a3e80ffb86ea940bcd3cfe3343345bdeb35be06b2d67003d7a87538232d"
+    },
+    "model": {
+      "schema_version": 1,
+      "model_id": "Qwen/Qwen2.5-3B-Instruct",
+      "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "dtype": "float16",
+      "attention_implementation": "eager",
+      "seed": 42,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "use_cache": true
+    },
+    "max_rounds": 2,
+    "arms": [
+      "direct",
+      "dual"
+    ],
+    "unit": "whole_source_claim",
+    "evidence": "closed_book_no_retrieval_no_gold",
+    "selective_logprob_thresholds": [
+      -0.05,
+      -0.1,
+      -0.25,
+      -0.5
+    ],
+    "arm_order": "Alternate direct-first and dual-first by input row index.",
+    "decision": "Identical sample judge prompt and generation parameters; direct analysis=null; dual analysis=all bounded Phase2 rounds with untrusted scores.",
+    "metrics": "REFUTED is error-positive. Accuracy counts abstention/invalid as not correct. FNR counts SUPPORTED among gold REFUTED; missed-error rate also includes abstention/invalid. Report all separately.",
+    "phase2_contract": {
+      "protocol": "phase2-closed-book-feedback-v1",
+      "input_kind": "formal",
+      "input_sha256": "c026dea203f713da2b66c39fd16ecc253ee78027dfeae40cf7c6163f27bd4998",
+      "max_rounds": 2,
+      "files_sha256": {
+        "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+        "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+        "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+        "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+        "scripts/run_phase2.py": "4f935d2f32c03dbc2e8a5bbed22de091b6403e30413ecff1d129c52a8ebf469d"
+      },
+      "model": {
+        "schema_version": 1,
+        "model_id": "Qwen/Qwen2.5-3B-Instruct",
+        "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+        "dtype": "float16",
+        "attention_implementation": "eager",
+        "seed": 42,
+        "max_new_tokens": 256,
+        "do_sample": false,
+        "num_beams": 1,
+        "repetition_penalty": 1.0,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "use_cache": true
+      },
+      "evidence": "None. Source is context, not independent fact-checking evidence.",
+      "roles": "Two prompting roles of the same model, not independently trained models.",
+      "verdict_scope": "Each extracted claim; not inherited from a whole-sample label."
+    }
+  }
+}

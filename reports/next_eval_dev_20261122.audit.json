@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "completed": true,
+  "samples": 32,
+  "counts": {
+    "candidate_forward_calls": 64,
+    "arm_results": 192,
+    "generation_calls": 346,
+    "generations_without_eos": 0,
+    "tokenizer_replayed_calls": 346,
+    "decision_traces": 218,
+    "feedback_transitions": 0
+  },
+  "run_sha256": "cb6d327cfd368171b16a9da03a8dfb2ddbf8896a096cba63811c082fbe1a5e7d",
+  "freeze_sha256": "a3d0e1926ebc09501f928186e282b3cc27f8b68df0b236b4195a3f58b481c16a",
+  "tokenizer_replayed": true,
+  "limits": "Audits stored values and tokenizer reconstruction, not a fresh model-logit forward pass. Human reviewer identities are attestations."
+}

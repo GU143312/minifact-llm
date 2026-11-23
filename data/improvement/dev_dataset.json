@@ -1,0 +1,3160 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "minifact-improvement-dev-v1",
+  "project_split": "dev",
+  "source": {
+    "benchmark": "AVeriTeC",
+    "repository": "MichSchli/AVeriTeC",
+    "revision": "7c62d1ec8df3fb560d6efe2b85fa191135636f81",
+    "file": "data/train.json",
+    "original_split": "train",
+    "sha256": "ae5eda7c42ddf1695ef185a7ba1bc716928f5adf57103e4f78aae5f9afe00f9c",
+    "git_blob_sha": "0f190e115cf2ee23416e8a539c8d6ac043d7cc83"
+  },
+  "license": {
+    "id": "CC-BY-NC-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "attribution": "Michael Sejr Schlichtkrull, Zhijiang Guo, and Andreas Vlachos (2023). AVeriTeC.",
+    "citation_url": "https://arxiv.org/abs/2305.13117",
+    "changes": "Selected and deterministically split train records; added project IDs/provenance. Claims and upstream records are unchanged. Separate evidence projections filter explicit verdicts/curator articles and truncate answers at fixed Unicode-character budgets."
+  },
+  "review": {
+    "selection": "Deterministic structural filtering; no model-output selection.",
+    "gold_origin": "Inherited upstream whole-sample historical labels.",
+    "independent_human_reverification": false,
+    "atomic_gold_available": false,
+    "unseen_boundary": "Not previously used in this project; public upstream train may have occurred in pretraining. No exhaustive semantic event clustering."
+  },
+  "statistics": {
+    "sample_count": 32,
+    "labels": {
+      "REFUTED": 16,
+      "SUPPORTED": 16
+    }
+  },
+  "samples": [
+    {
+      "id": "MFI-D-0010",
+      "text": "Nigeria's debt had been paid off by the time former President Obasanjo and VP Abubakar exited office in 2007.",
+      "context": {
+        "speaker": "Former Nigerian vice president Atiku Abubakar",
+        "location_ISO_code": "NG",
+        "reporting_source": "Daily Vanguard newspaper",
+        "claim_date": "2020-04-21"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "When did President Obasanjo and VP Abubakar exited office in Nigeria?",
+            "answers": [
+              {
+                "answer": "29th May 2007",
+                "answer_type": "Extractive",
+                "source_url": "https://en.wikipedia.org/wiki/Vice_President_of_Nigeria",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230317113511/https://en.wikipedia.org/wiki/Vice_President_of_Nigeria"
+              }
+            ]
+          },
+          {
+            "question": "How much was Nigeria's foreign debt by May 2007?",
+            "answers": [
+              {
+                "answer": "$3,654.21 Billion",
+                "answer_type": "Extractive",
+                "source_url": "https://www.dmo.gov.ng/publications/reports/dmo-annual-report-statement-of-accounts/1057-dmo-2007-annual-report/file#page=36",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20221126150937/https://dmo.gov.ng/publications/reports/dmo-annual-report-statement-of-accounts/1057-dmo-2007-annual-report/file"
+              }
+            ]
+          }
+        ],
+        "justification": "The second answer shows that nigeria had $3,654.21 Billion debt when President \nNigeria's debt had been paid off by the time former President left office"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 840,
+        "source_record_sha256": "3e44d6cede863f0e528391455a994dba220227a12f1d65f92b848294ac69f07e"
+      },
+      "upstream_record": {
+        "claim": "Nigeria's debt had been paid off by the time former President Obasanjo and VP Abubakar exited office in 2007.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The second answer shows that nigeria had $3,654.21 Billion debt when President \nNigeria's debt had been paid off by the time former President left office",
+        "claim_date": "21-4-2020",
+        "speaker": "Former Nigerian vice president Atiku Abubakar",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210719201019/https://africacheck.org/fact-checks/reports/covid-19-pandemic-fact-checking-former-nigeria-vp-abubakars-claims-about",
+        "reporting_source": "Daily Vanguard newspaper",
+        "location_ISO_code": "NG",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "When did President Obasanjo and VP Abubakar exited office in Nigeria?",
+            "answers": [
+              {
+                "answer": "29th May 2007",
+                "answer_type": "Extractive",
+                "source_url": "https://en.wikipedia.org/wiki/Vice_President_of_Nigeria",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230317113511/https://en.wikipedia.org/wiki/Vice_President_of_Nigeria"
+              }
+            ]
+          },
+          {
+            "question": "How much was Nigeria's foreign debt by May 2007?",
+            "answers": [
+              {
+                "answer": "$3,654.21 Billion",
+                "answer_type": "Extractive",
+                "source_url": "https://www.dmo.gov.ng/publications/reports/dmo-annual-report-statement-of-accounts/1057-dmo-2007-annual-report/file#page=36",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20221126150937/https://dmo.gov.ng/publications/reports/dmo-annual-report-statement-of-accounts/1057-dmo-2007-annual-report/file"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0017",
+      "text": "Kenyan President Kenyatta in national day speech stated Under this administration … at Kilindini we have more than doubled the volume of cleared cargo passing [through] the port annually.",
+      "context": {
+        "speaker": "Kenyan President Uhuru Kenyatta",
+        "location_ISO_code": "KE",
+        "reporting_source": null,
+        "claim_date": "2019-10-20"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How much cargo passed through the port of Mombasa in 2013?",
+            "answers": [
+              {
+                "answer": "25 million deadweight tonnage (DWT) passed through the port.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1chYncYikf_KlEJ4RJa6ue9hG7eCYiF67/view?usp=sharing",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1chYncYikf_KlEJ4RJa6ue9hG7eCYiF67/view?usp=sharing"
+              }
+            ]
+          },
+          {
+            "question": "How much cargo passed through the port of Mombasa in 2018?",
+            "answers": [
+              {
+                "answer": "28.2 million DWT (an increase of 12%)",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1SSYtVtWhQvLK7ZCGGukrk_wCXNmBEn1J/view",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1SSYtVtWhQvLK7ZCGGukrk_wCXNmBEn1J/view"
+              }
+            ]
+          }
+        ],
+        "justification": "The DWT passed through the port went from 25million in 2013 to 28.2 million in 2018. "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1606,
+        "source_record_sha256": "df890731d0b6ba63a6fc541457a0e96012c36204ac006e175cdbd1a2d04e0de2"
+      },
+      "upstream_record": {
+        "claim": "Kenyan President Kenyatta in national day speech stated Under this administration … at Kilindini we have more than doubled the volume of cleared cargo passing [through] the port annually.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The DWT passed through the port went from 25million in 2013 to 28.2 million in 2018. ",
+        "claim_date": "20-10-2019",
+        "speaker": "Kenyan President Uhuru Kenyatta",
+        "original_claim_url": "https://web.archive.org/web/20210505133030/https://nation.africa/kenya",
+        "fact_checking_article": "https://web.archive.org/web/20210720135839/https://africacheck.org/fact-checks/reports/fact-checked-5-claims-kenyan-president-kenyatta-national-day-speech",
+        "reporting_source": null,
+        "location_ISO_code": "KE",
+        "claim_types": [
+          "Numerical Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "How much cargo passed through the port of Mombasa in 2013?",
+            "answers": [
+              {
+                "answer": "25 million deadweight tonnage (DWT) passed through the port.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1chYncYikf_KlEJ4RJa6ue9hG7eCYiF67/view?usp=sharing",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1chYncYikf_KlEJ4RJa6ue9hG7eCYiF67/view?usp=sharing"
+              }
+            ]
+          },
+          {
+            "question": "How much cargo passed through the port of Mombasa in 2018?",
+            "answers": [
+              {
+                "answer": "28.2 million DWT (an increase of 12%)",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1SSYtVtWhQvLK7ZCGGukrk_wCXNmBEn1J/view",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1SSYtVtWhQvLK7ZCGGukrk_wCXNmBEn1J/view"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20210505133030/https://nation.africa/kenya"
+      }
+    },
+    {
+      "id": "MFI-D-0025",
+      "text": "US House Speaker Nancy Pelosi said, “Waiting hours longer in the waiting room will allow you to make new friends.” This is regarding emergency care waits.",
+      "context": {
+        "speaker": "Nancy Pelosi",
+        "location_ISO_code": "US",
+        "reporting_source": "Facebook",
+        "claim_date": "2019-05-16"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Where did Pelosi supposedly say this?",
+            "answers": [
+              {
+                "answer": "On a satire site duhprogressive.com",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20201107232538/http://www.duhprogressive.com/index.php/site-map/412-nancy-pelosi-waiting-hours-longer-in-the-emergency-room-will-allow-you-to-make-new-friends?fbclid=IwAR3NtDV0JFh9DUdqBdQGmaRbP2WqwtYUrF0YPnC1u8AMUJA54K2nNzlzedo",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "Is there any evidence she said this?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "boolean_explanation": "Duh progressive is political satire, not news."
+              }
+            ]
+          }
+        ],
+        "justification": "Satire news."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2176,
+        "source_record_sha256": "9594a3576047727008ba425b9060fca9eed8afd99dd34e3a8e48388157b0bf3a"
+      },
+      "upstream_record": {
+        "claim": "US House Speaker Nancy Pelosi said, “Waiting hours longer in the waiting room will allow you to make new friends.” This is regarding emergency care waits.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "Satire news.",
+        "claim_date": "16-5-2019",
+        "speaker": "Nancy Pelosi",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201107232538/https://checkyourfact.com/2019/06/17/fact-check-nancy-pelosi-hours-waiting-room-new-friends/",
+        "reporting_source": "Facebook",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "Where did Pelosi supposedly say this?",
+            "answers": [
+              {
+                "answer": "On a satire site duhprogressive.com",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20201107232538/http://www.duhprogressive.com/index.php/site-map/412-nancy-pelosi-waiting-hours-longer-in-the-emergency-room-will-allow-you-to-make-new-friends?fbclid=IwAR3NtDV0JFh9DUdqBdQGmaRbP2WqwtYUrF0YPnC1u8AMUJA54K2nNzlzedo",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "Is there any evidence she said this?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "boolean_explanation": "Duh progressive is political satire, not news."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MFI-D-0009",
+      "text": "Professor Tasuku Honjo said that coronavirus is “not natural”.",
+      "context": {
+        "speaker": "Alan Dawber",
+        "location_ISO_code": "CN",
+        "reporting_source": "Facebook",
+        "claim_date": "2020-04-29"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Did Professor Tasuku Honjo state that coronavirus is “not natural”?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.kyoto-u.ac.jp/en/news/2020-04-27",
+                "source_medium": "Web text",
+                "boolean_explanation": "Professor Honjo released a statement on 27 April saying: “In the wake of the pain, economic loss, and unprecedented global suffering caused by the COVID-19 pandemic, I am greatly saddened that my name and that of Kyoto University have been used to spread false accusations and misinformation.”",
+                "cached_source_url": "https://web.archive.org/web/20230418184313/https://www.kyoto-u.ac.jp/en/news/2020-04-27"
+              }
+            ]
+          }
+        ],
+        "justification": "The person who supposedly made the claim has publicly refuted that they said the quote and this is on the official university website."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 802,
+        "source_record_sha256": "532514b8d8e354fd21b637d5a4c55bb994ee74b4d01065e104d905f63a61c226"
+      },
+      "upstream_record": {
+        "claim": "Professor Tasuku Honjo said that coronavirus is “not natural”.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The person who supposedly made the claim has publicly refuted that they said the quote and this is on the official university website.",
+        "claim_date": "29-4-2020",
+        "speaker": "Alan Dawber",
+        "original_claim_url": "https://www.facebook.com/photo.php?fbid=3777619342311444&set=a.105781139495301&type=3&theater",
+        "fact_checking_article": "https://web.archive.org/web/20210620150608/https://fullfact.org/online/tasuku-honjo-coronavirus/",
+        "reporting_source": "Facebook",
+        "location_ISO_code": "CN",
+        "claim_types": [
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "Did Professor Tasuku Honjo state that coronavirus is “not natural”?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.kyoto-u.ac.jp/en/news/2020-04-27",
+                "source_medium": "Web text",
+                "boolean_explanation": "Professor Honjo released a statement on 27 April saying: “In the wake of the pain, economic loss, and unprecedented global suffering caused by the COVID-19 pandemic, I am greatly saddened that my name and that of Kyoto University have been used to spread false accusations and misinformation.”",
+                "cached_source_url": "https://web.archive.org/web/20230418184313/https://www.kyoto-u.ac.jp/en/news/2020-04-27"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230515203857/https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D3777619342311444%26set%3Da.105781139495301%26type%3D3%26theater"
+      }
+    },
+    {
+      "id": "MFI-D-0020",
+      "text": "Lewis Carroll once wrote, “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”",
+      "context": {
+        "speaker": null,
+        "location_ISO_code": null,
+        "reporting_source": "Facebook",
+        "claim_date": "2019-09-04"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Did Lewis Carroll write,  “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://onceuponatime.fandom.com/wiki/Hat_Trick/Transcript",
+                "source_medium": "Web text",
+                "boolean_explanation": "The quote is from the ABC television series \"Once Upon A Time\" in episode 17 where the character Jefferson states, \"And storybooks are based on what, imagination? Where does that come from? It has to come from somewhere. (Scoffs) You know what the issue is with this world? Everyone wants some magical solution to their problem, and everyone refuses to believe in magic. (Gestures with his gun) Now get it to work.\"",
+                "cached_source_url": "https://web.archive.org/web/20230603155156/https://onceuponatime.fandom.com/wiki/Hat_Trick/Transcript"
+              }
+            ]
+          }
+        ],
+        "justification": "Seems that the claim is from a TV show, therefore it is refuted"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1773,
+        "source_record_sha256": "cb7d21ba65693f4673e368d2019b26282863558d310f0615ccb8a51bbabbec73"
+      },
+      "upstream_record": {
+        "claim": "Lewis Carroll once wrote, “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "Seems that the claim is from a TV show, therefore it is refuted",
+        "claim_date": "4-9-2019",
+        "speaker": null,
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201101025608/https://checkyourfact.com/2019/10/17/fact-check-lewis-carroll-issue-world-magical-solution-problems-believe-magic/",
+        "reporting_source": "Facebook",
+        "location_ISO_code": null,
+        "claim_types": [
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Did Lewis Carroll write,  “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://onceuponatime.fandom.com/wiki/Hat_Trick/Transcript",
+                "source_medium": "Web text",
+                "boolean_explanation": "The quote is from the ABC television series \"Once Upon A Time\" in episode 17 where the character Jefferson states, \"And storybooks are based on what, imagination? Where does that come from? It has to come from somewhere. (Scoffs) You know what the issue is with this world? Everyone wants some magical solution to their problem, and everyone refuses to believe in magic. (Gestures with his gun) Now get it to work.\"",
+                "cached_source_url": "https://web.archive.org/web/20230603155156/https://onceuponatime.fandom.com/wiki/Hat_Trick/Transcript"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0031",
+      "text": "Expanding Medicaid would bring 40,000 jobs to North Carolina.",
+      "context": {
+        "speaker": "Darren Jackson",
+        "location_ISO_code": "US",
+        "reporting_source": "Twitter",
+        "claim_date": "2019-01-30"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "If Medicaid was expanded into North Carolina what sectors of industry would see an increase in Employment?",
+            "answers": [
+              {
+                "answer": "Ambulatory health care services, Hospitals, Construction, Retail & Wholesale trade, Food services & drinking places, Professional, scientific & technical services, Social assistance, State & local and all other sectors.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What would be the potential job losses if Medicaid was not expanded into North Carolina.",
+            "answers": [
+              {
+                "answer": "By 2017, potential job losses would\nrise to 36,000 and would continue to climb to 43,000 by 2020.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+              }
+            ]
+          }
+        ],
+        "justification": "From the source, it is seen that in 2014, 23,000 fewer jobs were not created that could have been created and in 2015, 29,000 fewer jobs were also not created as a result of the state refusing to expand Medicaid"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2756,
+        "source_record_sha256": "48b0cd56447d735d44bea302a37bc7f14108d347abd53324615a8c0885da1822"
+      },
+      "upstream_record": {
+        "claim": "Expanding Medicaid would bring 40,000 jobs to North Carolina.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "From the source, it is seen that in 2014, 23,000 fewer jobs were not created that could have been created and in 2015, 29,000 fewer jobs were also not created as a result of the state refusing to expand Medicaid",
+        "claim_date": "30-1-2019",
+        "speaker": "Darren Jackson",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210719175419/https://www.politifact.com/factchecks/2019/feb/13/darren-jackson/would-medicaid-expansion-bring-40000-jobs-north-ca/",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Causal Claim",
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Consultation",
+          "Fact-checker Reference"
+        ],
+        "questions": [
+          {
+            "question": "If Medicaid was expanded into North Carolina what sectors of industry would see an increase in Employment?",
+            "answers": [
+              {
+                "answer": "Ambulatory health care services, Hospitals, Construction, Retail & Wholesale trade, Food services & drinking places, Professional, scientific & technical services, Social assistance, State & local and all other sectors.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What would be the potential job losses if Medicaid was not expanded into North Carolina.",
+            "answers": [
+              {
+                "answer": "By 2017, potential job losses would\nrise to 36,000 and would continue to climb to 43,000 by 2020.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0029",
+      "text": "South Africa have launched the Youth Employment Service, which is placing unemployed youth in paid internships in companies across the country.",
+      "context": {
+        "speaker": "Cyril Ramaphosa",
+        "location_ISO_code": "ZA",
+        "reporting_source": "State of the Nation Address ",
+        "claim_date": "2019-02-07"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "When was the youth empowerment service created",
+            "answers": [
+              {
+                "answer": "It was launched on  27 March 2018, by President Cyril Ramaphosa",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210419120717/http://www.thepresidency.gov.za/press-statements/president-ramaphosa-launch-youth-employment-service-initiative",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210419120717/http://www.thepresidency.gov.za/press-statements/president-ramaphosa-launch-youth-employment-service-initiative"
+              }
+            ]
+          },
+          {
+            "question": "Since initialization, have there been youths that have gone through the program",
+            "answers": [
+              {
+                "answer": "According to the YES (Youth Employment Service) website over 50, 000+ job experiences have been created",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210226073226/https://yes4youth.co.za/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210226073226/https://yes4youth.co.za/"
+              }
+            ]
+          }
+        ],
+        "justification": "Launched March 27th 2018 and seen over 50,000 experiences created."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2659,
+        "source_record_sha256": "0204736aac58d0426ed8d8bccf4910cffccb29f2b297d664ff84ba5ce4a40ac7"
+      },
+      "upstream_record": {
+        "claim": "South Africa have launched the Youth Employment Service, which is placing unemployed youth in paid internships in companies across the country.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "Launched March 27th 2018 and seen over 50,000 experiences created.",
+        "claim_date": "7-2-2019",
+        "speaker": "Cyril Ramaphosa",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210226001653/https://africacheck.org/fact-checks/reports/state-facts-verifying-cyril-ramaphosas-sona2019-claims",
+        "reporting_source": "State of the Nation Address ",
+        "location_ISO_code": "ZA",
+        "claim_types": [
+          "Causal Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "When was the youth empowerment service created",
+            "answers": [
+              {
+                "answer": "It was launched on  27 March 2018, by President Cyril Ramaphosa",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210419120717/http://www.thepresidency.gov.za/press-statements/president-ramaphosa-launch-youth-employment-service-initiative",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210419120717/http://www.thepresidency.gov.za/press-statements/president-ramaphosa-launch-youth-employment-service-initiative"
+              }
+            ]
+          },
+          {
+            "question": "Since initialization, have there been youths that have gone through the program",
+            "answers": [
+              {
+                "answer": "According to the YES (Youth Employment Service) website over 50, 000+ job experiences have been created",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210226073226/https://yes4youth.co.za/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210226073226/https://yes4youth.co.za/"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0001",
+      "text": "Ghana's economy previously grew at 3.4% under the form President Mahama's government and on average, for three successive years, at 7% per year with the current administration.",
+      "context": {
+        "speaker": "Nana Addo Dankwa Akufo-Addo ",
+        "location_ISO_code": "GH",
+        "reporting_source": null,
+        "claim_date": "2020-08-22"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "When did Akufo-Addo become President of Nigeria?",
+            "answers": [
+              {
+                "answer": "7 Jan 2017\nNana Akufo-Addo was sworn in as Ghana’s new president on Saturday, in a ceremony attended by dozens of African leaders",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aljazeera.com/news/2017/1/7/nana-akufo-addo-sworn-in-as-ghanas-new-president",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230304172255/https://www.aljazeera.com/news/2017/1/7/nana-akufo-addo-sworn-in-as-ghanas-new-president"
+              }
+            ]
+          },
+          {
+            "question": "What was Ghana's economic growth rate in 2016?",
+            "answers": [
+              {
+                "answer": "3.448%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH"
+              }
+            ]
+          },
+          {
+            "question": "What was Ghana's economic growth rate in 2017,2018 & 2019?",
+            "answers": [
+              {
+                "answer": "2017: 8.143%\n2018: 6.263%\n2019: 6.478%\n\nAn average of 6.96% per year.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH"
+              }
+            ]
+          }
+        ],
+        "justification": "The GDP percentages in the answers and sources show that the claim is correct so it is supported."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 37,
+        "source_record_sha256": "fa66cab2661593e6c5fbe65c600aa6ff98ec9da1ffa63a07e9909d324ce68b3a"
+      },
+      "upstream_record": {
+        "claim": "Ghana's economy previously grew at 3.4% under the form President Mahama's government and on average, for three successive years, at 7% per year with the current administration.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The GDP percentages in the answers and sources show that the claim is correct so it is supported.",
+        "claim_date": "22-8-2020",
+        "speaker": "Nana Addo Dankwa Akufo-Addo ",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210228151829/https://ghanafact.com/2020/08/fact-check-akufo-addos-speech-at-npp-manifesto-launch/",
+        "reporting_source": null,
+        "location_ISO_code": "GH",
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "When did Akufo-Addo become President of Nigeria?",
+            "answers": [
+              {
+                "answer": "7 Jan 2017\nNana Akufo-Addo was sworn in as Ghana’s new president on Saturday, in a ceremony attended by dozens of African leaders",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aljazeera.com/news/2017/1/7/nana-akufo-addo-sworn-in-as-ghanas-new-president",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230304172255/https://www.aljazeera.com/news/2017/1/7/nana-akufo-addo-sworn-in-as-ghanas-new-president"
+              }
+            ]
+          },
+          {
+            "question": "What was Ghana's economic growth rate in 2016?",
+            "answers": [
+              {
+                "answer": "3.448%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH"
+              }
+            ]
+          },
+          {
+            "question": "What was Ghana's economic growth rate in 2017,2018 & 2019?",
+            "answers": [
+              {
+                "answer": "2017: 8.143%\n2018: 6.263%\n2019: 6.478%\n\nAn average of 6.96% per year.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210306175534/https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=GH"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0014",
+      "text": "House Speaker Nancy Pelosi approved $4.8 million in impeachment-related consulting fees to the Clinton Foundation.",
+      "context": {
+        "speaker": "Flagg Eagleton",
+        "location_ISO_code": "US",
+        "reporting_source": "Daily World Update",
+        "claim_date": "2019-11-23"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Where was this claim posted?",
+            "answers": [
+              {
+                "answer": "At the daily world update, a clearly labelled satire news site. The Daily World Update site is part of the \"America's Last Line of Defense\" network of satire websites. Self-professed liberal troll Christopher Blair runs those sites. The Maine resident works alongside a loose confederation of friends and allies. Blair has been in a feud with fact-checking website Snopes, and he has also criticized other fact-checkers who labeled his work \"fake news\" instead of satire. In reaction, he has recently rebranded all his active websites and Facebook pages, so they carry prominent disclaimers everywhere.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200806184015/https://dailyworldupdate.us/nancy-pelosi-approves-4-8-million-in-impeachment-consulting-fees-to-clinton-foundation/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20200806184015/https://dailyworldupdate.us/nancy-pelosi-approves-4-8-million-in-impeachment-consulting-fees-to-clinton-foundation/"
+              }
+            ]
+          },
+          {
+            "question": "Did Pelosi approve 4.8 million in impeachment fees?",
+            "answers": [
+              {
+                "answer": "The story is not true and is clearly labeled as satire. Pelosi did not approve these fees, and as a non-profit organization, the Clinton Foundation would not have the expertise to provide consultations on the impeachment hearings. President Trump was impeached by the House on December 18, 2019. Pelosi, as Speaker, has control over when the process is handed over to the Senate - a chamber she fears is not willing to hold a \"fair\" trial on charges of abuse of power and obstruction of Congress.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20200427101439/https://www.bloomberg.com/news/articles/2019-12-19/mcconnell-trump-blast-pelosi-over-possible-impeachment-delay?utm_campaign=pol&utm_medium=bd&utm_source=applenews",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20200427101439/https://www.bloomberg.com/news/articles/2019-12-19/mcconnell-trump-blast-pelosi-over-possible-impeachment-delay?utm_campaign=pol&utm_medium=bd&utm_source=applenews"
+              }
+            ]
+          }
+        ],
+        "justification": "from the 2nd question and answer pair it seems that the claim is refuted"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1491,
+        "source_record_sha256": "5998e29588041bb530f48618802333089101780f59041932660746fa4b9f69b9"
+      },
+      "upstream_record": {
+        "claim": "House Speaker Nancy Pelosi approved $4.8 million in impeachment-related consulting fees to the Clinton Foundation.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "from the 2nd question and answer pair it seems that the claim is refuted",
+        "claim_date": "23-11-2019",
+        "speaker": "Flagg Eagleton",
+        "original_claim_url": "http://archive.is/wip/2G7j5",
+        "fact_checking_article": "https://web.archive.org/web/20200427101439/https://leadstories.com/hoax-alert/2019/12/fake-news-nancy-pelosi-did-not-approve-48-million-in-impeachment-consulting-fees-to-clinton-foundation.html",
+        "reporting_source": "Daily World Update",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Numerical Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Satirical Source Identification"
+        ],
+        "questions": [
+          {
+            "question": "Where was this claim posted?",
+            "answers": [
+              {
+                "answer": "At the daily world update, a clearly labelled satire news site. The Daily World Update site is part of the \"America's Last Line of Defense\" network of satire websites. Self-professed liberal troll Christopher Blair runs those sites. The Maine resident works alongside a loose confederation of friends and allies. Blair has been in a feud with fact-checking website Snopes, and he has also criticized other fact-checkers who labeled his work \"fake news\" instead of satire. In reaction, he has recently rebranded all his active websites and Facebook pages, so they carry prominent disclaimers everywhere.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200806184015/https://dailyworldupdate.us/nancy-pelosi-approves-4-8-million-in-impeachment-consulting-fees-to-clinton-foundation/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20200806184015/https://dailyworldupdate.us/nancy-pelosi-approves-4-8-million-in-impeachment-consulting-fees-to-clinton-foundation/"
+              }
+            ]
+          },
+          {
+            "question": "Did Pelosi approve 4.8 million in impeachment fees?",
+            "answers": [
+              {
+                "answer": "The story is not true and is clearly labeled as satire. Pelosi did not approve these fees, and as a non-profit organization, the Clinton Foundation would not have the expertise to provide consultations on the impeachment hearings. President Trump was impeached by the House on December 18, 2019. Pelosi, as Speaker, has control over when the process is handed over to the Senate - a chamber she fears is not willing to hold a \"fair\" trial on charges of abuse of power and obstruction of Congress.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20200427101439/https://www.bloomberg.com/news/articles/2019-12-19/mcconnell-trump-blast-pelosi-over-possible-impeachment-delay?utm_campaign=pol&utm_medium=bd&utm_source=applenews",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20200427101439/https://www.bloomberg.com/news/articles/2019-12-19/mcconnell-trump-blast-pelosi-over-possible-impeachment-delay?utm_campaign=pol&utm_medium=bd&utm_source=applenews"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "http://archive.is/wip/2G7j5"
+      }
+    },
+    {
+      "id": "MFI-D-0004",
+      "text": "A rare yellow turtle was spotted in Balasore, Odisha.",
+      "context": {
+        "speaker": "Susanta Nanda IFS",
+        "location_ISO_code": "IN",
+        "reporting_source": "Twitter",
+        "claim_date": "2020-07-20"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "When was this claim made?",
+            "answers": [
+              {
+                "answer": "20/07/2020",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Has a rare yellow turtle been sighted in Balasore, Odisha?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "https://www.ndtv.com/india-news/balasore-odisha-yellow-turtle-spotted-in-odishas-balasore-never-seen-one-like-this-says-officer-2265535",
+                "source_medium": "Web text",
+                "boolean_explanation": "Balasore: Residents of a village in Odisha's Balasore district, 196 km from capital Bhubaneswar, witnessed a unique sight on Sunday. They spotted a turtle, yellow in colour.\nA senior wildlife officer said it is a rare spotting.",
+                "cached_source_url": "https://web.archive.org/web/20230424161630/https://www.ndtv.com/india-news/balasore-odisha-yellow-turtle-spotted-in-odishas-balasore-never-seen-one-like-this-says-officer-2265535"
+              }
+            ]
+          }
+        ],
+        "justification": "There are clear photos in the report showing the turtle so the claim is supported."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 277,
+        "source_record_sha256": "8ba6b4ea865cbeeeac037bc17a0a0f6a9424138c94f0551e345e38ef8aeda806"
+      },
+      "upstream_record": {
+        "claim": "A rare yellow turtle was spotted in Balasore, Odisha.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "There are clear photos in the report showing the turtle so the claim is supported.",
+        "claim_date": "20-7-2020",
+        "speaker": "Susanta Nanda IFS",
+        "original_claim_url": "https://twitter.com/susantananda3/status/1285028394950778884",
+        "fact_checking_article": "https://web.archive.org/web/20200923050534/https://newsmeter.in/fact-check-yes-a-rare-yellow-turtle-was-spotted-in-balasore-odisha/",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "IN",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "When was this claim made?",
+            "answers": [
+              {
+                "answer": "20/07/2020",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Has a rare yellow turtle been sighted in Balasore, Odisha?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "https://www.ndtv.com/india-news/balasore-odisha-yellow-turtle-spotted-in-odishas-balasore-never-seen-one-like-this-says-officer-2265535",
+                "source_medium": "Web text",
+                "boolean_explanation": "Balasore: Residents of a village in Odisha's Balasore district, 196 km from capital Bhubaneswar, witnessed a unique sight on Sunday. They spotted a turtle, yellow in colour.\nA senior wildlife officer said it is a rare spotting.",
+                "cached_source_url": "https://web.archive.org/web/20230424161630/https://www.ndtv.com/india-news/balasore-odisha-yellow-turtle-spotted-in-odishas-balasore-never-seen-one-like-this-says-officer-2265535"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230424161516/https://twitter.com/susantananda3/status/1285028394950778884"
+      }
+    },
+    {
+      "id": "MFI-D-0032",
+      "text": "The question of Almajiris’ lack of primary or basic education are all local government problems.",
+      "context": {
+        "speaker": "President Muhammadu Buhari",
+        "location_ISO_code": "NG",
+        "reporting_source": "Televised town hall meetings, January 2019.",
+        "claim_date": "2019-01-16"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Who are Almajiris?",
+            "answers": [
+              {
+                "answer": "Almajiri is any child or adult who begs for assistance in the streets or from house to house.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.voanews.com/a/a-13-2007-11-28-voa46/346945.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607174619/https://www.voanews.com/a/a-13-2007-11-28-voa46/346945.html"
+              }
+            ]
+          },
+          {
+            "question": "Who is responsible for maintaining education in Nigeria ?",
+            "answers": [
+              {
+                "answer": "Government shall direct its policy towards ensuring that there are equal and adequate educational\nopportunities at all levels.",
+                "answer_type": "Extractive",
+                "source_url": "https://publicofficialsfinancialdisclosure.worldbank.org/sites/fdl/files/assets/law-library-files/Nigeria_Constitution_1999_en.pdf",
+                "source_medium": "PDF"
+              },
+              {
+                "answer": "Every Government in Nigeria shall provide free, compulsory and\nUniversal basic education for every child of primary and junior secondary, school age.",
+                "answer_type": "Extractive",
+                "source_url": "https://africacheck.org//sites/default/files/NGA87623.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20230523023132/http://africacheck.org/sites/default/files/NGA87623.pdf"
+              }
+            ]
+          }
+        ],
+        "justification": "the evidence shows that the claim is true"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2767,
+        "source_record_sha256": "d52f2843fcc28471269a60988a9b9520376cd3c411872630c679ba7718ec47b6"
+      },
+      "upstream_record": {
+        "claim": "The question of Almajiris’ lack of primary or basic education are all local government problems.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "the evidence shows that the claim is true",
+        "claim_date": "16-1-2019",
+        "speaker": "President Muhammadu Buhari",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210720180153/https://africacheck.org/fact-checks/reports/battle-titans-fact-checking-arch-rivals-race-nigerias-presidency",
+        "reporting_source": "Televised town hall meetings, January 2019.",
+        "location_ISO_code": "NG",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Who are Almajiris?",
+            "answers": [
+              {
+                "answer": "Almajiri is any child or adult who begs for assistance in the streets or from house to house.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.voanews.com/a/a-13-2007-11-28-voa46/346945.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607174619/https://www.voanews.com/a/a-13-2007-11-28-voa46/346945.html"
+              }
+            ]
+          },
+          {
+            "question": "Who is responsible for maintaining education in Nigeria ?",
+            "answers": [
+              {
+                "answer": "Government shall direct its policy towards ensuring that there are equal and adequate educational\nopportunities at all levels.",
+                "answer_type": "Extractive",
+                "source_url": "https://publicofficialsfinancialdisclosure.worldbank.org/sites/fdl/files/assets/law-library-files/Nigeria_Constitution_1999_en.pdf",
+                "source_medium": "PDF"
+              },
+              {
+                "answer": "Every Government in Nigeria shall provide free, compulsory and\nUniversal basic education for every child of primary and junior secondary, school age.",
+                "answer_type": "Extractive",
+                "source_url": "https://africacheck.org//sites/default/files/NGA87623.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20230523023132/http://africacheck.org/sites/default/files/NGA87623.pdf"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0007",
+      "text": "President Muhammadu Buhari of Nigeria said Nigeria is now rated as one of the top ten reforming countries.",
+      "context": {
+        "speaker": "President Muhammadu Buhari of Nigeria",
+        "location_ISO_code": "NG",
+        "reporting_source": "democracy day address",
+        "claim_date": "2020-06-12"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What economies are are improving as regards ease of doing business",
+            "answers": [
+              {
+                "answer": "The economies with the most notable improvement in\nDoing Business 2020 are Saudi Arabia, Jordan, Togo, Bahrain,\nTajikistan, Pakistan, Kuwait, China, India, and Nigeria.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What rank is Nigeria amongst these improving economies",
+            "answers": [
+              {
+                "answer": "10th",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+              }
+            ]
+          }
+        ],
+        "justification": "The second answer shows Nigeria is in the top ten of reforming countries, ranking tenth. "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 544,
+        "source_record_sha256": "050c1cf9bc1c50844b2c71ac1c88e9fb60eed2e24ee87ed9d341851df139e2d3"
+      },
+      "upstream_record": {
+        "claim": "President Muhammadu Buhari of Nigeria said Nigeria is now rated as one of the top ten reforming countries.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The second answer shows Nigeria is in the top ten of reforming countries, ranking tenth. ",
+        "claim_date": "12-6-2020",
+        "speaker": "President Muhammadu Buhari of Nigeria",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210130082541/https://africacheck.org/fact-checks/reports/fact-checking-buharis-democracy-day-claims-about-his-economic-achievements",
+        "reporting_source": "democracy day address",
+        "location_ISO_code": "NG",
+        "claim_types": [
+          "Numerical Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "What economies are are improving as regards ease of doing business",
+            "answers": [
+              {
+                "answer": "The economies with the most notable improvement in\nDoing Business 2020 are Saudi Arabia, Jordan, Togo, Bahrain,\nTajikistan, Pakistan, Kuwait, China, India, and Nigeria.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What rank is Nigeria amongst these improving economies",
+            "answers": [
+              {
+                "answer": "10th",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0024",
+      "text": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+      "context": {
+        "speaker": null,
+        "location_ISO_code": "IN",
+        "reporting_source": null,
+        "claim_date": "2019-06-08"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What is Ayushman Bharat?",
+            "answers": [
+              {
+                "answer": "National Health Protection Scheme, which will cover over 10 crore poor and vulnerable families (approximately 50 crore beneficiaries) providing coverage up to 5 lakh rupees per family per year for secondary and tertiary care hospitalization.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.india.gov.in/spotlight/ayushman-bharat-national-health-protection-mission",
+                "source_medium": "Web text"
+              }
+            ]
+          }
+        ],
+        "justification": "Stated in a direct government source"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2114,
+        "source_record_sha256": "0bb12c572c35d72d696bccca1ad7ed77ece4f2b23613c4f1af6431278b2b27da"
+      },
+      "upstream_record": {
+        "claim": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "Stated in a direct government source",
+        "claim_date": "8-6-2019",
+        "speaker": null,
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20200720171212/https://factly.in/fact-checking-government-claims-on-ayushman-bharat/",
+        "reporting_source": null,
+        "location_ISO_code": "IN",
+        "claim_types": [
+          "Position Statement",
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "What is Ayushman Bharat?",
+            "answers": [
+              {
+                "answer": "National Health Protection Scheme, which will cover over 10 crore poor and vulnerable families (approximately 50 crore beneficiaries) providing coverage up to 5 lakh rupees per family per year for secondary and tertiary care hospitalization.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.india.gov.in/spotlight/ayushman-bharat-national-health-protection-mission",
+                "source_medium": "Web text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MFI-D-0008",
+      "text": "North Korea cancels all communication with South Korea.",
+      "context": {
+        "speaker": "Alexander Smith, Yuliya Talmazan",
+        "location_ISO_code": "KP",
+        "reporting_source": "NBC News",
+        "claim_date": "2020-06-09"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What is the date of the claim?",
+            "answers": [
+              {
+                "answer": "June 9th 2020",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Did North Korea declare it was cutting communication with South Korea around June 2020?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20210722054124/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146",
+                "source_medium": "Web text",
+                "boolean_explanation": "North Korea announced around the 9th of June that North Korea said it was suspending contact in anger at activist defectors who have fled to the South",
+                "cached_source_url": "https://web.archive.org/web/20210722054124/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146"
+              }
+            ]
+          },
+          {
+            "question": "Did North Korea actually stop communicating with South Korea as it announced it would?",
+            "answers": [
+              {
+                "answer": "South Korea confirmed that North Korea did not answer its military hotline for the first time since it was restored in 2018, according to a defense ministry spokeswoman.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210421134909mp_/https://survivalupdate.com/north-korea-has-severed-all-communication-with-south-korea/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210421134909mp_/https://survivalupdate.com/north-korea-has-severed-all-communication-with-south-korea/"
+              }
+            ]
+          }
+        ],
+        "justification": "The answers and sources show that communication was stopped so the claim is supported."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 575,
+        "source_record_sha256": "c6e32500d7ec9507dae54d154d1f4ba2705543ac0b1acabc35c1f95cf7424eb5"
+      },
+      "upstream_record": {
+        "claim": "North Korea cancels all communication with South Korea.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The answers and sources show that communication was stopped so the claim is supported.",
+        "claim_date": "9-6-2020",
+        "speaker": "Alexander Smith, Yuliya Talmazan",
+        "original_claim_url": "https://web.archive.org/web/20210721130549mp_/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146",
+        "fact_checking_article": "https://web.archive.org/web/20210721130549/https://misbar.com/en/factcheck/2020/06/10/has-north-korea-severed-all-communication-with-south-korea",
+        "reporting_source": "NBC News",
+        "location_ISO_code": "KP",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "What is the date of the claim?",
+            "answers": [
+              {
+                "answer": "June 9th 2020",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Did North Korea declare it was cutting communication with South Korea around June 2020?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20210722054124/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146",
+                "source_medium": "Web text",
+                "boolean_explanation": "North Korea announced around the 9th of June that North Korea said it was suspending contact in anger at activist defectors who have fled to the South",
+                "cached_source_url": "https://web.archive.org/web/20210722054124/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146"
+              }
+            ]
+          },
+          {
+            "question": "Did North Korea actually stop communicating with South Korea as it announced it would?",
+            "answers": [
+              {
+                "answer": "South Korea confirmed that North Korea did not answer its military hotline for the first time since it was restored in 2018, according to a defense ministry spokeswoman.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210421134909mp_/https://survivalupdate.com/north-korea-has-severed-all-communication-with-south-korea/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210421134909mp_/https://survivalupdate.com/north-korea-has-severed-all-communication-with-south-korea/"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20210721130549mp_/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146"
+      }
+    },
+    {
+      "id": "MFI-D-0028",
+      "text": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
+      "context": {
+        "speaker": "Quentin Miller",
+        "location_ISO_code": "US",
+        "reporting_source": "Fox news ",
+        "claim_date": "2019-02-26"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What was the Sheriff Quentin Miller's stance on ICE detainers",
+            "answers": [
+              {
+                "answer": "Effective immediately, it is the policy of the Buncombe County Sheriff’s Office and the Buncombe County Detention Center that ICE detainers will not be honored.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210511071926/https://www.buncombecounty.org/governing/depts/sheriff/news_detail.aspx?newsid=17850",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210511071926/https://www.buncombecounty.org/governing/depts/sheriff/news_detail.aspx?newsid=17850"
+              }
+            ]
+          },
+          {
+            "question": "What is an ICE detainer",
+            "answers": [
+              {
+                "answer": "ICE detainers, also known as ICE holds or immigration detainers, are requests that Immigration and Customs Enforcement (ICE) sends to local enforcement agencies (e.g. police, sheriff, local jail) asking for information about a person who is about to be released from custody and/or asking that the local agency hold that person for an extra amount of time in order to facilitate their deportation.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aclum.org/en/what-are-ice-detainers",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607144716/https://www.aclum.org/en/what-are-ice-detainers"
+              }
+            ]
+          },
+          {
+            "question": "Do ICE retainers carry any judicial authority",
+            "answers": [
+              {
+                "answer": "ICE detainers are not judicial warrants. An arrest warrant is an order signed by a judge that allows a police officer to detain a person because there is “probable cause” to believe that the person has committed a crime. “Probable cause” is the standard of proof that the government must show in order to deprive a person of his or her liberty under the Fourth Amendment.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aclum.org/en/what-are-ice-detainers",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607144716/https://www.aclum.org/en/what-are-ice-detainers"
+              }
+            ]
+          }
+        ],
+        "justification": "The 1st q&a pair says that the person named in the claim will not honour An ice detainer, the 3rd q&a pair stat that the 'ice detainers are not warrants'\nNeither q&a pair link these pieces of information so there is no evidence that the person in the claim said what is claimed but it is strongly  inferred."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2520,
+        "source_record_sha256": "7d6e7437d90d8afaca2a9affc00ca60bee848b678160013b283bedd06b8c3015"
+      },
+      "upstream_record": {
+        "claim": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The 1st q&a pair says that the person named in the claim will not honour An ice detainer, the 3rd q&a pair stat that the 'ice detainers are not warrants'\nNeither q&a pair link these pieces of information so there is no evidence that the person in the claim said what is claimed but it is strongly  inferred.",
+        "claim_date": "26-2-2019",
+        "speaker": "Quentin Miller",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210426180346/https://www.politifact.com/factchecks/2019/mar/28/quentin-miller/nc-sheriff-right-ice-detainers-are-not-valid-warra/",
+        "reporting_source": "Fox news ",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "What was the Sheriff Quentin Miller's stance on ICE detainers",
+            "answers": [
+              {
+                "answer": "Effective immediately, it is the policy of the Buncombe County Sheriff’s Office and the Buncombe County Detention Center that ICE detainers will not be honored.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210511071926/https://www.buncombecounty.org/governing/depts/sheriff/news_detail.aspx?newsid=17850",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210511071926/https://www.buncombecounty.org/governing/depts/sheriff/news_detail.aspx?newsid=17850"
+              }
+            ]
+          },
+          {
+            "question": "What is an ICE detainer",
+            "answers": [
+              {
+                "answer": "ICE detainers, also known as ICE holds or immigration detainers, are requests that Immigration and Customs Enforcement (ICE) sends to local enforcement agencies (e.g. police, sheriff, local jail) asking for information about a person who is about to be released from custody and/or asking that the local agency hold that person for an extra amount of time in order to facilitate their deportation.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aclum.org/en/what-are-ice-detainers",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607144716/https://www.aclum.org/en/what-are-ice-detainers"
+              }
+            ]
+          },
+          {
+            "question": "Do ICE retainers carry any judicial authority",
+            "answers": [
+              {
+                "answer": "ICE detainers are not judicial warrants. An arrest warrant is an order signed by a judge that allows a police officer to detain a person because there is “probable cause” to believe that the person has committed a crime. “Probable cause” is the standard of proof that the government must show in order to deprive a person of his or her liberty under the Fourth Amendment.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.aclum.org/en/what-are-ice-detainers",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230607144716/https://www.aclum.org/en/what-are-ice-detainers"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0005",
+      "text": "In June 2020, Nigerian debt servicing obligations stood at N943.12 billion.",
+      "context": {
+        "speaker": "Dr Obadiah Mailafia",
+        "location_ISO_code": "NG",
+        "reporting_source": "newspaper article",
+        "claim_date": "2020-06-22"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How much money went into Nigeria's debt servicing obligations?",
+            "answers": [
+              {
+                "answer": "N943.12 billion was\nfor debt service",
+                "answer_type": "Extractive",
+                "source_url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803",
+                "source_medium": "PDF"
+              },
+              {
+                "answer": "N943.12 billion was for debt service",
+                "answer_type": "Extractive",
+                "source_url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ],
+        "justification": "The answer and source show that the amount in the claim is correct so the claim is supported."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 453,
+        "source_record_sha256": "14f056e4a59cabe5c1c5e271a808dec64192c5a69c3da56b15dae9d463f54f9a"
+      },
+      "upstream_record": {
+        "claim": "In June 2020, Nigerian debt servicing obligations stood at N943.12 billion.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The answer and source show that the amount in the claim is correct so the claim is supported.",
+        "claim_date": "22-6-2020",
+        "speaker": "Dr Obadiah Mailafia",
+        "original_claim_url": "https://archive.ph/ScTQa",
+        "fact_checking_article": "https://web.archive.org/web/20210720231105/https://africacheck.org/fact-checks/reports/nigeria-officially-broke-why-prominent-economists-warning-needs-larger-view",
+        "reporting_source": "newspaper article",
+        "location_ISO_code": "NG",
+        "claim_types": [
+          "Numerical Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "How much money went into Nigeria's debt servicing obligations?",
+            "answers": [
+              {
+                "answer": "N943.12 billion was\nfor debt service",
+                "answer_type": "Extractive",
+                "source_url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803",
+                "source_medium": "PDF"
+              },
+              {
+                "answer": "N943.12 billion was for debt service",
+                "answer_type": "Extractive",
+                "source_url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://archive.ph/ScTQa"
+      }
+    },
+    {
+      "id": "MFI-D-0026",
+      "text": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+      "context": {
+        "speaker": "William Ruto",
+        "location_ISO_code": "KE",
+        "reporting_source": "Citizen TV",
+        "claim_date": "2019-04-10"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "In 2017, did the Kenyan Government manifesto say they would construct 57 mega dams?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf",
+                "source_medium": "PDF",
+                "boolean_explanation": "The wording was actually \"complete 57 mega dams\"."
+              },
+              {
+                "answer": "The wording was actually \"complete 57 mega dams\". Some of the dams had previously started construction.",
+                "answer_type": "Extractive",
+                "source_url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ],
+        "justification": "Q and A confirms statement was made in manifesto.\n(NB source link is a dead 404 error page.)"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2280,
+        "source_record_sha256": "e2ade0e7c67a5c19b7975622e08f9d8f6df77ac2fb34de25be2f73d18903f100"
+      },
+      "upstream_record": {
+        "claim": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "Q and A confirms statement was made in manifesto.\n(NB source link is a dead 404 error page.)",
+        "claim_date": "10-4-2019",
+        "speaker": "William Ruto",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210118134705/https://africacheck.org/fact-checks/reports/fact-checking-5-claims-kenyas-deputy-president-ruto-including-corruption-and",
+        "reporting_source": "Citizen TV",
+        "location_ISO_code": "KE",
+        "claim_types": [
+          "Position Statement"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "In 2017, did the Kenyan Government manifesto say they would construct 57 mega dams?",
+            "answers": [
+              {
+                "answer": "Yes",
+                "answer_type": "Boolean",
+                "source_url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf",
+                "source_medium": "PDF",
+                "boolean_explanation": "The wording was actually \"complete 57 mega dams\"."
+              },
+              {
+                "answer": "The wording was actually \"complete 57 mega dams\". Some of the dams had previously started construction.",
+                "answer_type": "Extractive",
+                "source_url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MFI-D-0021",
+      "text": "West Virginia highways move up twenty places in the U.S national highway system to place sixteenth, and affirms all the hard work we do on our states roads.",
+      "context": {
+        "speaker": "Jim Justice",
+        "location_ISO_code": "US",
+        "reporting_source": "Twitter",
+        "claim_date": "2019-08-22"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Did West Virginia highways move up twenty places in the U.S national highway system to place sixteenth ?",
+            "answers": [
+              {
+                "answer": "West Virginia’s highway system ranks 16th in the nation in overall cost-effectiveness and condition, according to the Annual Highway Report by Reason Foundation. This is a 20-spot improvement from the previous report, where West Virginia ranked 36th overall, as the fatality rate decreased somewhat and the state benefited from the report no longer measuring narrow rural arterial lanes (the state ranked 50th last year).",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210123034314/https://reason.org/policy-study/24th-annual-highway-report/west-virginia/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210123034314/https://reason.org/policy-study/24th-annual-highway-report/west-virginia/"
+              }
+            ]
+          },
+          {
+            "question": "What is West Virginia position in the U.S national highway system ?",
+            "answers": [
+              {
+                "answer": "1\tNorth Dakota\n2\tVirginia\n3\tMissouri\n4\tMaine\n5\tKentucky\n6\tKansas\n7\tTennessee\n8\tMontana\n9\tUtah\n10\tAlabama\n11\tWyoming\n12\tOregon\n13\tIdaho\n14\tSouth Dakota\n15\tNebraska\n16\tWest Virginia\n17\tNorth Carolina\n18\tOhio\n19\tVermont\n20\tSouth Carolina\n21\tNew Mexico\n22\tMinnesota\n23\tTexas\n24\tNew Hampshire\n25\tMississippi\n26\tGeorgia\n27\tNevada\n28\tIllinois\n29\tArizona\n30\tMichigan\n31\tIowa\n32\tArkansas\n33\tIndiana\n34\tLouisiana\n35\tPennsylvania\n36\tColorado\n37\tWashington\n38\tWisconsin\n39\tMaryland\n40\tFlorida\n41\tOklahoma\n42\tDelaware\n43\tCalifornia\n44\tConnecticut\n45\tNew York\n46\tMassachusetts\n47\tHawaii\n48\tRhode Island\n49\tAlaska\n50\tNew Jersey",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210301124659/https://reason.org/policy-study/24th-annual-highway-report/24th-annual-highway-report-executive-summary/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210301124659/https://reason.org/policy-study/24th-annual-highway-report/24th-annual-highway-report-executive-summary/"
+              }
+            ]
+          },
+          {
+            "question": "Does West Virginia position in the U.S national highway system affirms all the hard work by Governor Jim Justice on the states roads?",
+            "answers": [
+              {
+                "answer": "Justice has a point about the overall number, but his celebratory tone is somewhat exaggerated. Most of the data reflects a period before he became governor, and a major reason for the increase came from the elimination of a category from the previous year’s report in which West Virginia ranked 50th nationally.",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          }
+        ],
+        "justification": "West Virginia Highway are ranked 16th "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1815,
+        "source_record_sha256": "ca26150968258d29b6d0f4ea11902be4ddd59ff77dc992e4a66a007d5044f1a7"
+      },
+      "upstream_record": {
+        "claim": "West Virginia highways move up twenty places in the U.S national highway system to place sixteenth, and affirms all the hard work we do on our states roads.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "West Virginia Highway are ranked 16th ",
+        "claim_date": "22-8-2019",
+        "speaker": "Jim Justice",
+        "original_claim_url": "https://web.archive.org/web/20201227045803/https://twitter.com/WVGovernor/status/1164584746736766978",
+        "fact_checking_article": "https://web.archive.org/web/20201227045803/https://www.politifact.com/factchecks/2019/oct/01/jim-justice/fact-checking-jim-justices-boast-about-wva-highway/",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Causal Claim",
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Did West Virginia highways move up twenty places in the U.S national highway system to place sixteenth ?",
+            "answers": [
+              {
+                "answer": "West Virginia’s highway system ranks 16th in the nation in overall cost-effectiveness and condition, according to the Annual Highway Report by Reason Foundation. This is a 20-spot improvement from the previous report, where West Virginia ranked 36th overall, as the fatality rate decreased somewhat and the state benefited from the report no longer measuring narrow rural arterial lanes (the state ranked 50th last year).",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210123034314/https://reason.org/policy-study/24th-annual-highway-report/west-virginia/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210123034314/https://reason.org/policy-study/24th-annual-highway-report/west-virginia/"
+              }
+            ]
+          },
+          {
+            "question": "What is West Virginia position in the U.S national highway system ?",
+            "answers": [
+              {
+                "answer": "1\tNorth Dakota\n2\tVirginia\n3\tMissouri\n4\tMaine\n5\tKentucky\n6\tKansas\n7\tTennessee\n8\tMontana\n9\tUtah\n10\tAlabama\n11\tWyoming\n12\tOregon\n13\tIdaho\n14\tSouth Dakota\n15\tNebraska\n16\tWest Virginia\n17\tNorth Carolina\n18\tOhio\n19\tVermont\n20\tSouth Carolina\n21\tNew Mexico\n22\tMinnesota\n23\tTexas\n24\tNew Hampshire\n25\tMississippi\n26\tGeorgia\n27\tNevada\n28\tIllinois\n29\tArizona\n30\tMichigan\n31\tIowa\n32\tArkansas\n33\tIndiana\n34\tLouisiana\n35\tPennsylvania\n36\tColorado\n37\tWashington\n38\tWisconsin\n39\tMaryland\n40\tFlorida\n41\tOklahoma\n42\tDelaware\n43\tCalifornia\n44\tConnecticut\n45\tNew York\n46\tMassachusetts\n47\tHawaii\n48\tRhode Island\n49\tAlaska\n50\tNew Jersey",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210301124659/https://reason.org/policy-study/24th-annual-highway-report/24th-annual-highway-report-executive-summary/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210301124659/https://reason.org/policy-study/24th-annual-highway-report/24th-annual-highway-report-executive-summary/"
+              }
+            ]
+          },
+          {
+            "question": "Does West Virginia position in the U.S national highway system affirms all the hard work by Governor Jim Justice on the states roads?",
+            "answers": [
+              {
+                "answer": "Justice has a point about the overall number, but his celebratory tone is somewhat exaggerated. Most of the data reflects a period before he became governor, and a major reason for the increase came from the elimination of a category from the previous year’s report in which West Virginia ranked 50th nationally.",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20201227045803/https://twitter.com/WVGovernor/status/1164584746736766978"
+      }
+    },
+    {
+      "id": "MFI-D-0013",
+      "text": "Over the past two years, climate and weather disaster damage has cost the U.S. over $400 billion.",
+      "context": {
+        "speaker": "Tammy Baldwin",
+        "location_ISO_code": "US",
+        "reporting_source": "Twitter",
+        "claim_date": "2019-12-10"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What was the  cost of climate damage to the U.S in 2017?",
+            "answers": [
+              {
+                "answer": "2017 was the costliest year on record for natural disasters in the United States, with a price tag of at least $306 billion.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.vox.com/energy-and-environment/2017/12/28/16795490/natural-disasters-2017-hurricanes-wildfires-heat-climate-change-cost-deaths",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230521114553/https://www.vox.com/energy-and-environment/2017/12/28/16795490/natural-disasters-2017-hurricanes-wildfires-heat-climate-change-cost-deaths"
+              }
+            ]
+          },
+          {
+            "question": "What was the  cost of climate damage to the U.S in 2018?",
+            "answers": [
+              {
+                "answer": "wildfires push 2018 disaster costs to $91 billion",
+                "answer_type": "Extractive",
+                "source_url": "https://www.c2es.org/2019/02/record-wildfires-push-2018-disaster-costs-to-91-billion/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316113339/https://www.c2es.org/2019/02/record-wildfires-push-2018-disaster-costs-to-91-billion/"
+              }
+            ]
+          }
+        ],
+        "justification": "The numbers seem correct"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1451,
+        "source_record_sha256": "5d20018d43c5aaa8354a676af363837fb04d99935078175f814e8d777c3aa307"
+      },
+      "upstream_record": {
+        "claim": "Over the past two years, climate and weather disaster damage has cost the U.S. over $400 billion.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The numbers seem correct",
+        "claim_date": "10-12-2019",
+        "speaker": "Tammy Baldwin",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201104221801/https://www.politifact.com/factchecks/2020/feb/05/tammy-baldwin/wisconsin-sen-baldwin-makes-cents-costs-climate-ch/",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "What was the  cost of climate damage to the U.S in 2017?",
+            "answers": [
+              {
+                "answer": "2017 was the costliest year on record for natural disasters in the United States, with a price tag of at least $306 billion.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.vox.com/energy-and-environment/2017/12/28/16795490/natural-disasters-2017-hurricanes-wildfires-heat-climate-change-cost-deaths",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230521114553/https://www.vox.com/energy-and-environment/2017/12/28/16795490/natural-disasters-2017-hurricanes-wildfires-heat-climate-change-cost-deaths"
+              }
+            ]
+          },
+          {
+            "question": "What was the  cost of climate damage to the U.S in 2018?",
+            "answers": [
+              {
+                "answer": "wildfires push 2018 disaster costs to $91 billion",
+                "answer_type": "Extractive",
+                "source_url": "https://www.c2es.org/2019/02/record-wildfires-push-2018-disaster-costs-to-91-billion/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316113339/https://www.c2es.org/2019/02/record-wildfires-push-2018-disaster-costs-to-91-billion/"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0027",
+      "text": "Since 1973 the income of the bottom 90% of Americans didn't budge.",
+      "context": {
+        "speaker": null,
+        "location_ISO_code": null,
+        "reporting_source": null,
+        "claim_date": "2019-04-01"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "When was this claim made?",
+            "answers": [
+              {
+                "answer": "01/04/2019",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Has US income for this period been studied?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf",
+                "source_medium": "PDF",
+                "boolean_explanation": "The Congressional Budget Office published a Distribution of Household Income covering 1979 to 2015.",
+                "cached_source_url": "https://web.archive.org/web/20230607125912/https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf"
+              }
+            ]
+          },
+          {
+            "question": "Did the Congressional Budget Office Distribution of Household Income report of 2015 indicate that for 90% of the population income did not increase or decrease?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf",
+                "source_medium": "Web table",
+                "boolean_explanation": "Various tables indicate that incomes increased before and after taxes & etc.",
+                "cached_source_url": "https://web.archive.org/web/20230607125912/https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf"
+              }
+            ]
+          },
+          {
+            "question": "Have US wages for the bottom 90% stalled since 1973?",
+            "answers": [
+              {
+                "answer": "The chart shows clear wage stagnation for the bottom 60 percent of the income scale. The rate did go up for the 70 and 80 percent levels.",
+                "answer_type": "Abstractive",
+                "source_url": "https://www.epi.org/data/#?subject=wage-percentiles",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20230525210609/https://www.epi.org/data/"
+              }
+            ]
+          },
+          {
+            "question": "Has the share of pre-tax national income for the bottom 90% of American stayed the same since 1973?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "http://www.piketty.pse.ens.fr/files/ACPSZ2017AER.pdf",
+                "source_medium": "Web table",
+                "boolean_explanation": "This shows that both the bottom 50 percent and the next 40 percent have taken declining shares of the nation’s income since 1973.",
+                "cached_source_url": "https://web.archive.org/web/20230607125942/http://www.piketty.pse.ens.fr/files/ACPSZ2017AER.pdf"
+              }
+            ]
+          }
+        ],
+        "justification": "The Q&A pair state that data for the period in the claim in unavailable, and best available data concludes a worse outcome than stated"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2390,
+        "source_record_sha256": "7c0010c3e5f0f5ee1e39f2f06293f84524c2701e30e4d2067a7ab36aa7f8a7f2"
+      },
+      "upstream_record": {
+        "claim": "Since 1973 the income of the bottom 90% of Americans didn't budge.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The Q&A pair state that data for the period in the claim in unavailable, and best available data concludes a worse outcome than stated",
+        "claim_date": "1-4-2019",
+        "speaker": null,
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201227055603/https://www.politifact.com/factchecks/2019/apr/05/pete-buttigieg/has-income-stalled-bottom-90-1970s-pete-buttigieg-/",
+        "reporting_source": null,
+        "location_ISO_code": null,
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "When was this claim made?",
+            "answers": [
+              {
+                "answer": "01/04/2019",
+                "answer_type": "Extractive",
+                "source_url": "Metadata",
+                "source_medium": "Metadata",
+                "cached_source_url": "Metadata"
+              }
+            ]
+          },
+          {
+            "question": "Has US income for this period been studied?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf",
+                "source_medium": "PDF",
+                "boolean_explanation": "The Congressional Budget Office published a Distribution of Household Income covering 1979 to 2015.",
+                "cached_source_url": "https://web.archive.org/web/20230607125912/https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf"
+              }
+            ]
+          },
+          {
+            "question": "Did the Congressional Budget Office Distribution of Household Income report of 2015 indicate that for 90% of the population income did not increase or decrease?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf",
+                "source_medium": "Web table",
+                "boolean_explanation": "Various tables indicate that incomes increased before and after taxes & etc.",
+                "cached_source_url": "https://web.archive.org/web/20230607125912/https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf"
+              }
+            ]
+          },
+          {
+            "question": "Have US wages for the bottom 90% stalled since 1973?",
+            "answers": [
+              {
+                "answer": "The chart shows clear wage stagnation for the bottom 60 percent of the income scale. The rate did go up for the 70 and 80 percent levels.",
+                "answer_type": "Abstractive",
+                "source_url": "https://www.epi.org/data/#?subject=wage-percentiles",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20230525210609/https://www.epi.org/data/"
+              }
+            ]
+          },
+          {
+            "question": "Has the share of pre-tax national income for the bottom 90% of American stayed the same since 1973?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "http://www.piketty.pse.ens.fr/files/ACPSZ2017AER.pdf",
+                "source_medium": "Web table",
+                "boolean_explanation": "This shows that both the bottom 50 percent and the next 40 percent have taken declining shares of the nation’s income since 1973.",
+                "cached_source_url": "https://web.archive.org/web/20230607125942/http://www.piketty.pse.ens.fr/files/ACPSZ2017AER.pdf"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0030",
+      "text": "According to a 2017 Doctors Without Borders Report, more than 30 percent of women are sexually assaulted on the trek to the border.",
+      "context": {
+        "speaker": "Donald Trump",
+        "location_ISO_code": "US",
+        "reporting_source": "State of the Union address",
+        "claim_date": "2019-02-05"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How many people were surveyed about their journey to USA from Mexico ?",
+            "answers": [
+              {
+                "answer": "429 migrants and refugees\nanswered SGBV questions",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percent of the 429 surveyed were women?",
+            "answers": [
+              {
+                "answer": "12 percent were female.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percent of Females surveyed had experienced sexual abuse?",
+            "answers": [
+              {
+                "answer": "31.4%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percentage of women had experienced rape or direct sexual assault?",
+            "answers": [
+              {
+                "answer": "Considering only rape and other forms of direct sexual\nviolence, 10.7 percent of women surveyed reported this.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          }
+        ],
+        "justification": "Using the the definition of sexual assault as when someone makes another person take part in a sexual activity with them without that person's consent. the percentage of more than 30 percent is verified by the source."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 2717,
+        "source_record_sha256": "1af4ae46aa16bc452bb2b264c667b5c5e101039b429054972adb770601071459"
+      },
+      "upstream_record": {
+        "claim": "According to a 2017 Doctors Without Borders Report, more than 30 percent of women are sexually assaulted on the trek to the border.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "Using the the definition of sexual assault as when someone makes another person take part in a sexual activity with them without that person's consent. the percentage of more than 30 percent is verified by the source.",
+        "claim_date": "5-2-2019",
+        "speaker": "Donald Trump",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201227052454/https://www.politifact.com/article/2019/feb/05/fact-checking-state-union-2019/",
+        "reporting_source": "State of the Union address",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "How many people were surveyed about their journey to USA from Mexico ?",
+            "answers": [
+              {
+                "answer": "429 migrants and refugees\nanswered SGBV questions",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web table",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percent of the 429 surveyed were women?",
+            "answers": [
+              {
+                "answer": "12 percent were female.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percent of Females surveyed had experienced sexual abuse?",
+            "answers": [
+              {
+                "answer": "31.4%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          },
+          {
+            "question": "What percentage of women had experienced rape or direct sexual assault?",
+            "answers": [
+              {
+                "answer": "Considering only rape and other forms of direct sexual\nviolence, 10.7 percent of women surveyed reported this.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0006",
+      "text": "An Expansion of Mail-in Ballots would increase the chance of theft in the USA.",
+      "context": {
+        "speaker": "Donald Trump",
+        "location_ISO_code": "US",
+        "reporting_source": "Radio Interview with Michael Savage",
+        "claim_date": "2020-06-15"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Who made this claim about the potential for theft of mail in ballots?",
+            "answers": [
+              {
+                "answer": "Donald Trump",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+              }
+            ]
+          },
+          {
+            "question": "Has Donald Trump voted by mail in ballot?",
+            "answers": [
+              {
+                "answer": "Trump voted earlier this year, in a no-excuse absentee vote state -- meaning that a voter can request an absentee ballot (aka one you fill out at home and mail back to the election authority) without offering any excuse for why they want to do so.\nWhich is what Trump did. Being president is a more than full-time job, and he couldn't make time to travel to Florida to cast a vote in person. So he voted absentee.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+              }
+            ]
+          },
+          {
+            "question": "How secure is mail in voting (absentee ballot voteing)?",
+            "answers": [
+              {
+                "answer": "Numerous safeguards are included in the absentee voting process. Absentee ballots are sent only to registered voters who request them using an official N.C. Absentee Ballot Request Form before the deadline. The request must be signed and include identifying information about the voter, including date of birth and driver’s license number or last four digits of the voter’s Social Security number. Voters must vote their ballot in the presence of two witnesses or a notary, and those witnesses must sign the absentee return envelope certifying that the voter marked their ballot and is the registered voter submitting the marked ballot.\n\nOnly the voter or their near relative or legal guardian may return the ballot. Upon return, the county board of elections reviews the absentee envelope to ensure compliance with the legal requirements. Once the ballot is accepted, that voter is marked in the system as having voted in that election.\n\nData on who has requested absentee ballots is now confidential until Election Day. Criminal penalties have been increased for absentee voting fraud-related offenses. Many people are watching our absentee voting process, including candidates, political parties, county boards of elections, and political and data scientists. If there are anomalies or questionable activities, they will be identified by or reported to election officials.\n\nFinally, the State Board of Elections has an Investigations Division that investigates credible allegations of elections fraud and refers cases to prosecutors when warranted by the evidence. The State Board also conducts several post-election audits which will catch inconsistencies that can then be investigated by the board or the Investigations Division.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Howsecureisabsentee-by-mailvoting-795",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230419011138/https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail"
+              }
+            ]
+          },
+          {
+            "question": "What prevents someone from voting absentee and then voting again in-person?",
+            "answers": [
+              {
+                "answer": "If someone has voted an absentee ballot and then shows up to vote in person, the check-in system will alert the poll worker that the person has already voted. Voting twice in the same election is a crime and is investigated by the State Board and referred to prosecutors when warranted by the evidence",
+                "answer_type": "Extractive",
+                "source_url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Whatpreventssomeonefromvotingabsenteeandthenvotingagainin-person-797",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230419011138/https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail"
+              }
+            ]
+          }
+        ],
+        "justification": "The QA cover a lot of ground in terms of information around voter fraud and mail in ballots, there good probing question and good answers which give a very good view of it and allow for a good decision on the claim. Based on the information gathered from the QA it appears the claim itself was made by Donald Trump, we know that he has a problem with mail in ballots as he often refers to them as being a method of rigging an election, the QA has found that Donald Trump himself however used a mail in absentee ballot to vote. Theres plenty of information from further QA to discover that theres lots of secure safeguards in place to both prevent voter fraud and it also prooves that someone is not possible to vote by mail then in person. For this claim I have therefore refuted it."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 514,
+        "source_record_sha256": "c2fe50f86808183386c257e2bca5011847f4851a7263b550ab66d232128719d4"
+      },
+      "upstream_record": {
+        "claim": "An Expansion of Mail-in Ballots would increase the chance of theft in the USA.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The QA cover a lot of ground in terms of information around voter fraud and mail in ballots, there good probing question and good answers which give a very good view of it and allow for a good decision on the claim. Based on the information gathered from the QA it appears the claim itself was made by Donald Trump, we know that he has a problem with mail in ballots as he often refers to them as being a method of rigging an election, the QA has found that Donald Trump himself however used a mail in absentee ballot to vote. Theres plenty of information from further QA to discover that theres lots of secure safeguards in place to both prevent voter fraud and it also prooves that someone is not possible to vote by mail then in person. For this claim I have therefore refuted it.",
+        "claim_date": "15-6-2020",
+        "speaker": "Donald Trump",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210713125537/https://www.factcheck.org/2020/06/trumps-absentee-vs-mail-in-ballot-spin/",
+        "reporting_source": "Radio Interview with Michael Savage",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Who made this claim about the potential for theft of mail in ballots?",
+            "answers": [
+              {
+                "answer": "Donald Trump",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+              }
+            ]
+          },
+          {
+            "question": "Has Donald Trump voted by mail in ballot?",
+            "answers": [
+              {
+                "answer": "Trump voted earlier this year, in a no-excuse absentee vote state -- meaning that a voter can request an absentee ballot (aka one you fill out at home and mail back to the election authority) without offering any excuse for why they want to do so.\nWhich is what Trump did. Being president is a more than full-time job, and he couldn't make time to travel to Florida to cast a vote in person. So he voted absentee.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+              }
+            ]
+          },
+          {
+            "question": "How secure is mail in voting (absentee ballot voteing)?",
+            "answers": [
+              {
+                "answer": "Numerous safeguards are included in the absentee voting process. Absentee ballots are sent only to registered voters who request them using an official N.C. Absentee Ballot Request Form before the deadline. The request must be signed and include identifying information about the voter, including date of birth and driver’s license number or last four digits of the voter’s Social Security number. Voters must vote their ballot in the presence of two witnesses or a notary, and those witnesses must sign the absentee return envelope certifying that the voter marked their ballot and is the registered voter submitting the marked ballot.\n\nOnly the voter or their near relative or legal guardian may return the ballot. Upon return, the county board of elections reviews the absentee envelope to ensure compliance with the legal requirements. Once the ballot is accepted, that voter is marked in the system as having voted in that election.\n\nData on who has requested absentee ballots is now confidential until Election Day. Criminal penalties have been increased for absentee voting fraud-related offenses. Many people are watching our absentee voting process, including candidates, political parties, county boards of elections, and political and data scientists. If there are anomalies or questionable activities, they will be identified by or reported to election officials.\n\nFinally, the State Board of Elections has an Investigations Division that investigates credible allegations of elections fraud and refers cases to prosecutors when warranted by the evidence. The State Board also conducts several post-election audits which will catch inconsistencies that can then be investigated by the board or the Investigations Division.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Howsecureisabsentee-by-mailvoting-795",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230419011138/https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail"
+              }
+            ]
+          },
+          {
+            "question": "What prevents someone from voting absentee and then voting again in-person?",
+            "answers": [
+              {
+                "answer": "If someone has voted an absentee ballot and then shows up to vote in person, the check-in system will alert the poll worker that the person has already voted. Voting twice in the same election is a crime and is investigated by the State Board and referred to prosecutors when warranted by the evidence",
+                "answer_type": "Extractive",
+                "source_url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Whatpreventssomeonefromvotingabsenteeandthenvotingagainin-person-797",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230419011138/https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0023",
+      "text": "Since 2013, County Governments in Kenya have cumulatively received KSh1.57 trillion worth of the equitable share of the allocation of the consolidated fund revenue budget.",
+      "context": {
+        "speaker": "Wycliffe Oparanya",
+        "location_ISO_code": "KE",
+        "reporting_source": null,
+        "claim_date": "2019-06-28"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How much money have county Governments in Kenya cumulatively received  from the consolidated fund revenue budget?",
+            "answers": [
+              {
+                "answer": "National-Treasury-on-County-Fiscal-Transfers shows KSh1.3 trillion transferred to counties in Kenya.",
+                "answer_type": "Extractive",
+                "source_url": "https://africacheck.org/sites/default/files/National-Treasury-on-County-Fiscal-Transfers-for-FY-2017_18.pdf",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ],
+        "justification": "There is to much of a difference between the confirmed 1.3 and the claimed 1.57 for it just to be a rounding up error."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1988,
+        "source_record_sha256": "a25a1503a5413fd38519010dd47fb00875cadcbf355797238875fb255d858288"
+      },
+      "upstream_record": {
+        "claim": "Since 2013, County Governments in Kenya have cumulatively received KSh1.57 trillion worth of the equitable share of the allocation of the consolidated fund revenue budget.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "There is to much of a difference between the confirmed 1.3 and the claimed 1.57 for it just to be a rounding up error.",
+        "claim_date": "28-6-2019",
+        "speaker": "Wycliffe Oparanya",
+        "original_claim_url": "https://africacheck.org/sites/default/files/STATE-OF-DEVOLUTION-ADDRESS-2019-.pdf",
+        "fact_checking_article": "https://web.archive.org/web/20210720042508/https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+        "reporting_source": null,
+        "location_ISO_code": "KE",
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "How much money have county Governments in Kenya cumulatively received  from the consolidated fund revenue budget?",
+            "answers": [
+              {
+                "answer": "National-Treasury-on-County-Fiscal-Transfers shows KSh1.3 trillion transferred to counties in Kenya.",
+                "answer_type": "Extractive",
+                "source_url": "https://africacheck.org/sites/default/files/National-Treasury-on-County-Fiscal-Transfers-for-FY-2017_18.pdf",
+                "source_medium": "PDF"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MFI-D-0012",
+      "text": "Man accused of sexual Harassment of minor girls is a muslim.",
+      "context": {
+        "speaker": "@cbpunjabi",
+        "location_ISO_code": "IN",
+        "reporting_source": "Twitter",
+        "claim_date": "2020-01-21"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Who is the man the claim refers to?",
+            "answers": [
+              {
+                "answer": "Pawan Kumar.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316003336/https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+              }
+            ]
+          },
+          {
+            "question": "was Pawan alias Sonu a muslim?",
+            "answers": [
+              {
+                "answer": "Ambala police officials confirmed that the accused Pawan Kumar is not a Muslim.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316003336/https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+              }
+            ]
+          }
+        ],
+        "justification": "Ambala police officials confirmed that the accused Pawan Kumar is not a Muslim. "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1334,
+        "source_record_sha256": "9903df4e5a6293a4db3300c603b1a2d36d76e32e953c6a7891db3941f5649210"
+      },
+      "upstream_record": {
+        "claim": "Man accused of sexual Harassment of minor girls is a muslim.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "Ambala police officials confirmed that the accused Pawan Kumar is not a Muslim. ",
+        "claim_date": "21-1-2020",
+        "speaker": "@cbpunjabi",
+        "original_claim_url": "https://web.archive.org/web/20200120192324/https://twitter.com/cbpunjabi/status/1219326954672918534",
+        "fact_checking_article": "https://web.archive.org/web/20201129180919/https://www.altnews.in/man-accused-of-sexual-harassment-of-minor-girls-falsely-claimed-to-be-muslim/",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "IN",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Who is the man the claim refers to?",
+            "answers": [
+              {
+                "answer": "Pawan Kumar.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316003336/https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+              }
+            ]
+          },
+          {
+            "question": "was Pawan alias Sonu a muslim?",
+            "answers": [
+              {
+                "answer": "Ambala police officials confirmed that the accused Pawan Kumar is not a Muslim.",
+                "answer_type": "Extractive",
+                "source_url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230316003336/https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20200120192324/https://twitter.com/cbpunjabi/status/1219326954672918534"
+      }
+    },
+    {
+      "id": "MFI-D-0003",
+      "text": "The USA has only 4% of the worlds population but has 25% of the worlds Covid-19 Cases.",
+      "context": {
+        "speaker": "Bill Clinton",
+        "location_ISO_code": "US",
+        "reporting_source": "2020 Democratic National Convention",
+        "claim_date": "2020-08-18"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "what percentage of world's population lives in USA?",
+            "answers": [
+              {
+                "answer": "about 4%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210304233823/https://www.worldometers.info/world-population/us-population/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210304233823/https://www.worldometers.info/world-population/us-population/"
+              }
+            ]
+          },
+          {
+            "question": "What percentage of world's Covid-19 cases are from USA?",
+            "answers": [
+              {
+                "answer": "about 25%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210304145142/https://coronavirus.jhu.edu/map.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210304145142/https://coronavirus.jhu.edu/map.html"
+              }
+            ]
+          }
+        ],
+        "justification": "The answers support the claim."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 70,
+        "source_record_sha256": "4bc065be9558aea891af4c49984d88fa91b128a4ad5e07e9c884074f87b81d8b"
+      },
+      "upstream_record": {
+        "claim": "The USA has only 4% of the worlds population but has 25% of the worlds Covid-19 Cases.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "The answers support the claim.",
+        "claim_date": "18-8-2020",
+        "speaker": "Bill Clinton",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20210304150502/https://www.politifact.com/article/2020/aug/19/fact-checking-second-night-2020-democratic-nationa/",
+        "reporting_source": "2020 Democratic National Convention",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "what percentage of world's population lives in USA?",
+            "answers": [
+              {
+                "answer": "about 4%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210304233823/https://www.worldometers.info/world-population/us-population/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210304233823/https://www.worldometers.info/world-population/us-population/"
+              }
+            ]
+          },
+          {
+            "question": "What percentage of world's Covid-19 cases are from USA?",
+            "answers": [
+              {
+                "answer": "about 25%",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210304145142/https://coronavirus.jhu.edu/map.html",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210304145142/https://coronavirus.jhu.edu/map.html"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    },
+    {
+      "id": "MFI-D-0016",
+      "text": "Over 200,000 NHS nurses have resigned since 2010.",
+      "context": {
+        "speaker": "Full Fact",
+        "location_ISO_code": "GB",
+        "reporting_source": null,
+        "claim_date": "2019-11-01"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How many nurses have voluntary resigned from 2010-2018?",
+            "answers": [
+              {
+                "answer": "Over the eight years from 2010 to 2018, just under 97,000 of the 200,000 nurses and health visitors had ‘voluntary resignation’ recorded as a reason for leaving.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210101074216/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210101074216/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+              }
+            ]
+          },
+          {
+            "question": "Does the NHS now have 200,000 fewer nurses than in 2010?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20200811201346/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/joiners-of-and-leavers-from-the-nhs-that-were-nurses-and-health-visitors-september-2009-to-november-2018",
+                "source_medium": "Web text",
+                "boolean_explanation": "In June 2018, there were around 2,700 more nurses and health visitors (full-time equivalent) working for the NHS than in June 2010 (a 1% increase).",
+                "cached_source_url": "https://web.archive.org/web/20200811201346/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/joiners-of-and-leavers-from-the-nhs-that-were-nurses-and-health-visitors-september-2009-to-november-2018"
+              }
+            ]
+          },
+          {
+            "question": "Is the figure quoted of 200,000 just for resignations?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20201101025858/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving",
+                "source_medium": "Web text",
+                "boolean_explanation": "Over the eight years Labour looked at, just under 97,000 of the 200,000 nurses and health visitors had ‘voluntary resignation’ recorded as a reason for leaving—the single most common reason for leaving.\n\nIn the year to June 2011, 50% of nursing staff who had a reason for leaving recorded, voluntarily resigned. By the year ending June 2018, this had increased to 63%.\n\nIn total, around a third of voluntary resignations between June 2010 and 2018 did not have a specific reason for them recorded. Around a quarter were listed as being due to relocation and around one in five cited ‘work life balance’. Just under one in ten resigned for reasons relating to promotion.",
+                "cached_source_url": "https://web.archive.org/web/20201101025858/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+              }
+            ]
+          }
+        ],
+        "justification": "97k not 200k"
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1562,
+        "source_record_sha256": "8ead8435739a3654375b4cc0718f289248929ad35bca2ab70bbaf4f720cdf866"
+      },
+      "upstream_record": {
+        "claim": "Over 200,000 NHS nurses have resigned since 2010.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "97k not 200k",
+        "claim_date": "1-11-2019",
+        "speaker": "Full Fact",
+        "original_claim_url": "https://web.archive.org/web/20201126101601/https://fullfact.org/",
+        "fact_checking_article": "https://web.archive.org/web/20201126101601/https://fullfact.org/health/adult-social-care-nurse-numbers/",
+        "reporting_source": null,
+        "location_ISO_code": "GB",
+        "claim_types": [
+          "Numerical Claim",
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "How many nurses have voluntary resigned from 2010-2018?",
+            "answers": [
+              {
+                "answer": "Over the eight years from 2010 to 2018, just under 97,000 of the 200,000 nurses and health visitors had ‘voluntary resignation’ recorded as a reason for leaving.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210101074216/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210101074216/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+              }
+            ]
+          },
+          {
+            "question": "Does the NHS now have 200,000 fewer nurses than in 2010?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20200811201346/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/joiners-of-and-leavers-from-the-nhs-that-were-nurses-and-health-visitors-september-2009-to-november-2018",
+                "source_medium": "Web text",
+                "boolean_explanation": "In June 2018, there were around 2,700 more nurses and health visitors (full-time equivalent) working for the NHS than in June 2010 (a 1% increase).",
+                "cached_source_url": "https://web.archive.org/web/20200811201346/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/joiners-of-and-leavers-from-the-nhs-that-were-nurses-and-health-visitors-september-2009-to-november-2018"
+              }
+            ]
+          },
+          {
+            "question": "Is the figure quoted of 200,000 just for resignations?",
+            "answers": [
+              {
+                "answer": "No",
+                "answer_type": "Boolean",
+                "source_url": "https://web.archive.org/web/20201101025858/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving",
+                "source_medium": "Web text",
+                "boolean_explanation": "Over the eight years Labour looked at, just under 97,000 of the 200,000 nurses and health visitors had ‘voluntary resignation’ recorded as a reason for leaving—the single most common reason for leaving.\n\nIn the year to June 2011, 50% of nursing staff who had a reason for leaving recorded, voluntarily resigned. By the year ending June 2018, this had increased to 63%.\n\nIn total, around a third of voluntary resignations between June 2010 and 2018 did not have a specific reason for them recorded. Around a quarter were listed as being due to relocation and around one in five cited ‘work life balance’. Just under one in ten resigned for reasons relating to promotion.",
+                "cached_source_url": "https://web.archive.org/web/20201101025858/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20201126101601/https://fullfact.org/"
+      }
+    },
+    {
+      "id": "MFI-D-0002",
+      "text": "world bank currently rates Nigeria as one of ten top performing countries on its Doing Business Index.",
+      "context": {
+        "speaker": "Presidency Nigeria",
+        "location_ISO_code": "NG",
+        "reporting_source": "twitter",
+        "claim_date": "2020-08-21"
+      },
+      "gold": {
+        "verdict": "SUPPORTED",
+        "original_label": "Supported",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Is Nigeria in the top ten of countries on World Bank's Doing Business Index?",
+            "answers": [
+              {
+                "answer": "Nigeria is included in the top ten countries in the index.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210414171024/https://www.worldbank.org/en/news/feature/2019/10/24/doing-business-2020-sustaining-the-pace-of-reforms",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210414171024/https://www.worldbank.org/en/news/feature/2019/10/24/doing-business-2020-sustaining-the-pace-of-reforms"
+              }
+            ]
+          }
+        ],
+        "justification": "Nigeria is in the World Bank's top 10 Doing Business Index "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 51,
+        "source_record_sha256": "8af2000f4fa4cd842e0cfab44c4e806add55a9abcb9840e596e8ad414b998bc5"
+      },
+      "upstream_record": {
+        "claim": "world bank currently rates Nigeria as one of ten top performing countries on its Doing Business Index.",
+        "required_reannotation": false,
+        "label": "Supported",
+        "justification": "Nigeria is in the World Bank's top 10 Doing Business Index ",
+        "claim_date": "21-8-2020",
+        "speaker": "Presidency Nigeria",
+        "original_claim_url": "https://twitter.com/NGRPresident/status/1296765952558862336?s=19",
+        "fact_checking_article": "https://web.archive.org/web/20210411050242/https://dubawa.org/explainer-this-is-how-nigeria-became-one-of-the-top-10-rated-nations-in-ease-of-doing-business/",
+        "reporting_source": "twitter",
+        "location_ISO_code": "NG",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison"
+        ],
+        "questions": [
+          {
+            "question": "Is Nigeria in the top ten of countries on World Bank's Doing Business Index?",
+            "answers": [
+              {
+                "answer": "Nigeria is included in the top ten countries in the index.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210414171024/https://www.worldbank.org/en/news/feature/2019/10/24/doing-business-2020-sustaining-the-pace-of-reforms",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210414171024/https://www.worldbank.org/en/news/feature/2019/10/24/doing-business-2020-sustaining-the-pace-of-reforms"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230420113007/https://twitter.com/NGRPresident/status/1296765952558862336?s=19"
+      }
+    },
+    {
+      "id": "MFI-D-0015",
+      "text": "Access to antiretroviral therapy in the South African public health sector was given to 45,500 patients in 2004.",
+      "context": {
+        "speaker": "Cyril Ramaphosa",
+        "location_ISO_code": "ZA",
+        "reporting_source": "SA Govt.",
+        "claim_date": "2019-11-08"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "How many people were on anti-retroviral treatment in 2004 in South Africa",
+            "answers": [
+              {
+                "answer": "47, 500",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+              }
+            ]
+          },
+          {
+            "question": "Were all the 47, 500 people getting it from the public sector",
+            "answers": [
+              {
+                "answer": "The public sector was only catering to 9, 600 of them",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+              }
+            ]
+          }
+        ],
+        "justification": "The public sector was only catering to 9, 600 of them "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1543,
+        "source_record_sha256": "b10c13aa04ff22e8d47ba4dbae6ae3f56463f7367924423a3d9c7d252276f199"
+      },
+      "upstream_record": {
+        "claim": "Access to antiretroviral therapy in the South African public health sector was given to 45,500 patients in 2004.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The public sector was only catering to 9, 600 of them ",
+        "claim_date": "8-11-2019",
+        "speaker": "Cyril Ramaphosa",
+        "original_claim_url": "https://www.dpme.gov.za/news/SiteAssets/Pages/25-Year-Review-Launch/Towards%20A%2025%20Year%20Review.pdf",
+        "fact_checking_article": "https://web.archive.org/web/20210118230239/https://africacheck.org/fact-checks/reports/fact-checked-president-cyril-ramaphosas-claims-about-progress-south-africa-1994",
+        "reporting_source": "SA Govt.",
+        "location_ISO_code": "ZA",
+        "claim_types": [
+          "Numerical Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Numerical Comparison",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "How many people were on anti-retroviral treatment in 2004 in South Africa",
+            "answers": [
+              {
+                "answer": "47, 500",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+              }
+            ]
+          },
+          {
+            "question": "Were all the 47, 500 people getting it from the public sector",
+            "answers": [
+              {
+                "answer": "The public sector was only catering to 9, 600 of them",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260",
+                "source_medium": "PDF",
+                "cached_source_url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230602160637/https://www.dpme.gov.za/news/SiteAssets/Pages/25-Year-Review-Launch/Towards%20A%2025%20Year%20Review.pdf"
+      }
+    },
+    {
+      "id": "MFI-D-0022",
+      "text": "President Trump fully co-operated with the investigation into Russian interference in the 2016 U.S presidential campaign.",
+      "context": {
+        "speaker": "Mike Johnson",
+        "location_ISO_code": "US",
+        "reporting_source": "Mueller Hearings",
+        "claim_date": "2019-07-24"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "What was the investigation into Russian interference in the 2016 U.S presidential campaign called?",
+            "answers": [
+              {
+                "answer": "The Mueller Report.",
+                "answer_type": "Abstractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "What is the Mueller Report?",
+            "answers": [
+              {
+                "answer": "The report is a summation of the findings from the special counsel investigation. It is expected to contain the details of the investigation, from its interviews with key witnesses and other evidence amassed throughout the process and the Mueller team’s conclusions – or lack thereof.\n\nIn a letter to lawmakers, Attorney General William Barr said the report “sets forth the Special Counsel’s findings, analysis and the reasons for his conclusions.” \n\nMueller was appointed in May 2017 shortly after Trump fired Comey. Mueller was authorized to investigate Russian interference in the 2016 election, whether any Trump associates coordinated or colluded with the Russians, whether Trump obstructed the investigation and any other crimes that were uncovered during the investigation.",
+                "answer_type": "Extractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "Did Donald Trump act in good faith when being investigated?",
+            "answers": [
+              {
+                "answer": "Trump consistently denied that he or anyone on his team colluded with Russia to interfere in the election, and he has rejected further the intelligence community’s conclusion that Russia attempted to interfere in the election at all, including while standing next to Russian President Vladimir Putin shortly after Mueller’s appointment. He likewise denied the possibility he had obstructed justice.\n\nThroughout the process, Trump railed against Mueller and Mueller’s team, accusing them of political bias and maligning both the intelligence community and Justice Department more broadly.",
+                "answer_type": "Extractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "What did the Mueller report discover about Donald Trumps role in the Russian interference of the 2016 U.S presidential campaign?",
+            "answers": [
+              {
+                "answer": "Our investigation found multiple acts by the President that were capable of exerting undue influence over law enforcement investigations, including the Russian-interference and obstruction investigations,” Mueller wrote. “The incidents were often carried out through one-on-one meetings in which the President sought to use his official power outside of usual channels. These actions ranged from efforts to remove the Special Counsel and to reverse the effect of the Attorney General’s recusal; to the attempted use of official power to limit the scope of the investigation; to direct and indirect contacts with witnesses with the potential to influence their testimony.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210127070322/https://www.factcheck.org/2019/04/what-the-mueller-report-says-about-obstruction/",
+                "source_medium": "Web text"
+              }
+            ]
+          }
+        ],
+        "justification": "Mueller said “If we had confidence after a thorough investigation of the facts that the President clearly did not commit obstruction of justice, we would so state. Based on the facts and the applicable legal standards, we are unable to reach that judgment.”\nClearly this is not \"full cooperation\"."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1897,
+        "source_record_sha256": "aa388e581cb622e066f432faaa66320d0ec694918549cb55a4813db66eefa7cb"
+      },
+      "upstream_record": {
+        "claim": "President Trump fully co-operated with the investigation into Russian interference in the 2016 U.S presidential campaign.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "Mueller said “If we had confidence after a thorough investigation of the facts that the President clearly did not commit obstruction of justice, we would so state. Based on the facts and the applicable legal standards, we are unable to reach that judgment.”\nClearly this is not \"full cooperation\".",
+        "claim_date": "24-7-2019",
+        "speaker": "Mike Johnson",
+        "original_claim_url": "https://web.archive.org/web/20210119181232/https://www.c-span.org/video/?462628-1/robert-mueller-testifies-house-judiciary-committee&start=11986",
+        "fact_checking_article": "https://web.archive.org/web/20210119181232/https://www.factcheck.org/2019/07/factchecking-the-mueller-hearings/",
+        "reporting_source": "Mueller Hearings",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "What was the investigation into Russian interference in the 2016 U.S presidential campaign called?",
+            "answers": [
+              {
+                "answer": "The Mueller Report.",
+                "answer_type": "Abstractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "What is the Mueller Report?",
+            "answers": [
+              {
+                "answer": "The report is a summation of the findings from the special counsel investigation. It is expected to contain the details of the investigation, from its interviews with key witnesses and other evidence amassed throughout the process and the Mueller team’s conclusions – or lack thereof.\n\nIn a letter to lawmakers, Attorney General William Barr said the report “sets forth the Special Counsel’s findings, analysis and the reasons for his conclusions.” \n\nMueller was appointed in May 2017 shortly after Trump fired Comey. Mueller was authorized to investigate Russian interference in the 2016 election, whether any Trump associates coordinated or colluded with the Russians, whether Trump obstructed the investigation and any other crimes that were uncovered during the investigation.",
+                "answer_type": "Extractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "Did Donald Trump act in good faith when being investigated?",
+            "answers": [
+              {
+                "answer": "Trump consistently denied that he or anyone on his team colluded with Russia to interfere in the election, and he has rejected further the intelligence community’s conclusion that Russia attempted to interfere in the election at all, including while standing next to Russian President Vladimir Putin shortly after Mueller’s appointment. He likewise denied the possibility he had obstructed justice.\n\nThroughout the process, Trump railed against Mueller and Mueller’s team, accusing them of political bias and maligning both the intelligence community and Justice Department more broadly.",
+                "answer_type": "Extractive",
+                "source_url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained",
+                "source_medium": "Web text"
+              }
+            ]
+          },
+          {
+            "question": "What did the Mueller report discover about Donald Trumps role in the Russian interference of the 2016 U.S presidential campaign?",
+            "answers": [
+              {
+                "answer": "Our investigation found multiple acts by the President that were capable of exerting undue influence over law enforcement investigations, including the Russian-interference and obstruction investigations,” Mueller wrote. “The incidents were often carried out through one-on-one meetings in which the President sought to use his official power outside of usual channels. These actions ranged from efforts to remove the Special Counsel and to reverse the effect of the Attorney General’s recusal; to the attempted use of official power to limit the scope of the investigation; to direct and indirect contacts with witnesses with the potential to influence their testimony.",
+                "answer_type": "Extractive",
+                "source_url": "https://web.archive.org/web/20210127070322/https://www.factcheck.org/2019/04/what-the-mueller-report-says-about-obstruction/",
+                "source_medium": "Web text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MFI-D-0019",
+      "text": "Science fiction and popular science writer Isaac Asimov said your assumptions are your windows on the world.Scrub them off every once in a while, or the light won’t come in.",
+      "context": {
+        "speaker": "Ness Tomenlaco",
+        "location_ISO_code": "US",
+        "reporting_source": "Facebook",
+        "claim_date": "2019-09-16"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Who made the quote \"your assumptions are your windows on the world. scrub them off every once in a while or the light won't come in",
+            "answers": [
+              {
+                "answer": "Alan Alda said in the 62nd commencement speech in Connecticut college \"Your \nassumptions are your windows on the world. Scrub them off every once in a while or the light \nwon't come in. If you challenge your own, you won't be so quick to accept the unchallenged \nassumptions of others. You'll be a lot less likely to be caught up in bias or prejudice or be \ninfluenced by people who ask you to hand over your brains, your soul or your money because \nthey have everything all figured out for you\".",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210923051029/https://digitalcommons.conncoll.edu/cgi/viewcontent.cgi?article=1006&context=commence#toolbar=0&navpanes=0&scrollbar=1",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210923051029/https://digitalcommons.conncoll.edu/cgi/viewcontent.cgi?article=1006&context=commence#toolbar=0&navpanes=0&scrollbar=1"
+              }
+            ]
+          }
+        ],
+        "justification": "The quote was not made by Isaac Asimov. "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1750,
+        "source_record_sha256": "f82704a7eab113484536957b4e3905423488d9871dba612f665b7291cbc1c449"
+      },
+      "upstream_record": {
+        "claim": "Science fiction and popular science writer Isaac Asimov said your assumptions are your windows on the world.Scrub them off every once in a while, or the light won’t come in.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "The quote was not made by Isaac Asimov. ",
+        "claim_date": "16-9-2019",
+        "speaker": "Ness Tomenlaco",
+        "original_claim_url": "https://www.facebook.com/photo.php?fbid=3020718477944255&set=a.299399150076215&type=3&theater",
+        "fact_checking_article": "https://web.archive.org/web/20210720201359/https://checkyourfact.com/2019/09/19/fact-check-isaac-asimov-assumptions-windows-world-light-alan-alda/",
+        "reporting_source": "Facebook",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "Who made the quote \"your assumptions are your windows on the world. scrub them off every once in a while or the light won't come in",
+            "answers": [
+              {
+                "answer": "Alan Alda said in the 62nd commencement speech in Connecticut college \"Your \nassumptions are your windows on the world. Scrub them off every once in a while or the light \nwon't come in. If you challenge your own, you won't be so quick to accept the unchallenged \nassumptions of others. You'll be a lot less likely to be caught up in bias or prejudice or be \ninfluenced by people who ask you to hand over your brains, your soul or your money because \nthey have everything all figured out for you\".",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210923051029/https://digitalcommons.conncoll.edu/cgi/viewcontent.cgi?article=1006&context=commence#toolbar=0&navpanes=0&scrollbar=1",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210923051029/https://digitalcommons.conncoll.edu/cgi/viewcontent.cgi?article=1006&context=commence#toolbar=0&navpanes=0&scrollbar=1"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230603153509/https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D3020718477944255%26set%3Da.299399150076215%26type%3D3%26theater"
+      }
+    },
+    {
+      "id": "MFI-D-0011",
+      "text": "The U.S. Centers for Disease Control and Prevention are planning, in the next 10 days, to change guidance and advise Americans to wear masks in everyday life.",
+      "context": {
+        "speaker": "Dr. Matt McCarthy",
+        "location_ISO_code": "US",
+        "reporting_source": "Twitter",
+        "claim_date": "2020-03-28"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Do the CDC Plan to recommend wearing masks as part of daily life?",
+            "answers": [
+              {
+                "answer": "Following the publication of the story, the CDC denied the report.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210803012352/https://www.rawstory.com/2020/03/cdc-to-recommend-all-americans-wear-protective-masks-in-everyday-life-report/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210803012352/https://www.rawstory.com/2020/03/cdc-to-recommend-all-americans-wear-protective-masks-in-everyday-life-report/"
+              }
+            ]
+          }
+        ],
+        "justification": "Following the publication of the story, the CDC denied the report."
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 993,
+        "source_record_sha256": "a9f1588703ee8d40bb48bf5057a73ee87bd8762543766d0387cdde544c5e383a"
+      },
+      "upstream_record": {
+        "claim": "The U.S. Centers for Disease Control and Prevention are planning, in the next 10 days, to change guidance and advise Americans to wear masks in everyday life.",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "Following the publication of the story, the CDC denied the report.",
+        "claim_date": "28-3-2020",
+        "speaker": "Dr. Matt McCarthy",
+        "original_claim_url": "https://twitter.com/DrMattMcCarthy/status/1243891663162019841",
+        "fact_checking_article": "https://web.archive.org/web/20210322190757/https://leadstories.com/hoax-alert/2020/03/fact-check-cdc-is-not-scheduled-to-recommend-masks-for-everyday-life.html",
+        "reporting_source": "Twitter",
+        "location_ISO_code": "US",
+        "claim_types": [
+          "Causal Claim",
+          "Event/Property Claim"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence",
+          "Consultation"
+        ],
+        "questions": [
+          {
+            "question": "Do the CDC Plan to recommend wearing masks as part of daily life?",
+            "answers": [
+              {
+                "answer": "Following the publication of the story, the CDC denied the report.",
+                "answer_type": "Abstractive",
+                "source_url": "https://web.archive.org/web/20210803012352/https://www.rawstory.com/2020/03/cdc-to-recommend-all-americans-wear-protective-masks-in-everyday-life-report/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20210803012352/https://www.rawstory.com/2020/03/cdc-to-recommend-all-americans-wear-protective-masks-in-everyday-life-report/"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": "https://web.archive.org/web/20230524183030/https://twitter.com/DrMattMcCarthy/status/1243891663162019841"
+      }
+    },
+    {
+      "id": "MFI-D-0018",
+      "text": "ERNEST HEMINGWAY SAID, WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN",
+      "context": {
+        "speaker": "Debbie Pitts Palmer",
+        "location_ISO_code": null,
+        "reporting_source": "Facebook",
+        "claim_date": "2019-09-24"
+      },
+      "gold": {
+        "verdict": "REFUTED",
+        "original_label": "Refuted",
+        "verdict_scope": "whole_sample",
+        "questions": [
+          {
+            "question": "Is WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN, a Ernest Hemingway quote?",
+            "answers": [
+              {
+                "answer": "QI has found no substantive evidence that Ernest Hemingway wrote or said this precise remark.",
+                "answer_type": "Extractive",
+                "source_url": "https://quoteinvestigator.com/2016/11/16/light/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://quoteinvestigator.com/2016/11/16/light/"
+              }
+            ]
+          },
+          {
+            "question": "Did Ernest Hemingway have a similar quote in the book a farewell to arms?",
+            "answers": [
+              {
+                "answer": "Hemingway did write in his 1929 novel, “The world breaks everyone and afterward many are strong at the broken places. But those that will not break it kills. It kills the very good and the very gentle and the very brave impartially.”",
+                "answer_type": "Extractive",
+                "source_url": "https://books.google.co.uk/books?id=V_rvAwAAQBAJ&printsec=frontcover&dq=a+farewell+to+arms&hl=en&newbks=1&newbks_redir=0&sa=X&redir_esc=y#v=onepage&q=a%20farewell%20to%20arms&f=false",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230603152331/https://books.google.co.uk/books?id=V_rvAwAAQBAJ&amp;printsec=frontcover&amp;dq=a+farewell+to+arms&amp;hl=en&amp;newbks=1&amp;newbks_redir=0&amp;sa=X&amp;redir_esc=y"
+              }
+            ]
+          }
+        ],
+        "justification": "From the evidence the claim is not a quote from Ernest Hemingway "
+      },
+      "provenance": {
+        "original_split": "train",
+        "source_record_index": 1737,
+        "source_record_sha256": "46ebcc394d7fd8d113edb74dd7ce193fbe8461f8414a488bb13337c0fe4c956a"
+      },
+      "upstream_record": {
+        "claim": "ERNEST HEMINGWAY SAID, WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN",
+        "required_reannotation": false,
+        "label": "Refuted",
+        "justification": "From the evidence the claim is not a quote from Ernest Hemingway ",
+        "claim_date": "24-9-2019",
+        "speaker": "Debbie Pitts Palmer",
+        "original_claim_url": null,
+        "fact_checking_article": "https://web.archive.org/web/20201020172417/https://checkyourfact.com/2019/10/28/fact-check-ernest-hemingway-quote-all-broken-light/",
+        "reporting_source": "Facebook",
+        "location_ISO_code": null,
+        "claim_types": [
+          "Quote Verification"
+        ],
+        "fact_checking_strategies": [
+          "Written Evidence"
+        ],
+        "questions": [
+          {
+            "question": "Is WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN, a Ernest Hemingway quote?",
+            "answers": [
+              {
+                "answer": "QI has found no substantive evidence that Ernest Hemingway wrote or said this precise remark.",
+                "answer_type": "Extractive",
+                "source_url": "https://quoteinvestigator.com/2016/11/16/light/",
+                "source_medium": "Web text",
+                "cached_source_url": "https://quoteinvestigator.com/2016/11/16/light/"
+              }
+            ]
+          },
+          {
+            "question": "Did Ernest Hemingway have a similar quote in the book a farewell to arms?",
+            "answers": [
+              {
+                "answer": "Hemingway did write in his 1929 novel, “The world breaks everyone and afterward many are strong at the broken places. But those that will not break it kills. It kills the very good and the very gentle and the very brave impartially.”",
+                "answer_type": "Extractive",
+                "source_url": "https://books.google.co.uk/books?id=V_rvAwAAQBAJ&printsec=frontcover&dq=a+farewell+to+arms&hl=en&newbks=1&newbks_redir=0&sa=X&redir_esc=y#v=onepage&q=a%20farewell%20to%20arms&f=false",
+                "source_medium": "Web text",
+                "cached_source_url": "https://web.archive.org/web/20230603152331/https://books.google.co.uk/books?id=V_rvAwAAQBAJ&amp;printsec=frontcover&amp;dq=a+farewell+to+arms&amp;hl=en&amp;newbks=1&amp;newbks_redir=0&amp;sa=X&amp;redir_esc=y"
+              }
+            ]
+          }
+        ],
+        "cached_original_claim_url": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+[
+  {
+    "id": "MFI-D-0010",
+    "text": "Nigeria's debt had been paid off by the time former President Obasanjo and VP Abubakar exited office in 2007.",
+    "context": {
+      "claim_date": "2020-04-21",
+      "speaker": "Former Nigerian vice president Atiku Abubakar",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "When did President Obasanjo and VP Abubakar exited office in Nigeria?",
+        "answer": "29th May 2007",
+        "url": "https://en.wikipedia.org/wiki/Vice_President_of_Nigeria"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0017",
+    "text": "Kenyan President Kenyatta in national day speech stated Under this administration … at Kilindini we have more than doubled the volume of cleared cargo passing [through] the port annually.",
+    "context": {
+      "claim_date": "2019-10-20",
+      "speaker": "Kenyan President Uhuru Kenyatta",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "How much cargo passed through the port of Mombasa in 2013?",
+        "answer": "25 million deadweight tonnage (DWT) passed through the port.",
+        "url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1chYncYikf_KlEJ4RJa6ue9hG7eCYiF67/view?usp=sharing"
+      },
+      {
+        "question": "How much cargo passed through the port of Mombasa in 2018?",
+        "answer": "28.2 million DWT (an increase of 12%)",
+        "url": "https://web.archive.org/web/20210720135839/https://drive.google.com/file/d/1SSYtVtWhQvLK7ZCGGukrk_wCXNmBEn1J/view"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0025",
+    "text": "US House Speaker Nancy Pelosi said, “Waiting hours longer in the waiting room will allow you to make new friends.” This is regarding emergency care waits.",
+    "context": {
+      "claim_date": "2019-05-16",
+      "speaker": "Nancy Pelosi",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Where did Pelosi supposedly say this?",
+        "answer": "On a satire site duhprogressive.com",
+        "url": "https://web.archive.org/web/20201107232538/http://www.duhprogressive.com/index.php/site-map/412-nancy-pelosi-waiting-hours-longer-in-the-emergency-room-will-allow-you-to-make-new-friends?fbclid=IwAR3NtDV0JFh9DUdqBdQGmaRbP2WqwtYUrF0YPnC1u8AMUJA54K2nNzlzedo"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0009",
+    "text": "Professor Tasuku Honjo said that coronavirus is “not natural”.",
+    "context": {
+      "claim_date": "2020-04-29",
+      "speaker": "Alan Dawber",
+      "location_ISO_code": "CN"
+    },
+    "evidence": [
+      {
+        "question": "Did Professor Tasuku Honjo state that coronavirus is “not natural”?",
+        "answer": "No",
+        "url": "https://www.kyoto-u.ac.jp/en/news/2020-04-27"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0020",
+    "text": "Lewis Carroll once wrote, “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”",
+    "context": {
+      "claim_date": "2019-09-04",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Did Lewis Carroll write,  “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”?",
+        "answer": "No",
+        "url": "https://onceuponatime.fandom.com/wiki/Hat_Trick/Transcript"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0031",
+    "text": "Expanding Medicaid would bring 40,000 jobs to North Carolina.",
+    "context": {
+      "claim_date": "2019-01-30",
+      "speaker": "Darren Jackson",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "If Medicaid was expanded into North Carolina what sectors of industry would see an increase in Employment?",
+        "answer": "Ambulatory health care services, Hospitals, Construction, Retail & Wholesale trade, Food services & drinking places, Professional, scientific & technical services, Social assistance, State & local and all other sectors.",
+        "url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+      },
+      {
+        "question": "What would be the potential job losses if Medicaid was not expanded into North Carolina.",
+        "answer": "By 2017, potential job losses would\nrise to 36,000 and would continue to climb to 43,000 by 2020.",
+        "url": "https://web.archive.org/web/20211128030838/http://www.conehealthfoundation.com/app/files/public/b7be2b2a-6e55-4b68-ae9b-ad8193b2da49/The-Economic-and-Employment-Costs-of-Not-Expanding-Medicaid-in-North-Carolina.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0029",
+    "text": "South Africa have launched the Youth Employment Service, which is placing unemployed youth in paid internships in companies across the country.",
+    "context": {
+      "claim_date": "2019-02-07",
+      "speaker": "Cyril Ramaphosa",
+      "location_ISO_code": "ZA"
+    },
+    "evidence": [
+      {
+        "question": "When was the youth empowerment service created",
+        "answer": "It was launched on  27 March 2018, by President Cyril Ramaphosa",
+        "url": "https://web.archive.org/web/20210419120717/http://www.thepresidency.gov.za/press-statements/president-ramaphosa-launch-youth-employment-service-initiative"
+      },
+      {
+        "question": "Since initialization, have there been youths that have gone through the program",
+        "answer": "According to the YES (Youth Employment Service) website over 50, 000+ job experiences have been created",
+        "url": "https://web.archive.org/web/20210226073226/https://yes4youth.co.za/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0001",
+    "text": "Ghana's economy previously grew at 3.4% under the form President Mahama's government and on average, for three successive years, at 7% per year with the current administration.",
+    "context": {
+      "claim_date": "2020-08-22",
+      "speaker": "Nana Addo Dankwa Akufo-Addo ",
+      "location_ISO_code": "GH"
+    },
+    "evidence": [
+      {
+        "question": "When did Akufo-Addo become President of Nigeria?",
+        "answer": "7 Jan 2017\nNana Akufo-Addo was sworn in as Ghana’s new president on Saturday, in a ceremony attended by dozens of African leaders",
+        "url": "https://www.aljazeera.com/news/2017/1/7/nana-akufo-addo-sworn-in-as-ghanas-new-president"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0014",
+    "text": "House Speaker Nancy Pelosi approved $4.8 million in impeachment-related consulting fees to the Clinton Foundation.",
+    "context": {
+      "claim_date": "2019-11-23",
+      "speaker": "Flagg Eagleton",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Where was this claim posted?",
+        "answer": "At the daily world update, a clearly labelled satire news site. The Daily World Update site is part of the \"America's Last Line of Defense\" network of satire websites. Self-professed liberal troll Christopher Blair runs those sites. The Maine resident works alongside a loose confederation of friends and allies. Blair has been in a feud with fact-checking website Snopes, and he has also criticized other fact-checkers who labeled his work \"fake news\" instead of satire. In reaction, he has recently rebranded all his active websites and Facebook pages, so they carry prominent disclaimers everywhere.",
+        "url": "https://web.archive.org/web/20200806184015/https://dailyworldupdate.us/nancy-pelosi-approves-4-8-million-in-impeachment-consulting-fees-to-clinton-foundation/"
+      },
+      {
+        "question": "Did Pelosi approve 4.8 million in impeachment fees?",
+        "answer": "The story is not true and is clearly labeled as satire. Pelosi did not approve these fees, and as a non-profit organization, the Clinton Foundation would not have the expertise to provide consultations on the impeachment hearings. President Trump was impeached by the House on December 18, 2019. Pelosi, as Speaker, has control over when the process is handed over to the Senate - a chamber she fears is not willing to hold a \"fair\" trial on charges of abuse of power and obstruction of Congress.",
+        "url": "https://web.archive.org/web/20200427101439/https://www.bloomberg.com/news/articles/2019-12-19/mcconnell-trump-blast-pelosi-over-possible-impeachment-delay?utm_campaign=pol&utm_medium=bd&utm_source=applenews"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0004",
+    "text": "A rare yellow turtle was spotted in Balasore, Odisha.",
+    "context": {
+      "claim_date": "2020-07-20",
+      "speaker": "Susanta Nanda IFS",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "Has a rare yellow turtle been sighted in Balasore, Odisha?",
+        "answer": "Yes",
+        "url": "https://www.ndtv.com/india-news/balasore-odisha-yellow-turtle-spotted-in-odishas-balasore-never-seen-one-like-this-says-officer-2265535"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0032",
+    "text": "The question of Almajiris’ lack of primary or basic education are all local government problems.",
+    "context": {
+      "claim_date": "2019-01-16",
+      "speaker": "President Muhammadu Buhari",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "Who are Almajiris?",
+        "answer": "Almajiri is any child or adult who begs for assistance in the streets or from house to house.",
+        "url": "https://www.voanews.com/a/a-13-2007-11-28-voa46/346945.html"
+      },
+      {
+        "question": "Who is responsible for maintaining education in Nigeria ?",
+        "answer": "Government shall direct its policy towards ensuring that there are equal and adequate educational\nopportunities at all levels.",
+        "url": "https://publicofficialsfinancialdisclosure.worldbank.org/sites/fdl/files/assets/law-library-files/Nigeria_Constitution_1999_en.pdf"
+      },
+      {
+        "question": "Who is responsible for maintaining education in Nigeria ?",
+        "answer": "Every Government in Nigeria shall provide free, compulsory and\nUniversal basic education for every child of primary and junior secondary, school age.",
+        "url": "https://africacheck.org//sites/default/files/NGA87623.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0007",
+    "text": "President Muhammadu Buhari of Nigeria said Nigeria is now rated as one of the top ten reforming countries.",
+    "context": {
+      "claim_date": "2020-06-12",
+      "speaker": "President Muhammadu Buhari of Nigeria",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "What economies are are improving as regards ease of doing business",
+        "answer": "The economies with the most notable improvement in\nDoing Business 2020 are Saudi Arabia, Jordan, Togo, Bahrain,\nTajikistan, Pakistan, Kuwait, China, India, and Nigeria.",
+        "url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+      },
+      {
+        "question": "What rank is Nigeria amongst these improving economies",
+        "answer": "10th",
+        "url": "https://web.archive.org/web/20210114100519/http://documents1.worldbank.org/curated/en/688761571934946384/pdf/Doing-Business-2020-Comparing-Business-Regulation-in-190-Economies.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0024",
+    "text": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+    "context": {
+      "claim_date": "2019-06-08",
+      "speaker": null,
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "What is Ayushman Bharat?",
+        "answer": "National Health Protection Scheme, which will cover over 10 crore poor and vulnerable families (approximately 50 crore beneficiaries) providing coverage up to 5 lakh rupees per family per year for secondary and tertiary care hospitalization.",
+        "url": "https://www.india.gov.in/spotlight/ayushman-bharat-national-health-protection-mission"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0008",
+    "text": "North Korea cancels all communication with South Korea.",
+    "context": {
+      "claim_date": "2020-06-09",
+      "speaker": "Alexander Smith, Yuliya Talmazan",
+      "location_ISO_code": "KP"
+    },
+    "evidence": [
+      {
+        "question": "Did North Korea declare it was cutting communication with South Korea around June 2020?",
+        "answer": "Yes",
+        "url": "https://web.archive.org/web/20210722054124/https://www.nbcnews.com/news/world/north-korea-says-it-has-severed-all-communication-south-korea-n1228146"
+      },
+      {
+        "question": "Did North Korea actually stop communicating with South Korea as it announced it would?",
+        "answer": "South Korea confirmed that North Korea did not answer its military hotline for the first time since it was restored in 2018, according to a defense ministry spokeswoman.",
+        "url": "https://web.archive.org/web/20210421134909mp_/https://survivalupdate.com/north-korea-has-severed-all-communication-with-south-korea/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0028",
+    "text": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
+    "context": {
+      "claim_date": "2019-02-26",
+      "speaker": "Quentin Miller",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What was the Sheriff Quentin Miller's stance on ICE detainers",
+        "answer": "Effective immediately, it is the policy of the Buncombe County Sheriff’s Office and the Buncombe County Detention Center that ICE detainers will not be honored.",
+        "url": "https://web.archive.org/web/20210511071926/https://www.buncombecounty.org/governing/depts/sheriff/news_detail.aspx?newsid=17850"
+      },
+      {
+        "question": "What is an ICE detainer",
+        "answer": "ICE detainers, also known as ICE holds or immigration detainers, are requests that Immigration and Customs Enforcement (ICE) sends to local enforcement agencies (e.g. police, sheriff, local jail) asking for information about a person who is about to be released from custody and/or asking that the local agency hold that person for an extra amount of time in order to facilitate their deportation.",
+        "url": "https://www.aclum.org/en/what-are-ice-detainers"
+      },
+      {
+        "question": "Do ICE retainers carry any judicial authority",
+        "answer": "ICE detainers are not judicial warrants. An arrest warrant is an order signed by a judge that allows a police officer to detain a person because there is “probable cause” to believe that the person has committed a crime. “Probable cause” is the standard of proof that the government must show in order to deprive a person of his or her liberty under the Fourth Amendment.",
+        "url": "https://www.aclum.org/en/what-are-ice-detainers"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0005",
+    "text": "In June 2020, Nigerian debt servicing obligations stood at N943.12 billion.",
+    "context": {
+      "claim_date": "2020-06-22",
+      "speaker": "Dr Obadiah Mailafia",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "How much money went into Nigeria's debt servicing obligations?",
+        "answer": "N943.12 billion was\nfor debt service",
+        "url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803"
+      },
+      {
+        "question": "How much money went into Nigeria's debt servicing obligations?",
+        "answer": "N943.12 billion was for debt service",
+        "url": "https://www.budgetoffice.gov.ng/index.php/addendum-to-the-2020-2022-mtef-and-fsp?task=document.viewdoc&id=803"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0026",
+    "text": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+    "context": {
+      "claim_date": "2019-04-10",
+      "speaker": "William Ruto",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "In 2017, did the Kenyan Government manifesto say they would construct 57 mega dams?",
+        "answer": "Yes",
+        "url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf"
+      },
+      {
+        "question": "In 2017, did the Kenyan Government manifesto say they would construct 57 mega dams?",
+        "answer": "The wording was actually \"complete 57 mega dams\". Some of the dams had previously started construction.",
+        "url": "http://deputypresident.go.ke/images/jpmanifesto2017.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0021",
+    "text": "West Virginia highways move up twenty places in the U.S national highway system to place sixteenth, and affirms all the hard work we do on our states roads.",
+    "context": {
+      "claim_date": "2019-08-22",
+      "speaker": "Jim Justice",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Did West Virginia highways move up twenty places in the U.S national highway system to place sixteenth ?",
+        "answer": "West Virginia’s highway system ranks 16th in the nation in overall cost-effectiveness and condition, according to the Annual Highway Report by Reason Foundation. This is a 20-spot improvement from the previous report, where West Virginia ranked 36th overall, as the fatality rate decreased somewhat and the state benefited from the report no longer measuring narrow rural arterial lanes (the state ranked 50th last year).",
+        "url": "https://web.archive.org/web/20210123034314/https://reason.org/policy-study/24th-annual-highway-report/west-virginia/"
+      },
+      {
+        "question": "What is West Virginia position in the U.S national highway system ?",
+        "answer": "1\tNorth Dakota\n2\tVirginia\n3\tMissouri\n4\tMaine\n5\tKentucky\n6\tKansas\n7\tTennessee\n8\tMontana\n9\tUtah\n10\tAlabama\n11\tWyoming\n12\tOregon\n13\tIdaho\n14\tSouth Dakota\n15\tNebraska\n16\tWest Virginia\n17\tNorth Carolina\n18\tOhio\n19\tVermont\n20\tSouth Carolina\n21\tNew Mexico\n22\tMinnesota\n23\tTexas\n24\tNew Hampshire\n25\tMississippi\n26\tGeorgia\n27\tNevada\n28\tIllinois\n29\tArizona\n30\tMichigan\n31\tIowa\n32\tArkansas\n33\tIndiana\n34\tLouisiana\n35\tPennsylvania\n36\tColorado\n37\tWashington\n38\tWisconsin\n39\tMaryland\n40\tFlorida\n41\tOklahoma\n42\tDelaware\n43\tCalifornia\n44\tConnecticut\n45\tNew York\n46\tMassachusetts\n47\tHawaii\n48\tRhode Island\n49\tAlaska\n50\tNew Jersey",
+        "url": "https://web.archive.org/web/20210301124659/https://reason.org/policy-study/24th-annual-highway-report/24th-annual-highway-report-executive-summary/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0013",
+    "text": "Over the past two years, climate and weather disaster damage has cost the U.S. over $400 billion.",
+    "context": {
+      "claim_date": "2019-12-10",
+      "speaker": "Tammy Baldwin",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What was the  cost of climate damage to the U.S in 2017?",
+        "answer": "2017 was the costliest year on record for natural disasters in the United States, with a price tag of at least $306 billion.",
+        "url": "https://www.vox.com/energy-and-environment/2017/12/28/16795490/natural-disasters-2017-hurricanes-wildfires-heat-climate-change-cost-deaths"
+      },
+      {
+        "question": "What was the  cost of climate damage to the U.S in 2018?",
+        "answer": "wildfires push 2018 disaster costs to $91 billion",
+        "url": "https://www.c2es.org/2019/02/record-wildfires-push-2018-disaster-costs-to-91-billion/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0027",
+    "text": "Since 1973 the income of the bottom 90% of Americans didn't budge.",
+    "context": {
+      "claim_date": "2019-04-01",
+      "speaker": null,
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Has US income for this period been studied?",
+        "answer": "No",
+        "url": "https://www.cbo.gov/system/files/2018-11/54646-Distribution_of_Household_Income_2015_0.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0030",
+    "text": "According to a 2017 Doctors Without Borders Report, more than 30 percent of women are sexually assaulted on the trek to the border.",
+    "context": {
+      "claim_date": "2019-02-05",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What percent of the 429 surveyed were women?",
+        "answer": "12 percent were female.",
+        "url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+      },
+      {
+        "question": "What percent of Females surveyed had experienced sexual abuse?",
+        "answer": "31.4%",
+        "url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+      },
+      {
+        "question": "What percentage of women had experienced rape or direct sexual assault?",
+        "answer": "Considering only rape and other forms of direct sexual\nviolence, 10.7 percent of women surveyed reported this.",
+        "url": "https://web.archive.org/web/20210116195756/https://www.doctorswithoutborders.org/sites/default/files/2018-06/msf_forced-to-flee-central-americas-northern-triangle.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0006",
+    "text": "An Expansion of Mail-in Ballots would increase the chance of theft in the USA.",
+    "context": {
+      "claim_date": "2020-06-15",
+      "speaker": "Donald Trump",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Who made this claim about the potential for theft of mail in ballots?",
+        "answer": "Donald Trump",
+        "url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+      },
+      {
+        "question": "Has Donald Trump voted by mail in ballot?",
+        "answer": "Trump voted earlier this year, in a no-excuse absentee vote state -- meaning that a voter can request an absentee ballot (aka one you fill out at home and mail back to the election authority) without offering any excuse for why they want to do so.\nWhich is what Trump did. Being president is a more than full-time job, and he couldn't make time to travel to Florida to cast a vote in person. So he voted absentee.",
+        "url": "https://web.archive.org/web/20210703153205/https://www.cnn.com/2020/04/08/politics/donald-trump-vote-by-mail-absentee/index.html"
+      },
+      {
+        "question": "How secure is mail in voting (absentee ballot voteing)?",
+        "answer": "Numerous safeguards are included in the absentee voting process. Absentee ballots are sent only to registered voters who request them using an official N.C. Absentee Ballot Request Form before the deadline. The request must be signed and include identifying information about the voter, including date of birth and driver’s license number or last four digits of the voter’s Social Security number. Voters must vote their ballot in the presence of two witnesses or a notary, and those witnesses must sign the absentee return envelope certifying that the voter marked their ballot and is the registered voter submitting the marked ballot.\n\nOnly the voter or their near relative or legal guardian may return the ballot. Upon return, the county board of elections reviews the absentee envelope to ensure compliance with the legal requirements. Once the ballot is accepted, that voter is marked in the sys",
+        "url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Howsecureisabsentee-by-mailvoting-795"
+      },
+      {
+        "question": "What prevents someone from voting absentee and then voting again in-person?",
+        "answer": "If someone has voted an absentee ballot and then shows up to vote in person, the check-in system will alert the poll worker that the person has already voted. Voting twice in the same election is a crime and is investigated by the State Board and referred to prosecutors when warranted by the evidence",
+        "url": "https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#Whatpreventssomeonefromvotingabsenteeandthenvotingagainin-person-797"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0023",
+    "text": "Since 2013, County Governments in Kenya have cumulatively received KSh1.57 trillion worth of the equitable share of the allocation of the consolidated fund revenue budget.",
+    "context": {
+      "claim_date": "2019-06-28",
+      "speaker": "Wycliffe Oparanya",
+      "location_ISO_code": "KE"
+    },
+    "evidence": [
+      {
+        "question": "How much money have county Governments in Kenya cumulatively received  from the consolidated fund revenue budget?",
+        "answer": "National-Treasury-on-County-Fiscal-Transfers shows KSh1.3 trillion transferred to counties in Kenya.",
+        "url": "https://africacheck.org/sites/default/files/National-Treasury-on-County-Fiscal-Transfers-for-FY-2017_18.pdf"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0012",
+    "text": "Man accused of sexual Harassment of minor girls is a muslim.",
+    "context": {
+      "claim_date": "2020-01-21",
+      "speaker": "@cbpunjabi",
+      "location_ISO_code": "IN"
+    },
+    "evidence": [
+      {
+        "question": "Who is the man the claim refers to?",
+        "answer": "Pawan Kumar.",
+        "url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+      },
+      {
+        "question": "was Pawan alias Sonu a muslim?",
+        "answer": "Ambala police officials confirmed that the accused Pawan Kumar is not a Muslim.",
+        "url": "https://www.thequint.com/news/webqoof/case-of-sexual-harassment-from-ambala-shared-with-communal-spin"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0003",
+    "text": "The USA has only 4% of the worlds population but has 25% of the worlds Covid-19 Cases.",
+    "context": {
+      "claim_date": "2020-08-18",
+      "speaker": "Bill Clinton",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "what percentage of world's population lives in USA?",
+        "answer": "about 4%",
+        "url": "https://web.archive.org/web/20210304233823/https://www.worldometers.info/world-population/us-population/"
+      },
+      {
+        "question": "What percentage of world's Covid-19 cases are from USA?",
+        "answer": "about 25%",
+        "url": "https://web.archive.org/web/20210304145142/https://coronavirus.jhu.edu/map.html"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0016",
+    "text": "Over 200,000 NHS nurses have resigned since 2010.",
+    "context": {
+      "claim_date": "2019-11-01",
+      "speaker": "Full Fact",
+      "location_ISO_code": "GB"
+    },
+    "evidence": [
+      {
+        "question": "How many nurses have voluntary resigned from 2010-2018?",
+        "answer": "Over the eight years from 2010 to 2018, just under 97,000 of the 200,000 nurses and health visitors had ‘voluntary resignation’ recorded as a reason for leaving.",
+        "url": "https://web.archive.org/web/20210101074216/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+      },
+      {
+        "question": "Does the NHS now have 200,000 fewer nurses than in 2010?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20200811201346/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/joiners-of-and-leavers-from-the-nhs-that-were-nurses-and-health-visitors-september-2009-to-november-2018"
+      },
+      {
+        "question": "Is the figure quoted of 200,000 just for resignations?",
+        "answer": "No",
+        "url": "https://web.archive.org/web/20201101025858/https://digital.nhs.uk/data-and-information/find-data-and-publications/supplementary-information/2019-supplementary-information-files/leavers-and-joiners/leavers-from-the-nhs-by-age-and-reason-for-leaving"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0002",
+    "text": "world bank currently rates Nigeria as one of ten top performing countries on its Doing Business Index.",
+    "context": {
+      "claim_date": "2020-08-21",
+      "speaker": "Presidency Nigeria",
+      "location_ISO_code": "NG"
+    },
+    "evidence": [
+      {
+        "question": "Is Nigeria in the top ten of countries on World Bank's Doing Business Index?",
+        "answer": "Nigeria is included in the top ten countries in the index.",
+        "url": "https://web.archive.org/web/20210414171024/https://www.worldbank.org/en/news/feature/2019/10/24/doing-business-2020-sustaining-the-pace-of-reforms"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0015",
+    "text": "Access to antiretroviral therapy in the South African public health sector was given to 45,500 patients in 2004.",
+    "context": {
+      "claim_date": "2019-11-08",
+      "speaker": "Cyril Ramaphosa",
+      "location_ISO_code": "ZA"
+    },
+    "evidence": [
+      {
+        "question": "How many people were on anti-retroviral treatment in 2004 in South Africa",
+        "answer": "47, 500",
+        "url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+      },
+      {
+        "question": "Were all the 47, 500 people getting it from the public sector",
+        "answer": "The public sector was only catering to 9, 600 of them",
+        "url": "https://web.archive.org/web/20200929124624/https://sajhivmed.org.za/index.php/hivmed/article/view/156/260"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0022",
+    "text": "President Trump fully co-operated with the investigation into Russian interference in the 2016 U.S presidential campaign.",
+    "context": {
+      "claim_date": "2019-07-24",
+      "speaker": "Mike Johnson",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "What was the investigation into Russian interference in the 2016 U.S presidential campaign called?",
+        "answer": "The Mueller Report.",
+        "url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained"
+      },
+      {
+        "question": "What is the Mueller Report?",
+        "answer": "The report is a summation of the findings from the special counsel investigation. It is expected to contain the details of the investigation, from its interviews with key witnesses and other evidence amassed throughout the process and the Mueller team’s conclusions – or lack thereof.\n\nIn a letter to lawmakers, Attorney General William Barr said the report “sets forth the Special Counsel’s findings, analysis and the reasons for his conclusions.” \n\nMueller was appointed in May 2017 shortly after Trump fired Comey. Mueller was authorized to investigate Russian interference in the 2016 election, whether any Trump associates coordinated or colluded with the Russians, whether Trump obstructed the investigation and any other crimes that were uncovered during the investigation.",
+        "url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained"
+      },
+      {
+        "question": "Did Donald Trump act in good faith when being investigated?",
+        "answer": "Trump consistently denied that he or anyone on his team colluded with Russia to interfere in the election, and he has rejected further the intelligence community’s conclusion that Russia attempted to interfere in the election at all, including while standing next to Russian President Vladimir Putin shortly after Mueller’s appointment. He likewise denied the possibility he had obstructed justice.\n\nThroughout the process, Trump railed against Mueller and Mueller’s team, accusing them of political bias and maligning both the intelligence community and Justice Department more broadly.",
+        "url": "https://edition.cnn.com/2019/04/17/politics/mueller-report-explained"
+      },
+      {
+        "question": "What did the Mueller report discover about Donald Trumps role in the Russian interference of the 2016 U.S presidential campaign?",
+        "answer": "Our investigation found multiple acts by the President that were capable of exerting undue influence over law enforcement investigations, including the Russian-interference and obstruction investigations,” Mueller wrote. “The incidents were often carried out through one-on-one meetings in which the President sought to use his official power outside of usual channels. These actions ranged from efforts to remove the Special Counsel and to reverse the effect of the Attorney General’s recusal; to the attempted use of official power to limit the scope of the investigation; to direct and indirect contacts with witnesses with the potential to influence their testimony.",
+        "url": "https://web.archive.org/web/20210127070322/https://www.factcheck.org/2019/04/what-the-mueller-report-says-about-obstruction/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0019",
+    "text": "Science fiction and popular science writer Isaac Asimov said your assumptions are your windows on the world.Scrub them off every once in a while, or the light won’t come in.",
+    "context": {
+      "claim_date": "2019-09-16",
+      "speaker": "Ness Tomenlaco",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Who made the quote \"your assumptions are your windows on the world. scrub them off every once in a while or the light won't come in",
+        "answer": "Alan Alda said in the 62nd commencement speech in Connecticut college \"Your \nassumptions are your windows on the world. Scrub them off every once in a while or the light \nwon't come in. If you challenge your own, you won't be so quick to accept the unchallenged \nassumptions of others. You'll be a lot less likely to be caught up in bias or prejudice or be \ninfluenced by people who ask you to hand over your brains, your soul or your money because \nthey have everything all figured out for you\".",
+        "url": "https://web.archive.org/web/20210923051029/https://digitalcommons.conncoll.edu/cgi/viewcontent.cgi?article=1006&context=commence#toolbar=0&navpanes=0&scrollbar=1"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0011",
+    "text": "The U.S. Centers for Disease Control and Prevention are planning, in the next 10 days, to change guidance and advise Americans to wear masks in everyday life.",
+    "context": {
+      "claim_date": "2020-03-28",
+      "speaker": "Dr. Matt McCarthy",
+      "location_ISO_code": "US"
+    },
+    "evidence": [
+      {
+        "question": "Do the CDC Plan to recommend wearing masks as part of daily life?",
+        "answer": "Following the publication of the story, the CDC denied the report.",
+        "url": "https://web.archive.org/web/20210803012352/https://www.rawstory.com/2020/03/cdc-to-recommend-all-americans-wear-protective-masks-in-everyday-life-report/"
+      }
+    ]
+  },
+  {
+    "id": "MFI-D-0018",
+    "text": "ERNEST HEMINGWAY SAID, WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN",
+    "context": {
+      "claim_date": "2019-09-24",
+      "speaker": "Debbie Pitts Palmer",
+      "location_ISO_code": null
+    },
+    "evidence": [
+      {
+        "question": "Is WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN, a Ernest Hemingway quote?",
+        "answer": "QI has found no substantive evidence that Ernest Hemingway wrote or said this precise remark.",
+        "url": "https://quoteinvestigator.com/2016/11/16/light/"
+      },
+      {
+        "question": "Did Ernest Hemingway have a similar quote in the book a farewell to arms?",
+        "answer": "Hemingway did write in his 1929 novel, “The world breaks everyone and afterward many are strong at the broken places. But those that will not break it kills. It kills the very good and the very gentle and the very brave impartially.”",
+        "url": "https://books.google.co.uk/books?id=V_rvAwAAQBAJ&printsec=frontcover&dq=a+farewell+to+arms&hl=en&newbks=1&newbks_redir=0&sa=X&redir_esc=y#v=onepage&q=a%20farewell%20to%20arms&f=false"
+      }
+    ]
+  }
+]

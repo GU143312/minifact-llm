@@ -1,0 +1,12 @@
+{
+  "selected_closed_book": "structured",
+  "candidate_ranking": [
+    "structured",
+    "binary",
+    "neutral"
+  ],
+  "development_run": "reports/accuracy_dev_run_v2_20261112.json",
+  "development_run_sha256": "bc6b9ce45c73face19760f73a6f57720337fd0e4dcd90b676836341433c2ac20",
+  "development_metrics_sha256": "55c5eba96de118f58715a41a3a521253d8bc99efa8f0b0a990ab4b0785ebaba6",
+  "rule": "New closed-book candidate with highest development accuracy; ties lowest FPR, then mean elapsed seconds, then arm name. No holdout-dependent selection."
+}

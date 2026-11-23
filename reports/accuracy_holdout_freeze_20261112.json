@@ -1,0 +1,81 @@
+{
+  "frozen_at_utc": "2026-11-12T09:47:17.436278+00:00",
+  "contract": {
+    "protocol": "accuracy-candidates-v1",
+    "split": "holdout",
+    "arms": [
+      "legacy_direct",
+      "legacy_dual",
+      "structured",
+      "evidence"
+    ],
+    "files_sha256": {
+      "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+      "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+      "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+      "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+      "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+      "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+      "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+      "accuracy_claims.py": "fe6d0f13444e85da78e5a7db7859a27bf716f87a1d305721a2e84f36d03a817c",
+      "scripts/run_accuracy.py": "beba65056eb4db7dae06a939e4e0a0892f7ac65dbab949c7fc9132b5e0f589dc",
+      "scripts/summarize_accuracy.py": "c4678d927fb9102e2fa172a4ebd94704c9d853d95257c149c63dd8a26175d9e3",
+      "data/improvement/holdout_dataset.json": "4a8eb765c6522b6319e7ee82d086f5da7d7bc74b1aa724cb97f0a87b5052e4b9",
+      "data/improvement/holdout_inputs.json": "f7ab76f40886496fc4310f112fb217bd6b53ebdd26516ada3791b6c34e0388ab",
+      "data/improvement/holdout_evidence_inputs.json": "977c164ce32e221e9507d1f250ca2ef1a9c950c11c097a642ffc65253b90366b",
+      "data/improvement/manifest.json": "fc0a4428c3be163cc23dce0dfd9b0c57a0cfa10cc9a597bb058d8d853aeec521"
+    },
+    "model": {
+      "schema_version": 1,
+      "model_id": "Qwen/Qwen2.5-3B-Instruct",
+      "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "dtype": "float16",
+      "attention_implementation": "eager",
+      "seed": 42,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "use_cache": true
+    },
+    "input_sha256": "977c164ce32e221e9507d1f250ca2ef1a9c950c11c097a642ffc65253b90366b",
+    "closed_book": "Only source text is passed; no id, context, QA, labels or gold justification.",
+    "evidence_condition": "Supplied benchmark QA plus context; not automatic retrieval. URLs and gold labels/justifications excluded from model payload.",
+    "role_caps": {
+      "decision": 16,
+      "review": 64,
+      "extract": 256
+    },
+    "selection_rule": "New closed-book candidate with highest development accuracy; ties lowest FPR, then mean elapsed seconds, then arm name. No holdout-dependent selection.",
+    "order": "Rotate arm order by sample index; one checkpoint per completed paired sample.",
+    "selection_sha256": "cc0a627ee6ca43d8cfb674fceb38638c22d2cde1c7001d3e9b944183462f44c9",
+    "selection_file": "reports/accuracy_selection_20261112.json"
+  },
+  "audit_files_sha256": {
+    "scripts/audit_accuracy.py": "b69fadf7a225cd231c9bc4bfd0283baf20e9e4ed74a55cb139b66660e4bb04ba",
+    "scripts/audit_phase2_run.py": "61162c32cf591fa5bd5f6dad99bd6d73b63902cde46e2f0843e254c4fc9fafee",
+    "scripts/summarize_accuracy.py": "c4678d927fb9102e2fa172a4ebd94704c9d853d95257c149c63dd8a26175d9e3",
+    "scripts/evaluate_phase3.py": "9084397afed1b2dd8a37185c64a8c13ea82f74e01e5508141ccc8af54b3da5da",
+    "scripts/run_accuracy.py": "beba65056eb4db7dae06a939e4e0a0892f7ac65dbab949c7fc9132b5e0f589dc",
+    "scripts/run_phase3.py": "8292c8ec8340d2545f20a43cff3102d6529e8bfc5acb61f98ef733388ce99ffa",
+    "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+    "accuracy_claims.py": "fe6d0f13444e85da78e5a7db7859a27bf716f87a1d305721a2e84f36d03a817c",
+    "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+    "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+    "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+    "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+    "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+    "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574"
+  },
+  "additional_predeclared_condition": {
+    "method": "binary_candidate_threshold",
+    "calibration_sha256": "1b852c26587ec728dd1a0bcbf85500f7a2480f4166e163baedb82a6d443628b9",
+    "uncalibrated_threshold_reference": 0.0,
+    "calibration_run": "reports/accuracy_calibration_dev_20261112.json",
+    "calibration_source": "development only; no holdout fitting",
+    "all_conditions_declared_before_first_holdout": true
+  }
+}

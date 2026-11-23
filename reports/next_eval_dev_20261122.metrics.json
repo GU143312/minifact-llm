@@ -1,0 +1,3512 @@
+{
+  "stage": "dev",
+  "run_sha256": "cb6d327cfd368171b16a9da03a8dfb2ddbf8896a096cba63811c082fbe1a5e7d",
+  "freeze_sha256": "a3d0e1926ebc09501f928186e282b3cc27f8b68df0b236b4195a3f58b481c16a",
+  "audit": {
+    "passed": true,
+    "completed": true,
+    "samples": 32,
+    "counts": {
+      "candidate_forward_calls": 64,
+      "arm_results": 192,
+      "generation_calls": 346,
+      "generations_without_eos": 0,
+      "decision_traces": 218,
+      "feedback_transitions": 0
+    },
+    "run_sha256": "cb6d327cfd368171b16a9da03a8dfb2ddbf8896a096cba63811c082fbe1a5e7d",
+    "freeze_sha256": "a3d0e1926ebc09501f928186e282b3cc27f8b68df0b236b4195a3f58b481c16a",
+    "tokenizer_replayed": false,
+    "limits": "Audits stored values and tokenizer reconstruction, not a fresh model-logit forward pass. Human reviewer identities are attestations."
+  },
+  "primary_comparison": "F minus D",
+  "gold_sha256": "897e5c743275601382e9bc44812cf24171f6c2d10fd86e9d50f3c3034ee820d1",
+  "arms": {
+    "A": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 24,
+        "REFUTED": 8,
+        "NOT_ENOUGH_INFO": 0,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 14,
+          "REFUTED": 2,
+          "NOT_ENOUGH_INFO": 0,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 10,
+          "REFUTED": 6,
+          "NOT_ENOUGH_INFO": 0,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 20,
+      "accuracy": 0.625,
+      "binary_decisions": 32,
+      "binary_coverage": 1.0,
+      "accuracy_on_binary_decisions": 0.625,
+      "detected_errors": 6,
+      "error_recall": 0.375,
+      "false_negatives_supported": 10,
+      "false_negative_rate": 0.625,
+      "abstained_errors": 0,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 10,
+      "missed_error_rate_including_abstentions": 0.625,
+      "false_positives": 2,
+      "false_positive_rate": 0.125,
+      "supported_recall": 0.875,
+      "abstentions_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 0,
+          "samples_without_valid_score": 32,
+          "sample_mean_of_label_token_means": null,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 0,
+          "samples_without_valid_score": 32,
+          "sample_mean_of_label_token_means": null,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.4525440735307745,
+          0.7706611269054578
+        ],
+        "strict_fnr": [
+          0.38641040545502714,
+          0.8151876744113636
+        ],
+        "missed_error_rate": [
+          0.38641040545502714,
+          0.8151876744113636
+        ],
+        "fpr": [
+          0.03497748774324047,
+          0.36022827265758695
+        ]
+      },
+      "cost_and_extraction": {
+        "candidate_forward_calls": 64,
+        "prompt_tokens": 10626,
+        "scored_candidate_tokens_including_eos": 128,
+        "total_elapsed_seconds": 54.99284710001666,
+        "mean_elapsed_seconds": 1.7185264718755207,
+        "p95_elapsed_seconds": 1.7661402999947313,
+        "peak_cuda_allocated_bytes": 5188795904,
+        "accepted_span_precision": null,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "absolute_margin_from_frozen_threshold",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.42916666666666664,
+        "negative_entropy_correctness_auroc": null,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": 0.0,
+            "retained": 32,
+            "actual_coverage": 1.0,
+            "errors": 12,
+            "conditional_error_rate": 0.375
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": 0.7970754233756452,
+            "retained": 29,
+            "actual_coverage": 0.90625,
+            "errors": 11,
+            "conditional_error_rate": 0.3793103448275862
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": 1.7628928190242732,
+            "retained": 26,
+            "actual_coverage": 0.8125,
+            "errors": 10,
+            "conditional_error_rate": 0.38461538461538464
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    },
+    "B": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 0,
+        "REFUTED": 6,
+        "NOT_ENOUGH_INFO": 26,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 2,
+          "NOT_ENOUGH_INFO": 14,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 4,
+          "NOT_ENOUGH_INFO": 12,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 4,
+      "accuracy": 0.125,
+      "binary_decisions": 6,
+      "binary_coverage": 0.1875,
+      "accuracy_on_binary_decisions": 0.6666666666666666,
+      "detected_errors": 4,
+      "error_recall": 0.25,
+      "false_negatives_supported": 0,
+      "false_negative_rate": 0.0,
+      "abstained_errors": 12,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 12,
+      "missed_error_rate_including_abstentions": 0.75,
+      "false_positives": 2,
+      "false_positive_rate": 0.125,
+      "supported_recall": 0.0,
+      "abstentions_by_gold": {
+        "SUPPORTED": 14,
+        "REFUTED": 12
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": -0.2008779477328062,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": 0.4171764114871621,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.04970134387480073,
+          0.2806830548165022
+        ],
+        "strict_fnr": [
+          0.0,
+          0.1936076805344365
+        ],
+        "missed_error_rate": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "fpr": [
+          0.03497748774324047,
+          0.36022827265758695
+        ]
+      },
+      "cost_and_extraction": {
+        "generation_calls": 32,
+        "prompt_tokens": 5633,
+        "generated_tokens_including_eos": 64,
+        "truncated_calls": 0,
+        "total_elapsed_seconds": 53.90985199998249,
+        "mean_elapsed_seconds": 1.684682874999453,
+        "p95_elapsed_seconds": 1.735718399984762,
+        "peak_cuda_allocated_bytes": 5193465856,
+        "accepted_span_precision": null,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "actual_generated_label_mean_logprob",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.03571428571428571,
+        "negative_entropy_correctness_auroc": 0.044642857142857144,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": -0.5898699164390564,
+            "retained": 6,
+            "actual_coverage": 0.1875,
+            "errors": 2,
+            "conditional_error_rate": 0.3333333333333333
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": -0.5898699164390564,
+            "retained": 6,
+            "actual_coverage": 0.1875,
+            "errors": 2,
+            "conditional_error_rate": 0.3333333333333333
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": -0.5761274099349976,
+            "retained": 5,
+            "actual_coverage": 0.15625,
+            "errors": 2,
+            "conditional_error_rate": 0.4
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    },
+    "C": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 0,
+        "REFUTED": 6,
+        "NOT_ENOUGH_INFO": 26,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 1,
+          "NOT_ENOUGH_INFO": 15,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 5,
+          "NOT_ENOUGH_INFO": 11,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 5,
+      "accuracy": 0.15625,
+      "binary_decisions": 6,
+      "binary_coverage": 0.1875,
+      "accuracy_on_binary_decisions": 0.8333333333333334,
+      "detected_errors": 5,
+      "error_recall": 0.3125,
+      "false_negatives_supported": 0,
+      "false_negative_rate": 0.0,
+      "abstained_errors": 11,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 11,
+      "missed_error_rate_including_abstentions": 0.6875,
+      "false_positives": 1,
+      "false_positive_rate": 0.0625,
+      "supported_recall": 0.0,
+      "abstentions_by_gold": {
+        "SUPPORTED": 15,
+        "REFUTED": 11
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": -0.2181559547316283,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": 0.4244454959407449,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.0686442028250571,
+          0.3175414959753039
+        ],
+        "strict_fnr": [
+          0.0,
+          0.1936076805344365
+        ],
+        "missed_error_rate": [
+          0.44404355834740666,
+          0.8583535614521796
+        ],
+        "fpr": [
+          0.01111934476464252,
+          0.28328737570298945
+        ]
+      },
+      "cost_and_extraction": {
+        "generation_calls": 32,
+        "prompt_tokens": 6764,
+        "generated_tokens_including_eos": 64,
+        "truncated_calls": 0,
+        "total_elapsed_seconds": 54.86919169992325,
+        "mean_elapsed_seconds": 1.7146622406226015,
+        "p95_elapsed_seconds": 1.8377403999911621,
+        "peak_cuda_allocated_bytes": 5198399488,
+        "accepted_span_precision": null,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "actual_generated_label_mean_logprob",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.22962962962962963,
+        "negative_entropy_correctness_auroc": 0.2518518518518518,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": -0.6948016285896301,
+            "retained": 6,
+            "actual_coverage": 0.1875,
+            "errors": 1,
+            "conditional_error_rate": 0.16666666666666666
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": -0.6948016285896301,
+            "retained": 6,
+            "actual_coverage": 0.1875,
+            "errors": 1,
+            "conditional_error_rate": 0.16666666666666666
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": -0.6039547324180603,
+            "retained": 5,
+            "actual_coverage": 0.15625,
+            "errors": 1,
+            "conditional_error_rate": 0.2
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    },
+    "D": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 10,
+        "REFUTED": 13,
+        "NOT_ENOUGH_INFO": 9,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 9,
+          "REFUTED": 3,
+          "NOT_ENOUGH_INFO": 4,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 1,
+          "REFUTED": 10,
+          "NOT_ENOUGH_INFO": 5,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 19,
+      "accuracy": 0.59375,
+      "binary_decisions": 23,
+      "binary_coverage": 0.71875,
+      "accuracy_on_binary_decisions": 0.8260869565217391,
+      "detected_errors": 10,
+      "error_recall": 0.625,
+      "false_negatives_supported": 1,
+      "false_negative_rate": 0.0625,
+      "abstained_errors": 5,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 6,
+      "missed_error_rate_including_abstentions": 0.375,
+      "false_positives": 3,
+      "false_positive_rate": 0.1875,
+      "supported_recall": 0.5625,
+      "abstentions_by_gold": {
+        "SUPPORTED": 4,
+        "REFUTED": 5
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": -0.23314484534148505,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": 0.4070975295435346,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.42260024875382873,
+          0.7448036515733456
+        ],
+        "strict_fnr": [
+          0.01111934476464252,
+          0.28328737570298945
+        ],
+        "missed_error_rate": [
+          0.18481232558863633,
+          0.6135895945449727
+        ],
+        "fpr": [
+          0.06591599071428142,
+          0.4300888096197414
+        ]
+      },
+      "cost_and_extraction": {
+        "generation_calls": 32,
+        "prompt_tokens": 11129,
+        "generated_tokens_including_eos": 64,
+        "truncated_calls": 0,
+        "total_elapsed_seconds": 52.991941499960376,
+        "mean_elapsed_seconds": 1.6559981718737617,
+        "p95_elapsed_seconds": 1.706043399986811,
+        "peak_cuda_allocated_bytes": 5260384768,
+        "accepted_span_precision": null,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "actual_generated_label_mean_logprob",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.8299595141700404,
+        "negative_entropy_correctness_auroc": 0.8097165991902834,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": -0.7177225351333618,
+            "retained": 23,
+            "actual_coverage": 0.71875,
+            "errors": 4,
+            "conditional_error_rate": 0.17391304347826086
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": -0.5541160106658936,
+            "retained": 21,
+            "actual_coverage": 0.65625,
+            "errors": 3,
+            "conditional_error_rate": 0.14285714285714285
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": -0.3673357367515564,
+            "retained": 19,
+            "actual_coverage": 0.59375,
+            "errors": 3,
+            "conditional_error_rate": 0.15789473684210525
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    },
+    "E": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 6,
+        "REFUTED": 16,
+        "NOT_ENOUGH_INFO": 10,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 6,
+          "REFUTED": 4,
+          "NOT_ENOUGH_INFO": 6,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 12,
+          "NOT_ENOUGH_INFO": 4,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 18,
+      "accuracy": 0.5625,
+      "binary_decisions": 22,
+      "binary_coverage": 0.6875,
+      "accuracy_on_binary_decisions": 0.8181818181818182,
+      "detected_errors": 12,
+      "error_recall": 0.75,
+      "false_negatives_supported": 0,
+      "false_negative_rate": 0.0,
+      "abstained_errors": 4,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 4,
+      "missed_error_rate_including_abstentions": 0.25,
+      "false_positives": 4,
+      "false_positive_rate": 0.25,
+      "supported_recall": 0.375,
+      "abstentions_by_gold": {
+        "SUPPORTED": 6,
+        "REFUTED": 4
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": -0.13617907462230505,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": 0.29873742784548085,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.3932559113685198,
+          0.7183466888495963
+        ],
+        "strict_fnr": [
+          0.0,
+          0.1936076805344365
+        ],
+        "missed_error_rate": [
+          0.10182067491213048,
+          0.49498316535508774
+        ],
+        "fpr": [
+          0.10182067491213048,
+          0.49498316535508774
+        ]
+      },
+      "cost_and_extraction": {
+        "generation_calls": 125,
+        "prompt_tokens": 55546,
+        "generated_tokens_including_eos": 1357,
+        "truncated_calls": 0,
+        "extraction_samples": 32,
+        "samples_without_accepted_claim": 5,
+        "top_level_extraction_errors": 4,
+        "rejected_items": 1,
+        "ambiguous_items": 0,
+        "accepted_quotes": 29,
+        "exact_quotes": 29,
+        "feedback_transitions": 0,
+        "total_elapsed_seconds": 1126.8117636999523,
+        "mean_elapsed_seconds": 35.21286761562351,
+        "p95_elapsed_seconds": 51.74019199999748,
+        "peak_cuda_allocated_bytes": 5282822144,
+        "accepted_span_precision": 1.0,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "actual_generated_label_mean_logprob",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.7380952380952381,
+        "negative_entropy_correctness_auroc": 0.7301587301587301,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": -0.6866580247879028,
+            "retained": 22,
+            "actual_coverage": 0.6875,
+            "errors": 4,
+            "conditional_error_rate": 0.18181818181818182
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": -0.2662753462791443,
+            "retained": 20,
+            "actual_coverage": 0.625,
+            "errors": 3,
+            "conditional_error_rate": 0.15
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": -0.13534267246723175,
+            "retained": 18,
+            "actual_coverage": 0.5625,
+            "errors": 3,
+            "conditional_error_rate": 0.16666666666666666
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    },
+    "F": {
+      "evaluation_unit": "whole_sample",
+      "positive_class": "REFUTED",
+      "total_samples": 32,
+      "gold_counts": {
+        "SUPPORTED": 16,
+        "REFUTED": 16
+      },
+      "prediction_counts": {
+        "SUPPORTED": 6,
+        "REFUTED": 16,
+        "NOT_ENOUGH_INFO": 10,
+        "INVALID": 0
+      },
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 6,
+          "REFUTED": 4,
+          "NOT_ENOUGH_INFO": 6,
+          "INVALID": 0
+        },
+        "REFUTED": {
+          "SUPPORTED": 0,
+          "REFUTED": 12,
+          "NOT_ENOUGH_INFO": 4,
+          "INVALID": 0
+        }
+      },
+      "correct_samples": 18,
+      "accuracy": 0.5625,
+      "binary_decisions": 22,
+      "binary_coverage": 0.6875,
+      "accuracy_on_binary_decisions": 0.8181818181818182,
+      "detected_errors": 12,
+      "error_recall": 0.75,
+      "false_negatives_supported": 0,
+      "false_negative_rate": 0.0,
+      "abstained_errors": 4,
+      "invalid_errors": 0,
+      "missed_errors_including_abstentions": 4,
+      "missed_error_rate_including_abstentions": 0.25,
+      "false_positives": 4,
+      "false_positive_rate": 0.25,
+      "supported_recall": 0.375,
+      "abstentions_by_gold": {
+        "SUPPORTED": 6,
+        "REFUTED": 4
+      },
+      "invalid_by_gold": {
+        "SUPPORTED": 0,
+        "REFUTED": 0
+      },
+      "score_summaries": {
+        "mean_label_token_logprob": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": -0.13617907462230505,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        },
+        "mean_label_token_full_vocab_entropy_nats": {
+          "samples_with_valid_score": 32,
+          "samples_without_valid_score": 0,
+          "sample_mean_of_label_token_means": 0.29873742784548085,
+          "aggregation": "Arithmetic mean of per-sample label-token means; not token-weighted."
+        }
+      },
+      "definitions": {
+        "accuracy": "Correct whole-sample binary labels / all samples; abstentions and invalid outputs are not correct.",
+        "false_negative_rate": "Gold REFUTED predicted SUPPORTED / all gold REFUTED. Read with the separate abstention-inclusive missed-error rate.",
+        "missed_error_rate_including_abstentions": "Gold REFUTED not predicted REFUTED / all gold REFUTED, including NOT_ENOUGH_INFO and INVALID.",
+        "selective_results": "Development-only quantiles frozen before test; actual coverage may differ.",
+        "scores": "Actual generated-label-token model scores, not calibrated truth probabilities. Means of sample means are not token-weighted."
+      },
+      "ci95": {
+        "accuracy": [
+          0.3932559113685198,
+          0.7183466888495963
+        ],
+        "strict_fnr": [
+          0.0,
+          0.1936076805344365
+        ],
+        "missed_error_rate": [
+          0.10182067491213048,
+          0.49498316535508774
+        ],
+        "fpr": [
+          0.10182067491213048,
+          0.49498316535508774
+        ]
+      },
+      "cost_and_extraction": {
+        "generation_calls": 125,
+        "prompt_tokens": 55546,
+        "generated_tokens_including_eos": 1357,
+        "truncated_calls": 0,
+        "extraction_samples": 32,
+        "samples_without_accepted_claim": 5,
+        "top_level_extraction_errors": 4,
+        "rejected_items": 1,
+        "ambiguous_items": 0,
+        "accepted_quotes": 29,
+        "exact_quotes": 29,
+        "feedback_transitions": 0,
+        "total_elapsed_seconds": 1128.6357194999582,
+        "mean_elapsed_seconds": 35.269866234373694,
+        "p95_elapsed_seconds": 51.9352381999779,
+        "peak_cuda_allocated_bytes": 5282822144,
+        "accepted_span_precision": 1.0,
+        "cost_scope": "Observed execution excluding model loading and checkpoint I/O; two teacher-forced forwards differ from a generate call."
+      },
+      "uncertainty": {
+        "score_kind": "actual_generated_label_mean_logprob",
+        "samples_with_scores": 32,
+        "samples_without_scores": 0,
+        "correctness_auroc": 0.7380952380952381,
+        "negative_entropy_correctness_auroc": 0.7301587301587301,
+        "selective": [
+          {
+            "development_target_coverage": 1.0,
+            "frozen_threshold": -0.6866580247879028,
+            "retained": 22,
+            "actual_coverage": 0.6875,
+            "errors": 4,
+            "conditional_error_rate": 0.18181818181818182
+          },
+          {
+            "development_target_coverage": 0.9,
+            "frozen_threshold": -0.2662753462791443,
+            "retained": 20,
+            "actual_coverage": 0.625,
+            "errors": 3,
+            "conditional_error_rate": 0.15
+          },
+          {
+            "development_target_coverage": 0.8,
+            "frozen_threshold": -0.13534267246723175,
+            "retained": 18,
+            "actual_coverage": 0.5625,
+            "errors": 3,
+            "conditional_error_rate": 0.16666666666666666
+          }
+        ],
+        "not_a_truth_probability": true
+      }
+    }
+  },
+  "paired": {
+    "F_minus_D": {
+      "total_samples": 32,
+      "both_correct": 16,
+      "both_incorrect": 11,
+      "baseline_only_correct": 3,
+      "dual_only_correct": 2,
+      "changed_verdicts": 6,
+      "accuracy_difference_dual_minus_baseline": -0.03125,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability.",
+      "bootstrap": {
+        "method": "class-stratified paired percentile bootstrap",
+        "seed": 42,
+        "repetitions": 10000,
+        "ci95": [
+          -0.15625,
+          0.09375
+        ]
+      }
+    },
+    "C_minus_B": {
+      "total_samples": 32,
+      "both_correct": 3,
+      "both_incorrect": 26,
+      "baseline_only_correct": 1,
+      "dual_only_correct": 2,
+      "changed_verdicts": 4,
+      "accuracy_difference_dual_minus_baseline": 0.03125,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "D_minus_C": {
+      "total_samples": 32,
+      "both_correct": 5,
+      "both_incorrect": 13,
+      "baseline_only_correct": 0,
+      "dual_only_correct": 14,
+      "changed_verdicts": 17,
+      "accuracy_difference_dual_minus_baseline": 0.4375,
+      "mcnemar_exact_two_sided_p": 0.0001220703125,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "E_minus_D": {
+      "total_samples": 32,
+      "both_correct": 16,
+      "both_incorrect": 11,
+      "baseline_only_correct": 3,
+      "dual_only_correct": 2,
+      "changed_verdicts": 6,
+      "accuracy_difference_dual_minus_baseline": -0.03125,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    },
+    "F_minus_E": {
+      "total_samples": 32,
+      "both_correct": 18,
+      "both_incorrect": 14,
+      "baseline_only_correct": 0,
+      "dual_only_correct": 0,
+      "changed_verdicts": 0,
+      "accuracy_difference_dual_minus_baseline": 0.0,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "interpretation": "Paired whole-sample benchmark-label agreement; abstentions/invalid outputs count as incorrect. No threshold selection or causal attribution to log-probability."
+    }
+  },
+  "semantics": null,
+  "boundary": null,
+  "case_ledger": [
+    {
+      "id": "MFI-D-0010",
+      "source": "Nigeria's debt had been paid off by the time former President Obasanjo and VP Abubakar exited office in 2007.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -10.869196138773987,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.18514306843280792,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.2970656454563141,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5514771342277527,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.16997739672660828,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.16997739672660828,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0017",
+      "source": "Kenyan President Kenyatta in national day speech stated Under this administration … at Kilindini we have more than doubled the volume of cleared cargo passing [through] the port annually.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.19062453508377075,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.028869090601801872,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.1713404655456543,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.051909439265728,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.051909439265728,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -5.540984417544678,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0025",
+      "source": "US House Speaker Nancy Pelosi said, “Waiting hours longer in the waiting room will allow you to make new friends.” This is regarding emergency care waits.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "C": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.6948016285896301,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5541160106658936,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.059856563806533813,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.059856563806533813,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -6.612143325386569,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.45169511437416077,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0009",
+      "source": "Professor Tasuku Honjo said that coronavirus is “not natural”.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.013817960396409035,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.010678059421479702,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.010678059421479702,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -10.835078325515497,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5761274099349976,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.1270967721939087,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0020",
+      "source": "Lewis Carroll once wrote, “You know what the issue is with this world? Everyone wants a magical solution to their problems, and everyone refuses to believe in magic.”",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.019839540123939514,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.019839540123939514,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -5.887357318075374,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.1702161282300949,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.6183800101280212,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.30546995997428894,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0031",
+      "source": "Expanding Medicaid would bring 40,000 jobs to North Carolina.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.43130746483802795,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -5.263279865030199,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.06611023098230362,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.04594867676496506,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.019989117980003357,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.43130746483802795,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0029",
+      "source": "South Africa have launched the Youth Employment Service, which is placing unemployed youth in paid internships in companies across the country.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": 0.7787111904472113,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.08720851689577103,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.11733152717351913,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.0738779753446579,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.015650777146220207,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.015650777146220207,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0001",
+      "source": "Ghana's economy previously grew at 3.4% under the form President Mahama's government and on average, for three successive years, at 7% per year with the current administration.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "B": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.35785728693008423,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.41831621527671814,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.3673357367515564,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 2,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5361179709434509,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 2,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5361179709434509,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -9.106303319749713,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0014",
+      "source": "House Speaker Nancy Pelosi approved $4.8 million in impeachment-related consulting fees to the Clinton Foundation.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "C": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.27373871207237244,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.01617581769824028,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.009484234265983105,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.009484234265983105,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -12.8779276852365,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.29717889428138733,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0004",
+      "source": "A rare yellow turtle was spotted in Balasore, Odisha.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.0002924968139268458,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 108 (char 107)"
+            }
+          ],
+          "mean_label_token_logprob": -0.5853198170661926,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 108 (char 107)"
+            }
+          ],
+          "mean_label_token_logprob": -0.5853198170661926,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -5.402183644240722,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.0216151662170887,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03304598107933998,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0032",
+      "source": "The question of Almajiris’ lack of primary or basic education are all local government problems.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.16997337341308594,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.16997337341308594,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -8.394653487484902,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.22561918199062347,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.27379336953163147,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.39694157242774963,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0007",
+      "source": "President Muhammadu Buhari of Nigeria said Nigeria is now rated as one of the top ten reforming countries.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.04277675598859787,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -7.288763120945077,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.21945184469223022,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.11642652004957199,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -7.772143726469949e-05,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.04277675598859787,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0024",
+      "source": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": 4.022495100740343,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.0993497297167778,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.1861525923013687,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -9.214453893946484e-05,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.014433855190873146,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.014433855190873146,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0008",
+      "source": "North Korea cancels all communication with South Korea.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.10650617629289627,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.4861491322517395,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.6432139277458191,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 110 (char 109)"
+            }
+          ],
+          "mean_label_token_logprob": -0.6866580247879028,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 110 (char 109)"
+            }
+          ],
+          "mean_label_token_logprob": -0.6866580247879028,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -11.461486909116502,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0028",
+      "source": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.10941758751869202,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.011198053136467934,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.10420224815607071,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.10420224815607071,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -0.3433831067959545,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.12854152917861938,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0005",
+      "source": "In June 2020, Nigerian debt servicing obligations stood at N943.12 billion.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.0001991788885788992,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.008227502927184105,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.008227502927184105,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -6.28953068330884,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.20178556442260742,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.13505901396274567,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0026",
+      "source": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.22636958956718445,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.22636958956718445,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -6.848873986979015,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.4983366131782532,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.24532601237297058,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.4258556365966797,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0021",
+      "source": "West Virginia highways move up twenty places in the U.S national highway system to place sixteenth, and affirms all the hard work we do on our states roads.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03016100451350212,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -7.077269792353036,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.29710912704467773,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.16621172428131104,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.00012790338951162994,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03016100451350212,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0013",
+      "source": "Over the past two years, climate and weather disaster damage has cost the U.S. over $400 billion.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -0.12421642057597637,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03168619051575661,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.030036423355340958,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03225089609622955,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 152 (char 151)"
+            }
+          ],
+          "mean_label_token_logprob": -0.04880975931882858,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 152 (char 151)"
+            }
+          ],
+          "mean_label_token_logprob": -0.04880975931882858,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0027",
+      "source": "Since 1973 the income of the bottom 90% of Americans didn't budge.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.07240121066570282,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.07011140137910843,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5491613745689392,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03700333461165428,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03700333461165428,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -4.997285271587316,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0030",
+      "source": "According to a 2017 Doctors Without Borders Report, more than 30 percent of women are sexually assaulted on the trek to the border.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "C": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.3306075930595398,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.34920260310173035,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.025798821821808815,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.025798821821808815,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -15.08613254352531,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "REFUTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.20732176303863525,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0006",
+      "source": "An Expansion of Mail-in Ballots would increase the chance of theft in the USA.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.44690749049186707,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.2840137183666229,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.2840137183666229,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -12.566518984334834,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.20160813629627228,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.17486704885959625,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0023",
+      "source": "Since 2013, County Governments in Kenya have cumulatively received KSh1.57 trillion worth of the equitable share of the allocation of the consolidated fund revenue budget.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.030724262818694115,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.030724262818694115,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": 0.3955047242343426,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03406386449933052,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.026657553389668465,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.6181947588920593,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0012",
+      "source": "Man accused of sexual Harassment of minor girls is a muslim.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.032578423619270325,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -10.494742682341894,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.25216418504714966,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.10347738116979599,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.01802867464721203,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.032578423619270325,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0003",
+      "source": "The USA has only 4% of the worlds population but has 25% of the worlds Covid-19 Cases.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -3.865247876106878,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.043478261679410934,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03701424598693848,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -2.753696753643453e-05,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 1,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.00027891082572750747,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 1,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.00027891082572750747,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0016",
+      "source": "Over 200,000 NHS nurses have resigned since 2010.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.05183609575033188,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.07911424338817596,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.7177225351333618,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.18388678133487701,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.18388678133487701,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -8.887359777152597,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0002",
+      "source": "world bank currently rates Nigeria as one of ten top performing countries on its Doing Business Index.",
+      "whole_sample_gold": "SUPPORTED",
+      "arms": {
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.1905156672000885,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.20157930254936218,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03619793802499771,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.03619793802499771,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -2.629132491303608,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.13106630742549896,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0015",
+      "source": "Access to antiretroviral therapy in the South African public health sector was given to 45,500 patients in 2004.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.4391461908817291,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.13534267246723175,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.13534267246723175,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": 2.290858283638954,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.07050119340419769,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.07568804174661636,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0022",
+      "source": "President Trump fully co-operated with the investigation into Russian interference in the 2016 U.S presidential campaign.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 176 (char 175)"
+            }
+          ],
+          "mean_label_token_logprob": -0.2662753462791443,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [
+            {
+              "reason": "invalid_json",
+              "message": "Extra data: line 1 column 176 (char 175)"
+            }
+          ],
+          "mean_label_token_logprob": -0.2662753462791443,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -13.488156746227105,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.5898699164390564,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.42881107330322266,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.340166836977005,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0019",
+      "source": "Science fiction and popular science writer Isaac Asimov said your assumptions are your windows on the world.Scrub them off every once in a while, or the light won’t come in.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.008650095202028751,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": 4.315040386340115,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.3791530132293701,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.19055989384651184,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.01557883433997631,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.008650095202028751,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0011",
+      "source": "The U.S. Centers for Disease Control and Prevention are planning, in the next 10 days, to change guidance and advise Americans to wear masks in everyday life.",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -8.309227896374068,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.06227155029773712,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.2664450407028198,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.05027175694704056,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 2,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.05347054451704025,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 2,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.05347054451704025,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    },
+    {
+      "id": "MFI-D-0018",
+      "source": "ERNEST HEMINGWAY SAID, WE ARE ALL BROKEN — THAT’S HOW THE LIGHT GETS IN",
+      "whole_sample_gold": "REFUTED",
+      "arms": {
+        "B": {
+          "verdict": "NOT_ENOUGH_INFO",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.12019652128219604,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "C": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.6039547324180603,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "D": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.13079744577407837,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "E": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.04175616055727005,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "F": {
+          "verdict": "REFUTED",
+          "correct": true,
+          "accepted_claim_count": 1,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": -0.04175616055727005,
+          "candidate_margin": null,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        },
+        "A": {
+          "verdict": "SUPPORTED",
+          "correct": false,
+          "accepted_claim_count": 0,
+          "rejected_item_count": 0,
+          "extraction_errors": [],
+          "mean_label_token_logprob": null,
+          "candidate_margin": -4.153087540020351,
+          "content_error_types": [],
+          "system_failure_types": [],
+          "cause_status": "undetermined"
+        }
+      }
+    }
+  ],
+  "acceptance": {
+    "evaluation_complete": false,
+    "upgrade_default_method": false,
+    "reason": "Development results cannot satisfy prospective test acceptance."
+  }
+}

@@ -1,5 +1,11 @@
 * text=auto eol=lf
 *.png binary
+# Matplotlib SVG bytes are hashed in chart manifests. Preserve its output and
+# ignore generated path-line whitespace rather than rewriting experiment assets.
+*.svg -text -whitespace
+# Generated report bytes are also part of the chart manifest; keep its final
+# blank line while retaining other whitespace checks for Markdown.
+reports/next_eval_*_report_*/REPORT.md whitespace=-blank-at-eof
 
 # Preserve experiment inputs, output records and historical source snapshots
 # byte-for-byte: their published SHA256 values include the original line endings.

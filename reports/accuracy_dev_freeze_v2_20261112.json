@@ -1,0 +1,57 @@
+{
+  "frozen_at_utc": "2026-11-12T09:27:37.500787+00:00",
+  "contract": {
+    "protocol": "accuracy-candidates-v1",
+    "split": "dev",
+    "arms": [
+      "legacy_direct",
+      "legacy_dual",
+      "neutral",
+      "binary",
+      "structured",
+      "evidence"
+    ],
+    "files_sha256": {
+      "minifact.py": "bd0a2245bcc3b3521e3dfa16eb8588c14f00be861cfcf31f85ca2a6b9c4d58bd",
+      "config.json": "b43d214a6a9c075c283f25945214f760264bbc11755aac88b6d6cbda399e9574",
+      "phase2_backend.py": "1db836f108116f19f68a914ac88695bcf5612c65154ccfc64d40aa02644bb091",
+      "phase2_pipeline.py": "1208cc9693434ff2c6d23d7c32818c1b87369fcf1812113d4d50bae9797cf701",
+      "phase3_experiment.py": "8d4bc8e49413e7115a86b42b02888883d130d142c94fee1a6b485e31e6012f7f",
+      "phase3_metrics.py": "80724a5bc70d28edbf3412ff10af76c1590d45f1ac904df7d71fbb7ce63ba166",
+      "accuracy_backend.py": "0dad84ad4697fa5443b7b94a6985ecf5a30cbd80ab57fcf5bb260647498ce60c",
+      "accuracy_claims.py": "fe6d0f13444e85da78e5a7db7859a27bf716f87a1d305721a2e84f36d03a817c",
+      "scripts/run_accuracy.py": "beba65056eb4db7dae06a939e4e0a0892f7ac65dbab949c7fc9132b5e0f589dc",
+      "scripts/summarize_accuracy.py": "c4678d927fb9102e2fa172a4ebd94704c9d853d95257c149c63dd8a26175d9e3",
+      "data/improvement/dev_dataset.json": "897e5c743275601382e9bc44812cf24171f6c2d10fd86e9d50f3c3034ee820d1",
+      "data/improvement/dev_inputs.json": "4dda79612344e19d8788c66c896ddd37149f7a894ae8ba048204d0c9ab8ffb6c",
+      "data/improvement/dev_evidence_inputs.json": "cd405a15c649facfff7c981e6a8606ca7262519cf8525c6f93cc0715c29aa2ee",
+      "data/improvement/manifest.json": "fc0a4428c3be163cc23dce0dfd9b0c57a0cfa10cc9a597bb058d8d853aeec521"
+    },
+    "model": {
+      "schema_version": 1,
+      "model_id": "Qwen/Qwen2.5-3B-Instruct",
+      "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "dtype": "float16",
+      "attention_implementation": "eager",
+      "seed": 42,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "use_cache": true
+    },
+    "input_sha256": "cd405a15c649facfff7c981e6a8606ca7262519cf8525c6f93cc0715c29aa2ee",
+    "closed_book": "Only source text is passed; no id, context, QA, labels or gold justification.",
+    "evidence_condition": "Supplied benchmark QA plus context; not automatic retrieval. URLs and gold labels/justifications excluded from model payload.",
+    "role_caps": {
+      "decision": 16,
+      "review": 64,
+      "extract": 256
+    },
+    "selection_rule": "New closed-book candidate with highest development accuracy; ties lowest FPR, then mean elapsed seconds, then arm name. No holdout-dependent selection.",
+    "order": "Rotate arm order by sample index; one checkpoint per completed paired sample."
+  }
+}
